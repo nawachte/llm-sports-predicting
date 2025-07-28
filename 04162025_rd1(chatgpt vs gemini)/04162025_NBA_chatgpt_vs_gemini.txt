@@ -1,0 +1,35 @@
+I gave chat gpt and gemini the same prompt for their deep research functionality. 
+ChatGPT always comes up with questions so I included the questions and answer in the Gemini prompt.
+Here is the prompt:
+Go to DraftKings and look at the spread, over under, and money line for all of the upcoming NBA games. 
+Then do market research. Go through hundreds of sites to understand team news, player injuries, game trends, etc. 
+Finally, I want you to pick the top 3 bets that a professional sports better would make an explain you reasoning.
+
+Some questions and answers to better help your understanding:
+1. Q: Are you looking for bets only for today's NBA games, or should I include tomorrow's or upcoming playoff games as well?
+A: All available upcoming games
+2. Q: Do you want bets based on point spread, over/under, moneyline, or a mix of the best values across those?
+A: Consider all 3 markets but in your final answer give me the 3 best value bets across bet types. (combination of likelihood and price)
+3. Q: Are you interested in a specific type of edge—e.g., injury news, rest advantage, betting line movement, advanced analytics, or all of the above?
+A: all of the above
+
+Notes:
+Interesting that they both picked the pacers to cover the spread against the bucks.
+I'll bet $3 on that pick and $1 on the rest. 
+Actually, I'm writing this a day after predictions and some of the lines have changed and some game were yesterday so whatever is still valid.
+
+Picks/Results
+Gemini picks
+Pick1: Indiana Pacers vs. Milwaukee Bucks    | spread (Pacers)    | -5 / -110   -> won
+Pick2: Dallas Mavericks vs. Sacramento Kings | spread (Mavericks) | +4.5 / -110 -> won
+Pick3: Miami Heat vs. Chicago Bulls          | over/under (Over)  | 219 / -110  -> lost
+
+ChatGPT picks
+Pick1: Indiana Pacers vs. Milwaukee Bucks      | spread (Pacers)   | -5.5 / -112 -> won
+Pick2: Los Angeles Clippers vs. Denver Nuggets | spread (Clippers) | +2.5 / -112 -> won
+Pick3: Detroit Pistons vs. New York Knicks     | spread (Pistons)  | +7 / -108   -> lost
+
+Lets say I made all of the bets I said I wanted to earlier. Given the outcome here is my profit/loss.
+Gemini: $2.73(pick1) + $0.91(pick2) - $1.00(pick3) = $2.64   [52.8% profit]
+ChatGPT: $2.68(pick1) + $0.89(pick2) - $1.00(pick3) = $2.57  [51.4% profit]
+Overall: $2.64(Gemini) + $2.57(ChatGPT) = $5.21              [52.1% profit]

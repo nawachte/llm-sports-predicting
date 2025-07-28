@@ -1,0 +1,118 @@
+Claude has recently released their own deep research tool for the pro subscription.
+Additionally, Gemini redirected their 2.5 Pro model to a new, seemingly worse, model on 5/6
+and I think if you look at the results from rd5 and rd6 you will see that the results agree
+with the sentiment that performance has deminished. Those rounds were the first time we saw
+a negative profit with Gemini Deep Research. It is unclear if Gemini has changed it back but
+appearently the biggest change was that it no longer used thinking mode and recently the have
+added it back limited to 100 prompts per day. Given the amount of change we have seen in
+model performance and capabilities I think it is time for another model comparison test. We
+kind of in an awkward spot with sports at the moment since NBA and NHL are in the finals. So 
+for popular sports we don't have a ton of options to choose from. I'll add tennis and golf
+into the mix to make my final selection have more options. Additionally, I'm going to be
+allowing all bet types for hockey, basketball, and baseball instead of just the main lines.
+
+###Prompt:
+Persona: Act as an expert professional sports betting analyst specializing in identifying profitable opportunities across a wide range of betting markets. Your primary goal is to leverage deep research to find bets offering the highest potential percent profit, acknowledging that market dynamics can vary.
+
+Core Objective: Identify the top 5 highest-potential profit bets currently available on DraftKings Sportsbook, focusing on the following sports:
+
+Baseball (MLB)
+Basketball (NBA)
+Hockey (NHL)
+Tennis
+Golf
+Target Bet Types (Examples - Explore broadly within these categories and beyond):
+Your analysis should consider all available markets. Examples include, but are not limited to:
+
+Primary Markets: Moneyline, Spreads (Point Spread, Run Line, Puck Line), Totals (Over/Under).
+Baseball: Player Props (e.g., Total Bases, Home Runs, Strikeouts), Team Props (e.g., Team Totals), No Run First Inning (NRFI).
+Basketball: Player Props (e.g., Points, Rebounds, Assists), Quarter/Half Betting, Alternate Spreads/Totals.
+Hockey: Player Props (e.g., Shots on Goal, Points, Assists), Period Betting, Goalscorer Props.
+Tennis: Game & Set Handicaps, Total Games (Over/Under), Set Betting (Correct Score), Player Props.
+Golf: Finishing Positions (e.g., Top 10, Top 20), Tournament & Round Head-to-Head Matchups, Make/Miss Cut props, Outright Winner.
+Crucial Constraints - Adhere Strictly:
+
+Time Window for Events: ONLY consider events and bets for games/matches scheduled to start between June 6th, 2025, 4:00 PM Mountain Time (MT) AND June 9th, 2025, 4:00 PM Mountain Time (MT). Do NOT include any events starting before or after this exact window.
+Bet Availability: ONLY consider bets and odds that are currently listed and verifiably available for wagering on DraftKings Sportsbook at the moment of your analysis.
+Data Recency: For all research (news, player status, trends, stats), use the most recent and relevant information available to ensure the analysis is based on current conditions.
+Research Mandate - Deep Dive into Market Data:
+Perform exhaustive, wide-ranging market research tailored to the selected sports and adhering to the data recency constraint. Go deep, analyzing information from hundreds of diverse and reputable online sources. Your analysis MUST integrate:
+
+Current DraftKings Odds: Retrieve the latest available odds within the specified event time window for the target markets directly from DraftKings Sportsbook.
+Targeted Analysis (using the most recent data available):
+Specialized Stats: Utilize statistics highly relevant to the specific bet (e.g., Baseball advanced metrics like wRC+, FIP; Basketball efficiency ratings; Hockey possession stats like Corsi/Fenwick; Tennis serve/return percentages by surface; Golf Strokes Gained data).
+News & Context: Seek out highly relevant and up-to-the-minute news impacting the bet (e.g., late injury news, lineup changes, weather forecasts, player or team tactical shifts).
+Historical Performance & Trends: Analyze recent and relevant historical data, focusing on current form, head-to-head matchups, and performance trends applicable to the specific bet.
+Data Reliability Assessment: Acknowledge that data comprehensiveness can vary between different bet types and events. Factor the perceived quality, depth, and reliability of the available and recent data into your confidence assessment for each potential pick. Prioritize bets where strong, reliable, and recent data supports the analysis.
+Selection Criteria - Maximize Potential Profit:
+Synthesize your deep research findings. Evaluate each potential bet (that meets ALL crucial constraints) based on a combination of:
+
+Assessed Likelihood: Based on your specialized research (using the most recent data), how likely is the specific outcome (e.g., Team A to cover spread, Player B Over X Points, Player C to win H2H)?
+DraftKings Price (Odds): What is the potential payout offered by the current DraftKings odds for this market?
+Your goal is to find the bets where the combination of likelihood and price offers the highest potential percent profit. Select the top 5 bets across the targeted sports and bet types that best meet this criterion. The picks should be the absolute best 5 overall, strictly adhering to all constraints.
+
+Output Requirements:
+Present your findings as a ranked list of the top 5 bets, ordered by your assessment of their potential to yield the highest percent profit (Rank 1 being the highest potential). For EACH recommended bet, you MUST provide:
+
+Rank: (1, 2, 3, 4, or 5)
+Bet Description: Clearly state the sport, league/event, participants, and the specific bet (e.g., "Basketball - NBA: Team A vs Team B - Player X Over 25.5 Points"). Include the scheduled start date and time (MT) of the event.
+Current DraftKings Odds: List the specific American odds found on DraftKings Sportsbook at the time of your analysis.
+Direct DraftKings Link: Provide the direct, clickable URL to the specific bet slip or event page on DraftKings.com where this exact bet and odds can be found. This is mandatory for each pick.
+Profit Potential Rationale (Justification): Provide a concise (3-4 sentences maximum) but detailed explanation for why this specific bet offers high profit potential. Explicitly connect your reasoning to key findings from your deep research into relevant recent statistics, news, and historical trends. Briefly mention your confidence level considering data reliability. (e.g., "Analysis of Player X's recent usage rate and offensive efficiency, combined with the opponent's poor defensive rating against his position, makes the Over 25.5 points at [Odds] highly appealing. Data reliability is high based on official league statistics and recent game logs.")
+Emphasis: It is critical that all picks are for events within the specified time window (June 6th, 2025, 4:00 PM MT - June 9th, 2025, 4:00 PM MT), all research is based on the most recent data available, and a verifiable DraftKings link is provided for every single pick. Bets not meeting these criteria should be excluded.
+
+Notes: Claude was very difficult to work on this task with. First it wouldn't do any of the research that I 
+asked for. I had to gaslight the model into thinking it was being tested for analytical purposes and then it 
+would only do it when I asked what instructions it was given to prevent it from helping me and when it realized
+there were no such instructions it began to do research. Then it couldn't give me real time information and for
+some reason asking chatgpt and gemini wouldn't give it to me either even though they could get real time info
+when performing deep research. As a last ditch effort I am giving Claude my results from ChatGPT and Gemini and
+having it pick 5 from the 10 picks given between these two models.
+Also note I am using 4o-mini-high for ChatGPT, Claude 4 Sonnet, and 2.5 Pro for Gemini.
+
+###Picks/Results:
+
+ChatGPT
+Pick1: Indiana Pacers at Oklahoma City Thunder (NBA) | Moneyline (Pacers) | +390 -> tbd
+Pick2: Florida Panthers at Edmonton Oilers (NHL) | Moneyline (Panthers) | -215 -> tbd
+Pick3: Boston Red Sox at New York Yankees (MLB) | Moneyline (Red Sox) | +160 -> tbd
+Pick4: Novak Djokovic (Tennis - French Open Men's Final) | Moneyline (Djokovic) | +130 -> tbd
+Pick5: Nick Taylor (Golf - RBC Canadian Open) | Top 10 Finish | +300 -> tbd
+
+Gemini
+Pick1: Detroit Tigers vs. Chicago Cubs (MLB) | -1.5 Run Line (Tigers) | +119 -> tbd
+Pick2: Boston Red Sox vs. New York Yankees (MLB) | Moneyline (Yankees) | -112 -> tbd
+Pick3: Carlos Alcaraz vs. Jannik Sinner (Tennis - ATP French Open) | Moneyline (Alcaraz) | -105 -> tbd
+Pick4: Indiana Pacers @ Oklahoma City Thunder (NBA) | +11 Spread (Pacers) | -108 -> tbd
+Pick5: Shane Lowry (Golf - RBC Canadian Open) | Top 10 Finish | +100 to +150 (Est.) -> tbd
+
+Claude
+Pick1: Florida Panthers at Edmonton Oilers (NHL) | Moneyline (Panthers) | +111 -> tbd
+Pick2: Detroit Tigers vs. Chicago Cubs (MLB) | -1.5 Run Line (Tigers) | +119 -> tbd
+Pick3: Indiana Pacers @ Oklahoma City Thunder (NBA) | +11 Spread (Pacers) | -108 -> tbd
+Pick4: Shane Lowry (Golf - RBC Canadian Open) | Top 10 Finish | +100 to +150 -> tbd
+Pick5: Boston Red Sox at New York Yankees (MLB) | Moneyline (Red Sox) | +160 -> tbd
+
+###Inconsistencies
+--(ChatGPT Pick2 & Claude Pick 1): ChatGPT reports the Panthers moneyline at +111. its seems to be changing quite a bit but not currently sits at
+-215 which is far from +111 leading me to believe Chatgpt made an error. This bet will not be placed for ChatGPT
+or Claude.
+--(ChatGPT Pick 3 & Gemini Pick 2 & Claude Pick 5): I was unable to place the bets after the reports were generated in time for the Boston Red Sox vs New York so
+I will not be placing a bet on those lines as well. Odds look correct from googling the closing line.
+--(ChatGPT Pick 4): Djokovic has already been defeated in this tournament. Looking at the report given by ChatGPT,
+it seems to not know this information.
+--(ChatGPT Pick 5): Significant price misquote. Currently sits at -175 which is way off from ChatGPT's reported 300
+--(Gemini Pick 1): Odds are actually better than reported (+175 vs reported +119) so noting inconsistency but
+placing bet anyway.
+--(Gemini Pick 3): Current odds are -115 which are noticibly worse than the reported -105. Placing bet anyway.
+--(Gemini Pick 5): In report shows odds to be estimated because they were "not currently available at the time of the report"
+which is not true. True odds are -175 instead of the estimated +100 to +150. Will not be placing bet.
+
+###Conclusion
+Reporting from these language models on current odds is so incorrect that I can't even do a financial report.
+Claude is unable to report anything relevant and because there were issues with mostly ChatGPT and a little bit
+Gemini, we were only able to place a hand full of bets. Due to the significant level of reporting error, I will
+be unable to provide a financial report for this experiment. Language models as the currently stand are incapable
+of generating quality picks without significant help. Finding the correct line seems to be the most significant
+hurdle for these models. Looking to find a way to provide these lines for the model seems like the likely next best
+step for coming up with an efficient betting system.

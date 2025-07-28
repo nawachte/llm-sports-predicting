@@ -1,0 +1,383 @@
+-----Intro
+Alright, we've made some modifications from the last time. This time I've included some more sports to bet on because there isn't
+any tennis or golf going on in my next time frame. So I added WNBA and F1 to the mix. I modified my scripts so that it no longer is
+looking for 5 bets to spend $1 on but rather each model is allowed to spend $5 how they choose. Also they understand that they are
+in competition with the other models. If you notice in this folder this is another folder of what looks like another test. I needed
+to retry because when I gave the data to gemini to parse it started pulling lines from what I can only guess to be another file.
+This meant there were lines that weren't valid and I noticed lines were picked from each model that couldn't be placed. Additionally,
+ChatGPT once again could not follow instructions and was picking lines from events that already happened as well as listing lines for
+events that were valid but misquoting the odds for that event. Mind you this is ChatGPT's most advanced reasoning model, o3, so no
+excuses to be had here. Throughout all of the experiments I have been conducting for this activity, ChatGPT is consistently unable
+to follow basic instructions and therefore will be removed from testing moving forward due to incompetency. I am using Gemini 2.5 
+Pro and Claude 4 Opus for this experiment. Personally I think this is the best script/test I have tried so far and I'm excited for 
+the results.
+
+-----Prompt:
+### **1. Persona and Core Mission**
+
+You are an elite sports betting analyst AI, operating as a professional portfolio manager. You are in a head-to-head competition against two other AI agents. This is **Round 1 of a 10-round experiment.**
+
+Your sole performance metric is **long-term percentage profit.** Your goal is to maximize the growth of your starting bankroll over the 10 rounds. This is a marathon, not a sprint. While single-round wins are good, a strategy that prioritizes sustainable, long-term growth and capital preservation is paramount. Avoid overly risky plays that could decimate your bankroll, but don't be so conservative that you miss calculated opportunities for significant gains. Your analysis must be unemotional, mathematical, and grounded in the concept of Positive Expected Value (+EV).
+
+### **2. Bankroll Management and Bet Allocation**
+
+For this round, you have a **starting bankroll of exactly $5.00.**
+
+* **Total Allocation:** You must allocate the **entire $5.00** across your selected bets.
+* **Bet Denomination:** All bet amounts must be in **25-cent increments** (e.g., $0.25, $0.50, $0.75, $1.00, $1.25). Amounts like $1.38 or $0.77 are not allowed.
+* **Allocation Strategy:** The amount you allocate to each bet should be a direct reflection of your confidence in the bet's "edge" or +EV. Higher confidence and a greater perceived edge should warrant a larger portion of your $5.00 bankroll. This allocation is a critical part of your strategy.
+
+### **3. Hard Constraint: Adherence to Provided Lines**
+
+**You must acknowledge and confirm you will adhere to this constraint.**
+
+Your entire analysis and all final bet selections **must** be drawn directly and exclusively from the list provided under "Bets for Analysis." You are strictly forbidden from researching, considering, or suggesting any bet or odds not on this list. Any bet selected that is not on the provided list will be graded as an automatic loss, nullifying any potential profit.
+
+**Bets for Analysis**
+**MLB**
+
+San Francisco Giants vs. Los Angeles Dodgers (Sun, Jun 15, 5:10 PM)
+SF Giants
+Run Line: +1.5 (-137)
+Total: O 9 (-107)
+Moneyline: +142
+LA Dodgers
+Run Line: -1.5 (+112)
+Total: U 9 (-113)
+Moneyline: -174
+
+Philadelphia Phillies vs. Miami Marlins (Mon, Jun 16, 4:40 PM)
+PHI Phillies
+Total: O 8.5 (-102)
+Moneyline: -132
+MIA Marlins
+Total: U 8.5 (-119)
+Moneyline: +108
+
+Colorado Rockies vs. Washington Nationals (Mon, Jun 16, 4:45 PM)
+COL Rockies
+Total: O 9 (-110)
+Moneyline: +168
+WAS Nationals
+Total: U 9 (-110)
+Moneyline: -208
+
+Los Angeles Angels vs. New York Yankees (Mon, Jun 16, 5:05 PM)
+LA Angels
+Total: O 8.5 (-119)
+Moneyline: +168
+NY Yankees
+Total: U 8.5 (-102)
+Moneyline: -208
+
+Boston Red Sox vs. Seattle Mariners (Mon, Jun 16, 7:40 PM)
+BOS Red Sox
+Total: O 7.5 (-102)
+Moneyline: +138
+SEA Mariners
+Total: U 7.5 (-119)
+Moneyline: -169
+
+**FIFA Club World Cup**
+
+Botafogo RJ vs. Seattle Sounders (Sun, Jun 15, 8:00 PM)
+Botafogo RJ: +120
+Draw: +235
+Seattle Sounders: +240
+
+Chelsea vs. LAFC (Mon, Jun 16, 1:00 PM)
+Chelsea: -380
+Draw: +500
+LAFC: +950
+
+Boca Juniors vs. Benfica (Mon, Jun 16, 4:00 PM)
+Boca Juniors: +380
+Draw: +280
+Benfica: -135
+
+Flamengo vs. Esperance de Tunis (Mon, Jun 16, 7:00 PM)
+Flamengo: -295
+Draw: +400
+Esperance de Tunis: +800
+
+Fluminense vs. Dortmund (Tue, Jun 17, 10:00 AM)
+Fluminense: +450
+Draw: +340
+Dortmund: -185
+
+River Plate [ARG] vs. Urawa Red Diamonds (Tue, Jun 17, 1:00 PM)
+River Plate [ARG]: -160
+Draw: +295
+Urawa Red Diamonds: +475
+
+Ulsan HD FC vs. Mamelodi Sundowns (Tue, Jun 17, 4:00 PM)
+Ulsan HD FC: +200
+Draw: +220
+Mamelodi Sundowns: +150
+
+Monterrey vs. Inter Milan (Tue, Jun 17, 7:00 PM)
+Monterrey: +450
+Draw: +330
+Inter Milan: -175
+
+Man City vs. Wydad Casablanca (Wed, Jun 18, 10:00 AM)
+Man City: -1400
+Draw: +1100
+Wydad Casablanca: +2800
+
+Real Madrid vs. Al-Hilal [KSA] (Wed, Jun 18, 1:00 PM)
+Real Madrid: -310
+Draw: +475
+Al-Hilal [KSA]: +750
+
+Pachuca vs. Salzburg (Wed, Jun 18, 4:00 PM)
+Pachuca: +185
+Draw: +230
+Salzburg: +145
+
+Al Ain [UAE] vs. Juventus (Wed, Jun 18, 7:00 PM)
+Al Ain [UAE]: +1000
+Draw: +550
+Juventus: -425
+
+Palmeiras vs. Al Ahly [EGY] (Thu, Jun 19, 10:00 AM)
+Palmeiras: -120
+Draw: +255
+Al Ahly [EGY]: +320
+
+Inter Miami vs. Porto (Thu, Jun 19, 1:00 PM)
+Inter Miami: +400
+Draw: +310
+Porto: -160
+
+Seattle Sounders vs. Atletico Madrid (Thu, Jun 19, 4:00 PM)
+Seattle Sounders: +650
+Draw: +425
+Atletico Madrid: -275
+
+Paris St-Germain vs. Botafogo RJ (Thu, Jun 19, 7:00 PM)
+Paris St-Germain: -475
+Draw: +550
+Botafogo RJ: +1100
+
+Benfica vs. Auckland City (Fri, Jun 20, 10:00 AM)
+Draw: +1900
+Auckland City: +12000
+
+Flamengo vs. Chelsea (Fri, Jun 20, 12:00 PM)
+Flamengo: +350
+Draw: +320
+Chelsea: -150
+
+LAFC vs. Esperance de Tunis (Fri, Jun 20, 4:00 PM)
+LAFC: +100
+Draw: +255
+Esperance de Tunis: +260
+
+Bayern Munchen vs. Boca Juniors (Fri, Jun 20, 7:00 PM)
+Bayern Munchen: -475
+Draw: +550
+Boca Juniors: +1100
+
+Mamelodi Sundowns vs. Dortmund (Sat, Jun 21, 10:00 AM)
+Mamelodi Sundowns: +900
+Draw: +550
+Dortmund: -400
+
+Inter Milan vs. Urawa Red Diamonds (Sat, Jun 21, 1:00 PM)
+Inter Milan: -390
+Draw: +475
+Urawa Red Diamonds: +1000
+
+Fluminense vs. Ulsan HD FC (Sat, Jun 21, 4:00 PM)
+Fluminense: -145
+Draw: +285
+Ulsan HD FC: +360
+
+River Plate [ARG] vs. Monterrey (Sat, Jun 21, 7:00 PM)
+River Plate [ARG]: +100
+Draw: +250
+Monterrey: +250
+
+Juventus vs. Wydad Casablanca (Sun, Jun 22, 10:00 AM)
+Juventus: -425
+Draw: +500
+Wydad Casablanca: +1000
+
+Real Madrid vs. Pachuca (Sun, Jun 22, 1:00 PM)
+Real Madrid: -500
+Draw: +600
+Pachuca: +1200
+
+Salzburg vs. Al-Hilal [KSA] (Sun, Jun 22, 4:00 PM)
+Salzburg: +195
+Draw: +245
+Al-Hilal [KSA]: +135
+
+**NBA**
+
+Indiana Pacers vs. Oklahoma City Thunder (Mon, Jun 16, 6:35 PM)
+IND Pacers
+Spread: +9.5 (-115)
+Total: O 223.5 (-110)
+Moneyline: +300
+OKC Thunder
+Spread: -9.5 (-105)
+Total: U 223.5 (-110)
+Moneyline: -380
+
+**NHL**
+
+Edmonton Oilers vs. Florida Panthers (Tue, Jun 17, 6:10 PM)
+EDM Oilers
+Puck Line: +1.5 (-198)
+Total: O 6.5 (+100)
+Moneyline: +124
+FLA Panthers
+Puck Line: -1.5 (+164)
+Total: U 6.5 (-120)
+Moneyline: -148
+
+**WNBA**
+
+Connecticut Sun vs. Indiana Fever (Tue, Jun 17, 5:00 PM)
+CON Sun
+Spread: +15.5 (-110)
+Total: O 164.5 (-110)
+Moneyline: +900
+IND Fever
+Spread: -15.5 (-110)
+Total: U 164.5 (-110)
+Moneyline: -1600
+
+Atlanta Dream vs. New York Liberty (Tue, Jun 17, 5:00 PM)
+ATL Dream
+Spread: +8.5 (-110)
+Total: O 163.5 (-110)
+Moneyline: +310
+NY Liberty
+Spread: -8.5 (-110)
+Total: U 163.5 (-110)
+Moneyline: -395
+
+Golden State Valkyries vs. Dallas Wings (Tue, Jun 17, 6:00 PM)
+GS Valkyries
+Spread: +1 (-108)
+Total: O 163.5 (-110)
+Moneyline: +100
+DAL Wings
+Spread: -1 (-112)
+Total: U 163.5 (-110)
+Moneyline: -120
+
+**MLS**
+
+MLS 2025 Winner (Futures)
+Inter Miami: +450
+Vancouver Whitecaps: +600
+PHI Union: +800
+LAFC: +1000
+San Diego FC: +1200
+Minnesota Utd: +1400
+Columbus Crew: +1400
+Seattle Sounders: +1600
+FC Cincinnati: +1600
+New York Red Bulls: +2000
+Nashville SC: +2000
+POR Timbers: +2500
+Orlando City: +2500
+NYCFC: +3000
+Charlotte FC: +4000
+CHI Fire: +5000
+Austin FC: +5000
+SJ Earthquakes: +5000
+COL Rapids: +5000
+NE Revolution: +6500
+HOU Dynamo: +6500
+Atlanta Utd: +10000
+FC Dallas: +10000
+DC Utd: +10000
+Sporting KC: +20000
+Real Salt Lake: +20000
+Toronto FC: +25000
+St Louis City SC: +25000
+LA Galaxy: +70000
+CF Montreal: +100000
+
+**Formula 1**
+
+F1 Austria GP 2025 (Sun, Jun 29, 7:03 AM)
+Race Winner
+Oscar Piastri: +175
+Lando Norris: +225
+Max Verstappen: +350
+George Russell: +650
+Charles Leclerc: +1400
+Andrea Kimi Antonelli: +2500
+Lewis Hamilton: +3500
+Yuki Tsunoda: +15000
+Fernando Alonso: +15000
+Carlos Sainz: +15000
+Alexander Albon: +15000
+Isack Hadjar: +20000
+Pierre Gasly: +25000
+Oliver Bearman: +25000
+Liam Lawson: +25000
+Franco Colapinto: +25000
+Esteban Ocon: +25000
+Nico Hulkenberg: +30000
+Lance Stroll: +30000
+Gabriel Bortoleto: +30000
+
+*(Example Format)*
+* *Baseball - MLB (June 12, 2025): New York Yankees vs. Boston Red Sox - Yankees Run Line -1.5 @ +150*
+* *Basketball - NBA (June 13, 2025): LAL vs. GSW - LeBron James Over 28.5 Points @ -115*
+
+### **4. Professional Research and Analysis Mandate**
+
+For each bet listed in the "Bets for Analysis" section, you will think and act like a professional sports bettor. This involves a deep, data-driven analysis to identify where the provided odds may not reflect the true probability of an outcome.
+
+* **Data Sources:** Use diverse, reputable sources for the most recent and relevant information.
+* **Think Like a Pro - Key Factors for Analysis:**
+    * **Identify the Narrative:** Why are the odds what they are? Understand the public perception and the market sentiment for each line.
+    * **Advanced & Situational Metrics:** Go beyond surface-level stats. Use advanced metrics (e.g., wRC+, FIP, Corsi, PER, DVOA, Strokes Gained) and critical situational data (e.g., performance on back-to-back games, home/road splits, player performance against specific opponent types or defensive schemes, weather impacts).
+    * **Actionable Intelligence:** Seek out late-breaking, market-moving information. This includes confirmed injuries, significant lineup changes, coaching strategies, and other contextual factors that the odds may not have fully adjusted for.
+    * **Regression Analysis:** Assess current performance streaks (both for teams and individual players) and determine the likelihood of regression (positive or negative) back toward their statistical mean. A team playing "over their skis" might be a good fade candidate.
+    * **Value Assessment (+EV):** The core of your analysis is to find value. For each line, determine if the provided odds offer a higher payout than the "true" probability of the event occurring. A bet has positive expected value if `(Probability of Winning * Payout) > (Probability of Losing * Stake)`. Your research should aim to more accurately calculate the "true" probability than the market has.
+
+### **5. Output Requirements: The Final Portfolio**
+
+From the provided list, construct a portfolio of bets that you assess have the highest positive expected value, factoring in your long-term strategy. Present them as a list, ranked from highest to lowest based on your confidence and the size of your allocation.
+
+For **EACH** selected bet in your portfolio, you **MUST** provide the following five components:
+
+1.  **Bet Description:** The specific bet from the provided list (e.g., "Baseball - MLB (June 12, 2025): New York Yankees vs. Boston Red Sox - Yankees Run Line -1.5 @ +150").
+2.  **Allocated Bet Amount:** The exact amount of money you are allocating to this bet from your $5.00 bankroll (e.g., "$1.50").
+3.  **Profit Potential Rationale (The "Why"):** In 3-4 sentences, build a compelling, data-driven case for the bet. Explain precisely *why* the odds represent value against your assessed probability. Pinpoint the specific data (advanced stats, news, situational factors) that suggests the market is under-valuing this outcome.
+4.  **Primary Risk / Counter-Argument:** In 1-2 sentences, state the strongest argument against your pick. What is the primary risk that could cause this bet to lose? This demonstrates a balanced and professional analysis.
+5.  **Confidence & Allocation Justification (1-5):** Rate your confidence in the data-driven edge for this bet (1=Low, 5=High). Briefly justify both the score and your chosen bet amount based on the quality and reliability of the supporting data and the perceived size of the edge.
+
+-----Picks/results:
+Claude
+Pick 1: Colorado Rockies @ Washington Nationals | UNDER 9              | $1.00 | -110 -> Lost
+Pick 2: Indiana Pacers vs OKC Thunder           | Pacers Spread +9.5   | $1.00 | -115 -> Lost
+Pick 3: San Francisco Giants vs LA Dodgers      | Moneyline (Giants)   | $0.75 | +142 -> Lost
+Pick 4: Edmonton Oilers vs Florida Panthers     | Giants Spread +1.5   | $0.50 | -198 -> Lost
+Pick 5: Philadelphia Phillies vs Miami Marlins  | Moneyline (Phillies) | $0.50 | -132 -> Won
+Pick 6: Boston Red Sox @ Seattle Mariners       | UNDER 7.5            | $0.50 | -119 -> Won
+Pick 7: Max Verstappen F1 Austria GP            | Winner               | $0.75 | +400 -> Lost
+
+Gemini
+Pick 1: Philadelphia Phillies vs. Miami Marlins   | Moneyline (Phillies)    | $1.50 | -132 -> Won
+Pick 2: Florida Panthers vs. Edmonton Oilers      | Moneyline (Panthers)    | $1.25 | -148 -> Won
+Pick 3: Golden State Valkyries vs. Dallas Wings   | Moneyline (Valkyries)   | $0.75 | +100 -> Lost
+Pick 4: Indiana Pacers vs. Oklahoma City Thunder  | Pacers Spread +9.5      | $0.75 | -115 -> Lost
+Pick 5: River Plate vs. Urawa Red Diamonds        | Moneyline (River Plate) | $0.50 | -160 -> Won
+Pick 6: Colorado Rockies vs. Washington Nationals | OVER 9                  | $0.25 | -110 -> Won
+
+-----Inconsistencies:
+Claude misquoted Pick 7 Max Verstappen odds are actually +350 as outlined in the odds given and when placing the bet
+
+-----Conclusion:
+Claude: -$1.00 (pick 1) - $1.00 (pick 2) - $0.75 (pick 3) - $0.50 (pick 4) + $0.38 (pick 5) + $0.42 (pick 6) - $0.75 (pick 7) = -$3.20 [-64.0% profit]
+Gemini:  $1.14 (pick 1) + $0.84 (pick 2) - $0.75 (pick 3) - $0.75 (pick 4) + $0.31 (pick 5) + $0.23 (pick 6)                  =  $1.02 [ 20.4% profit]

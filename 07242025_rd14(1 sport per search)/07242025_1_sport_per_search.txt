@@ -1,0 +1,67 @@
+-----Intro:
+Last round the parlay flopped but Gemini was 4 for 4 on the standalone bets which is insane. That got me thinking that AI agents
+tend to do better when you limit the scope of work. In this case I want to test for a few rounds if AI does better when I run a deep
+research report on each sport individually rather than 1 report that does research for multiple sports. I think I want to make a
+prompt that is sport specfic for each sport that I do. For money, I might just need to set a specific amount per sport. Is that the
+best way? I wish I could find a way to do this and have it allocate an appropriate amount of money based on confidence but I think
+for the purpose of also analyzing which sports it excels at this could actually work out better. Also in the financial report we will 
+split by sport for P/L. I'm actually curious to see how it will do across a variety of sports but I think I'm going to give more
+money to some sports than others. Taking a look at the upcoming events I'd like to do UFC, WNBA, and MLB. Lets do $20 with the 
+following breakdown. UFC:$10, MLB:$5, WNBA:$5. Side note, I've come to realize the the biggest time consumption for these tests is OCR. 
+I need to find a way to quickly and accurately pull betting lines from sports books.
+
+-----Prompts:
+See UFC_prompt.txt, MLB_prompt.txt, and WNBA_prompt.txt
+
+-----Picks/results:
+UFC - false
+Pick 1: Nikita Krylov vs Bogdan Guskov      | Krylov to win by submission | $3.50 | +180 -> Lost
+Pick 2: Bryce Mitchell vs Said Nurmagomedov | Mitchell to win by decision | $2.75 | +140 -> Won
+Pick 3: Amanda Ribas vs Tabatha Ricci       | Ribas to win by decision    | $2.00 | -110 -> Lost
+Pick 4: Martin Buday vs Marcus Buchecha     | Under 1.5 rounds            | $1.75 | +100 -> Lost
+
+UFC - actual
+Pick 1: (UFC) Asu Almabayev vs Jose Ochoa            | Moneyline (Almabayev)      | $2.25  | -110  -> Won
+Pick 2: (UFC) Ibo Aslan vs Billy Elekana             | Moneyline (Elekana)        | $2.00  | +215  -> Won
+Pick 3: (UFC) Martin Buday vs Marcus Buchecha        | Total Over (1.5)           | $1.75  | -130  -> Won
+Pick 4: (UFC) Robert Whittaker vs Reinier de Ridder  | Moneyline (Whittaker)      | $1.25  | -142  -> Lost
+Pick 5: (UFC) Amanda Ribas vs Tabatha Ricci          | To Win By Decision (Ribas) | $1.00  | +150  -> Lost
+Pick 6: (UFC) Da'Mon Blackshear vs Davey Grant       | Go The Distance (Yes)      | $1.00  | +150  -> Won
+Pick 7: (UFC) Muslim Salikhov vs Carlos Leal         | Moneyline (Salikhov)       | $0.75  | +300  -> Won
+
+MLB
+Pick 1: Blue Jays vs Tigers | Blue Jays moneyline                        | $2.75 | +113 -> Won
+Pick 2: Blue Jays vs Tigers | Under 8.5 total runs                       | $1.50 | -101 -> Lost
+Pick 3: Blue Jays vs Tigers | A. Barger or V Guerrero - either player HR | $0.75 | +245 -> Lost
+
+WNBA
+Pick 1: Aces vs Fever | A. Boston vs J. Young - more points (Boston) | $1.75 | -115 -> Lost
+Pick 2: Aces vs Fever | Under 164.5 total points                     | $1.50 | -108 -> Won
+Pick 3: Aces vs Fever | Fever moneyline                              | $1.25 | +110 -> Won
+Pick 4: Aces vs Fever | A. Bost first points scorer                  | $0.50 | +550 -> Lost
+
+-----Inconsistencies:
+Not necessarily an error but I'm not stoked that the MLB picks and the WNBA picks all came from the same game. It seems unlikely
+that those were the best bets out of everything given. Especially for two different agents working on two different sports.
+One more  note is that sometimes the agent didn't specify what event it was talking about. It had an event in mind but didn't say
+what game this was for. Again this was specifically for MLB and WNBA.
+
+Oh my god I'm so pissed right now. In the same window that I ran the UFC report, I asked Gemini what the picks were and IT STRAIGHT
+UP LIED TO ME! (see UFC - false vs UFC - actual) Thats so infuriating. It clearly had access to the document because it picked lines 
+with the right odds from the right sport. I don't know what to do right now because I already placed those. Checking the first couple,
+these lines are worse on fanduel so I don't think I want to place them there. In fact looking around its worse everywhere including
+on DraftKings. DAMN IT. Never use the same window on Gemini to ask questions on the VERY REPORT IT JUST CREATED APPARENTLY. Thats so
+frustrating. 
+
+-----Conclusion:
+Here are the P/L for each sport with both the false and actual UFC picks. I'm so pissed right now. If had made the picks that were
+actually made then I would have made +91.9% profit instead of -34.0%. I'm so mad right now. I know there is nothing I can do. Oh 
+well. Expensive lesson I guess.
+
+UFC - false: -$3.50 (pick 1) + $3.85 (pick 2) - $2.00 (pick 3) - $1.75 (pick 4) = -$3.40 [-34.0% profit]
+UFC - actual: +$2.05 (pick 1) + $4.30 (pick 2) + $1.35 (pick 3) - $1.25 (pick 4) 
+                - $1.00 (pick 5) + $1.50 (pick 6) + $2.25 (pick 7)              = +$9.19 [+91.9% profit]
+
+MLB: +$3.11 (pick 1) - $1.50 (pick 2) - $0.75 (pick 3)                          = +$0.86 [+17.2% profit]
+
+WNBA: -$1.75 (pick 1) + $1.39 (pick 2) + $1.38 (pick 3) - $0.50 (pick 4)        = +$0.52 [+10.4% profit]

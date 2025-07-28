@@ -1,0 +1,199 @@
+-----Introduction:
+Its time to start specializing. Previously I had chose a few markets, both niche and popular, for these agents to try out in case 
+some agents are better at some of the more popular markets. MLB seemed to be the only popular market that they were kind of ok at but
+they are clarly better at making money with the niche markets. Additionally, I think if I'm consistently betting the niche markets
+that will help hedge some of the issues I may have down the line with bot detection. I'm not sure if I want to stay away from prop
+betting or not long term (as there are often more inefficiencies in prop betting than main markets) but for now I'm going to include
+them as options to bet on since I want a larger volume of bets for these agnets to choose from and I want to see what markets thay are
+good at betting in. I used Gemini and Claude deep research to identify sports that I should bet on based on a balance of availability 
+of data and market inefficiencies (research reports are in this folder). Based on the findings and my own personal experience I have
+decided the best markets to bet on are: MMA, tennis, golf, college basketball/football. MMA and tennis are a must in my opinion. They 
+offer a ton of markts to bet on, they have a lot of information online about them, and in my experience LLMs tend to be successful 
+betting on these markets. Golf seems to be hit or miss for me personally, mostly miss in my experience, but I think the potential is 
+there since I know there is a significant amount of information the average person would struggle to comprehend such as weather, course
+history, etc. I hadn't even considered college sports in the past, and unfortunately there doesn't seem to be anything available right
+now but logically it makes sense for LLMs to be good at researching for this since there is probably a ton of information on line that
+would assist the agent and I'm guessing most people betting in these markets are just betting on their favorite team and not necessarily
+trying to make money. So for this test right now we have upcoming events for tennis and MMA. Again we will be using Gemini 2.5 Pro and
+Claude Opus 4. Since I placed like 30 bets today on draft kings, I'm going to do this one on Fanduel. Lets get after it.
+
+-----Prompt:
+### **1. Persona and Core Mission**
+
+You are an elite sports betting analyst AI, operating as a professional portfolio manager. You are in a head-to-head competition against two other AI agents. This is **Round 1 of a 10-round experiment.**
+
+Your sole performance metric is **long-term percentage profit.** Your goal is to maximize the growth of your starting bankroll over the 10 rounds. This is a marathon, not a sprint. While single-round wins are good, a strategy that prioritizes sustainable, long-term growth and capital preservation is paramount. Avoid overly risky plays that could decimate your bankroll, but don't be so conservative that you miss calculated opportunities for significant gains. Your analysis must be unemotional, mathematical, and grounded in the concept of Positive Expected Value (+EV).
+
+### **2. Bankroll Management and Bet Allocation**
+
+For this round, you have a **starting bankroll of exactly $5.00.**
+
+* **Total Allocation:** You must allocate the **entire $5.00** across your selected bets.
+* **Bet Denomination:** All bet amounts must be in **25-cent increments** (e.g., $0.25, $0.50, $0.75, $1.00, $1.25). Amounts like $1.38 or $0.77 are not allowed.
+* **Allocation Strategy:** The amount you allocate to each bet should be a direct reflection of your confidence in the bet's "edge" or +EV. Higher confidence and a greater perceived edge should warrant a larger portion of your $5.00 bankroll. This allocation is a critical part of your strategy.
+
+### **3. Hard Constraint: Adherence to Provided Lines**
+
+**You must acknowledge and confirm you will adhere to this constraint.**
+
+Your entire analysis and all final bet selections **must** be drawn directly and exclusively from the list provided under "Bets for Analysis." You are strictly forbidden from researching, considering, or suggesting any bet or odds not on this list. Any bet selected that is not on the provided list will be graded as an automatic loss, nullifying any potential profit.
+
+**Bets for Analysis**
+Tennis
+
+ITF Klosters: Vittoria Paganetti (-3000) vs. Viktoria Varga (+880) - MON 1:00AM MT
+ITF Klosters: Mariella Thamm (-6000) vs. Kiara Cvetkovic (+1260) - MON 1:00AM MT
+ITF Klosters: Lara Smejkal (-440) vs. Monika Wojcik (+290) - MON 1:00AM MT
+ITF Klosters: Malkia Ngounoue (-550) vs. Anna Lena Ebster (+350) - MON 1:00AM MT
+ITF Klosters: Nagi Hanatani (-4500) - MON 1:00AM MT
+ITF Klosters: Berta Bonardi (-450) vs. Anina Lanz (+300) - MON 1:00AM MT
+ITF Klosters: Laura Mair (-235) vs. Anais Gabriel (+172) - MON 2:00AM MT
+ITF Tauste: Darja Suvirdjonkova (-110) vs. Carmen Gallardo Guevara (-120) - MON 1:00AM MT
+ITF Tauste: Mana Kawamura (-650) vs. Isabella Barrera Aguirre (+390) - MON 1:00AM MT
+ITF Tauste: Raquel Gonzalez Vilar (-260) vs. Alice Ferlito (+188) - MON 2:00AM MT
+ITF Tauste: Lucia Llinares Domingo (-670) vs. Cayetana Gay (+400) - MON 2:00AM MT
+ITF Tauste: Georgia Kalamaris (+280) vs. Menuha Popovici (-420) - MON 2:00AM MT
+ITF Tauste: Ruien Zhang (-550) vs. Carmen Lopez Martinez (+350) - MON 4:00AM MT
+ITF Tauste: Arina Arifullina (-146) vs. Meritxell Teixido Garcia (+110) - MON 4:00AM MT
+Mens UTR Pro Series, North Macedonia: Robert Watzka (+140) vs. Gabriel Matuszewski (-188) - MON 1:00AM MT
+Mens UTR Pro Series, North Macedonia: Janos Fekete (-290) vs. Roman Postolka (+205) - MON 2:15AM MT
+Mens UTR Pro Series, North Macedonia: Hugo Magnusson (-300) vs. Kristof Minarik (+210) - MON 2:15AM MT
+Mens UTR Pro Series, North Macedonia: Razvan Baiant (-230) vs. Thiago Agustin Pernas (+168) - MON 3:30AM MT
+ITF Switzerland Futures: Tymur Bieldiugin (-310) vs. Adrien Burdet (+220) - MON 2:00AM MT
+ITF Switzerland Futures: Niklas Waldner (-320) vs. Lukas Hellum Lilleengen (+225) - MON 2:00AM MT
+ITF Switzerland Futures: Max Westphal (-8000) vs. Mert Aytekin (+1400) - MON 2:00AM MT
+ITF Switzerland Futures: Rafael Tosetto (-850) vs. Guelfo Borghini Baldovinetti (+470) - MON 4:00AM MT
+ITF Switzerland Futures: Tanguy Genier (-800) vs. Laurin Aerne (+450) - MON 4:00AM MT
+ITF Zagreb: Georgia Andreea Craciun (-5000) vs. Ela Plosnik (+1200) - STREAM MON 2:00AM MT
+ITF Zagreb: Kajsa Rinaldo Persson (-210) vs. Alexis Blokhina (+154) - STREAM MON 2:00AM MT
+ITF Zagreb: Ksenia Efremova (-118) - STREAM MON 2:00AM MT
+ITF Zagreb: Teodora Kostovic (-490) vs. Arina Bulatova (+320) - STREAM MON 3:00AM MT
+ITF Zagreb: Gabriela Lee (-500) vs. Beatrice Ricci (+320) - STREAM MON 3:00AM MT
+ITF Zagreb: Mia Ristic (-260) vs. Yelyzaveta Kotliar (+188) - STREAM MON 3:00AM MT
+ITF Zagreb: Lina Gjorcheska (-186) - STREAM MON 3:00AM MT
+Mens UTR Pro Series, Portugal: Cornelius Alexander Shalmi (+300) vs. Stijn Paardekooper (-450) - MON 2:00AM MT
+Mens UTR Pro Series, Portugal: Joel Hansson (+270) vs. Roi Ginat (-400) - MON 2:00AM MT
+Mens UTR Pro Series, Portugal: Gabriel Elicha Navas (-320) vs. Ben Weintraub (+225) - MON 3:30AM MT
+Mens UTR Pro Series, Portugal: Vasco Leote Prata (+178) vs. Jakub Vrba (-245) - MON 3:30AM MT
+Mens UTR Pro Series, Portugal: Andre Steinbach (+550) vs. Benito Sanchez Martinez (-1100) - Time not listed
+Ladies UTR Pro Series, Portugal: Olga Bienzobas Fernandez (-320) vs. Natalie Salkova (+225) - MON 2:00AM MT
+Ladies UTR Pro Series, Portugal: Elena Mercioiu (+240) vs. Mariia Hlahola (-350) - MON 3:30AM MT
+Ladies UTR Pro Series, Portugal: Stefaniya Pushkar (+182) - MON 4:00AM MT
+Ladies UTR Pro Series, Portugal: Maelie Monfils (-180) vs. Karim Al-amin (+290) - MON 5:00AM MT
+ITF Ystad: Angelina Farha (odds not listed) vs. Ida Johansson (+2000) - MON 2:15AM MT
+ITF Ystad: Bella Bergkvist Larsson (-118) vs. Isabella Svahn (-112) - MON 2:15AM MT
+ITF Ystad: Chelsea Fontenel (-10000) vs. Thale Myhre (+1500) - MON 3:15AM MT
+ITF Ystad: Emma Kamper (-650) vs. Sarafina Olivia Hansen (+390) - MON 3:15AM MT
+ITF Ystad: Cristina Pescucci (+270) vs. Anna Petkovic (-400) - MON 3:15AM MT
+ITF Italy Futures: Maximilian Figl (-210) vs. Andrea Meduri (+154) - STREAM MON 3:00AM MT
+ITF Italy Futures: Andrea Paolini (-350) vs. Leonardo Primucci (+240) - STREAM MON 3:00AM MT
+ITF Italy Futures: Giorgio Tabacco (-1200) vs. Alberto Morolli (+580) - STREAM MON 4:00AM MT
+ITF Italy Futures: Alessandro Spadola (-650) vs. Matteo Mesaglio (+390) - STREAM MON 4:00AM MT
+ITF Italy Futures: Gabriele Vulpitta (-470) vs. Patric Prinoth (+310) - STREAM MON 4:00AM MT
+ITF Italy Futures: Ivan La Cava (+205) vs. Nicola Rispoli (-290) - STREAM MON 5:00AM MT
+ITF Italy Futures: Stefano D'agostino (+240) vs. Carlo Alberto Caniato (-350) - STREAM MON 5:00AM MT
+ITF Tunisia Futures: Photos Photiades (-900) vs. Egor Khotchenkov (+490) - MON 3:30AM MT
+ITF Tunisia Futures: Marcus Walters (-3000) vs. Victor Paganetti (+880) - MON 3:30AM MT
+ITF Tunisia Futures: Hugo Coquelin (+110) vs. Alejandro Melero Kretzer (-146) - MON 3:30AM MT
+ITF Tunisia Futures: Jorge Plans (-146) vs. Breno Rossetto Urvaneja (+174) - MON 4:30AM MT
+ITF Tunisia Futures: Matteo Lavizzari (-470) vs. Alexey Aleshchev (+310) - MON 4:30AM MT
+ITF Tunisia Futures: Daniel Batista (-1450) vs. Maxwell Castle (+640) - MON 4:30AM MT
+Nottingham Challenger 2025: Martin Landaluce (-198) vs. Nicolai Budkov Kjaer (+146) - SGP STREAM MON 4:00AM MT
+Nottingham Challenger 2025: Mitchell Krueger (+136) vs. Tristan Boyer (-182) - SGP STREAM MON 4:00AM MT
+
+UFC
+
+UFC Matches: Irina Alekseeva (-265) vs. Klaudia Sygula (+200) - SGP SAT 10:10AM MT
+UFC Matches: Seokhyeon Ko (+340) vs. Oban Elliott (-500) - SGP SAT 10:40AM MT
+UFC Matches: Hamdy Abdelwahab (-188) vs. Mohammed Usman (+146) - SGP SAT 11:05AM MT
+UFC Matches: Melissa Mullins (-265)
+UFC Matches: Ismail Naurdiev (+164) vs. Junyong Park (-215) - SGP SAT 12:00PM MT
+UFC Matches: Tagir Ulanbekov (-350) vs. Azat Maksum (+255) - SGP SAT 12:30PM MT
+UFC Matches: Muhammed Naimov (-235) vs. Bogdan Grad (+180) - SGP SAT 1:15PM MT
+UFC Matches: Nazim Sadykhov (-460) vs. Nikolas Motta (+320) - SGP SAT 1:45PM MT
+UFC Matches: Tofiq Musayev (+132) vs. Myktybek Orolbai (-170) - SGP SAT 2:15PM MT
+UFC Matches: Rafael Fiziev (-113) vs. Ignacio Bahamondes (-113) - SGP SAT 3:15PM MT
+UFC Matches: Jamahal Hill (+124) vs. Khalil Rountree (-160) - SGP SAT 3:45PM MT
+UFC Matches: Viviane Araujo (+200) vs. Tracy Cortez (-265) - SGP JUN 28, 6:20PM MT
+UFC Matches: Jack Hermansson (+158) vs. Gregory Rodrigues (-205) - SGP JUN 28, 7:00PM MT
+UFC Matches: Paulo Costa (+220) vs. Roman Kopylov (-295) - SGP JUN 28, 7:30PM MT
+UFC Matches: Brandon Royval (-136) vs. Joshua Van (+108) - SGP JUN 28, 8:15PM MT
+UFC Matches: Beneil Dariush (+130) vs. Renato Moicano (-166) - SGP JUN 28, 8:30PM MT
+UFC Matches: Alexandre Pantoja (-265)
+UFC Matches: Ilia Topuria (-460) vs. Charles Oliveira (+320) - SGP JUN 28, 11:00PM MT
+UFC Matches: Neil Magny (+255) vs. Gunnar Nelson (-350) - SGP JUL 19, 7:30PM MT
+UFC Matches: Marvin Vettori (+200) vs. Brendan Allen (-265) - SGP JUL 19, 8:00PM MT
+UFC Matches: Adam Fugitt (+320) vs. Islam Dulatov (-460) - SGP JUL 19, 8:00PM MT
+UFC Matches: Shara Magomedov (-310) vs. Marc-Andre Barriault (+230) - SGP JUL 26, 1:30PM MT
+UFC Matches: Robert Whittaker (-154) vs. Reinier De Ridder (+120) - SGP JUL 26, 2:00PM MT
+UFC Matches: Dricus du Plessis (+146) vs. Khamzat Chimaev (-188) - SGP AUG 16, 11:00PM MT
+UFC Matches: Jon Jones (+120) vs. Tom Aspinall (-154) - SGP DEC 30, 5:00PM MT
+
+*(Example Format)*
+* *Baseball - MLB (June 12, 2025): New York Yankees vs. Boston Red Sox - Yankees Run Line -1.5 @ +150*
+* *Basketball - NBA (June 13, 2025): LAL vs. GSW - LeBron James Over 28.5 Points @ -115*
+
+### **4. Professional Research and Analysis Mandate**
+
+For each bet listed in the "Bets for Analysis" section, you will think and act like a professional sports bettor. This involves a deep, data-driven analysis to identify where the provided odds may not reflect the true probability of an outcome.
+
+* **Data Sources:** Use diverse, reputable sources for the most recent and relevant information.
+* **Think Like a Pro - Key Factors for Analysis:**
+    * **Identify the Narrative:** Why are the odds what they are? Understand the public perception and the market sentiment for each line.
+    * **Advanced & Situational Metrics:** Go beyond surface-level stats. Use advanced metrics (e.g., wRC+, FIP, Corsi, PER, DVOA, Strokes Gained) and critical situational data (e.g., performance on back-to-back games, home/road splits, player performance against specific opponent types or defensive schemes, weather impacts).
+    * **Actionable Intelligence:** Seek out late-breaking, market-moving information. This includes confirmed injuries, significant lineup changes, coaching strategies, and other contextual factors that the odds may not have fully adjusted for.
+    * **Regression Analysis:** Assess current performance streaks (both for teams and individual players) and determine the likelihood of regression (positive or negative) back toward their statistical mean. A team playing "over their skis" might be a good fade candidate.
+    * **Value Assessment (+EV):** The core of your analysis is to find value. For each line, determine if the provided odds offer a higher payout than the "true" probability of the event occurring. A bet has positive expected value if `(Probability of Winning * Payout) > (Probability of Losing * Stake)`. Your research should aim to more accurately calculate the "true" probability than the market has.
+
+### **5. Output Requirements: The Final Portfolio**
+
+From the provided list, construct a portfolio of bets that you assess have the highest positive expected value, factoring in your long-term strategy. Present them as a list, ranked from highest to lowest based on your confidence and the size of your allocation.
+
+For **EACH** selected bet in your portfolio, you **MUST** provide the following five components:
+
+1.  **Bet Description:** The specific bet from the provided list (e.g., "Baseball - MLB (June 12, 2025): New York Yankees vs. Boston Red Sox - Yankees Run Line -1.5 @ +150").
+2.  **Allocated Bet Amount:** The exact amount of money you are allocating to this bet from your $5.00 bankroll (e.g., "$1.50").
+3.  **Profit Potential Rationale (The "Why"):** In 3-4 sentences, build a compelling, data-driven case for the bet. Explain precisely *why* the odds represent value against your assessed probability. Pinpoint the specific data (advanced stats, news, situational factors) that suggests the market is under-valuing this outcome.
+4.  **Primary Risk / Counter-Argument:** In 1-2 sentences, state the strongest argument against your pick. What is the primary risk that could cause this bet to lose? This demonstrates a balanced and professional analysis.
+5.  **Confidence & Allocation Justification (1-5):** Rate your confidence in the data-driven edge for this bet (1=Low, 5=High). Briefly justify both the score and your chosen bet amount based on the quality and reliability of the supporting data and the perceived size of the edge.
+
+-----Picks/Results:
+Claude
+Pick 1: Jamahal Hill vs. Khalil Rountree                        | Moneyline (Hill)       | $1.25 | +124 -> Lost 
+Pick 2: Tofiq Musayev vs. Myktybek Orolbai                      | Moneyline (Musayev)    | $1.00 | +132 -> Lost 
+Pick 3: ITF Tauste: Hugo Coquelin vs. Alejandro Melero Kretzer  | Moneyline (Coquelin)   | $1.00 | +110 -> Won 
+Pick 4: Ignacio Bahamondes vs. Rafael Fiziev                    | Moneyline (Bahamondes) | $0.75 | -113 -> Lost 
+Pick 5: ITF Zagreb: Kajsa Rinaldo Persson vs. Alexis Blokhina   | Moneyline (Persson)    | $0.50 | -210 -> Won 
+Pick 6: Tagir Ulanbekov vs. Azat Maksum                         | Moneyline (Ulanbekov)  | $0.50 | -350 -> Won 
+XXXPick 7: Mens UTR Pro Series: Janos Fekete vs. Roman Postolka | Moneyline (Fekete)     | $0.25 | -290 -> tbd
+
+Gemini
+Pick 1: ITF Tauste: Carmen Gallardo Guevara vs. Darja Suvirdjonkova | Moneyline (Guevara)       | $1.75 | -120 -> Lost 
+Pick 2: UFC: Jon Jones vs. Tom Aspinall                             | Moneyline (Jones)         | $1.25 | +120 -> Push
+Pick 3: Nottingham Challenger: Tristan Boyer vs. Mitchell Krueger   | Moneyline (Boyer)         | $1.00 | -182 -> Won 
+Pick 4: UFC: Beneil Dariush vs. Renato Moicano                      | Moneyline (Dariush)       | $0.50 | +130 -> Won 
+XXXPick 5: ITF Ystad: dar Bergkvist Larsson vs. Isabella Svahn      | Moneyline (Larsson)       | $0.50 | -118 -> XXX
+New pick 5: Darja Suvirdjonkova vs. Carmen Gallardo Guevara         | Moneyline (Suvirdjonkova) | $0.50 | -110 -> Won
+
+-----Inconsistencies:
+-Gemini Pick 5: There was an error in translation between the PDF document and the Gemini agent responsible for pulling out the data
+on the Bella Bergkvist Larsson moneyline the correct value should have been -290 instead of the reported -118. After asking Gemini 
+for a backup of pick 5 it picks the opposite moneyline from its pick 1. I blame myself a little bit for giving it the wrong line in 
+the first place but also interesting to note that asking it qustiosn like that after the fact may not work well.
+-Claude Pick 7: Its alread at exactly $5 after its 6th pick so ommitting this pick. I want there to be some sort of punishment for that
+but instead I think I'll just take note and move forward.
+-Gemini Pick 2: Jon Jones is no longer fighting Tom Aspiinall. Allowing an event that far into the future is my fault.
+
+-----Conclusion:
+From the instruction set you can see we changed the way that these models are allowed to bet. They have $5 and are allowed to pick any
+number of bets that they would like with the smallest denomination being $0.25. 
+
+Gemini: -$1.75 (pick 1) + $0.00 (pick 2) + $0.55 (pick 3) + $0.65 (pick 4) + $0.45 (pick 5) = -$0.10 [-2.0% profit]
+Claude: -$1.25 (pick 1) - $1.00 (pick 2) + $1.10 (pick 3) - $0.75 (pick 4) + $0.24 (pick 5) + $0.14 (pick 6) = -$1.52 [-30.4% profit]
+
+Gemini appears to clearly be the best model for this activity. Claude is more accurate in reporting lines and following directions
+than ChatGPT was but doesn't appear to be performing too well with picking bets. For my next test I'm going to basically do the same
+thing as this test but I likely will not be placing bets given to me by Claude. Gemini did give me a negative ROI for this round but
+by much less than Claude. I'm not sure if focusing on these markets is the issue or if this is a one off bad luck. I think I'll try
+the same markets again and see how it goes.
+

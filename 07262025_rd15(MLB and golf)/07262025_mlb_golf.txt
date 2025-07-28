@@ -1,0 +1,64 @@
+-----Intro:
+Clearly UFC is a golden goose. I'll definitley keep going with that. I want to get some more sports going so that I can bet more
+frequently. Today I gave all 72 files from my 14 rounds of testing so far to an AI agent and had it analyze my testing. MLB is 
+averaging 19.17% which is actually really good. I think we can get it better. One thing it pointed out is that AI seems to find edges
+in analyzing pitchers so adding pitching props into the mix could be a great angle of attack. Thats one of those that you have to
+click left it right to see the 3+, 4+, 5+, etc... strikeouts so I wipped up a webscraping script to grab those. So probably only a
+line that I'm going to be able to easily pull from DraftKings but for now thats ok. I also want to do golf. After some analysis it
+seems that focusing on matchups is the way to go. Specifically starting out with 2 way matchups. I want to do group matchups but I
+think that might have to be something to do at the beginning of the tournaments as right now most of the groups are grayed out with
+some insane odds like +2500 and -600. Actually what the hell, might as well include them. Same thing with some of the H2H matchups.
+I could do nationality but honestly the groups still have so many peope in them for this big tournament that I think I'm going to run
+into the same problems that I did with trying to choose tournament winners.
+
+-----Prompt:
+See 07262025_golf_prompt.txt and 07262025_MLB_prompt.txt
+
+-----Picks/results:
+MLB(1)
+Pick 1: Arizona Diamondbacks vs. Pittsburgh Pirates | Total Runs Under 7.5                 | $2.75 | -108  -> Won
+Pick 2: Seattle Mariners vs. Los Angeles Angels     | SEA Mariners -1.5                    | $2.50 | +120  -> (Bet Not Placed)
+Pick 3: Colorado Rockies vs. Baltimore Orioles      | BAL Orioles -1.5                     | $2.25 | -108  -> Won
+Pick 4: Arizona Diamondbacks vs. Pittsburgh Pirates | 1st 5 Innings Under 4.5 runs (total) | $1.00 | -145  -> (Bet Not Placed)
+Pick 5: Los Angeles Dodgers vs. Boston Red Sox      | Total Runs Over 10.5                 | $1.00 | -110  -> Lost
+Pick 6: Colorado Rockies vs. Baltimore Orioles      | 1st 5 Innings Under 2.5 (COL)        | $0.50 | -160  -> (Bet Not Placed)
+MLB(2)
+Pick 7: Colorado Rockies vs. Baltimore Orioles      | Game Total Over 10 runs              | $2.00 | -110 -> Lost
+Pick 8: Seattle Mariners vs. Los Angeles Angels     | Mariners Moneyline                   | $2.00 | -164 -> Lost
+
+Golf - 3M Classic
+Pick 1: Alex Smalley vs. Luke Clanton   | H2H Matchup (Alex Smalley)  | $1.75  | +135  -> Won
+Pick 2: Sam Burns VS. Chris Gotterup    | H2H Matchup (Sam Burns)     | $1.25  | +750  -> Lost
+Pick 3: Adam Scott VS. Jake Knapp       | H2H Matchup (Adam Scott)    | $1.00  | +1100 -> (Bet Not Placed)
+Pick 4: Wyndham Clark VS. Akshay Bhatia | H2H Matchup (Wyndham Clark) | $0.75  | +425  -> Won
+Pick 5: Rickie Fowler VS. Kurt Kitayama | H2H Matchup (Rickie Fowler) | $0.25  | +1500 -> (Bet Not Placed)
+
+
+
+
+-----Inconsistencies:
+For golf, the agent picked every single line and ONLY lines from the H2H matchups which considering some of the odds on there, I
+highly doubt that is a good decision. I wonder if I ran out of 2.5 pro messages or something because I feel like AI started falling 
+apart for me while I was doing some of this. Anyway some of them were so improbably that DraftKings grayed them out and I just left
+because I thought the agent would be reasonable enought not pick them but I guess not. So what I'm going to do is just place the
+ones that are still available because I just need one to hit to be able to pay back the others. Nonetheless this are clearly some poor
+picks and I probably should have just rerun this.
+
+* Baseball is seeing some data issues. The report quotes the -1.5 spread on the Mariners to be at +120 when its actually -101 on both 
+the site and in the JSON. The agent doing research simply misquoted. This frees up $2.50 that I'm going to ask AI to reallocate.
+* Another issue is in the 1st 5 innings for ARI vs PIT it chose under 4.5 runs which is consistent with the JSON but looking at the
+sportsbook, the line is actually at 2.5 which was missreported during data extraction. This frees up another $1.00 to reallocate.
+* LAD vs BOS the odds in the book were -108 and the odds on the report were -110 for the Over 10.5 runs. So of course accepting those
+new odds. Probably from line movement. 
+* Another issue with runs in the first X innings. This time for data extraction. The JSON shows the chosen under 2.5 for the Rockies
+but in reality the line is 1.5. Not placing this bet either. Freeing $0.50 for reallocation.
+I think I'm going to do another run MLB script for 4 dollars and just add that.
+
+-----Conclusion:
+Baseball did pretty bad. Golf did good but I think it was kind of a fluke. I don't want to say this round was a waste but there were
+clearly some issues going on with Gemini. I'm just happy to move on and learn from what I can. Definitely need to be checking that
+the output isn't something absurd before placing bets. I'm considering not placing bets until I can get some more consistent
+performance from these other sports. Anyway, here is the P/L:
+
+MLB:  +$2.55 (pick 1) + $2.08 (pick 3) - $1.00 (pick 5) - $2.00 (pick 7) - $2.00 (pick 8) = -$0.37 [-3.7% profit]
+Golf: +$2.36 (pick 1) - $1.25 (pick 2) + $3.19 (pick 4)                                   = +$4.30 [+114.7% profit]

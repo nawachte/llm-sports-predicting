@@ -1,0 +1,693 @@
+-----Intro:
+Ok this is the same test as 07062025_baseball_and_UFC but last time I realized that Claude didn't pull out MLB prop bets so all
+Gemini  really had to look at was spread/total/moneyline for MLB and then still the same moneylines for UFC. Its only a couple hours
+later and its late at night so I doubt the lines have changed much if at all. Still looking at the same markets but now with the full
+set. I already put in the bets for the other ones so still going to evaluate those. Hopefully these ones are different. I havn't
+decided yet if I'm going to put these in or not. Likely if the bets are all different from the other set I will. I'll note what I
+decide in the conclusion. One more piece of discussion, I've been thinking about how much the proximity of bets to the event matters.
+It is something that came up when I was creating the education pieces for my website. Closer to the event you have the most relevant
+information but you also have the most perfected lines. My guess is that since all of these bets are being made in batch at one time
+and not as new information is coming out, it is likely better to find mispriced markets around 5-7 days before the event than it is
+to try to beat the market with new information. That being said, my MLB picks are almost always the day before and it seems to be
+doing great with that. Maybe its market dependant. I'm guessing high volume markets like NFL and NBA are probably better to bet
+earlier in the week versus lower volume markets could be better to bet closer to the actual event.
+
+-----Prompt:
+
+### **1. Persona and Core Mission**
+
+You are an elite sports betting analyst AI, operating as a professional portfolio manager. You are in a head-to-head competition against four other AI agents. This is **Round 1 of a 10-round experiment.**
+
+Your sole performance metric is **long-term percentage profit.** Your goal is to maximize the growth of your starting bankroll over the 10 rounds. This is a marathon, not a sprint. While single-round wins are good, a strategy that prioritizes sustainable, long-term growth and capital preservation is paramount. Avoid overly risky plays that could decimate your bankroll, but don't be so conservative that you miss calculated opportunities for significant gains. Your analysis must be unemotional, mathematical, and grounded in the concept of Positive Expected Value (+EV).
+
+### **2. Bankroll Management and Bet Allocation**
+
+For this round, you have a **starting bankroll of exactly $10.00.**
+
+* **Total Allocation:** You must allocate the **entire $10.00** across your selected bets.
+* **Bet Denomination:** All bet amounts must be in **25-cent increments** (e.g., $0.25, $0.50, $0.75, $1.00, $1.25). Amounts like $1.38 or $0.77 are not allowed.
+* **Allocation Strategy:** The amount you allocate to each bet should be a direct reflection of your confidence in the bet's "edge" or +EV. Higher confidence and a greater perceived edge should warrant a larger portion of your $10.00 bankroll. This allocation is a critical part of your strategy.
+
+### **3. Hard Constraint: Adherence to Provided Lines**
+
+**You must acknowledge and confirm you will adhere to this constraint.**
+
+Your entire analysis and all final bet selections **must** be drawn directly and exclusively from the list provided under "Bets for Analysis." You are strictly forbidden from researching, considering, or suggesting any bet or odds not on this list. Any bet selected that is not on the provided list will be graded as an automatic loss, nullifying any potential profit.
+
+**Bets for Analysis**
+Here are the betting lines for all upcoming events within the next 7 days, based on the files provided.
+
+**MLB**
+
+**COL Rockies at BOS Red Sox (Tomorrow 5:10PM)**
+
+* **Game Lines**
+    * Run Line
+        * COL Rockies +1.5: -105
+        * BOS Red Sox -1.5: -115
+    * Total
+        * Over 9.5: -119
+        * Under 9.5: -102
+    * Moneyline
+        * COL Rockies: +193
+        * BOS Red Sox: -241
+* **1st Run**
+    * COL Rockies: -120
+    * BOS Red Sox: -110
+* **Runs - 1st Inning**
+    * Over 0.5: -125
+    * Under 0.5: -105
+    * Over 1.5: +205
+    * Under 1.5: -270
+* **1st Inning Scoring Props**
+    * COL Rockies Run Scored - 1st Inning?
+        * Yes: +180 
+        * No: -255 
+    * BOS Red Sox Run Scored - 1st Inning?
+        * Yes: +200 
+        * No: -285 
+    * COL Rockies Home Run - 1st Inning?
+        * Yes: +450 
+        * No: -800 
+    * BOS Red Sox Home Run - 1st Inning?
+        * Yes: +450 
+        * No: -900 
+    * COL Rockies Runs Scored Exact - 1st Inning
+        * 0: -255 
+        * 1: +425 
+        * 2: +850 
+        * 3+: +900 
+    * BOS Red Sox Runs Scored Exact - 1st Inning
+        * 0: -285 
+        * 1: +425
+        * 2: +700
+        * 3+: +800
+* **Race To Runs**
+    * Race to 3 Runs
+        * COL Rockies: +130 
+        * BOS Red Sox: -155 
+        * Neither: +1500 
+    * Race to 4 Runs
+        * COL Rockies: +160 
+        * BOS Red Sox: -145 
+        * Neither: +600 
+    * Race to 5 Runs
+        * COL Rockies: +205 
+        * BOS Red Sox: -115 
+        * Neither: +290 
+    * Race to 6 Runs
+        * COL Rockies: +270 
+        * BOS Red Sox: +110 
+        * Neither: +160 
+    * Race to 7 Runs
+        * COL Rockies: +380 
+        * BOS Red Sox: +155 
+        * Neither: -110 
+
+**MIA Marlins at CIN Reds (Tomorrow 5:10PM)**
+
+* **Game Lines**
+    * Run Line
+        * MIA Marlins +1.5: -176
+        * CIN Reds -1.5: +144
+    * Total
+        * Over 9: -118
+        * Under 9: -103
+    * Moneyline
+        * MIA Marlins: +113
+        * CIN Reds: -137
+* **1st Run**
+    * MIA Marlins: -135
+    * CIN Reds: +100
+* **Runs - 1st Inning**
+    * Over 0.5: -110
+    * Under 0.5: -120
+    * Over 1.5: +235
+    * Under 1.5: -310
+* **1st Inning Scoring Props**
+    * MIA Marlins Run Scored - 1st Inning?
+        * Yes: +215
+        * No: -310
+    * CIN Reds Run Scored - 1st Inning?
+        * Yes: +175
+        * No: -245
+    * MIA Marlins Home Run - 1st Inning?
+        * Yes: +550
+        * No: -1100
+    * CIN Reds Home Run - 1st Inning?
+        * Yes: +475
+        * No: -900
+    * MIA Marlins Runs Scored Exact - 1st Inning
+        * 0: -310
+        * 1: +450
+        * 2: +850
+        * 3+: +950
+    * CIN Reds Runs Scored Exact - 1st Inning
+        * 0: -245
+        * 1: +425
+        * 2: +700
+        * 3+: +800
+* **Race To Runs**
+    * Race to 3 Runs
+        * MIA Marlins: -105
+        * CIN Reds: -110
+        * Neither: +1200
+    * Race to 4 Runs
+        * MIA Marlins: +120
+        * CIN Reds: +105
+        * Neither: +475
+    * Race to 5 Runs
+        * MIA Marlins: +150
+        * CIN Reds: +140
+        * Neither: +230
+    * Race to 6 Runs
+        * MIA Marlins: +205
+        * CIN Reds: +195
+        * Neither: +120
+    * Race to 7 Runs
+        * MIA Marlins: +300
+        * CIN Reds: +270
+        * Neither: -150
+
+**TOR Blue Jays at CHI White Sox (Tomorrow 5:40PM)**
+
+* **Game Lines**
+    * Run Line
+        * TOR Blue Jays -1.5: -108
+        * CHI White Sox +1.5: -112
+    * Total
+        * Over 8.5: -113
+        * Under 8.5: -108
+    * Moneyline
+        * TOR Blue Jays: -187
+        * CHI White Sox: +152
+* **Player Props**
+    * Jose Berrios
+        * Outs Recorded: O 17.5 (-170), U 17.5 (+135)
+        * Strikeouts Thrown: O 5.5 (+120), U 5.5 (-160)
+    * Sean Burke
+        * Outs Recorded: O 16.5 (+100), U 16.5 (-130)
+        * Strikeouts Thrown: O 3.5 (-140), U 3.5 (+110)
+* **1st Run**
+    * TOR Blue Jays: -200
+    * CHI White Sox: +150
+* **Runs - 1st Inning**
+    * Over 0.5: -105
+    * Under 0.5: -120
+    * Over 1.5: +230
+    * Under 1.5: -310
+* **1st Inning Scoring Props**
+    * TOR Blue Jays Run Scored - 1st Inning?
+        * Yes: +190 
+        * No: -265 
+    * CHI White Sox Run Scored - 1st Inning?
+        * Yes: +245 
+        * No: -360 
+    * TOR Blue Jays Home Run - 1st Inning?
+        * Yes: +425 
+        * No: -750 
+    * CHI White Sox Home Run - 1st Inning?
+        * Yes: +600 
+        * No: -1400 
+    * TOR Blue Jays Runs Scored Exact - 1st Inning
+        * 0: -265 
+        * 1: +425 
+        * 2: +750 
+        * 3+: +800 
+    * CHI White Sox Runs Scored Exact - 1st Inning
+        * 0: -360 
+        * 1: +500 
+        * 2: +850 
+        * 3+: +1000 
+* **Race To Runs**
+    * Race to 3 Runs
+        * TOR Blue Jays: -160
+        * CHI White Sox: +160
+        * Neither: +900
+    * Race to 4 Runs
+        * TOR Blue Jays: -130
+        * CHI White Sox: +200
+        * Neither: +370
+    * Race to 5 Runs
+        * TOR Blue Jays: +100
+        * CHI White Sox: +270
+        * Neither: +190
+    * Race to 7 Runs
+        * TOR Blue Jays: +205 
+        * CHI White Sox: +550 
+        * Neither: -175 
+
+**LA Dodgers at MIL Brewers (Tomorrow 5:40PM)**
+
+* **Game Lines**
+    * Run Line
+        * LA Dodgers -1.5: +118
+        * MIL Brewers +1.5: -145
+    * Total
+        * Over 8: -102
+        * Under 8: -119
+    * Moneyline
+        * LA Dodgers: -144
+        * MIL Brewers: +118
+* **1st Run**
+    * LA Dodgers: -180
+    * MIL Brewers: +135
+* **Runs - 1st Inning**
+    * Over 0.5: +100
+    * Under 0.5: -130
+    * Over 1.5: +265
+    * Under 1.5: -360
+* **1st Inning Scoring Props**
+    * LA Dodgers Run Scored - 1st Inning?
+        * Yes: +220 
+        * No: -310 
+    * MIL Brewers Run Scored - 1st Inning?
+        * Yes: +250 
+        * No: -370 
+    * LA Dodgers Home Run - 1st Inning?
+        * Yes: +425 
+        * No: -750 
+    * MIL Brewers Home Run - 1st Inning?
+        * Yes: +650 
+        * No: -1600 
+    * MIL Brewers Runs Scored Exact - 1st Inning
+        * 0: -370 
+        * 1: +500 
+        * 2: +850 
+        * 3+: +1000 
+* **Race To Runs**
+    * Race to 3 Runs
+        * LA Dodgers: -135 
+        * MIL Brewers: +140 
+        * Neither: +750 
+    * Race to 4 Runs
+        * LA Dodgers: -105 
+        * MIL Brewers: +175 
+        * Neither: +310 
+    * Race to 5 Runs
+        * LA Dodgers: +130 
+        * MIL Brewers: +245 
+        * Neither: +150 
+    * Race to 6 Runs
+        * LA Dodgers: +195 
+        * MIL Brewers: +370 
+        * Neither: -130 
+    * Race to 7 Runs
+        * LA Dodgers: +285 
+        * MIL Brewers: +550 
+        * Neither: -225 
+
+**PIT Pirates at KC Royals (Tomorrow 5:40PM)**
+
+* **Game Lines**
+    * Run Line
+        * PIT Pirates +1.5: -165
+        * KC Royals -1.5: +135
+    * Total
+        * Over 8.5: -115
+        * Under 8.5: -106
+    * Moneyline
+        * PIT Pirates: +128
+        * KC Royals: -157
+* **Player Props**
+    * Andrew Heaney
+        * Outs Recorded: O 15.5 (-125), U 15.5 (-105)
+        * Strikeouts Thrown: O 3.5 (-125), U 3.5 (-105)
+    * Noah Cameron
+        * Outs Recorded: O 15.5 (-115), U 15.5 (-110)
+        * Strikeouts Thrown: O 4.5 (-125), U 4.5 (-105)
+* **1st Run**
+    * PIT Pirates: -130
+    * KC Royals: +100
+* **Runs - 1st Inning**
+    * Over 0.5: -110
+    * Under 0.5: -120
+    * Over 1.5: +235
+    * Under 1.5: -310
+* **1st Inning Scoring Props**
+    * PIT Pirates Run Scored - 1st Inning?
+        * Yes: +250 
+        * No: -370 
+    * KC Royals Run Scored - 1st Inning?
+        * Yes: +180 
+        * No: -255 
+    * PIT Pirates Home Run - 1st Inning?
+        * Yes: +550 
+        * No: -1200 
+    * KC Royals Home Run - 1st Inning?
+        * Yes: +500 
+        * No: -1000 
+    * PIT Pirates Runs Scored Exact - 1st Inning
+        * 0: -370 
+        * 1: +500 
+        * 2: +900 
+        * 3+: +1000 
+    * KC Royals Runs Scored Exact - 1st Inning
+        * 0: -255 
+        * 1: +400 
+        * 2: +750 
+        * 3+: +800 
+* **Race To Runs**
+    * Race to 3 Runs
+        * PIT Pirates: +105 
+        * KC Royals: -115 
+        * Neither: +1000 
+    * Race to 4 Runs
+        * PIT Pirates: +130 
+        * KC Royals: +105 
+        * Neither: +390 
+    * Race to 5 Runs
+        * PIT Pirates: +175 
+        * KC Royals: +140 
+        * Neither: +195 
+    * Race to 6 Runs
+        * PIT Pirates: +240 
+        * KC Royals: +195 
+        * Neither: +105 
+    * Race to 7 Runs
+        * PIT Pirates: +340 
+        * KC Royals: +285 
+        * Neither: -170 
+
+**CLE Guardians at HOU Astros (Tomorrow 6:10PM)**
+
+* **Game Lines**
+    * Run Line
+        * CLE Guardians +1.5: -163
+        * HOU Astros -1.5: +133
+    * Total
+        * Over 7.5: +100
+        * Under 7.5: -123
+    * Moneyline
+        * CLE Guardians: +134
+        * HOU Astros: -164
+* **Player Props**
+    * Tanner Bibee
+        * Outs Recorded: O 17.5 (-175), U 17.5 (+135)
+        * Strikeouts Thrown: O 5.5 (-105), U 5.5 (-125)
+    * Colton Gordon
+        * Outs Recorded: O 15.5 (+125), U 15.5 (-160)
+        * Strikeouts Thrown: O 4.5 (+130), U 4.5 (-170)
+* **1st Run**
+    * CLE Guardians: -125
+    * HOU Astros: -105
+* **Runs - 1st Inning**
+    * Over 0.5: +100
+    * Under 0.5: -125
+    * Over 1.5: +250
+    * Under 1.5: -340
+* **1st Inning Scoring Props**
+    * CLE Guardians Run Scored - 1st Inning?
+        * Yes: +220 
+        * No: -320 
+    * HOU Astros Run Scored - 1st Inning?
+        * Yes: +255 
+        * No: -380 
+    * CLE Guardians Home Run - 1st Inning?
+        * Yes: +500 
+        * No: -1000 
+    * HOU Astros Home Run - 1st Inning?
+        * Yes: +550 
+        * No: -1100 
+    * CLE Guardians Runs Scored Exact - 1st Inning
+        * 0: -320 
+        * 1: +475 
+        * 2: +800 
+        * 3+: +950 
+    * HOU Astros Runs Scored Exact - 1st Inning
+        * 0: -380 
+        * 1: +500 
+        * 2: +900 
+* **Race To Runs**
+    * Race to 3 Runs
+        * CLE Guardians: +120 
+        * HOU Astros: -110 
+        * Neither: +650 
+    * Race to 4 Runs
+        * CLE Guardians: +160 
+        * HOU Astros: +120 
+        * Neither: +260 
+    * Race to 5 Runs
+        * CLE Guardians: +225 
+        * HOU Astros: +165 
+        * Neither: +125 
+    * Race to 6 Runs
+        * CLE Guardians: +330 
+        * HOU Astros: +250 
+        * Neither: -150 
+    * Race to 7 Runs
+        * CLE Guardians: +500 
+        * HOU Astros: +380 
+        * Neither: -270 
+
+**TEX Rangers at LA Angels (Tomorrow 7:38PM)**
+
+* **Game Lines**
+    * Run Line
+        * TEX Rangers -1.5: +118
+        * LA Angels +1.5: -143
+    * Total
+        * Over 7.5: -109
+        * Under 7.5: -112
+    * Moneyline
+        * TEX Rangers: -157
+        * LA Angels: +129
+* **1st Run**
+    * TEX Rangers: -175
+    * LA Angels: +130
+* **Runs - 1st Inning**
+    * Over 0.5: +115
+    * Under 0.5: -150
+    * Over 1.5: +310
+    * Under 1.5: -425
+* **1st Inning Scoring Props**
+    * TEX Rangers Run Scored - 1st Inning?
+        * Yes: +275 
+        * No: -425 
+    * LA Angels Run Scored - 1st Inning?
+        * Yes: +275 
+        * No: -425 
+    * TEX Rangers Home Run - 1st Inning?
+        * Yes: +475 
+        * No: -900 
+    * LA Angels Home Run - 1st Inning?
+        * Yes: +475 
+        * No: -900 
+    * TEX Rangers Runs Scored Exact - 1st Inning
+        * 0: -425 
+        * 1: +550 
+        * 2: +950 
+        * 3+: +1100 
+    * LA Angels Runs Scored Exact - 1st Inning
+        * 0: -425 
+        * 1: +550 
+        * 2: +950 
+        * 3+: +1100 
+* **Race To Runs**
+    * Race to 3 Runs
+        * TEX Rangers: -140 
+        * LA Angels: +150 
+        * Neither: +650 
+    * Race to 4 Runs
+        * TEX Rangers: -105 
+        * LA Angels: +195 
+        * Neither: +275 
+    * Race to 5 Runs
+        * TEX Rangers: +130 
+        * LA Angels: +275 
+        * Neither: +135 
+    * Race to 6 Runs
+        * TEX Rangers: +195 
+        * LA Angels: +400 
+        * Neither: -135 
+    * Race to 7 Runs
+        * TEX Rangers: +290 
+        * LA Angels: +600 
+        * Neither: -240 
+
+**ARI Diamondbacks at SD Padres (Tomorrow 7:40PM)**
+
+* **Game Lines**
+    * Run Line
+        * ARI Diamondbacks +1.5: -193
+        * SD Padres -1.5: +157
+    * Total
+        * Over 8: -119
+        * Under 8: -102
+    * Moneyline
+        * ARI Diamondbacks: +109
+        * SD Padres: -132
+* **1st Run**
+    * ARI Diamondbacks: -145
+    * SD Padres: +110
+* **Runs - 1st Inning**
+    * Over 0.5: -115
+    * Under 0.5: -115
+    * Over 1.5: +235
+    * Under 1.5: -310
+* **1st Inning Scoring Props**
+    * ARI Diamondbacks Run Scored - 1st Inning?
+        * Yes: +230 
+        * No: -330 
+    * SD Padres Run Scored - 1st Inning?
+        * Yes: +185 
+        * No: -260 
+    * ARI Diamondbacks Home Run - 1st Inning?
+        * Yes: +450 
+        * No: -900 
+    * SD Padres Home Run - 1st Inning?
+        * Yes: +425 
+        * No: -750 
+    * ARI Diamondbacks Runs Scored Exact - 1st Inning
+        * 0: -330 
+        * 1: +425 
+        * 2: +900 
+        * 3+: +1100 
+    * SD Padres Runs Scored Exact - 1st Inning
+        * 0: -260 
+        * 1: +390 
+        * 2: +750 
+        * 3+: +950 
+* **Race To Runs**
+    * Race to 3 Runs
+        * ARI Diamondbacks: +100 
+        * SD Padres: +100 
+        * Neither: +900 
+    * Race to 4 Runs
+        * ARI Diamondbacks: +125 
+        * SD Padres: +120 
+        * Neither: +350 
+    * Race to 5 Runs
+        * ARI Diamondbacks: +170 
+        * SD Padres: +165 
+        * Neither: +170 
+    * Race to 6 Runs
+        * ARI Diamondbacks: +245 
+        * SD Padres: +230 
+        * Neither: -115 
+    * Race to 7 Runs
+        * ARI Diamondbacks: +360 
+        * SD Padres: +340 
+        * Neither: -200 
+
+**UFC (Saturday, July 12th)**
+
+* **Fatima Kline vs. Melissa Martinez**
+    * Moneyline
+        * Fatima Kline: -1350
+        * Melissa Martinez: +800
+* **Mitch Ramirez vs. Mike Davis**
+    * Moneyline
+        * Mitch Ramirez: +650
+        * Mike Davis: -1000
+* **Kennedy Nzechukwu vs. Valter Walker**
+    * Moneyline
+        * Kennedy Nzechukwu: -205
+        * Valter Walker: +170
+* **Lauren Murphy vs. Eduarda Moura**
+    * Moneyline
+        * Lauren Murphy: +470
+        * Eduarda Moura: -650
+* **Jake Matthews vs. Chidi Njokuani**
+    * Moneyline
+        * Jake Matthews: +124
+        * Chidi Njokuani: -148
+* **Max Griffin vs. Chris Curtis**
+    * Moneyline
+        * Max Griffin: +250
+        * Chris Curtis: -310
+* **Junior Tafa vs. Tuco Tokkos**
+    * Moneyline
+        * Junior Tafa: -166
+        * Tuco Tokkos: +140
+* **Vitor Petrino vs. Austen Lane**
+    * Moneyline
+        * Vitor Petrino: -750
+        * Austen Lane: +525
+* **Nate Landwehr vs. Morgan Charriere**
+    * Moneyline
+        * Nate Landwehr: +215
+        * Morgan Charriere: -265
+* **Calvin Kattar vs. Steve Garcia**
+    * Moneyline
+        * Calvin Kattar: +105
+        * Steve Garcia: -125
+* **Stephen Thompson vs. Gabriel Bonfim**
+    * Moneyline
+        * Stephen Thompson: +310
+        * Gabriel Bonfim: -395
+* **Derrick Lewis vs. Tallison Teixeira**
+    * Moneyline
+        * Derrick Lewis: +210
+        * Tallison Teixeira: -280
+
+*(Example Format)*
+* *Baseball - MLB (June 12, 2025): New York Yankees vs. Boston Red Sox - Yankees Run Line -1.5 @ +150*
+* *Basketball - NBA (June 13, 2025): LAL vs. GSW - LeBron James Over 28.5 Points @ -115*
+
+### **4. Professional Research and Analysis Mandate**
+
+For each bet listed in the "Bets for Analysis" section, you will think and act like a professional sports bettor. This involves a deep, data-driven analysis to identify where the provided odds may not reflect the true probability of an outcome.
+
+* **Data Sources:** Use diverse, reputable sources for the most recent and relevant information.
+* **Think Like a Pro - Key Factors for Analysis:**
+    * **Identify the Narrative:** Why are the odds what they are? Understand the public perception and the market sentiment for each line.
+    * **Advanced & Situational Metrics:** Go beyond surface-level stats. Use advanced metrics (e.g., wRC+, FIP, Corsi, PER, DVOA, Strokes Gained) and critical situational data (e.g., performance on back-to-back games, home/road splits, player performance against specific opponent types or defensive schemes, weather impacts).
+    * **Actionable Intelligence:** Seek out late-breaking, market-moving information. This includes confirmed injuries, significant lineup changes, coaching strategies, and other contextual factors that the odds may not have fully adjusted for.
+    * **Regression Analysis:** Assess current performance streaks (both for teams and individual players) and determine the likelihood of regression (positive or negative) back toward their statistical mean. A team playing "over their skis" might be a good fade candidate.
+    * **Value Assessment (+EV):** The core of your analysis is to find value. For each line, determine if the provided odds offer a higher payout than the "true" probability of the event occurring. A bet has positive expected value if `(Probability of Winning * Payout) > (Probability of Losing * Stake)`. Your research should aim to more accurately calculate the "true" probability than the market has.
+
+### **5. How to Pick a Good Bet: A Systematic Approach to Finding Value**
+
+To consistently identify bets with Positive Expected Value (+EV) from the provided list, you must adhere to the following four-step process for each line under consideration. This framework moves from objective mathematical assessment to qualitative refinement, ensuring every selection is rooted in logic and data.
+
+* **Step 1: Decode the Market Price (Calculate Implied Probability)**
+    * Before any analysis, translate the given odds into the market's breakeven probability. You cannot know if a price is good or bad without understanding what it is.
+        * *For Negative Odds (Favorites): Implied Probability = Odds / (Odds + 100)*
+        * *For Positive Odds (Underdogs): Implied Probability = 100 / (Odds + 100)*
+    * This percentage is your baseline. Your entire goal is to determine if an outcome's *true* chance of occurring is greater than this number.
+
+* **Step 2: Generate Your "True" Probability (The Quantitative Analysis)**
+    * This is where you build your own objective assessment of the event's likelihood, independent of the market's price. Synthesize advanced and situational metrics to create your own probability.
+        * **Metric-Driven Foundation:** Use advanced metrics (DVOA, EPA/Play, wRC+, xFIP, Corsi%, etc.) to establish a performance baseline for each team or player.
+        * **Situational Adjustment:** Modify this baseline with critical situational data. Quantify the impact of factors like home/road splits, rest advantage, and specific matchup history.
+        * **Formulate Your Probability:** Combine these factors to arrive at a specific percentage. For example: *"Based on the team's superior EPA/Play margin and the opponent's situational disadvantage, our model gives Team A a **58%** true probability of winning."*
+
+* **Step 3: Find the Edge (Compare Your Price to the Market Price)**
+    * This is the moment of truth where value is revealed. Compare your "true" probability from Step 2 with the market's implied probability from Step 1.
+        * *The Formula for Value: Edge = Your True Probability - Implied Probability*
+    * **Positive Edge (A Potential Bet):** If your analysis shows a 58% true probability and the market's implied probability is 53.48% (from -115 odds), you have identified a positive edge of 4.52%. This is a potential +EV wager.
+    * **Negative Edge (A Clear Pass):** If your true probability is 50% and the implied probability is 53.48%, you have a negative edge. You must discard this bet. Do not bet on lines where you do not have a positive edge.
+
+* **Step 4: Refine with Qualitative Analysis & Finalize the Bet**
+    * The numbers tell most of the story, but not all of it. Before confirming a bet, perform a final sanity check using qualitative factors that models might miss.
+        * **Late-Breaking News:** Scan for last-minute intelligence. A surprise injury, a significant weather shift, or reports of team turmoil can invalidate your calculated edge.
+        * **Motivation & Narrative Check:** Is there a non-quantifiable motivational angle (e.g., a "revenge game," playoff implications)? Use these factors to increase or decrease your confidence in a calculated edge.
+        * **Confirm and Allocate:** If the qualitative check doesn't raise any major red flags, the bet is confirmed. The size of your identified "Edge" from Step 3 should be the primary driver of your allocation. A 7-8% edge warrants a significantly larger allocation than a 2-3% edge.
+
+### **6. Output Requirements: The Final Portfolio**
+
+From the provided list, construct a portfolio of bets that you assess have the highest positive expected value, factoring in your long-term strategy. Present them as a list, ranked from highest to lowest based on your confidence and the size of your allocation.
+
+For **EACH** selected bet in your portfolio, you **MUST** provide the following five components:
+
+1.  **Bet Description:** The specific bet from the provided list (e.g., "Baseball - MLB (June 12, 2025): New York Yankees vs. Boston Red Sox - Yankees Run Line -1.5 @ +150").
+2.  **Allocated Bet Amount:** The exact amount of money you are allocating to this bet from your $10.00 bankroll (e.g., "$1.50").
+3.  **Profit Potential Rationale (The "Why"):** In 3-4 sentences, build a compelling, data-driven case for the bet. Explain precisely *why* the odds represent value against your assessed probability. Pinpoint the specific data (advanced stats, news, situational factors) that suggests the market is under-valuing this outcome.
+4.  **Primary Risk / Counter-Argument:** In 1-2 sentences, state the strongest argument against your pick. What is the primary risk that could cause this bet to lose? This demonstrates a balanced and professional analysis.
+5.  **Confidence & Allocation Justification (1-5):** Rate your confidence in the data-driven edge for this bet (1=Low, 5=High). Briefly justify both the score and your chosen bet amount based on the quality and reliability of the supporting data and the perceived size of the edge.
+
+-----Picks/results:
+Pick 1: (MLB) PIT Pirates at KC Royals       | Over 15.5 Outs (Cameron) | $3.00 | -115 -> Won
+Pick 2: (UFC) Calvin Kattar vs. Steve Garcia | Moneyline (Kattar)       | $2.50 | +105 -> Lost
+Pick 3: (MLB) ARI Diamondbacks at SD Padres  | Moneyline (Padres)       | $1.75 | -132 -> Lost
+Pick 4: (MLB) TEX Rangers at LA Angels       | Under 7.5 Total Runs     | $1.50 | -112 -> Lost
+Pick 5: (MLB) COL Rockies at BOS Red Sox     | +1.5 Run Line (Rockies)  | $1.25 | -105 -> Lost
+
+-----Inconsistencies:
+In pick 2 Noah Cameron Over 15.5 outs @ -115 I'm seeing 16.5 @ +100. Looking at the screenshot it appears both have simly moved.
+
+-----Conclusion:
+All bets are different and the include at least one player prop which is cool to see. There is a conflict with the Dbacks vs padres
+as I'm now betting the moneyline on both but whatever its fine.
+Gemini: +$2.61 (pick 1) - $2.50 (pick 2) - $1.75 (pick 3) - $1.50 (pick 4) - $1.25 (pick 5) = $-4.39 [-43.9% profit]

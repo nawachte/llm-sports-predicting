@@ -1,0 +1,426 @@
+In my previous test, all language models struggled to get the current available odds. Sportsbooks might be taking measures to ensure
+that language models are unable to easily access that information. To combat this I have created a python script that pulls the
+relevant HTML data from DraftKings and then I give this file to Gemini to parse and format the betting lines. Then I give these lines
+in my prompt to each model and let it make betting decisions. I expect this to increase these models ability to make betting choices
+because not only do they now not need to focus on finding lines they will also have the correct lines. Note that the model version
+being used are Claude 4 Sonnet, Gemini 2.5 Pro, and ChatGPT 04-mini-high.
+
+###Prompt
+**Persona:** Act as an expert professional sports betting analyst. Your primary goal is to perform deep, targeted research on a provided list of bets to identify which ones offer the highest potential profit.
+
+**Core Objective:** Analyze the specific bets and odds listed in the "Bets for Analysis" section below. Your task is to conduct in-depth research on each provided line to determine its viability. From that list, identify and rank the top 5 bets that offer the highest potential percent profit. You are restricted to ONLY analyzing the bets I have provided.
+
+**Research Mandate - Deep Dive into Market Data:**
+For each bet listed below, perform exhaustive research tailored to that specific line. Your analysis MUST integrate the most recent and relevant data available, including:
+
+  * **Specialized Stats:** Utilize statistics highly relevant to the specific bet (e.g., Baseball advanced metrics like wRC+, FIP; Basketball efficiency ratings; Hockey possession stats like Corsi/Fenwick; Tennis serve/return percentages by surface; Golf Strokes Gained data).
+  * **News & Context:** Seek out up-to-the-minute news impacting the bet (e.g., late injury news, lineup changes, weather forecasts, player or team tactical shifts).
+  * **Historical Performance & Trends:** Analyze recent and relevant historical data, focusing on current form, head-to-head matchups, and performance trends applicable to the specific bet.
+  * **Data Reliability Assessment:** Factor the perceived quality and depth of the available data into your confidence assessment for each pick.
+
+-----
+
+### **Bets for Analysis**
+
+Of course! I'm glad the script is working now. Here are the betting odds from the updated file:
+
+**NBA**
+
+* **OKC Thunder vs. IND Pacers**
+    * [cite_start]**OKC Thunder** [cite: 1]
+        * [cite_start]Spread: -5.5 (-108) [cite: 1]
+        * [cite_start]Total: O 227.5 (-110) [cite: 1]
+        * [cite_start]Moneyline: -218 [cite: 1]
+    * [cite_start]**IND Pacers** [cite: 2]
+        * [cite_start]Spread: +5.5 (-112) [cite: 2]
+        * [cite_start]Total: U 227.5 (-110) [cite: 2]
+        * [cite_start]Moneyline: +180 [cite: 2]
+
+**NHL**
+
+* **EDM Oilers vs. FLA Panthers**
+    * **EDM Oilers**
+        * [cite_start]Puck Line: +1.5 (-198) [cite: 3]
+        * [cite_start]Total: O 6.5 (+105) [cite: 3]
+        * [cite_start]Moneyline: +130 [cite: 3]
+    * **FLA Panthers**
+        * Puck Line: -1.5 (+164)
+        * [cite_start]Total: U 6.5 (-125) [cite: 4]
+        * [cite_start]Moneyline: -155 [cite: 4]
+
+**MLB**
+
+* **MIA Marlins vs. PIT Pirates**
+    * **MIA Marlins**
+        * Run Line: +3.5 (-175)
+        * Total: O 7.5 (-123)
+        * [cite_start]Moneyline: +760 [cite: 5]
+    * **PIT Pirates**
+        * Run Line: -3.5 (+133)
+        * Total: U 7.5 (-106)
+        * Moneyline: -1820
+* **CHI Cubs vs. PHI Phillies**
+    * [cite_start]**CHI Cubs** [cite: 6]
+        * [cite_start]Run Line: +3.5 (+103) [cite: 6]
+        * [cite_start]Total: O 9.5 (-104) [cite: 6]
+        * [cite_start]Moneyline: +610 [cite: 6]
+    * [cite_start]**PHI Phillies** [cite: 7]
+        * [cite_start]Run Line: -3.5 (-135) [cite: 7]
+        * [cite_start]Total: U 9.5 (-125) [cite: 7]
+        * [cite_start]Moneyline: -1200 [cite: 7]
+* **CIN Reds vs. CLE Guardians**
+    * **CIN Reds**
+        * [cite_start]Run Line: +4.5 (-155) [cite: 8]
+        * [cite_start]Total: O 10.5 (-115) [cite: 8]
+        * [cite_start]Moneyline: +820 [cite: 8]
+    * **CLE Guardians**
+        * Run Line: -4.5 (+119)
+        * [cite_start]Total: U 10.5 (-113) [cite: 9]
+        * Moneyline: -2200
+* **ATL Braves vs. MIL Brewers**
+    * **ATL Braves**
+        * Run Line: -1.5 (-105)
+        * Total: O 7.5 (-111)
+        * [cite_start]Moneyline: -192 [cite: 10]
+    * **MIL Brewers**
+        * Run Line: +1.5 (-116)
+        * Total: U 7.5 (-109)
+        * Moneyline: +156
+* **TOR Blue Jays vs. STL Cardinals**
+    * [cite_start]**TOR Blue Jays** [cite: 11]
+        * [cite_start]Run Line: +1.5 (-180) [cite: 11]
+        * [cite_start]Total: O 8.5 (-113) [cite: 11]
+        * [cite_start]Moneyline: +118 [cite: 11]
+    * **STL Cardinals**
+        * Run Line: -1.5 (+147)
+        * [cite_start]Total: U 8.5 (-108) [cite: 12]
+        * [cite_start]Moneyline: -144 [cite: 12]
+* **SEA Mariners vs. ARI Diamondbacks**
+    * **SEA Mariners**
+        * Run Line: -1.5 (+152)
+        * Total: O 9 (-106)
+        * [cite_start]Moneyline: -102 [cite: 13]
+    * **ARI Diamondbacks**
+        * Run Line: +1.5 (-187)
+        * Total: U 9 (-115)
+        * Moneyline: -119
+* **Athletics vs. LA Angels**
+    * [cite_start]**Athletics** [cite: 14]
+        * [cite_start]Run Line: +1.5 (-167) [cite: 14]
+        * [cite_start]Total: O 9.5 (-116) [cite: 14]
+        * [cite_start]Moneyline: +126 [cite: 14]
+    * **LA Angels**
+        * Run Line: -1.5 (+136)
+        * [cite_start]Total: U 9.5 (-104) [cite: 15]
+        * [cite_start]Moneyline: -154 [cite: 15]
+* **LA Dodgers vs. SD Padres**
+    * **LA Dodgers**
+        * Run Line: -1.5 (+108)
+        * Total: O 9.5 (-112)
+        * [cite_start]Moneyline: -156 [cite: 16]
+    * **SD Padres**
+        * Run Line: +1.5 (-131)
+        * Total: U 9.5 (-108)
+        * Moneyline: +128
+* **DET Tigers vs. BAL Orioles**
+    * [cite_start]**DET Tigers** [cite: 17]
+        * [cite_start]Run Line: +1.5 (-196) [cite: 17]
+        * [cite_start]Total: O 9 (-108) [cite: 17]
+        * [cite_start]Moneyline: +107 [cite: 17]
+    * **BAL Orioles**
+        * [cite_start]Run Line: -1.5 (+159) [cite: 18]
+        * [cite_start]Total: U 9 (-112) [cite: 18]
+        * [cite_start]Moneyline: -131 [cite: 18]
+* **WAS Nationals vs. NY Mets**
+    * **WAS Nationals**
+        * Run Line: +1.5 (+107)
+        * Total: O 8.5 (-118)
+        * [cite_start]Moneyline: +221 [cite: 19]
+    * **NY Mets**
+        * Run Line: -1.5 (-131)
+        * Total: U 8.5 (-103)
+        * Moneyline: -279
+* **TB Rays vs. BOS Red Sox**
+    * [cite_start]**TB Rays** [cite: 20]
+        * [cite_start]Run Line: -1.5 (+144) [cite: 20]
+        * [cite_start]Total: O 9.5 (-115) [cite: 20]
+        * [cite_start]Moneyline: -105 [cite: 20]
+    * **BOS Red Sox**
+        * [cite_start]Run Line: +1.5 (-177) [cite: 21]
+        * [cite_start]Total: U 9.5 (-106) [cite: 21]
+        * [cite_start]Moneyline: -116 [cite: 21]
+* **NY Yankees vs. KC Royals**
+    * **NY Yankees**
+        * Run Line: -1.5 (+129)
+        * [cite_start]Total: O 8.5 (-123) [cite: 22]
+        * Moneyline: -132
+    * **KC Royals**
+        * Run Line: +1.5 (-158)
+        * Total: U 8.5 (+101)
+        * Moneyline: +108
+* **TEX Rangers vs. MIN Twins**
+    * [cite_start]**TEX Rangers** [cite: 23]
+        * [cite_start]Run Line: +1.5 (-174) [cite: 23]
+        * [cite_start]Total: O 8.5 (-105) [cite: 23]
+        * [cite_start]Moneyline: +127 [cite: 23]
+    * **MIN Twins**
+        * [cite_start]Run Line: -1.5 (+142) [cite: 24]
+        * [cite_start]Total: U 8.5 (-116) [cite: 24]
+        * [cite_start]Moneyline: -155 [cite: 24]
+* **CHI White Sox vs. HOU Astros**
+    * **CHI White Sox**
+        * Run Line: +1.5 (-151)
+        * [cite_start]Total: O 8.5 (-109) [cite: 25]
+        * Moneyline: +142
+    * **HOU Astros**
+        * Run Line: -1.5 (+124)
+        * Total: U 8.5 (-112)
+        * [cite_start]Moneyline: -174 [cite: 26]
+* **SF Giants vs. COL Rockies**
+    * **SF Giants**
+        * Run Line: -1.5 (-137)
+        * Total: O 10.5 (-103)
+        * Moneyline: -206
+    * [cite_start]**COL Rockies** [cite: 27]
+        * [cite_start]Run Line: +1.5 (+113) [cite: 27]
+        * [cite_start]Total: U 10.5 (-118) [cite: 27]
+        * [cite_start]Moneyline: +167 [cite: 27]
+
+**UFC**
+
+* **Jamey-Lyn Horth vs. Vanessa Demopoulos**
+    * [cite_start]Jamey-Lyn Horth: -600 [cite: 28]
+    * Vanessa Demopoulos: +440
+* **Phil Rowe vs. Ange Loosa**
+    * [cite_start]Phil Rowe: +110 [cite: 29]
+    * Ange Loosa: -130
+* **Cody Durden vs. Jose Ochoa**
+    * [cite_start]Cody Durden: +154 [cite: 30]
+    * [cite_start]Jose Ochoa: -185 [cite: 31]
+* **Malcolm Wellmaker vs. Kris Moutinho**
+    * Malcolm Wellmaker: -1800
+    * [cite_start]Kris Moutinho: +1000 [cite: 32]
+* **Michael Chiesa vs. Court McGee**
+    * Michael Chiesa: -345
+    * [cite_start]Court McGee: +275 [cite: 33]
+* **Paul Craig vs. Rodolfo Bellato**
+    * Paul Craig: +310
+    * [cite_start]Rodolfo Bellato: -395 [cite: 34]
+* **Alonzo Menifield vs. Oumar Sy**
+    * [cite_start]Alonzo Menifield: +500 [cite: 35]
+    * Oumar Sy: -700
+* **Mansur Abdul-Malik vs. Cody Brundage**
+    * [cite_start]Mansur Abdul-Malik: -800 [cite: 36]
+    * [cite_start]Cody Brundage: +550 [cite: 37]
+* **Cody Garbrandt vs. Raoni Barcelos**
+    * Cody Garbrandt: +164
+    * [cite_start]Raoni Barcelos: -198 [cite: 38]
+* **Edmen Shahbazyan vs. Andre Petroski**
+    * [cite_start]Edmen Shahbazyan: -185 [cite: 39]
+    * [cite_start]Andre Petroski: +154 [cite: 40]
+* **Rose Namajunas vs. Miranda Maverick**
+    * Rose Namajunas: -258
+    * [cite_start]Miranda Maverick: +210 [cite: 41]
+* **Kamaru Usman vs. Joaquin Buckley**
+    * [cite_start]Kamaru Usman: +225 [cite: 42]
+    * Joaquin Buckley: -278
+* **Irina Alekseeva vs. Klaudia Sygula**
+    * [cite_start]Irina Alekseeva: -225 [cite: 43]
+    * Klaudia Sygula: +185
+* **Seokhyeon Ko vs. Oban Elliott**
+    * [cite_start]Seokhyeon Ko: +310 [cite: 44]
+    * Oban Elliott: -395
+* **Hamdy Abdelwahab vs. Mohammed Usman**
+    * [cite_start]Hamdy Abdelwahab: -198 [cite: 45]
+    * Mohammed Usman: +164
+* **Daria Zhelezniakova vs. Melissa Mullins**
+    * Daria Zhelezniakova: +210
+    * [cite_start]Melissa Mullins: -258 [cite: 46]
+* **Ismail Naurdiev vs. Jun Yong Park**
+    * Ismail Naurdiev: +185
+    * [cite_start]Jun Yong Park: -225 [cite: 47]
+* **Tagir Ulanbekov vs. Azat Maksum**
+    * Tagir Ulanbekov: -285
+    * [cite_start]Azat Maksum: +230 [cite: 48]
+* **Muhammad Naimov vs. Bogdan Grad**
+    * Muhammad Naimov: -218
+    * Bogdan Grad: +180
+* **Nazim Sadykhov vs. Nikolas Motta**
+    * [cite_start]Nazim Sadykhov: -395 [cite: 49]
+    * Nikolas Motta: +310
+* **Curtis Blaydes vs. Rizvan Kuniev**
+    * [cite_start]Curtis Blaydes: -270 [cite: 50]
+    * Rizvan Kuniev: +220
+* **Rafael Fiziev vs. Ignacio Bahamondes**
+    * [cite_start]Rafael Fiziev: -122 [cite: 51]
+    * Ignacio Bahamondes: +102
+* **Jamahal Hill vs. Khalil Rountree Jr.**
+    * [cite_start]Jamahal Hill: +136 [cite: 52]
+    * Khalil Rountree Jr.: -162
+* **Brandon Royval vs. Joshua Van**
+    * Brandon Royval: -125
+    * [cite_start]Joshua Van: +105 [cite: 53]
+* **Beneil Dariush vs. Renato Moicano**
+    * Beneil Dariush: +140
+    * [cite_start]Renato Moicano: -166 [cite: 54]
+* **Paulo Costa vs. Roman Kopylov**
+    * Paulo Costa: +205
+    * [cite_start]Roman Kopylov: -250 [cite: 55]
+* **Jhonata Diniz vs. Justin Tafa**
+    * Jhonata Diniz: -340
+    * Justin Tafa: +270
+* **Viviane Araujo vs. Tracy Cortez**
+    * [cite_start]Viviane Araujo: +195 [cite: 56]
+    * Tracy Cortez: -238
+* **Jack Hermansson vs. Gregory Rodrigues**
+    * [cite_start]Jack Hermansson: +160 [cite: 57]
+    * Gregory Rodrigues: -192
+* **Alexandre Pantoja vs. Kai Kara-France**
+    * [cite_start]Alexandre Pantoja: -250 [cite: 58]
+    * Kai Kara-France: +205
+* **Charles Oliveira vs. Ilia Topuria**
+    * Charles Oliveira: +310
+    * [cite_start]Ilia Topuria: -395 [cite: 59]
+* **Max Holloway vs. Dustin Poirier**
+    * Max Holloway: -115
+    * [cite_start]Dustin Poirier: -105 [cite: 60]
+* **Robert Whittaker vs. Reinier De Ridder**
+    * Robert Whittaker: -162
+    * [cite_start]Reinier De Ridder: +136 [cite: 61]
+* **Dricus Du Plessis vs. Khamzat Chimaev**
+    * Dricus Du Plessis: +150
+    * [cite_start]Khamzat Chimaev: -180 [cite: 62]
+* **Jon Jones vs. Tom Aspinall**
+    * Jon Jones: +110
+    * [cite_start]Tom Aspinall: -130 [cite: 63]
+* **Magomed Ankalaev vs. Alex Pereira**
+    * Magomed Ankalaev: -180
+    * Alex Pereira: +150
+* **Kayla Harrison vs. Amanda Nunes**
+    * [cite_start]Kayla Harrison: -155 [cite: 64]
+    * Amanda Nunes: +130
+
+**Golf**
+
+* [cite_start]**US Open 2025** [cite: 65]
+    * **Winner**
+        * Scottie Scheffler: +275
+        * Bryson DeChambeau: +750
+        * Jon Rahm: +1200
+        * Rory McIlroy: +1200
+        * [cite_start]Xander Schauffele: +2200 [cite: 68]
+        * Collin Morikawa: +2500
+        * Joaquin Niemann: +3000
+        * Ludvig Aberg: +3000
+        * Tommy Fleetwood: +4000
+        * [cite_start]Shane Lowry: +4500 [cite: 69]
+    * [cite_start]**Top 5 Finish (Including Ties)** [cite: 95]
+        * [cite_start]Scottie Scheffler: -175 [cite: 95]
+        * [cite_start]Bryson DeChambeau: +160 [cite: 95]
+        * [cite_start]Jon Rahm: +225 [cite: 95]
+        * [cite_start]Rory McIlroy: +220 [cite: 95]
+        * [cite_start]Xander Schauffele: +360 [cite: 96]
+        * [cite_start]Collin Morikawa: +360 [cite: 96]
+        * [cite_start]Joaquin Niemann: +450 [cite: 96]
+        * [cite_start]Ludvig Aberg: +450 [cite: 96]
+        * [cite_start]Tommy Fleetwood: +500 [cite: 96]
+        * [cite_start]Shane Lowry: +600 [cite: 96]
+    * [cite_start]**Top 10 Finish (Including Ties)** [cite: 123]
+        * [cite_start]Scottie Scheffler: -350 [cite: 123]
+        * [cite_start]Bryson DeChambeau: -125 [cite: 123]
+        * [cite_start]Jon Rahm: +110 [cite: 123]
+        * [cite_start]Rory McIlroy: +110 [cite: 123]
+        * [cite_start]Xander Schauffele: +180 [cite: 123]
+        * [cite_start]Collin Morikawa: +180 [cite: 124]
+        * [cite_start]Joaquin Niemann: +225 [cite: 124]
+        * [cite_start]Ludvig Aberg: +260 [cite: 124]
+        * [cite_start]Tommy Fleetwood: +240 [cite: 124]
+        * [cite_start]Shane Lowry: +280 [cite: 124]
+
+**Tennis**
+
+* **Diana Shnaider vs. Katie Boulter**:
+    * [cite_start]Diana Shnaider: -165 [cite: 151]
+    * [cite_start]Katie Boulter: +125 [cite: 151]
+* **Heather Watson vs. Elena Rybakina**:
+    * [cite_start]Heather Watson: +800 [cite: 152]
+    * [cite_start]Elena Rybakina: -1200 [cite: 152]
+* **Qinwen Zheng vs. McCartney Kessler**:
+    * Qinwen Zheng: -250
+    * McCartney Kessler: +200
+* **Suzan Lamens vs. Ann Li**:
+    * [cite_start]Suzan Lamens: +160 [cite: 153]
+    * [cite_start]Ann Li: -200 [cite: 153]
+* **Carson Branstine vs. Elena Gabriela Ruse**:
+    * Carson Branstine: +250
+    * [cite_start]Elena Gabriela Ruse: -330 [cite: 154]
+* **Maria Sakkari vs. Elise Mertens**:
+    * Maria Sakkari: +180
+    * Elise Mertens: -225
+* **Bianca Andreescu vs. Lulu Sun**:
+    * [cite_start]Bianca Andreescu: -225 [cite: 155]
+    * [cite_start]Lulu Sun: +175 [cite: 155]
+* **Kimberly Birrell vs. Yue Yuan**:
+    * Kimberly Birrell: -150
+    * Yue Yuan: +120
+
+*Example Format:*
+*Baseball - MLB: New York Yankees vs. Boston Red Sox - Yankees Run Line -1.5 @ +150*
+*Basketball - NBA: Los Angeles Lakers vs. Golden State Warriors - LeBron James Over 28.5 Points @ -115*
+*Golf - PGA Championship: Scottie Scheffler vs. Jon Rahm - Head-to-Head Matchup - Scottie Scheffler @ -135*
+*Hockey - NHL: Edmonton Oilers vs. Florida Panthers - Total Goals Over 5.5 @ -110*
+
+-----
+
+**Selection Criteria & Output:**
+Synthesize your research findings for each bet provided above. Evaluate each one based on the likelihood of the outcome versus the potential payout offered by the odds I have provided. Select the top 5 bets from my list that offer the highest potential percent profit.
+
+Present your findings as a ranked list (1-5), ordered by your assessment of their potential profit. For EACH of the 5 recommendations, you MUST provide:
+
+1.  **Rank:** (1, 2, 3, 4, or 5)
+2.  **Bet Description:** The specific bet from my list (e.g., "Basketball - NBA: Los Angeles Lakers vs. Golden State Warriors - LeBron James Over 28.5 Points @ -115").
+3.  **Profit Potential Rationale (Justification):** A concise (3-4 sentences maximum) but detailed explanation for why this specific bet offers high profit potential. Explicitly connect your reasoning to key findings from your deep research into relevant recent statistics, news, and historical trends. Briefly mention your confidence level in the analysis based on data reliability.
+
+**Crucial Mandate:** Do NOT research, suggest, or include any bets or odds that are not explicitly written in the "Bets for Analysis" section above. Your entire analysis and all five final recommendations must be drawn directly from the list I provide.
+
+###Picks/Results:
+ChatGPT
+Pick1: Novak Djokovic vs Carlos Alcaraz       | Moneyline (Djokovic)  | +110 -> DNF
+Pick2: New York Yankees vs Kansas City Royals | Moneyline (Yankees)   | -126 -> DNF
+Pick3: Denver Nuggets vs Boston Celtics       | -4.5 Spread (Nuggets) | -110 -> DNF
+Pick4: Florida Panthers vs Edmonton Oilers    | Moneyline (Panthers)  | -135 -> DNF
+Pick5: Viktor Hovland                         | Outright Winner       | +2000 -> DNF
+
+Gemini
+Pick1: Kris Moutinho vs. Malcolm Wellmaker    | Moneyline (Moutinho)   | +1000 -> Lost
+Pick2: Miami Marlins vs. Pittsburgh Pirates   | Moneyline (Marlins)    | +760 -> Lost
+Pick3: Cody Brundage vs. Mansur Abdul-Malik   | Moneyline (Brundage)   | +550 -> Lost
+Pick4: Alonzo Menifield vs. Oumar Sy          | Moneyline (Menifield)  | +500 -> Won
+Pick5: Vanessa Demopoulos vs. Jamey-Lyn Horth | Moneyline (Demopoulos) | +440 -> Lost
+
+Claude
+Pick1: Pittsburgh Pirates vs Miami Marlins | Moneyline (Pirates)      | -146 -> Won
+Pick2: Indiana Pacers vs OKC Thunder       | +5.5 Spread (Pacers)     | -112 -> Won
+Pick3: Bryson DeChambeau                   | Outright Winner          | +750 -> Lost
+Pick4: Florida Panthers vs Edmonton Oilers | -1.5 Spread (Panthers)   | +164 -> Lost
+Pick5: Cody Durden vs Jose Ochoa           | Moneyline (Durden)       | +154 -> Lost
+
+### Inconsistencies
+- ChatGPT literally made up just about everything. Denver Nuggets vs Boston Celtics is not an upcoming event and niether Novak
+Djokovic vs Carlos Alcaraz. I'm looking at the other picks it made and the Viktor Hovland fight is coming up but it wasn't on my
+list (though now that I'm looking into it Gemini forgot to report it). And then the odds were wrong for picks 2, 4, & 5. So not only
+did ChatGPT find a line I didn't give it, it couldn't correctly quote the odds for that match. ChatGPT will not be scored and
+compared to the other models in the conclusion section due to those massive incosistnecy.
+- I made a mistake including events that were currently going on. Specifically MLB games.
+- As noted in the first bullet point, Gemini forgot to report the Viktor Hovland from golf. I'm not sure what else but I'm looking in
+to it. I'm hoping to maybe have Gemini develop a python algorithm that I can run to extract and then compare to what it found. It
+was, however, able to relize its mistake when asked. Quote '''You are right to ask! Upon reviewing the provided file, I see that for 
+the "US Open 2025" golf tournament, I only listed the top 10 golfers for each betting category ("Winner", "Top 5 Finish", and "Top 
+10 Finish") for the sake of brevity. The file contains odds for over 100 golfers.'''.
+
+### Conclusion
+Financial Results
+ChatGPT: DNF
+Gemini: $-1.00 (pick1) - $1.00 (pick2) - $1.00 (pick3) + $5.00 (pick4) - $1.00 (pick5) = $1.00 [20.0% profit]
+Claude: $0.68 (pick1) + $0.89 (pick2) - $1.00 (pick3) - $1.00 (pick4) - $1.00 (pick5) = $-1.42 [-28.4% profit]
+Overall: $1.00 (Gemini) - $1.42 (Claude) = $-0.42 [-4.2% profit]

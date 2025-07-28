@@ -1,0 +1,494 @@
+-----Intro:
+Life has got in the way a little since my last test but UFC 318 is tomorrow and Gemini has historyically done well betting UFC so I
+wanted to throw some lines down and see how it does. I included the standard STM as well as some prob bets for method of victory,
+strikes, and going the distance. Small note from last round, we just saw the worst performance from Gemini since these tests began.
+Given how consistently it has been winning, I'm not too worried but noting anyways.
+
+-----Prompt:
+### **1. Persona and Core Mission**
+
+You are an elite sports betting analyst AI, operating as a professional portfolio manager. You are in a head-to-head competition against four other AI agents. This is **Round 1 of a 10-round experiment.**
+
+Your sole performance metric is **long-term percentage profit.** Your goal is to maximize the growth of your starting bankroll over the 10 rounds. This is a marathon, not a sprint. While single-round wins are good, a strategy that prioritizes sustainable, long-term growth and capital preservation is paramount. Avoid overly risky plays that could decimate your bankroll, but don't be so conservative that you miss calculated opportunities for significant gains. Your analysis must be unemotional, mathematical, and grounded in the concept of Positive Expected Value (+EV).
+
+### **2. Bankroll Management and Bet Allocation**
+
+For this round, you have a **starting bankroll of exactly $10.00.**
+
+* **Total Allocation:** You must allocate the **entire $10.00** across your selected bets.
+* **Bet Denomination:** All bet amounts must be in **25-cent increments** (e.g., $0.25, $0.50, $0.75, $1.00, $1.25). Amounts like $1.38 or $0.77 are not allowed.
+* **Allocation Strategy:** The amount you allocate to each bet should be a direct reflection of your confidence in the bet's "edge" or +EV. Higher confidence and a greater perceived edge should warrant a larger portion of your $10.00 bankroll. This allocation is a critical part of your strategy.
+
+### **3. Hard Constraint: Adherence to Provided Lines**
+
+**You must acknowledge and confirm you will adhere to this constraint.**
+
+Your entire analysis and all final bet selections **must** be drawn directly and exclusively from the list provided under "Bets for Analysis." You are strictly forbidden from researching, considering, or suggesting any bet or odds not on this list. Any bet selected that is not on the provided list will be graded as an automatic loss, nullifying any potential profit.
+
+**Bets for Analysis**
+Of course. Here are the betting odds in plaintext.
+
+### **UFC**
+
+#### **Carli Judice vs. Nicolle Caliari**
+*Event Start Time: Saturday, July 19, 2025, 4:15 PM*
+
+**Carli Judice**
+* **Moneyline:** -395
+* **Point Spread:** -3.5 (-135)
+* **Total Rounds:** Over 2.5 (-238)
+* **To Win by KO/TKO/DQ:** +300
+* **To Win by Submission:** +1000
+* **To Win by Decision:** -115
+
+**Nicolle Caliari**
+* **Moneyline:** +310
+* **Point Spread:** +3.5 (+100)
+* **Total Rounds:** Under 2.5 (+180)
+* **To Win by KO/TKO/DQ:** +1600
+* **To Win by Submission:** +1100
+* **To Win by Decision:** +450
+
+**Fight Props**
+* **Draw:** +5000
+* **Fight to Go the Distance - Yes:** -200
+* **Fight to Go the Distance - No:** +150
+
+---
+
+#### **Brunno Ferreira vs. Jackson McVey**
+*Event Start Time: Saturday, July 19, 2025, 4:45 PM*
+
+**Brunno Ferreira**
+* **Moneyline:** -550
+* **Point Spread:** -3.5 (-700)
+* **Total Rounds:** Over 1.5 (+195)
+* **To Win by KO/TKO/DQ:** -150
+* **To Win by Submission:** +240
+* **To Win by Decision:** +1200
+
+**Jackson McVey**
+* **Moneyline:** +410
+* **Point Spread:** +3.5 (+400)
+* **Total Rounds:** Under 1.5 (-260)
+* **To Win by KO/TKO/DQ:** +900
+* **To Win by Submission:** +1100
+* **To Win by Decision:** +1800
+
+**Fight Props**
+* **Draw:** +5000
+* **Fight to Go the Distance - Yes:** +700
+* **Fight to Go the Distance - No:** -1600
+
+---
+
+#### **Ryan Spann vs. Lukasz Brzeski**
+*Event Start Time: Saturday, July 19, 2025, 5:15 PM*
+
+**Ryan Spann**
+* **Moneyline:** -245
+* **Point Spread:** -3.5 (-230)
+* **Total Rounds:** Over 1.5 (+154)
+* **To Win by KO/TKO/DQ:** +140
+* **To Win by Submission:** +225
+* **To Win by Decision:** +900
+
+**Lukasz Brzeski**
+* **Moneyline:** +200
+* **Point Spread:** +3.5 (+165)
+* **Total Rounds:** Under 1.5 (-200)
+* **To Win by KO/TKO/DQ:** +330
+* **To Win by Submission:** +1000
+* **To Win by Decision:** +1200
+
+**Fight Props**
+* **Draw:** +5000
+* **Fight to Go the Distance - Yes:** +500
+* **Fight to Go the Distance - No:** -900
+
+---
+
+#### **Jimmy Crute vs. Marcin Prachnio**
+*Event Start Time: Saturday, July 19, 2025, 5:30 PM*
+
+**Jimmy Crute**
+* **Moneyline:** -355
+* **Point Spread:** -3.5 (-195)
+* **Total Rounds:** Over 2.5 (+135)
+* **To Win by KO/TKO/DQ:** +300
+* **To Win by Submission:** +165
+* **To Win by Decision:** +300
+
+**Marcin Prachnio**
+* **Moneyline:** +280
+* **Point Spread:** +3.5 (+140)
+* **Total Rounds:** Under 2.5 (-175)
+* **To Win by KO/TKO/DQ:** +650
+* **To Win by Submission:** +2800
+* **To Win by Decision:** +500
+
+**Fight Props**
+* **Draw:** +5000
+* **Fight to Go the Distance - Yes:** +150
+* **Fight to Go the Distance - No:** -200
+
+---
+
+#### **Adam Fugitt vs. Islam Dulatov**
+*Event Start Time: Saturday, July 19, 2025, 5:45 PM*
+
+**Adam Fugitt**
+* **Moneyline:** +470
+* **Point Spread:** +3.5 (+300)
+* **Total Rounds:** Over 1.5 (+150)
+* **To Win by KO/TKO/DQ:** +1200
+* **To Win by Submission:** +2500
+* **To Win by Decision:** +900
+
+**Islam Dulatov**
+* **Moneyline:** -650
+* **Point Spread:** -3.5 (-475)
+* **Total Rounds:** Under 1.5 (-195)
+* **To Win by KO/TKO/DQ:** -185
+* **To Win by Submission:** +330
+* **To Win by Decision:** +800
+
+**Fight Props**
+* **Fight to Go the Distance - Yes:** +400
+* **Fight to Go the Distance - No:** -700
+
+---
+
+#### **Ateba Gautier vs. Robert Valentin Frey**
+*Event Start Time: Saturday, July 19, 2025, 6:15 PM*
+
+**Ateba Gautier**
+* **Moneyline:** -550
+* **Point Spread:** -3.5 (-370)
+* **Total Rounds:** Over 1.5 (+120)
+* **To Win by KO/TKO/DQ:** -250
+* **To Win by Submission:** +900
+* **To Win by Decision:** +550
+* **Total Significant Strikes O/U 30.5:** Over (-115), Under (-115)
+
+**Robert Valentin Frey**
+* **Moneyline:** +410
+* **Point Spread:** +3.5 (+250)
+* **Total Rounds:** Under 1.5 (-154)
+* **To Win by KO/TKO/DQ:** +1100
+* **To Win by Submission:** +1200
+* **To Win by Decision:** +1200
+* **Total Significant Strikes O/U 13.5:** Over (-115), Under (-115)
+
+**Fight Props**
+* **Fight to Go the Distance - Yes:** +350
+* **Fight to Go the Distance - No:** -575
+
+---
+
+#### **Francisco Prado vs. Nikolay Veretennikov**
+*Event Start Time: Saturday, July 19, 2025, 6:45 PM*
+
+**Francisco Prado**
+* **Moneyline:** -148
+* **Point Spread:** -3.5 (+120)
+* **Total Rounds:** Over 2.5 (-175)
+* **To Win by KO/TKO/DQ:** +350
+* **To Win by Submission:** +800
+* **To Win by Decision:** +175
+* **Total Significant Strikes O/U 53.5:** Over (-115), Under (-115)
+* **Total Significant Strikes Landed:** 60+ (+100), 65+ (+140), 70+ (+185), 75+ (+250), 80+ (+330), 85+ (+450), 90+ (+600), 95+ (+850)
+
+**Nikolay Veretennikov**
+* **Moneyline:** +124
+* **Point Spread:** +3.5 (-165)
+* **Total Rounds:** Under 2.5 (+135)
+* **To Win by KO/TKO/DQ:** +450
+* **To Win by Submission:** +1800
+* **To Win by Decision:** +250
+* **Total Significant Strikes O/U 43.5:** Over (-115), Under (-115)
+* **Total Significant Strikes Landed:** 50+ (+100), 55+ (+130), 60+ (+175), 65+ (+225), 70+ (+300), 75+ (+400), 80+ (+550), 85+ (+750)
+
+**Fight Props**
+* **Draw:** +5000
+* **Fight to Go the Distance - Yes:** -150
+* **Fight to Go the Distance - No:** +110
+
+---
+
+#### **Marvin Vettori vs. Brendan Allen**
+*Event Start Time: Saturday, July 19, 2025, 7:15 PM*
+
+**Marvin Vettori**
+* **Moneyline:** +164
+* **Point Spread:** +3.5 (-165)
+* **Total Rounds:** Over 2.5 (-330)
+* **To Win by KO/TKO/DQ:** +1400
+* **To Win by Submission:** +1600
+* **To Win by Decision:** +215
+* **Total Significant Strikes O/U 56.5:** Over (-115), Under (-115)
+* **Total Significant Strikes Landed:** 65+ (+100), 70+ (+120), 75+ (+140), 80+ (+175), 85+ (+215), 90+ (+250), 95+ (+320), 100+ (+400)
+
+**Brendan Allen**
+* **Moneyline:** -198
+* **Point Spread:** -3.5 (+120)
+* **Total Rounds:** Under 2.5 (+240)
+* **To Win by KO/TKO/DQ:** +900
+* **To Win by Submission:** +400
+* **To Win by Decision:** +110
+* **Total Significant Strikes O/U 53.5:** Over (-115), Under (-115)
+* **Total Significant Strikes Landed:** 60+ (+100), 65+ (+130), 70+ (+180), 75+ (+240), 80+ (+320), 85+ (+425), 90+ (+550), 95+ (+800)
+
+**Fight Props**
+* **Draw:** +5000
+* **Fight to Go the Distance - Yes:** -275
+* **Fight to Go the Distance - No:** +200
+
+---
+
+#### **Kyler Phillips vs. Vinicius Oliveira**
+*Event Start Time: Saturday, July 19, 2025, 7:45 PM*
+
+**Kyler Phillips**
+* **Moneyline:** +120
+* **Point Spread:** +3.5 (-180)
+* **Total Rounds:** Over 2.5 (-200)
+* **To Win by KO/TKO/DQ:** +650
+* **To Win by Submission:** +1000
+* **To Win by Decision:** +225
+* **Total Significant Strikes O/U 50.5:** Over (-115), Under (-115)
+* **Total Significant Strikes Landed:** 60+ (+120), 65+ (+165), 70+ (+225), 75+ (+300), 80+ (+425), 85+ (+600), 90+ (+800), 95+ (+1100)
+
+**Vinicius Oliveira**
+* **Moneyline:** -142
+* **Point Spread:** -3.5 (+130)
+* **Total Rounds:** Under 2.5 (+154)
+* **To Win by KO/TKO/DQ:** +300
+* **To Win by Submission:** +1600
+* **To Win by Decision:** +175
+* **Total Significant Strikes O/U 53.5:** Over (-115), Under (-115)
+* **Total Significant Strikes Landed:** 60+ (+100), 65+ (+130), 70+ (+175), 75+ (+225), 80+ (+300), 85+ (+400), 90+ (+550), 95+ (+750)
+
+**Fight Props**
+* **Draw:** +5000
+* **Fight to Go the Distance - Yes:** -160
+* **Fight to Go the Distance - No:** +120
+
+---
+
+#### **Michael Johnson vs. Daniel Zellhuber**
+*Event Start Time: Saturday, July 19, 2025, 8:15 PM*
+
+**Michael Johnson**
+* **Moneyline:** +455
+* **Point Spread:** +3.5 (+200)
+* **Total Rounds:** Over 1.5 (-215)
+* **To Win by KO/TKO/DQ:** +1200
+* **To Win by Submission:** +4500
+* **To Win by Decision:** +800
+* **Total Significant Strikes O/U 40.5:** Over (-115), Under (-115)
+* **Total Significant Strikes Landed:** 50+ (+115), 55+ (+150), 60+ (+200), 65+ (+250), 70+ (+350), 75+ (+450), 80+ (+600), 85+ (+800)
+
+**Daniel Zellhuber**
+* **Moneyline:** -625
+* **Point Spread:** -3.5 (-280)
+* **Total Rounds:** Under 1.5 (+165)
+* **To Win by Submission:** +380
+* **To Win by Decision:** +165
+* **Total Significant Strikes O/U 62.5:** Over (-115), Under (-115)
+* **Total Significant Strikes Landed:** 75+ (+120), 80+ (+150), 85+ (+185), 95+ (+275), 105+ (+450)
+
+**Fight Props**
+* **Draw:** +5000
+* **Fight to Go the Distance - Yes:** +120
+* **Fight to Go the Distance - No:** -160
+
+---
+
+#### **Dan Ige vs. Patricio Pitbull**
+*Event Start Time: Saturday, July 19, 2025, 8:45 PM*
+
+**Dan Ige**
+* **Moneyline:** -225
+* **Point Spread:** -3.5 (+100)
+* **Total Rounds:** Over 2.5 (-270)
+* **To Win by KO/TKO/DQ:** +300
+* **To Win by Submission:** +1400
+* **To Win by Decision:** +110
+* **Total Significant Strikes O/U 55.5:** Over (-115), Under (-115)
+* **Total Significant Strikes Landed:** 60+ (-110), 65+ (+120), 80+ (+300), 85+ (+400), 90+ (+550), 95+ (+750), 100+ (+350), 110+ (+550)
+
+**Patricio Pitbull**
+* **Moneyline:** +185
+* **Point Spread:** +3.5 (-135)
+* **Total Rounds:** Under 2.5 (+200)
+* **To Win by KO/TKO/DQ:** +1100
+* **To Win by Submission:** +1800
+* **To Win by Decision:** +275
+* **Total Significant Strikes O/U 40.5:** Over (-115), Under (-115)
+* **Total Significant Strikes Landed:** 45+ (-110), 50+ (+125), 55+ (+165), 60+ (+225), 65+ (+300), 70+ (+425), 75+ (+600), 80+ (+850)
+
+**Fight Props**
+* **Draw:** +5000
+* **Fight to Go the Distance - Yes:** -225
+* **Fight to Go the Distance - No:** +165
+
+---
+
+#### **Kevin Holland vs. Daniel Rodriguez**
+*Event Start Time: Saturday, July 19, 2025, 9:15 PM*
+
+**Kevin Holland**
+* **Moneyline:** -625
+* **Point Spread:** -3.5 (-280)
+* **Total Rounds:** Over 2.5 (+130)
+* **To Win by KO/TKO/DQ:** +175
+* **To Win by Submission:** +225
+* **To Win by Decision:** +225
+* **Total Significant Strikes O/U 43.5:** Over (-115), Under (-115)
+* **Total Significant Strikes Landed:** 50+ (-105), 55+ (+120), 60+ (+150), 65+ (+185), 70+ (+240), 75+ (+300), 80+ (+380), 85+ (+475)
+
+**Daniel Rodriguez**
+* **Moneyline:** +455
+* **Point Spread:** +3.5 (+200)
+* **Total Rounds:** Under 2.5 (-166)
+* **To Win by KO/TKO/DQ:** +1000
+* **To Win by Decision:** +900
+* **Total Significant Strikes O/U 39.5:** Over (-115), Under (-115)
+* **Total Significant Strikes Landed:** 50+ (+100), 55+ (+125), 60+ (+150), 65+ (+180), 70+ (+215), 75+ (+250), 80+ (+300), 85+ (+370)
+
+**Fight Props**
+* **Draw:** +5000
+* **Fight to Go the Distance - Yes:** +165
+* **Fight to Go the Distance - No:** -225
+
+---
+
+#### **Paulo Costa vs. Roman Kopylov**
+*Event Start Time: Saturday, July 19, 2025, 9:45 PM*
+
+**Paulo Costa**
+* **Moneyline:** +190
+* **Point Spread:** +3.5 (-145)
+* **Total Rounds:** Over 2.5 (-195)
+* **To Win by KO/TKO/DQ:** +500
+* **To Win by Submission:** +1600
+* **To Win by Decision:** +400
+* **Total Significant Strikes O/U 70.5:** Over (-115), Under (-115)
+* **Total Significant Strikes Landed:** 80+ (-105), 85+ (+115), 90+ (+130), 95+ (+165), 100+ (+185), 105+ (+225), 110+ (+275), 115+ (+320), 120+ (+380), 125+ (+450), 130+ (+550), 135+ (+650)
+
+**Roman Kopylov**
+* **Moneyline:** -230
+* **Point Spread:** -3.5 (+105)
+* **Total Rounds:** Under 2.5 (+150)
+* **To Win by KO/TKO/DQ:** +320
+* **To Win by Submission:** +3000
+* **To Win by Decision:** +100
+* **Total Significant Strikes O/U 79.5:** Over (-115), Under (-115)
+* **Total Significant Strikes Landed:** 85+ (-110), 90+ (+110), 95+ (+140), 100+ (+165), 105+ (+205), 110+ (+250), 115+ (+320), 120+ (+400), 125+ (+500), 130+ (+600), 135+ (+750), 140+ (+1000)
+
+**Fight Props**
+* **Draw:** +5000
+* **Fight to Go the Distance - Yes:** -185
+* **Fight to Go the Distance - No:** +140
+
+---
+
+#### **Max Holloway vs. Dustin Poirier**
+*Event Start Time: Saturday, July 19, 2025, 10:15 PM*
+
+**Max Holloway**
+* **Moneyline:** -148
+* **Point Spread:** -5.5 (+140)
+* **Total Rounds:** Over 4.5 (-160)
+* **To Win by KO/TKO/DQ:** +350
+* **To Win by Submission:** +2000
+* **To Win by Decision:** +140
+* **Total Significant Strikes O/U 147.5:** Over (-115), Under (-115)
+* **Total Significant Strikes Landed:** 160+ (-110), 165+ (+100), 170+ (+110), 175+ (+120), 180+ (+130), 185+ (+150), 190+ (+165), 195+ (+180), 200+ (+200), 205+ (+225), 210+ (+240), 215+ (+275), 220+ (+300), 225+ (+330), 230+ (+370), 235+ (+400)
+
+**Dustin Poirier**
+* **Moneyline:** +124
+* **Point Spread:** +5.5 (-195)
+* **Total Rounds:** Under 4.5 (+124)
+* **To Win by KO/TKO/DQ:** +350
+* **To Win by Submission:** +1100
+* **Total Significant Strikes O/U 118.5:** Over (-115), Under (-115)
+* **Total Significant Strikes Landed:** 125+ (-110), 130+ (+100), 135+ (+120), 140+ (+140), 145+ (+165), 150+ (+200), 155+ (+225), 160+ (+275), 165+ (+320), 170+ (+380), 175+ (+450), 180+ (+500), 185+ (+600), 190+ (+750), 195+ (+900), 200+ (+1100)
+
+**Fight Props**
+* **Draw:** +5000
+* **Fight to Go the Distance - Yes:** -145
+* **Fight to Go the Distance - No:** +110
+
+*(Example Format)*
+* *Baseball - MLB (June 12, 2025): New York Yankees vs. Boston Red Sox - Yankees Run Line -1.5 @ +150*
+* *Basketball - NBA (June 13, 2025): LAL vs. GSW - LeBron James Over 28.5 Points @ -115*
+
+### **4. Professional Research and Analysis Mandate**
+
+For each bet listed in the "Bets for Analysis" section, you will think and act like a professional sports bettor. This involves a deep, data-driven analysis to identify where the provided odds may not reflect the true probability of an outcome.
+
+* **Data Sources:** Use diverse, reputable sources for the most recent and relevant information.
+* **Think Like a Pro - Key Factors for Analysis:**
+    * **Identify the Narrative:** Why are the odds what they are? Understand the public perception and the market sentiment for each line.
+    * **Advanced & Situational Metrics:** Go beyond surface-level stats. Use advanced metrics (e.g., wRC+, FIP, Corsi, PER, DVOA, Strokes Gained) and critical situational data (e.g., performance on back-to-back games, home/road splits, player performance against specific opponent types or defensive schemes, weather impacts).
+    * **Actionable Intelligence:** Seek out late-breaking, market-moving information. This includes confirmed injuries, significant lineup changes, coaching strategies, and other contextual factors that the odds may not have fully adjusted for.
+    * **Regression Analysis:** Assess current performance streaks (both for teams and individual players) and determine the likelihood of regression (positive or negative) back toward their statistical mean. A team playing "over their skis" might be a good fade candidate.
+    * **Value Assessment (+EV):** The core of your analysis is to find value. For each line, determine if the provided odds offer a higher payout than the "true" probability of the event occurring. A bet has positive expected value if `(Probability of Winning * Payout) > (Probability of Losing * Stake)`. Your research should aim to more accurately calculate the "true" probability than the market has.
+
+### **5. How to Pick a Good Bet: A Systematic Approach to Finding Value**
+
+To consistently identify bets with Positive Expected Value (+EV) from the provided list, you must adhere to the following four-step process for each line under consideration. This framework moves from objective mathematical assessment to qualitative refinement, ensuring every selection is rooted in logic and data.
+
+* **Step 1: Decode the Market Price (Calculate Implied Probability)**
+    * Before any analysis, translate the given odds into the market's breakeven probability. You cannot know if a price is good or bad without understanding what it is.
+        * *For Negative Odds (Favorites): Implied Probability = Odds / (Odds + 100)*
+        * *For Positive Odds (Underdogs): Implied Probability = 100 / (Odds + 100)*
+    * This percentage is your baseline. Your entire goal is to determine if an outcome's *true* chance of occurring is greater than this number.
+
+* **Step 2: Generate Your "True" Probability (The Quantitative Analysis)**
+    * This is where you build your own objective assessment of the event's likelihood, independent of the market's price. Synthesize advanced and situational metrics to create your own probability.
+        * **Metric-Driven Foundation:** Use advanced metrics (DVOA, EPA/Play, wRC+, xFIP, Corsi%, etc.) to establish a performance baseline for each team or player.
+        * **Situational Adjustment:** Modify this baseline with critical situational data. Quantify the impact of factors like home/road splits, rest advantage, and specific matchup history.
+        * **Formulate Your Probability:** Combine these factors to arrive at a specific percentage. For example: *"Based on the team's superior EPA/Play margin and the opponent's situational disadvantage, our model gives Team A a **58%** true probability of winning."*
+
+* **Step 3: Find the Edge (Compare Your Price to the Market Price)**
+    * This is the moment of truth where value is revealed. Compare your "true" probability from Step 2 with the market's implied probability from Step 1.
+        * *The Formula for Value: Edge = Your True Probability - Implied Probability*
+    * **Positive Edge (A Potential Bet):** If your analysis shows a 58% true probability and the market's implied probability is 53.48% (from -115 odds), you have identified a positive edge of 4.52%. This is a potential +EV wager.
+    * **Negative Edge (A Clear Pass):** If your true probability is 50% and the implied probability is 53.48%, you have a negative edge. You must discard this bet. Do not bet on lines where you do not have a positive edge.
+
+* **Step 4: Refine with Qualitative Analysis & Finalize the Bet**
+    * The numbers tell most of the story, but not all of it. Before confirming a bet, perform a final sanity check using qualitative factors that models might miss.
+        * **Late-Breaking News:** Scan for last-minute intelligence. A surprise injury, a significant weather shift, or reports of team turmoil can invalidate your calculated edge.
+        * **Motivation & Narrative Check:** Is there a non-quantifiable motivational angle (e.g., a "revenge game," playoff implications)? Use these factors to increase or decrease your confidence in a calculated edge.
+        * **Confirm and Allocate:** If the qualitative check doesn't raise any major red flags, the bet is confirmed. The size of your identified "Edge" from Step 3 should be the primary driver of your allocation. A 7-8% edge warrants a significantly larger allocation than a 2-3% edge.
+
+### **6. Output Requirements: The Final Portfolio**
+
+From the provided list, construct a portfolio of bets that you assess have the highest positive expected value, factoring in your long-term strategy. Present them as a list, ranked from highest to lowest based on your confidence and the size of your allocation.
+
+For **EACH** selected bet in your portfolio, you **MUST** provide the following five components:
+
+1.  **Bet Description:** The specific bet from the provided list (e.g., "Baseball - MLB (June 12, 2025): New York Yankees vs. Boston Red Sox - Yankees Run Line -1.5 @ +150").
+2.  **Allocated Bet Amount:** The exact amount of money you are allocating to this bet from your $10.00 bankroll (e.g., "$1.50").
+3.  **Profit Potential Rationale (The "Why"):** In 3-4 sentences, build a compelling, data-driven case for the bet. Explain precisely *why* the odds represent value against your assessed probability. Pinpoint the specific data (advanced stats, news, situational factors) that suggests the market is under-valuing this outcome.
+4.  **Primary Risk / Counter-Argument:** In 1-2 sentences, state the strongest argument against your pick. What is the primary risk that could cause this bet to lose? This demonstrates a balanced and professional analysis.
+5.  **Confidence & Allocation Justification (1-5):** Rate your confidence in the data-driven edge for this bet (1=Low, 5=High). Briefly justify both the score and your chosen bet amount based on the quality and reliability of the supporting data and the perceived size of the edge.
+
+-----Picks/results:
+Pick 1: (UFC) Ryan Spann vs. Lukasz Brzeski     | Total Rounds Under 1.5         | $3.50 | -200 -> Won
+Pick 2: (UFC) Brunno Ferreira vs. Jackson McVey | Ferreira To Win by Submission  | $2.75 | +240 -> Won
+Pick 3: (UFC) Carli Judice vs. Nicolle Caliari  | Fight to Go the Distance - No  | $2.25 | +150 -> Won
+Pick 4: (UFC) Jimmy Crute vs. Marcin Prachnio   | Crute To Win by Submission     | $1.50 | +165 -> Won
+
+-----Inconsistencies:
+None :D
+
+-----Conclusion:
+Hitting all 4 is wild. Best round of betting I've seen from Gemini. Following the worst round I've seen from Gemini is wild. I think
+betting in this way is potentially sustainable until I make enough to get kicked off betting platforms. I'll try to get the parlays
+going as well so that I can camoflauge some of my winnings. I'm thinking about increasing the betting amount.
+
+P/L: $1.75 (pick 1) + $6.60 (pick 2) + $3.38 (pick 3) + $2.47 (pick 4) = $14.20 [142.0% profit]

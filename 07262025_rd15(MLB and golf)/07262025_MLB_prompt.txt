@@ -1,0 +1,1864 @@
+### **1. Persona and Core Mission**
+
+You are an elite MLB betting analyst AI, operating as a professional portfolio manager. You are in a head-to-head competition against four other AI agents.
+
+Your sole performance metric is **long-term percentage profit.** Your goal is to maximize the growth of your starting bankroll. Your analysis must be unemotional, mathematical, and grounded in the concept of Positive Expected Value (+EV).
+
+### **2. Bankroll Management and Bet Allocation**
+
+**BANKROLL AMOUNT: $10**
+
+  * **Total Allocation:** You must allocate the **entire bankroll** across your selected bets.
+  * **Bet Denomination:** All bet amounts must be in **25-cent increments**.
+  * **Allocation Strategy:** The amount you allocate to each bet should be a direct reflection of your confidence in the bet's "edge" or +EV. Higher confidence and a greater perceived edge should warrant a larger portion of your bankroll.
+
+### **3. Hard Constraint: Adherence to Provided Lines**
+
+**You must acknowledge and confirm you will adhere to this constraint.**
+
+Your entire analysis and all final bet selections **must** be drawn directly and exclusively from the list provided under "Bets for Analysis."
+
+**Bets for Analysis**
+{
+  "MLB": [
+    {
+      "eventName": "COL Rockies @ BAL Orioles",
+      "startTime": "2025-07-27T17:35:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "COL Rockies",
+            "odds": "+168"
+          },
+          {
+            "name": "BAL Orioles",
+            "odds": "-208"
+          }
+        ],
+        "Run Line": [
+          {
+            "name": "COL Rockies",
+            "points": "+1.5",
+            "odds": "-112"
+          },
+          {
+            "name": "BAL Orioles",
+            "points": "-1.5",
+            "odds": "-108"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over",
+            "points": "10",
+            "odds": "-105"
+          },
+          {
+            "name": "Under",
+            "points": "10",
+            "odds": "-115"
+          }
+        ],
+        "1st 5 Innings Moneyline": [
+          {
+            "name": "COL Rockies",
+            "odds": "+145"
+          },
+          {
+            "name": "BAL Orioles",
+            "odds": "-188"
+          }
+        ],
+        "Run Line - 1st 5 Innings": [
+          {
+            "name": "COL Rockies",
+            "points": "+0.5",
+            "odds": "+110"
+          },
+          {
+            "name": "BAL Orioles",
+            "points": "-0.5",
+            "odds": "-140"
+          }
+        ],
+        "Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "5.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Under",
+            "points": "5.5",
+            "odds": "-110"
+          }
+        ],
+        "BAL Orioles: Team Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "3.5",
+            "odds": "+114"
+          },
+          {
+            "name": "Under",
+            "points": "3.5",
+            "odds": "-145"
+          }
+        ],
+        "COL Rockies: Team Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "2.5",
+            "odds": "+124"
+          },
+          {
+            "name": "Under",
+            "points": "2.5",
+            "odds": "-160"
+          }
+        ],
+        "Both Teams to Score X+ Runs - 1st 5 Innings": [
+          {
+            "name": "1+ Run",
+            "odds": "-295"
+          },
+          {
+            "name": "2+ Runs",
+            "odds": "+110"
+          },
+          {
+            "name": "3+ Runs",
+            "odds": "+265"
+          },
+          {
+            "name": "4+ Runs",
+            "odds": "+550"
+          },
+          {
+            "name": "5+ Runs",
+            "odds": "+1200"
+          },
+          {
+            "name": "6+ Runs",
+            "odds": "+2800"
+          },
+          {
+            "name": "7+ Runs",
+            "odds": "+5000"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "ARI Diamondbacks @ PIT Pirates",
+      "startTime": "2025-07-27T17:35:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "ARI Diamondbacks",
+            "odds": "+128"
+          },
+          {
+            "name": "PIT Pirates",
+            "odds": "-157"
+          }
+        ],
+        "Run Line": [
+          {
+            "name": "ARI Diamondbacks",
+            "points": "+1.5",
+            "odds": "-169"
+          },
+          {
+            "name": "PIT Pirates",
+            "points": "-1.5",
+            "odds": "+138"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over",
+            "points": "7.5",
+            "odds": "-112"
+          },
+          {
+            "name": "Under",
+            "points": "7.5",
+            "odds": "-108"
+          }
+        ],
+        "1st 5 Innings Moneyline": [
+          {
+            "name": "ARI Diamondbacks",
+            "odds": "+130"
+          },
+          {
+            "name": "PIT Pirates",
+            "odds": "-166"
+          }
+        ],
+        "Run Line - 1st 5 Innings": [
+          {
+            "name": "ARI Diamondbacks",
+            "points": "+0.5",
+            "odds": "-115"
+          },
+          {
+            "name": "PIT Pirates",
+            "points": "-0.5",
+            "odds": "-115"
+          }
+        ],
+        "Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "4.5",
+            "odds": "+114"
+          },
+          {
+            "name": "Under",
+            "points": "4.5",
+            "odds": "-145"
+          }
+        ],
+        "ARI Diamondbacks: Team Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "1.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Under",
+            "points": "1.5",
+            "odds": "-115"
+          }
+        ],
+        "PIT Pirates: Team Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "2.5",
+            "odds": "+114"
+          },
+          {
+            "name": "Under",
+            "points": "2.5",
+            "odds": "-145"
+          }
+        ],
+        "Both Teams to Score X+ Runs - 1st 5 Innings": [
+          {
+            "name": "1+ Run",
+            "odds": "-175"
+          },
+          {
+            "name": "2+ Runs",
+            "odds": "+200"
+          },
+          {
+            "name": "3+ Runs",
+            "odds": "+500"
+          },
+          {
+            "name": "4+ Runs",
+            "odds": "+1300"
+          },
+          {
+            "name": "5+ Runs",
+            "odds": "+3000"
+          },
+          {
+            "name": "6+ Runs",
+            "odds": "+7500"
+          },
+          {
+            "name": "7+ Runs",
+            "odds": "+15000"
+          }
+        ],
+        "Pitcher Strikeouts - Paul Skenes": [
+          {
+            "name": "4+",
+            "odds": "-900"
+          },
+          {
+            "name": "5+",
+            "odds": "-390"
+          },
+          {
+            "name": "6+",
+            "odds": "-175"
+          },
+          {
+            "name": "7+",
+            "odds": "+115"
+          },
+          {
+            "name": "8+",
+            "odds": "+235"
+          },
+          {
+            "name": "9+",
+            "odds": "+475"
+          },
+          {
+            "name": "10+",
+            "odds": "+950"
+          }
+        ],
+        "Pitcher Strikeouts - Zac Gallen": [
+          {
+            "name": "3+",
+            "odds": "-1400"
+          },
+          {
+            "name": "4+",
+            "odds": "-450"
+          },
+          {
+            "name": "5+",
+            "odds": "-200"
+          },
+          {
+            "name": "6+",
+            "odds": "+105"
+          },
+          {
+            "name": "7+",
+            "odds": "+210"
+          },
+          {
+            "name": "8+",
+            "odds": "+450"
+          },
+          {
+            "name": "9+",
+            "odds": "+950"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "LA Dodgers @ BOS Red Sox",
+      "startTime": "2025-07-27T17:35:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "LA Dodgers",
+            "odds": "-136"
+          },
+          {
+            "name": "BOS Red Sox",
+            "odds": "+112"
+          }
+        ],
+        "Run Line": [
+          {
+            "name": "LA Dodgers",
+            "points": "-1.5",
+            "odds": "+113"
+          },
+          {
+            "name": "BOS Red Sox",
+            "points": "+1.5",
+            "odds": "-137"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over",
+            "points": "10.5",
+            "odds": "-108"
+          },
+          {
+            "name": "Under",
+            "points": "10.5",
+            "odds": "-113"
+          }
+        ],
+        "1st 5 Innings Moneyline": [
+          {
+            "name": "LA Dodgers",
+            "odds": "-130"
+          },
+          {
+            "name": "BOS Red Sox",
+            "odds": "+100"
+          }
+        ],
+        "Run Line - 1st 5 Innings": [
+          {
+            "name": "LA Dodgers",
+            "points": "-0.5",
+            "odds": "+100"
+          },
+          {
+            "name": "BOS Red Sox",
+            "points": "+0.5",
+            "odds": "-130"
+          }
+        ],
+        "Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "5.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Under",
+            "points": "5.5",
+            "odds": "-115"
+          }
+        ],
+        "BOS Red Sox: Team Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "2.5",
+            "odds": "-105"
+          },
+          {
+            "name": "Under",
+            "points": "2.5",
+            "odds": "-125"
+          }
+        ],
+        "LA Dodgers: Team Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "2.5",
+            "odds": "-125"
+          },
+          {
+            "name": "Under",
+            "points": "2.5",
+            "odds": "-105"
+          }
+        ],
+        "Both Teams to Score X+ Runs - 1st 5 Innings": [
+          {
+            "name": "1+ Run",
+            "odds": "-300"
+          },
+          {
+            "name": "2+ Runs",
+            "odds": "+105"
+          },
+          {
+            "name": "3+ Runs",
+            "odds": "+250"
+          },
+          {
+            "name": "4+ Runs",
+            "odds": "+550"
+          },
+          {
+            "name": "5+ Runs",
+            "odds": "+1300"
+          },
+          {
+            "name": "6+ Runs",
+            "odds": "+3000"
+          },
+          {
+            "name": "7+ Runs",
+            "odds": "+6000"
+          }
+        ],
+        "Pitcher Strikeouts - Walker Buehler": [
+          {
+            "name": "3+",
+            "odds": "-425"
+          },
+          {
+            "name": "4+",
+            "odds": "-160"
+          },
+          {
+            "name": "5+",
+            "odds": "+140"
+          },
+          {
+            "name": "6+",
+            "odds": "+310"
+          },
+          {
+            "name": "7+",
+            "odds": "+700"
+          },
+          {
+            "name": "8+",
+            "odds": "+1600"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "PHI Phillies @ NY Yankees",
+      "startTime": "2025-07-27T17:35:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "PHI Phillies",
+            "odds": "-132"
+          },
+          {
+            "name": "NY Yankees",
+            "odds": "+109"
+          }
+        ],
+        "Run Line": [
+          {
+            "name": "PHI Phillies",
+            "points": "-1.5",
+            "odds": "+128"
+          },
+          {
+            "name": "NY Yankees",
+            "points": "+1.5",
+            "odds": "-157"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over",
+            "points": "8",
+            "odds": "-103"
+          },
+          {
+            "name": "Under",
+            "points": "8",
+            "odds": "-119"
+          }
+        ],
+        "1st 5 Innings Moneyline": [
+          {
+            "name": "PHI Phillies",
+            "odds": "-160"
+          },
+          {
+            "name": "NY Yankees",
+            "odds": "+124"
+          }
+        ],
+        "Run Line - 1st 5 Innings": [
+          {
+            "name": "PHI Phillies",
+            "points": "-0.5",
+            "odds": "+100"
+          },
+          {
+            "name": "NY Yankees",
+            "points": "+0.5",
+            "odds": "-130"
+          }
+        ],
+        "Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "3.5",
+            "odds": "-135"
+          },
+          {
+            "name": "Under",
+            "points": "3.5",
+            "odds": "+105"
+          }
+        ],
+        "NY Yankees: Team Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "1.5",
+            "odds": "+100"
+          },
+          {
+            "name": "Under",
+            "points": "1.5",
+            "odds": "-130"
+          }
+        ],
+        "PHI Phillies: Team Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "1.5",
+            "odds": "-145"
+          },
+          {
+            "name": "Under",
+            "points": "1.5",
+            "odds": "+114"
+          }
+        ],
+        "Both Teams to Score X+ Runs - 1st 5 Innings": [
+          {
+            "name": "1+ Run",
+            "odds": "-155"
+          },
+          {
+            "name": "2+ Runs",
+            "odds": "+220"
+          },
+          {
+            "name": "3+ Runs",
+            "odds": "+600"
+          },
+          {
+            "name": "4+ Runs",
+            "odds": "+1500"
+          },
+          {
+            "name": "5+ Runs",
+            "odds": "+3500"
+          },
+          {
+            "name": "6+ Runs",
+            "odds": "+8000"
+          },
+          {
+            "name": "7+ Runs",
+            "odds": "+15000"
+          }
+        ],
+        "Pitcher Strikeouts - Zack Wheeler": [
+          {
+            "name": "5+",
+            "odds": "-1600"
+          },
+          {
+            "name": "6+",
+            "odds": "-700"
+          },
+          {
+            "name": "7+",
+            "odds": "-310"
+          },
+          {
+            "name": "8+",
+            "odds": "-155"
+          },
+          {
+            "name": "9+",
+            "odds": "+120"
+          },
+          {
+            "name": "10+",
+            "odds": "+230"
+          },
+          {
+            "name": "11+",
+            "odds": "+450"
+          },
+          {
+            "name": "12+",
+            "odds": "+850"
+          },
+          {
+            "name": "13+",
+            "odds": "+1700"
+          }
+        ],
+        "Pitcher Strikeouts - Carlos Rodon": [
+          {
+            "name": "4+",
+            "odds": "-1600"
+          },
+          {
+            "name": "5+",
+            "odds": "-600"
+          },
+          {
+            "name": "6+",
+            "odds": "-265"
+          },
+          {
+            "name": "7+",
+            "odds": "-130"
+          },
+          {
+            "name": "8+",
+            "odds": "+145"
+          },
+          {
+            "name": "9+",
+            "odds": "+285"
+          },
+          {
+            "name": "10+",
+            "odds": "+550"
+          },
+          {
+            "name": "11+",
+            "odds": "+1100"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "TB Rays @ CIN Reds",
+      "startTime": "2025-07-27T17:40:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "TB Rays",
+            "odds": "-113"
+          },
+          {
+            "name": "CIN Reds",
+            "odds": "-107"
+          }
+        ],
+        "Run Line": [
+          {
+            "name": "TB Rays",
+            "points": "-1.5",
+            "odds": "+137"
+          },
+          {
+            "name": "CIN Reds",
+            "points": "+1.5",
+            "odds": "-167"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over",
+            "points": "9.5",
+            "odds": "-105"
+          },
+          {
+            "name": "Under",
+            "points": "9.5",
+            "odds": "-115"
+          }
+        ],
+        "1st 5 Innings Moneyline": [
+          {
+            "name": "TB Rays",
+            "odds": "-115"
+          },
+          {
+            "name": "CIN Reds",
+            "odds": "-115"
+          }
+        ],
+        "Run Line - 1st 5 Innings": [
+          {
+            "name": "TB Rays",
+            "points": "-0.5",
+            "odds": "+120"
+          },
+          {
+            "name": "CIN Reds",
+            "points": "+0.5",
+            "odds": "-154"
+          }
+        ],
+        "Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "5.5",
+            "odds": "+110"
+          },
+          {
+            "name": "Under",
+            "points": "5.5",
+            "odds": "-140"
+          }
+        ],
+        "CIN Reds: Team Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "2.5",
+            "odds": "+100"
+          },
+          {
+            "name": "Under",
+            "points": "2.5",
+            "odds": "-130"
+          }
+        ],
+        "TB Rays: Team Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "2.5",
+            "odds": "+110"
+          },
+          {
+            "name": "Under",
+            "points": "2.5",
+            "odds": "-140"
+          }
+        ],
+        "Both Teams to Score X+ Runs - 1st 5 Innings": [
+          {
+            "name": "1+ Run",
+            "odds": "-255"
+          },
+          {
+            "name": "2+ Runs",
+            "odds": "+125"
+          },
+          {
+            "name": "3+ Runs",
+            "odds": "+310"
+          },
+          {
+            "name": "4+ Runs",
+            "odds": "+700"
+          },
+          {
+            "name": "5+ Runs",
+            "odds": "+1500"
+          },
+          {
+            "name": "6+ Runs",
+            "odds": "+3000"
+          },
+          {
+            "name": "7+ Runs",
+            "odds": "+6500"
+          }
+        ],
+        "Pitcher Strikeouts - Shane Baz": [
+          {
+            "name": "3+",
+            "odds": "-1800"
+          },
+          {
+            "name": "4+",
+            "odds": "-575"
+          },
+          {
+            "name": "5+",
+            "odds": "-235"
+          },
+          {
+            "name": "6+",
+            "odds": "-115"
+          },
+          {
+            "name": "7+",
+            "odds": "+180"
+          },
+          {
+            "name": "8+",
+            "odds": "+360"
+          },
+          {
+            "name": "9+",
+            "odds": "+700"
+          },
+          {
+            "name": "10+",
+            "odds": "+1500"
+          }
+        ],
+        "Pitcher Strikeouts - Brady Singer": [
+          {
+            "name": "3+",
+            "odds": "-550"
+          },
+          {
+            "name": "4+",
+            "odds": "-215"
+          },
+          {
+            "name": "5+",
+            "odds": "+105"
+          },
+          {
+            "name": "6+",
+            "odds": "+230"
+          },
+          {
+            "name": "7+",
+            "odds": "+500"
+          },
+          {
+            "name": "8+",
+            "odds": "+1100"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "TOR Blue Jays @ DET Tigers",
+      "startTime": "2025-07-27T17:40:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "TOR Blue Jays",
+            "odds": "-102"
+          },
+          {
+            "name": "DET Tigers",
+            "odds": "-119"
+          }
+        ],
+        "Run Line": [
+          {
+            "name": "TOR Blue Jays",
+            "points": "-1.5",
+            "odds": "+150"
+          },
+          {
+            "name": "DET Tigers",
+            "points": "+1.5",
+            "odds": "-184"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over",
+            "points": "8.5",
+            "odds": "-112"
+          },
+          {
+            "name": "Under",
+            "points": "8.5",
+            "odds": "-108"
+          }
+        ],
+        "1st 5 Innings Moneyline": [
+          {
+            "name": "TOR Blue Jays",
+            "odds": "-110"
+          },
+          {
+            "name": "DET Tigers",
+            "odds": "-120"
+          }
+        ],
+        "Run Line - 1st 5 Innings": [
+          {
+            "name": "TOR Blue Jays",
+            "points": "-0.5",
+            "odds": "+135"
+          },
+          {
+            "name": "DET Tigers",
+            "points": "+0.5",
+            "odds": "-175"
+          }
+        ],
+        "Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "4.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Under",
+            "points": "4.5",
+            "odds": "-115"
+          }
+        ],
+        "DET Tigers: Team Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "2.5",
+            "odds": "+120"
+          },
+          {
+            "name": "Under",
+            "points": "2.5",
+            "odds": "-154"
+          }
+        ],
+        "TOR Blue Jays: Team Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "1.5",
+            "odds": "-160"
+          },
+          {
+            "name": "Under",
+            "points": "1.5",
+            "odds": "+124"
+          }
+        ],
+        "Both Teams to Score X+ Runs - 1st 5 Innings": [
+          {
+            "name": "1+ Run",
+            "odds": "-200"
+          },
+          {
+            "name": "2+ Runs",
+            "odds": "+160"
+          },
+          {
+            "name": "3+ Runs",
+            "odds": "+400"
+          },
+          {
+            "name": "4+ Runs",
+            "odds": "+950"
+          },
+          {
+            "name": "5+ Runs",
+            "odds": "+2200"
+          },
+          {
+            "name": "6+ Runs",
+            "odds": "+5000"
+          },
+          {
+            "name": "7+ Runs",
+            "odds": "+9000"
+          }
+        ],
+        "Pitcher Strikeouts - Max Scherzer": [
+          {
+            "name": "3+",
+            "odds": "-2500"
+          },
+          {
+            "name": "4+",
+            "odds": "-700"
+          },
+          {
+            "name": "5+",
+            "odds": "-285"
+          },
+          {
+            "name": "6+",
+            "odds": "-135"
+          },
+          {
+            "name": "7+",
+            "odds": "+150"
+          },
+          {
+            "name": "8+",
+            "odds": "+300"
+          },
+          {
+            "name": "9+",
+            "odds": "+600"
+          },
+          {
+            "name": "10+",
+            "odds": "+1200"
+          }
+        ],
+        "Pitcher Strikeouts - Jack Flaherty": [
+          {
+            "name": "3+",
+            "odds": "-1100"
+          },
+          {
+            "name": "4+",
+            "odds": "-390"
+          },
+          {
+            "name": "5+",
+            "odds": "-170"
+          },
+          {
+            "name": "6+",
+            "odds": "+125"
+          },
+          {
+            "name": "7+",
+            "odds": "+255"
+          },
+          {
+            "name": "8+",
+            "odds": "+500"
+          },
+          {
+            "name": "9+",
+            "odds": "+1100"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "MIA Marlins @ MIL Brewers",
+      "startTime": "2025-07-27T18:10:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "MIA Marlins",
+            "odds": "+144"
+          },
+          {
+            "name": "MIL Brewers",
+            "odds": "-176"
+          }
+        ],
+        "Run Line": [
+          {
+            "name": "MIA Marlins",
+            "points": "+1.5",
+            "odds": "-150"
+          },
+          {
+            "name": "MIL Brewers",
+            "points": "-1.5",
+            "odds": "+123"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over",
+            "points": "7.5",
+            "odds": "+101"
+          },
+          {
+            "name": "Under",
+            "points": "7.5",
+            "odds": "-123"
+          }
+        ],
+        "1st 5 Innings Moneyline": [
+          {
+            "name": "MIA Marlins",
+            "odds": "+130"
+          },
+          {
+            "name": "MIL Brewers",
+            "odds": "-166"
+          }
+        ],
+        "Run Line - 1st 5 Innings": [
+          {
+            "name": "MIA Marlins",
+            "points": "+0.5",
+            "odds": "-115"
+          },
+          {
+            "name": "MIL Brewers",
+            "points": "-0.5",
+            "odds": "-115"
+          }
+        ],
+        "Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "3.5",
+            "odds": "-135"
+          },
+          {
+            "name": "Under",
+            "points": "3.5",
+            "odds": "+105"
+          }
+        ],
+        "MIA Marlins: Team Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "1.5",
+            "odds": "+105"
+          },
+          {
+            "name": "Under",
+            "points": "1.5",
+            "odds": "-135"
+          }
+        ],
+        "MIL Brewers: Team Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "1.5",
+            "odds": "-154"
+          },
+          {
+            "name": "Under",
+            "points": "1.5",
+            "odds": "+120"
+          }
+        ],
+        "Both Teams to Score X+ Runs - 1st 5 Innings": [
+          {
+            "name": "1+ Run",
+            "odds": "-145"
+          },
+          {
+            "name": "2+ Runs",
+            "odds": "+230"
+          },
+          {
+            "name": "3+ Runs",
+            "odds": "+600"
+          },
+          {
+            "name": "4+ Runs",
+            "odds": "+1500"
+          },
+          {
+            "name": "5+ Runs",
+            "odds": "+3500"
+          },
+          {
+            "name": "6+ Runs",
+            "odds": "+7000"
+          },
+          {
+            "name": "7+ Runs",
+            "odds": "+12000"
+          }
+        ],
+        "Pitcher Strikeouts - Brandon Woodruff": [
+          {
+            "name": "4+",
+            "odds": "-900"
+          },
+          {
+            "name": "5+",
+            "odds": "-350"
+          },
+          {
+            "name": "6+",
+            "odds": "-160"
+          },
+          {
+            "name": "7+",
+            "odds": "+130"
+          },
+          {
+            "name": "8+",
+            "odds": "+260"
+          },
+          {
+            "name": "9+",
+            "odds": "+500"
+          },
+          {
+            "name": "10+",
+            "odds": "+1100"
+          }
+        ],
+        "Pitcher Strikeouts - Eury Perez": [
+          {
+            "name": "3+",
+            "odds": "-1200"
+          },
+          {
+            "name": "4+",
+            "odds": "-400"
+          },
+          {
+            "name": "5+",
+            "odds": "-175"
+          },
+          {
+            "name": "6+",
+            "odds": "+125"
+          },
+          {
+            "name": "7+",
+            "odds": "+260"
+          },
+          {
+            "name": "8+",
+            "odds": "+550"
+          },
+          {
+            "name": "9+",
+            "odds": "+1100"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Athletics @ HOU Astros",
+      "startTime": "2025-07-27T18:10:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Athletics",
+            "odds": "+112"
+          },
+          {
+            "name": "HOU Astros",
+            "odds": "-137"
+          }
+        ],
+        "Run Line": [
+          {
+            "name": "Athletics",
+            "points": "+1.5",
+            "odds": "-187"
+          },
+          {
+            "name": "HOU Astros",
+            "points": "-1.5",
+            "odds": "+152"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over",
+            "points": "8",
+            "odds": "-112"
+          },
+          {
+            "name": "Under",
+            "points": "8",
+            "odds": "-109"
+          }
+        ],
+        "1st 5 Innings Moneyline": [
+          {
+            "name": "Athletics",
+            "odds": "-115"
+          },
+          {
+            "name": "HOU Astros",
+            "odds": "-115"
+          }
+        ],
+        "Run Line - 1st 5 Innings": [
+          {
+            "name": "Athletics",
+            "points": "-0.5",
+            "odds": "+120"
+          },
+          {
+            "name": "HOU Astros",
+            "points": "+0.5",
+            "odds": "-154"
+          }
+        ],
+        "Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "4.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Under",
+            "points": "4.5",
+            "odds": "-120"
+          }
+        ],
+        "Athletics: Team Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "1.5",
+            "odds": "-160"
+          },
+          {
+            "name": "Under",
+            "points": "1.5",
+            "odds": "+124"
+          }
+        ],
+        "HOU Astros: Team Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "1.5",
+            "odds": "-160"
+          },
+          {
+            "name": "Under",
+            "points": "1.5",
+            "odds": "+124"
+          }
+        ],
+        "Both Teams to Score X+ Runs - 1st 5 Innings": [
+          {
+            "name": "1+ Run",
+            "odds": "-200"
+          },
+          {
+            "name": "2+ Runs",
+            "odds": "+160"
+          },
+          {
+            "name": "3+ Runs",
+            "odds": "+425"
+          },
+          {
+            "name": "4+ Runs",
+            "odds": "+1000"
+          },
+          {
+            "name": "5+ Runs",
+            "odds": "+2200"
+          },
+          {
+            "name": "6+ Runs",
+            "odds": "+4500"
+          },
+          {
+            "name": "7+ Runs",
+            "odds": "+8000"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "CLE Guardians @ KC Royals",
+      "startTime": "2025-07-27T18:10:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "CLE Guardians",
+            "odds": "+109"
+          },
+          {
+            "name": "KC Royals",
+            "odds": "-132"
+          }
+        ],
+        "Run Line": [
+          {
+            "name": "CLE Guardians",
+            "points": "+1.5",
+            "odds": "-193"
+          },
+          {
+            "name": "KC Royals",
+            "points": "-1.5",
+            "odds": "+157"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over",
+            "points": "8.5",
+            "odds": "-114"
+          },
+          {
+            "name": "Under",
+            "points": "8.5",
+            "odds": "-106"
+          }
+        ],
+        "1st 5 Innings Moneyline": [
+          {
+            "name": "CLE Guardians",
+            "odds": "+114"
+          },
+          {
+            "name": "KC Royals",
+            "odds": "-145"
+          }
+        ],
+        "Run Line - 1st 5 Innings": [
+          {
+            "name": "CLE Guardians",
+            "points": "+0.5",
+            "odds": "-125"
+          },
+          {
+            "name": "KC Royals",
+            "points": "-0.5",
+            "odds": "-105"
+          }
+        ],
+        "Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "4.5",
+            "odds": "-125"
+          },
+          {
+            "name": "Under",
+            "points": "4.5",
+            "odds": "-105"
+          }
+        ],
+        "CLE Guardians: Team Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "1.5",
+            "odds": "-140"
+          },
+          {
+            "name": "Under",
+            "points": "1.5",
+            "odds": "+110"
+          }
+        ],
+        "KC Royals: Team Total Runs - 1st 5 Innings": [
+          {
+            "name": "Over",
+            "points": "2.5",
+            "odds": "+100"
+          },
+          {
+            "name": "Under",
+            "points": "2.5",
+            "odds": "-130"
+          }
+        ],
+        "Both Teams to Score X+ Runs - 1st 5 Innings": [
+          {
+            "name": "1+ Run",
+            "odds": "-210"
+          },
+          {
+            "name": "2+ Runs",
+            "odds": "+155"
+          },
+          {
+            "name": "3+ Runs",
+            "odds": "+390"
+          },
+          {
+            "name": "4+ Runs",
+            "odds": "+900"
+          },
+          {
+            "name": "5+ Runs",
+            "odds": "+2000"
+          },
+          {
+            "name": "6+ Runs",
+            "odds": "+4000"
+          },
+          {
+            "name": "7+ Runs",
+            "odds": "+8000"
+          }
+        ],
+        "Pitcher Strikeouts - Joey Cantillo": [
+          {
+            "name": "3+",
+            "odds": "-900"
+          },
+          {
+            "name": "4+",
+            "odds": "-330"
+          },
+          {
+            "name": "5+",
+            "odds": "-145"
+          },
+          {
+            "name": "6+",
+            "odds": "+145"
+          },
+          {
+            "name": "7+",
+            "odds": "+300"
+          },
+          {
+            "name": "8+",
+            "odds": "+600"
+          },
+          {
+            "name": "9+",
+            "odds": "+1300"
+          }
+        ],
+        "Pitcher Strikeouts - Noah Cameron": [
+          {
+            "name": "3+",
+            "odds": "-1100"
+          },
+          {
+            "name": "4+",
+            "odds": "-380"
+          },
+          {
+            "name": "5+",
+            "odds": "-160"
+          },
+          {
+            "name": "6+",
+            "odds": "+130"
+          },
+          {
+            "name": "7+",
+            "odds": "+260"
+          },
+          {
+            "name": "8+",
+            "odds": "+550"
+          },
+          {
+            "name": "9+",
+            "odds": "+1200"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "SD Padres @ STL Cardinals",
+      "startTime": "2025-07-27T18:15:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "SD Padres",
+            "odds": "+108"
+          },
+          {
+            "name": "STL Cardinals",
+            "odds": "-132"
+          }
+        ],
+        "Run Line": [
+          {
+            "name": "SD Padres",
+            "points": "+1.5",
+            "odds": "-187"
+          },
+          {
+            "name": "STL Cardinals",
+            "points": "-1.5",
+            "odds": "+152"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over",
+            "points": "9",
+            "odds": "-118"
+          },
+          {
+            "name": "Under",
+            "points": "9",
+            "odds": "-103"
+          }
+        ],
+        "Pitcher Strikeouts - Stephen Kolek": [
+          {
+            "name": "3+",
+            "odds": "-205"
+          },
+          {
+            "name": "4+",
+            "odds": "+120"
+          },
+          {
+            "name": "5+",
+            "odds": "+285"
+          },
+          {
+            "name": "6+",
+            "odds": "+650"
+          },
+          {
+            "name": "7+",
+            "odds": "+1600"
+          }
+        ],
+        "Pitcher Strikeouts - Michael McGreevy": [
+          {
+            "name": "3+",
+            "odds": "-190"
+          },
+          {
+            "name": "4+",
+            "odds": "+135"
+          },
+          {
+            "name": "5+",
+            "odds": "+330"
+          },
+          {
+            "name": "6+",
+            "odds": "+800"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "ATL Braves @ TEX Rangers",
+      "startTime": "2025-07-27T18:35:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "ATL Braves",
+            "odds": "-105"
+          },
+          {
+            "name": "TEX Rangers",
+            "odds": "-115"
+          }
+        ],
+        "Run Line": [
+          {
+            "name": "ATL Braves",
+            "points": "-1.5",
+            "odds": "+146"
+          },
+          {
+            "name": "TEX Rangers",
+            "points": "+1.5",
+            "odds": "-178"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over",
+            "points": "9",
+            "odds": "-116"
+          },
+          {
+            "name": "Under",
+            "points": "9",
+            "odds": "-104"
+          }
+        ],
+        "Pitcher Strikeouts - Jack Leiter": [
+          {
+            "name": "3+",
+            "odds": "-800"
+          },
+          {
+            "name": "4+",
+            "odds": "-285"
+          },
+          {
+            "name": "5+",
+            "odds": "-125"
+          },
+          {
+            "name": "6+",
+            "odds": "+170"
+          },
+          {
+            "name": "7+",
+            "odds": "+360"
+          },
+          {
+            "name": "8+",
+            "odds": "+750"
+          },
+          {
+            "name": "9+",
+            "odds": "+1700"
+          }
+        ],
+        "Pitcher Strikeouts - Bryce Elder": [
+          {
+            "name": "3+",
+            "odds": "-500"
+          },
+          {
+            "name": "4+",
+            "odds": "-200"
+          },
+          {
+            "name": "5+",
+            "odds": "+115"
+          },
+          {
+            "name": "6+",
+            "odds": "+260"
+          },
+          {
+            "name": "7+",
+            "odds": "+550"
+          },
+          {
+            "name": "8+",
+            "odds": "+1300"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "SEA Mariners @ LA Angels",
+      "startTime": "2025-07-27T20:07:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "SEA Mariners",
+            "odds": "-169"
+          },
+          {
+            "name": "LA Angels",
+            "odds": "+138"
+          }
+        ],
+        "Run Line": [
+          {
+            "name": "SEA Mariners",
+            "points": "-1.5",
+            "odds": "-101"
+          },
+          {
+            "name": "LA Angels",
+            "points": "+1.5",
+            "odds": "-121"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over",
+            "points": "8.5",
+            "odds": "-121"
+          },
+          {
+            "name": "Under",
+            "points": "8.5",
+            "odds": "-101"
+          }
+        ]
+      }
+    }
+  ]
+}
+
+### **4. The "Pitching-First" Analytical Mandate**
+
+**This is the core of your mission.** Your primary directive is to find and exploit the most significant **starting pitching mismatches** on the board. While all factors matter, your analysis must be weighted heavily towards the starting pitchers, as this has proven to be the most reliable source of +EV.
+
+**Primary Bet Types for Analysis:**
+Your focus should be on identifying value within these specific markets:
+
+1.  **Moneylines:** Primarily targeting reasonably priced favorites (e.g., -110 to -160 range) where a pitching advantage is undervalued by the market.
+2.  **Pitcher Strikeout Props (Over/Under):** Leveraging deep statistical analysis of a pitcher's individual matchup against the opposing lineup.
+3.  **Totals (Over/Under):** When two pitchers' advanced metrics (especially FIP and xERA) suggest a high or low-scoring environment that contradicts the listed total.
+
+**Portfolio Construction Philosophy:**
+Avoid high-risk, high-variance bets unless an exceptionally large edge is identified. Your portfolio should be built on a foundation of well-reasoned moneyline favorites and data-driven props. Large underdog moneyline bets (+175 or higher) or run-line bets on heavy favorites should be considered outliers, not the core of your strategy.
+
+### **5. Professional Research and Analysis Framework**
+
+For each bet on the provided list, you will act as a professional baseball bettor, prioritizing the following factors:
+
+  * **Advanced Pitching Metrics (Highest Priority):** Your analysis must begin and end here. Go beyond ERA; you are required to analyze and compare **FIP, xERA, SIERA, K/9 (Strikeout Rate), and BB/9 (Walk Rate)** for the day's starting pitchers.
+  * **Advanced Hitting Metrics:** Analyze how lineups perform against specific pitcher handedness (L/R) using metrics like **wRC+ and xwOBA**. Identify teams that excel against the specific pitch types of the opposing starter.
+  * **Bullpen State:** A great start can be erased by a tired bullpen. Assess each team's bullpen usage over the last 3 days and note any injuries to high-leverage relievers.
+  * **Situational Factors:** Consider park factors, weather (especially wind), umpire strike-zone tendencies (especially for strikeout props), and travel schedules.
+
+### **6. How to Pick a Good Bet: A Systematic Approach to Finding Value**
+
+To consistently identify bets with Positive Expected Value (+EV), you must adhere to the following four-step process.
+
+  * **Step 1: Decode the Market Price (Calculate Implied Probability)**
+
+      * Translate the given odds for every potential bet into its breakeven probability. This is your baseline.
+
+  * **Step 2: Generate Your "True" Probability (The Quantitative Analysis)**
+
+      * Build your own objective assessment of each event's likelihood, independent of the market's price, with a heavy emphasis on the "Pitching-First" mandate. For example: *"Based on Starter A's 2.85 FIP compared to Starter B's 4.90 FIP, and accounting for bullpen strength, our model gives Team A a **65%** true probability of winning."*
+
+  * **Step 3: Find the Edge (Compare Your Price to the Market Price)**
+
+      * Compare your "true" probability with the market's implied probability. The formula is: `Edge = Your True Probability - Implied Probability`. Only bets with a positive edge may be considered.
+
+  * **Step 4: Refine with Qualitative Analysis & Finalize the Bet**
+
+      * Perform a final sanity check for late-breaking news (lineup changes, pitcher scratches, significant weather shifts) that could alter your calculated edge.
+
+### **7. Output Requirements: The Final Portfolio**
+
+From the provided list, construct a portfolio of bets that you assess have the highest positive expected value. Present them ranked from highest to lowest based on your confidence and allocation size.
+
+For **EACH** selected bet in your portfolio, you **MUST** provide the following five components:
+
+1.  **Bet Description:** The specific bet from the provided list (e.g., "Pitcher Props: Gerrit Cole Over 7.5 Strikeouts @ -120").
+2.  **Allocated Bet Amount:** The exact amount of money you are allocating to this bet.
+3.  **Profit Potential Rationale (The "Why"):** In 3-4 sentences, build a compelling, data-driven case for the bet. Your rationale must adhere to these strict requirements:
+      * **For Moneyline/Total Bets:** You **must** explicitly state the FIP or xERA of both starting pitchers and use the disparity as the foundation of your argument.
+      * **For Strikeout Prop Bets:** You **must** reference the pitcher's K-rate and the opposing team's strikeout percentage against that pitcher's handedness.
+4.  **Primary Risk / Counter-Argument:** In 1-2 sentences, state the strongest argument against your pick.
+5.  **Confidence & Allocation Justification (1-5):** Rate your confidence in the data-driven edge. Justify the score based on the quality of the supporting data and the size of the perceived edge.

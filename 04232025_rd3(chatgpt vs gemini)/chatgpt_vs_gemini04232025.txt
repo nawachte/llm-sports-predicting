@@ -1,0 +1,45 @@
+This is round 3 of comparing chatgpt and gemini deep research capabilities for sports betting.
+
+Here is the prompt:
+Persona: Act as an expert professional sports betting analyst with a proven track record of identifying high-profit opportunities. Your primary goal is to maximize betting profit percentage by finding the most advantageous plays.
+Core Objective: Identify the top 3 highest-potential profit bets currently available on DraftKings Sportsbook across MLB, NBA, NHL, and MLS. Consider all primary bet types: Spread (Run/Puck Line), Moneyline, and Over/Under (Total).
+Research Mandate - Perform Deep & Extensive Research:
+Your most critical task is to conduct exhaustive, wide-ranging market research. Go far beyond surface-level stats. Leverage deep research capabilities to analyze information from hundreds of diverse and reputable online sources. Your analysis MUST integrate:
+Current DraftKings Odds: Retrieve the latest available odds for all relevant bets directly from DraftKings Sportsbook. This is the baseline for assessing potential profit.
+Comprehensive Team/Player Analysis:News & Injuries: Seek out the absolute latest and most reliable reports on team news, confirmed player statuses (injuries, availability, starting lineups), minute restrictions, roster changes, and locker room dynamics. Prioritize official sources and reputable sports news outlets.
+Performance Trends: Analyze recent team form (last 5-10 games minimum), momentum shifts, winning/losing streaks, and performance against the spread/total.
+Statistical Deep Dive: Incorporate relevant advanced statistics and metrics for each sport (e.g., offensive/defensive efficiency, Net Rating, PDO, wRC+, xG, FIP, goalie save percentages, power play/penalty kill effectiveness, etc.). Look beyond basic box scores.
+Matchup Analysis: Evaluate head-to-head history (recent encounters are key), coaching strategy clashes, stylistic advantages/disadvantages, and performance in specific venues or situations (e.g., home/away splits, rest days, travel fatigue, back-to-backs).
+Contextual Factors: Assess the impact of weather (especially MLB), scheduling quirks, motivation levels (e.g., playoff implications, rivalry games), and any other relevant situational factors.
+Market Context: Briefly note any significant line movements on DraftKings since the odds opened, if readily apparent, as this can provide context, but focus your analysis on the current odds and underlying factors.
+Selection Criteria - Maximize Potential Profit:
+Synthesize all your research findings. Evaluate each potential bet based on a combination of:
+Assessed Likelihood: Based on your deep research, how likely is the outcome to occur?
+DraftKings Price (Odds): What is the potential payout offered by the current DraftKings odds?
+Your goal is to find the bets where the combination of likelihood and price offers the highest potential percent profit. Select the top 3 bets across all four leagues (MLB, NBA, NHL, MLS) and all three bet types (Spread, Moneyline, Total) that best meet this criterion. The picks should be the absolute best 3 overall, regardless of league or bet type.
+Output Requirements:
+Present your findings as a ranked list of the top 3 bets, ordered by your assessment of their potential to yield the highest percent profit (Rank 1 being the highest potential). For each recommended bet, provide
+Rank: (1, 2, or 3)
+Bet Description: Clearly state the league, teams/players involved, and the specific bet (e.g., "MLB: New York Yankees Moneyline", "NBA: Boston Celtics -5.5 Spread", "NHL: Edmonton Oilers / Calgary Flames Over 6.5 Total").
+Current DraftKings Odds: List the specific decimal or American odds found on DraftKings Sportsbook at the time of your analysis.
+Profit Potential Rationale (Justification): Provide a concise (3-4 sentences maximum) but detailed explanation for why this specific bet offers high profit potential. Explicitly connect your reasoning to key findings from your extensive research (e.g., "Based on [Specific Stat X], [Player Y]'s confirmed absence impacting the matchup, and [Team Z]'s recent trend in [Specific Situation], the likelihood of this outcome appears significantly underestimated by the current DraftKings price of [Odds], offering excellent profit potential.").
+
+Notes: ChatGPT once again is misquoting odds, spreads, totals, etc. Also this is the first time they don't have an overlapping bet.
+Next time I think I'm going to do 5 bets instead of 3. 
+
+Picks/Results:
+Gemini picks
+Pick1:  Toronto Maple Leafs vs Ottawa Senators  | Moneyline (Leafs) | -108     -> Won
+Pick2:  New York Knicks vs Detroit Pistons      | Spread (Knicks)   | -1/-110  -> Won
+Pick3:  Floridy Panthers vs Tampa Bay Lightning | Total (under)     | 5.5/-102 -> Won
+
+ChatGPT picks
+Pick1:  -> Edmonton Oilers vs Los Angeles Kings     | Moneyline (Oilers) | +110     -> Lost
+Pick2:  -> Golden State Warriors vs Houston Rockets | Spread (Warriors)  | +4/-110  -> Lost
+Pick3:  -> Seattle Mariners vs Boston Red Sox       | Total (over)       | 9.5/-112 -> Won
+
+I have bet $1 on each pick listed above (6 picks, $1/pick, $6 total, $3 per model) 
+Here are the financial results:
+Gemini: $0.93 (pick1) + $0.91 (pick2) + $0.98 (pick3) = $2.82   [94.0% profit]
+ChatGPT: -$1.00 (pick1) - $1.00 (pick2) + $0.89 (pick3) = -$1.11  [-37.0% profit]
+Overall: $2.82 (Gemini) - $1.11 (ChatGPT) = $1.71               [28.5% profit]

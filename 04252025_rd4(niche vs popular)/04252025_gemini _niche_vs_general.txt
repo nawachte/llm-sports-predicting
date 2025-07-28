@@ -1,0 +1,100 @@
+This is round 4 of exploring the use of deep research for sports betting predictions. 
+Previously I was comparing ChatGPT's vs Gemini's deepresearch functionalities. It has become appearent that Gemini is significantly better. 
+ChatGPT also has a restrictively low number of deep research reports. Therefore we will continue these tests with Gemini only. 
+Moving forward we are going to be experimenting with prompting as well as the scope we are assigning Gemini to explore (sport, market, time frame, etc...)
+For this experiment (and likely the next 2 as well) we are going to compare Gemini's ability to make selections in niche markets vs popular markets.
+My hypothesis is that betting on niche markets is going to be more successful because there is less market movement perfecting the line.
+
+###Here is the popular market prompt (same prompt used in round 3 but for 5 picks instead of 3):
+Persona: Act as an expert professional sports betting analyst with a proven track record of identifying high-profit opportunities. Your primary goal is to maximize betting profit percentage by finding the most advantageous plays.
+Core Objective: Identify the top 5 highest-potential profit bets currently available on DraftKings Sportsbook across MLB, NBA, NHL, and MLS. Consider all primary bet types: Spread (Run/Puck Line), Moneyline, and Over/Under (Total).
+Research Mandate - Perform Deep & Extensive Research:
+Your most critical task is to conduct exhaustive, wide-ranging market research. Go far beyond surface-level stats. Leverage deep research capabilities to analyze information from hundreds of diverse and reputable online sources. Your analysis MUST integrate:
+ * Current DraftKings Odds: Retrieve the latest available odds for all relevant bets directly from DraftKings Sportsbook. This is the baseline for assessing potential profit.
+ * Comprehensive Team/Player Analysis:
+   * News & Injuries: Seek out the absolute latest and most reliable reports on team news, confirmed player statuses (injuries, availability, starting lineups), minute restrictions, roster changes, and locker room dynamics. Prioritize official sources and reputable sports news outlets.
+   * Performance Trends: Analyze recent team form (last 5-10 games minimum), momentum shifts, winning/losing streaks, and performance against the spread/total.
+   * Statistical Deep Dive: Incorporate relevant advanced statistics and metrics for each sport (e.g., offensive/defensive efficiency, Net Rating, PDO, wRC+, xG, FIP, goalie save percentages, power play/penalty kill effectiveness, etc.). Look beyond basic box scores.
+   * Matchup Analysis: Evaluate head-to-head history (recent encounters are key), coaching strategy clashes, stylistic advantages/disadvantages, and performance in specific venues or situations (e.g., home/away splits, rest days, travel fatigue, back-to-backs).
+   * Contextual Factors: Assess the impact of weather (especially MLB), scheduling quirks, motivation levels (e.g., playoff implications, rivalry games), and any other relevant situational factors.
+ * Market Context: Briefly note any significant line movements on DraftKings since the odds opened, if readily apparent, as this can provide context, but focus your analysis on the current odds and underlying factors.
+Selection Criteria - Maximize Potential Profit:
+Synthesize all your research findings. Evaluate each potential bet based on a combination of:
+ * Assessed Likelihood: Based on your deep research, how likely is the outcome to occur?
+ * DraftKings Price (Odds): What is the potential payout offered by the current DraftKings odds?
+Your goal is to find the bets where the combination of likelihood and price offers the highest potential percent profit. Select the top 5 bets across all four leagues (MLB, NBA, NHL, MLS) and all three bet types (Spread, Moneyline, Total) that best meet this criterion. The picks should be the absolute best 5 overall, regardless of league or bet type.
+Output Requirements:
+Present your findings as a ranked list of the top 5 bets, ordered by your assessment of their potential to yield the highest percent profit (Rank 1 being the highest potential). For each recommended bet, provide:
+ * Rank: (1, 2, 3, 4, or 5)
+ * Bet Description: Clearly state the league, teams/players involved, and the specific bet (e.g., "MLB: New York Yankees Moneyline", "NBA: Boston Celtics -5.5 Spread", "NHL: Edmonton Oilers / Calgary Flames Over 6.5 Total").
+ * Current DraftKings Odds: List the specific decimal or American odds found on DraftKings Sportsbook at the time of your analysis.
+ * Profit Potential Rationale (Justification): Provide a concise (3-4 sentences maximum) but detailed explanation for why this specific bet offers high profit potential. Explicitly connect your reasoning to key findings from your extensive research (e.g., "Based on [Specific Stat X], [Player Y]'s confirmed absence impacting the matchup, and [Team Z]'s recent trend in [Specific Situation], the likelihood of this outcome appears significantly underestimated by the current DraftKings price of [Odds], offering excellent profit potential.").
+Why this prompt is structured this way:
+ * Clear Persona & Goal: Sets the stage for profit-focused analysis.
+ * Emphasis on Deep Research: Explicitly instructs Gemini to leverage its capability for extensive information gathering across many sources, aligning with your core requirement.
+ * User's Value Definition: Frames the selection around maximizing "potential percent profit" based on likelihood and price, matching your definition.
+ * Specific Inputs: Mandates current DraftKings odds and lists comprehensive research categories.
+ * Scope: Clearly defines the leagues (MLB, NBA, NHL, MLS) and bet types (Spread, Moneyline, Total) while ensuring the top 5 are selected globally across these options.
+ * Actionable Output: Requires ranked picks with specific details and, crucially, justifications explicitly linked to the deep research findings.
+
+###Here is the niche market prompt:
+Persona: Act as an expert professional sports betting analyst specializing in identifying profitable opportunities within niche and derivative betting markets. Your primary goal is to leverage deep research to find bets offering the highest potential percent profit, acknowledging the unique characteristics of lower-liquidity markets.
+Core Objective: Identify the top 5 highest-potential profit bets currently available on DraftKings Sportsbook, focusing specifically on niche and derivative markets within the following sports:
+ * Tennis (ATP & WTA Tours)
+ * Golf (PGA Tour & Majors)
+ * MMA (UFC events)
+ * Soccer (Focus on leagues available on DraftKings)
+Target Niche Market Types (Examples - Explore within these categories):
+ * Tennis: Total Games (Over/Under), Game Handicaps, Set Handicaps, Set Betting (Correct Score).
+ * Golf: Finishing Positions (e.g., Top 10, Top 20), Tournament Head-to-Head Matchups, Round Head-to-Head Matchups, Make/Miss Cut props.
+ * MMA (UFC): Method of Victory (KO/TKO/Sub/Decision), Fight to Go the Distance (Yes/No), Round Betting (Specific round finish or Over/Under).
+ * Soccer: Total Corners (Over/Under, Handicaps), potentially specific Player Props like Goalscorer or Cards if consistently available on DraftKings for the specific league/match.
+Crucial Constraint: Only consider bets and odds that are currently listed and available for wagering on DraftKings Sportsbook.
+Research Mandate - Deep Dive into Niche Data:
+Perform exhaustive, wide-ranging market research specifically tailored to these niche markets. Go deep, analyzing information from hundreds of diverse and reputable online sources relevant to the specific sport and market type. Your analysis MUST integrate:
+ * Current DraftKings Odds: Retrieve the latest available odds for the target niche markets directly from DraftKings Sportsbook.
+ * Targeted Analysis for Niche Markets:
+   * Specialized Stats: Utilize statistics highly relevant to the specific prop (e.g., Tennis serve/return percentages by surface for Total Games/Handicaps; Golf Strokes Gained data for matchups/finishes; MMA fighter finishing tendencies/styles for Method of Victory; Soccer team tactical data for Corners).
+   * News & Context: Seek out highly relevant news impacting the specific bet (e.g., late injury news affecting a specific golfer's matchup, tactical changes influencing soccer corner counts, fighter camp reports for MMA).
+   * Historical Performance: Analyze historical data pertinent to the niche market (e.g., player's history in specific finishing positions, fighter's record in fights going the distance, team's corner counts in similar matchups).
+ * Data Reliability Assessment: Acknowledge that data for niche markets can sometimes be less comprehensive or consistent than for primary markets. Factor the perceived quality, depth, and reliability of the available data into your confidence assessment for each potential pick. Prioritize bets where strong, reliable data supports the analysis.
+Selection Criteria - Maximize Potential Profit in Niches:
+Synthesize your deep research findings. Evaluate each potential niche bet based on a combination of:
+ * Assessed Likelihood: How likely is the specific niche outcome (e.g., Over X Games, Player A to win H2H, Fight ends by KO, Over Y Corners) based on your specialized research?
+ * DraftKings Price (Odds): What is the potential payout offered by the current DraftKings odds for this niche market?
+Your goal is to find the bets where the combination of likelihood and price offers the highest potential percent profit, considering the specific dynamics and data landscape of niche markets. Select the top 5 bets across the targeted sports and niche market types that best meet this criterion. The picks should be the absolute best 5 overall from the specified niche categories.
+Output Requirements:
+Present your findings as a ranked list of the top 5 niche bets, ordered by your assessment of their potential to yield the highest percent profit (Rank 1 being the highest potential). For each recommended bet, provide:
+ * Rank: (1, 2, 3, 4, or 5)
+ * Bet Description: Clearly state the sport, league/event, participants, and the specific niche bet (e.g., "Tennis - ATP Madrid: Player A vs Player B - Total Games Over 22.5", "Golf - PGA Championship: Player X Top 20 Finish", "MMA - UFC 300: Fighter Y by KO/TKO/DQ", "Soccer - Premier League: Team Z Total Corners Over 5.5").
+ * Current DraftKings Odds: List the specific decimal or American odds found on DraftKings Sportsbook at the time of your analysis.
+ * Profit Potential Rationale (Justification): Provide a concise (3-4 sentences maximum) but detailed explanation for why this specific niche bet offers high profit potential. Explicitly connect your reasoning to key findings from your deep research into relevant niche statistics, news, and historical trends, and briefly mention your confidence level considering data reliability. (e.g., "Analysis of Player A's high hold/break percentages on clay suggests a long match, making the Over 22.5 games at [Odds] appealing given the data reliability. Player X's strong Strokes Gained: Approach stats align well with this course, indicating high potential for a Top 20 finish at [Odds]. Fighter Y's significant power advantage and opponent's questionable chin, supported by reliable fight data, make a KO finish at [Odds] a high-profit prospect.").
+
+###Notes: I was having some issues, mostly with the niche prompt. For both I realized that it will go find picks for sport events that are actively going on. I believe this was ok for the one event populat chose that had this as the price didn't change by the time I put it in. But for the niche markets I was having issues with multiple changing.
+The was also an issue that only happened for the niche market (though I think it's possible to run into this with the current prompt for popular markets) where it was choosing picks for events that had already concluded. To be honest that does trigger concern for Gemini's competency but considering Gemini's track record I'm going to say its ok and keep an eye on it for now.
+For the niche market I was also having issues with finding the lines that it was chosing on DraftKings. One specific example is for golf, it was saying to choose top 10 finish for a specific duo at a specific event. Top 10 is a line available for other tournements that were happening but not the one that it specifically called to. I'm thinking asking for direct links might be the answer to that.
+I had to redo some picks for the niche market so that is why there is extra but I'm still going to compare them by percent so I think it is probably alright.
+This also accounts for some weird betting choices such as Flick vs Schnell go the distance on one bet and Flick to win by submisison as well as Prates vs Garry go the distance and Prates to win by KO/TKO/DQ.
+I would normall just run analysis on the second completion that I ran but there were missing lines from each completion so I'll note both for now and but I'm not going to put too much weight on performance.
+
+###Picks/Results:
+Popular market picks
+Pick1: Indiana Pacers vs Milwaukee Bucks    | Total (over)             | 222.5/-110 -> lost
+Pick2: Cincinnati Reds vs Colorado Rockies  | Total (over)             | 10.5/-110 -> won
+Pick3: Los Angeles Kings vs Edmonton Oilers | Total (over)             | 6.5/+110 -> won
+Pick4: Chelsea vs Everton                   | Cole Palmer anytime goal | +140 -> lost
+Pick5: Cleveland Cavaliers vs Miami Heat    | Spread (Cavaliers)       | -5.5/-108 -> won
+
+Niche market picks
+Pick1: Philidelphia Union vs D.C. United        | Moneyline (Union)            | -145 -> won
+Pick2: Ikram Aliskerov vs Andre Muniz           | Win by KO/TKO/DQ (Aliskerov) | -160 -> won
+Pick3: Ian Machado Garry vs Carlos Prates       | Go the distance              | +165 -> won
+Pick4: Jimmy Flick vs Matt Schnell              | Win by submission (Flick)    | +300 -> lost
+Pick5: Ian Machado Garry vs Carlos Prates       | Win by KO/TKO/DQ (Prates)    | +180 -> lost
+Pick6: Stefanos Tsitsipas vs Jan-Lennard Struff | Total games (over)           | 22.5/+100 -> won
+
+###I have bet $1 on each pick listed above (11 picks, $1/pick, $11 total, $5 for popular and $6 for niche markets) 
+Here are the financial results:
+Popular: -$1.00 (pick1) + $0.91 (pick2) + $1.10 (pick3) - $1.00 (pick4) + $0.93 (pick5)                 = $0.94   [18.8% profit]
+Niche:   +$0.69 (pick1) + $0.63 (pick2) + $1.65 (pick3) - $1.00 (pick4) - $1.00 (pick5) + $1.00 (pick6) = $1.97   [32.8% profit]
+Overall: $0.94 (popular) + $1.97 (niche)                                                                = $2.91   [26.5% profit]

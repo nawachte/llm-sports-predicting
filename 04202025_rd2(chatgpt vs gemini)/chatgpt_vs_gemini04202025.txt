@@ -1,0 +1,70 @@
+This is round 2 of comparing chatgpt and gemini deep research capabilities for sports betting.
+I've updated the prompt but had to make them slightly different because Gemini didn't understand the assignment the first time.
+Here is the prompt with the denoted difference for Gemini:
+
+Act as an expert sports betting analyst.
+Your task is to outline a systematic research process to identify the top 3 highest-probability or "value" bets for upcoming NBA, NHL, and MLB games listed on DraftKings.
+Here is the process you will describe:
+
+1. **Data Gathering (DraftKings Focus):** Explain how you would gather the initial betting data from DraftKings for *all* upcoming NBA, NHL, and MLB games, specifically focusing on:
+* Point Spread / Puck Line / Run Line
+* Over/Under (Total)
+* Moneyline
+
+2. **In-Depth Market Research & Analysis:** Detail the subsequent research phase. Instead of just "hundreds of sites," specify the *types* of information sources and the *kind* of data you would seek to understand the context behind the odds. This includes, but is not limited to:
+* **Team News:** Recent performance trends, schedule fatigue (back-to-backs, travel), coaching strategies, team morale, locker room reports.
+* **Player Status:** Official injury reports, depth chart changes, confirmed starting lineups, minute restrictions, recent player performance slumps or hot streaks.
+* **Situational Trends:** Head-to-head historical matchups, performance in specific venues, performance against specific coach types or playing styles, impact of weather (for MLB).
+* **Advanced Statistics:** Relevant statistical metrics for each sport (e.g., Net Rating, PDO, wRC+, advanced pitching/hitting stats, defensive metrics).
+* **Market Movement:** How the odds on DraftKings (and potentially other books, though focus on DK) have moved since opening – identify significant shifts and potential reasons.
+
+3. **Synthesizing Data & Identifying Edge:** Explain how you would synthesize the gathered odds data from DraftKings with the qualitative and quantitative research. Describe the process of identifying potential "value" bets – where the implied probability from the odds appears lower than your researched probability of the outcome occurring.
+
+4. **Selecting Top 3 Bets:** Based on the research and analysis, describe the criteria you would use to narrow down *all* potential bets to the single top 3 that a professional bettor would prioritize. These should be the bets with the highest perceived edge or confidence level based on the research.
+
+5. **Providing Detailed Reasoning:** For each of the top 3 selected bets, provide a comprehensive explanation justifying *why* it's a strong play. This reasoning must explicitly connect the DraftKings odds to the specific research findings (injuries, trends, stats, news) that support the prediction and indicate value.
+
+Focus your response on describing this systematic process as if you were instructing someone on how to perform this research and selection for DraftKings NBA, NHL, and MLB markets.
+
+-----
+
+I have already tasked another agent with doing this same assignment and they had questions so I will provide you with the questions they asked and the answers I gave down below.
+
+Questions:
+1. Timeframe: Are you looking for bets for just today’s games, next 24 hours, or a broader window like this week?
+2. Bet Types Preference: Should we treat Moneyline, Spread, and Totals equally in weight? Or prioritize one (e.g., looking mostly for underdog MLs or Over/Unders)?
+3. Statistical Tools: Do you want the process to incorporate model-based approaches (e.g., logistic regression, ELO models, Monte Carlo simulations), or keep it qualitative + publicly available stats?
+4. Access to Tools: Will you be scraping DraftKings or do you want a manual approach that mimics what a bettor without scraping tools would do?
+
+Answers:
+1. Lets say within the next week.
+2. The main focus here is value. Think about the price and likelihood for each market.
+3. If you think it will improve your answer then yes.
+4. You are doing all of the research and all of the analysis. Its your call how to approach this.
+
+Gemini added instruction >>>>>
+I want to make one last statement for clarification. 
+You're main task here is to come up with the three highest value bets on draftkings that are available right now.
+The other information I have provided is to help guide you. Ultimately give me the three best picks.
+<<<<< end gemini additional instruction.
+
+Notes:
+ChatGPT misquotes values in its evaluation which in my opinion severly diminishes its credibility. 
+However I have gone ahead and places the bets nonetheless. Below are the picks made by each model.
+
+Picks/Results:
+Gemini picks
+Pick1: Houston Rockets vs. Golden State Warriors | spread (Rockets)   | -1 / -112 -> lost
+Pick2: Los Angeles Kings vs. Edmonton Oilers     | moneyline (Kings)  | -122      -> won
+Pick3: San Diego Padres vs Houston Astros        | moneyline (Padres) | -105      -> won
+
+ChatGPT picks
+Pick1: Milwaukee Bucks vs. Indiana Pacers      | spread (Bucks)       | +4.5 / -108 -> lost
+Pick2: Ottawa Senators vs. Toronto Maple Leafs | moneyline (Senators) | +142        -> lost
+Pick3: San Diego Padres vs. Houston Astros     | moneyline (Padres)   | -105        -> won
+
+I have bet $1 on picks 1 and 2 for each model and since pick 3 is the same I have bet $2 on this pick. 
+Here are the financial results:
+Gemini: -$1.00 (pick1) + $0.82 (pick2) + $1.90 (pick3) = $1.72   [43.0% profit]
+ChatGPT: -$1.00 (pick1) - $1.00 (pick2) + $1.90 (pick3) = -$0.10 [-2.5% profit]
+Overall: $1.72 (Gemini) - $0.10 (ChatGPT) = $1.62                [20.3% profit]

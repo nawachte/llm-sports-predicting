@@ -1,0 +1,66 @@
+This experiment is different than the others in that we aren't comparing different tools or
+methods but rather observing the performance of aggregating one method. Here we are running 
+three reports with the same prompt. Each pick set will pick 3 picks from major betting markets.
+Originally I wanted to compare overlapping picks from each set to the overall performance to see
+if the would perform better than the average pick but There was really only on overlapping
+pick (Florida Panthers moneyline) so this would make for a very robust anaylysis.
+
+###Prompt
+Persona: Act as an expert professional sports betting analyst with a proven track record of identifying high-profit opportunities in popular sports markets. Your primary goal is to leverage deep research to find bets offering the highest potential percent profit.
+Core Objective: Identify the top 3 highest-potential profit bets currently available on FanDuel Sportsbook, focusing specifically on MLB, NBA, NHL, and MLS. Consider ONLY the following primary bet types:
+
+Spread (Run Line for MLB, Puck Line for NHL, Point Spread for NBA/MLS)
+Moneyline
+Over/Under (Total)
+Crucial Constraints - Adhere Strictly:
+
+Time Window for Events: ONLY consider events and bets for games/matches scheduled to start between [START DATE, START TIME, TIMEZONE] AND [END DATE, END TIME, TIMEZONE]. (User: Please update this window based on when you run the prompt. For example: "between May 7th, 2025, 7:30 AM Mountain Time (MT) AND May 9th, 2025, 7:30 AM Mountain Time (MT)" if running now). Do NOT include any events starting before or after this exact window.
+Bet Availability: ONLY consider bets and odds that are currently listed and verifiably available for wagering on FanDuel Sportsbook at the moment of your analysis.
+Research Mandate - Deep Dive into Popular Market Data:
+Perform exhaustive, wide-ranging market research specifically tailored to these popular markets. Go deep, analyzing information from hundreds of diverse and reputable online sources relevant to the specific sport and market type. Your analysis MUST integrate:
+
+Current FanDuel Odds: Retrieve the latest available odds within the specified event time window for the target popular markets directly from FanDuel Sportsbook.
+Targeted Analysis for Popular Markets:Comprehensive Team/Player Analysis:News & Injuries: Seek out the absolute latest and most reliable reports on team news, confirmed player statuses (injuries, availability, starting lineups), minute restrictions, roster changes, and locker room dynamics. Prioritize information that is as current as possible for these factors.
+Performance Trends: Analyze recent team form (e.g., last 5-10 games, recent streaks) alongside longer-term performance metrics. Evaluate momentum shifts and performance against the spread/total.
+Statistical Deep Dive: Incorporate relevant advanced statistics and metrics for each sport (e.g., offensive/defensive efficiency, Net Rating for NBA; wRC+, FIP, WHIP for MLB; PDO, Corsi/Fenwick, xG for NHL/MLS; goalie save percentages, power play/penalty kill effectiveness, etc.). Utilize both recent and relevant historical statistical data.
+Matchup Analysis: Evaluate head-to-head history (both recent and historically significant encounters), coaching strategy clashes, stylistic advantages/disadvantages, and performance in specific venues or situations (e.g., home/away splits, rest days, travel fatigue, back-to-backs).
+Contextual Factors: Assess the impact of weather (especially MLB using current forecasts), scheduling quirks, motivation levels (e.g., playoff implications, rivalry games), and any other relevant situational factors.
+Market Context: Briefly note any significant line movements on FanDuel since the odds opened, if readily apparent from your research, as this can provide context. Focus your analysis on the current odds and underlying factors.
+Data Reliability Assessment: Factor in the perceived quality, depth, and reliability of the available data (both recent and historical) into your confidence assessment for each pick. Prioritize bets where strong and reliable data supports the analysis. Ensure that the most time-sensitive information (like injuries) is up-to-date.
+Selection Criteria - Maximize Potential Profit in Popular Markets:
+Synthesize your deep research findings. Evaluate each potential popular market bet (that meets ALL crucial constraints) based on a combination of:
+
+Assessed Likelihood: Based on your comprehensive research (incorporating both relevant historical data and the most current dynamic factors), how likely is the outcome (e.g., Team A to cover spread, Over X runs, Team B Moneyline win) to occur?
+FanDuel Price (Odds): What is the potential payout offered by the current FanDuel odds for this market?
+Your goal is to find the bets where the combination of likelihood and price offers the highest potential percent profit. Select the top 3 bets across the targeted sports (MLB, NBA, NHL, MLS) and primary bet types that best meet this criterion. The picks should be the absolute best 3 overall from the specified categories, strictly adhering to all constraints.
+Output Requirements:
+Present your findings as a ranked list of the top 3 popular market bets, ordered by your assessment of their potential to yield the highest percent profit (Rank 1 being the highest potential). For EACH recommended bet, you MUST provide:
+
+Rank: (1, 2, or 3)
+Bet Description: Clearly state the league, teams involved, and the specific bet (e.g., "MLB: New York Yankees Moneyline", "NBA: Boston Celtics -5.5 Spread", "NHL: Edmonton Oilers / Calgary Flames Over 6.5 Total"). Include the scheduled start date and time ([Your Timezone]) of the event.
+Current FanDuel Odds: List the specific American odds found on FanDuel Sportsbook at the time of your analysis.
+Direct FanDuel Link: Provide the direct, clickable URL to the specific bet slip or event page on FanDuel.com where this exact bet and odds can be found. This is mandatory for each pick.
+Profit Potential Rationale (Justification): Provide a concise (3-4 sentences maximum) but detailed explanation for why this specific bet offers high profit potential. Explicitly connect your reasoning to key findings from your deep research into relevant statistics, news (prioritizing current injury/roster news), trends, and matchup analysis. Briefly mention your confidence level considering data reliability. (e.g., "Based on [Relevant Historical Stat X combined with recent performance trends], [Player Y]'s confirmed current absence impacting the matchup, and [Team Z]'s consistent trend in [Specific Situation], the likelihood of this outcome appears significantly underestimated by the current FanDuel price of [Odds], offering excellent profit potential. Data reliability is high, with injury news being very recent.")
+Emphasis: It is critical that all picks are for events within the specified time window, all picks are from FanDuel Sportsbook, and a verifiable FanDuel link is provided for every single pick. Ensure that analysis of dynamic factors like injuries relies on the most current information available. Bets not meeting these criteria should be excluded.
+
+Picks/Results:
+Pick Set 1
+Pick1: Golden State Warriors @ Minnesota Timberwolves | Total (Under) | 201.5/-106 -> Lost    
+Pick2: Florida Panthers @ Toronto Maple Leafs | Moneyline (Panthers) | -137 -> Lost    
+Pick3: Philadelphia Phillies @ Tampa Bay Rays | Moneyline (Phillies) | -134 -> Won    
+
+Pick Set 2
+Pick1: Edmonton Oilers @ Vegas Golden Knights | Total (Over) | 6.5/-112 -> Won    
+Pick2: Florida Panthers @ Toronto Maple Leafs | Moneyline (Panthers) | -128 -> Lost    
+Pick3: Cleveland Guardians @ Washington Nationals | Moneyline (Guardians) | -132 -> Won    
+
+Pick Set 3
+Pick1: New York Knicks @ Boston Celtics | Spread (Knicks) | +10.5/-110 -> Won    
+Pick2: Pittsburgh Pirates @ St. Louis Cardinals | Total (Under) | 7.5/-110 -> Won    
+Pick3: Florida Panthers @ Toronto Maple Leafs | Moneyline (Panthers) | -137 -> Lost    
+
+Financial Results
+Pick Set 1: $-1.00 (pick1) - $1.00 (pick2) + $0.75 (pick3) = $-1.25   [-41.8% profit]
+Pick Set 2: $0.89 (pick1) - $1.00 (pick2) + $0.76 (pick3) = $0.65    [21.7% profit]
+Pick Set 3: $0.91 (pick1) + $0.91 (pick2) - $1.00 (pick3) = $0.82    [27.3% profit]
+Overall: $-1.25 (Set 1) + $0.65 (Set 2) + $0.82 (Set 3) = $0.22         [2.4% profit]

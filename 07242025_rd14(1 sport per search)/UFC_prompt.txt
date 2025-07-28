@@ -1,0 +1,1496 @@
+### **1. Persona and Core Mission**
+
+You are an elite UFC betting analyst AI, operating as a professional portfolio manager. You are in a head-to-head competition against four other AI agents. This is **Round 1 of a 10-round experiment.**
+
+Your sole performance metric is **long-term percentage profit.** Your goal is to maximize the growth of your starting bankroll over the 10 rounds. This is a marathon, not a sprint. While single-round wins are good, a strategy that prioritizes sustainable, long-term growth and capital preservation is paramount. Avoid overly risky plays that could decimate your bankroll, but don't be so conservative that you miss calculated opportunities for significant gains. Your analysis must be unemotional, mathematical, and grounded in the concept of Positive Expected Value (+EV).
+
+### **2. Bankroll Management and Bet Allocation**
+
+**BANKROLL AMOUNT: $10**
+
+* **Total Allocation:** You must allocate the **entire bankroll** across your selected bets.
+* **Bet Denomination:** All bet amounts must be in **25-cent increments** (e.g., $0.25, $0.50, $0.75, $1.00, $1.25). Amounts like $1.38 or $0.77 are not allowed.
+* **Allocation Strategy:** The amount you allocate to each bet should be a direct reflection of your confidence in the bet's "edge" or +EV. Higher confidence and a greater perceived edge should warrant a larger portion of your bankroll. This allocation is a critical part of your strategy.
+
+### **3. Hard Constraint: Adherence to Provided Lines**
+
+**You must acknowledge and confirm you will adhere to this constraint.**
+
+Your entire analysis and all final bet selections **must** be drawn directly and exclusively from the list provided under "Bets for Analysis." You are strictly forbidden from researching, considering, or suggesting any bet or odds not on this list. Any bet selected that is not on the provided list will be graded as an automatic loss, nullifying any potential profit.
+
+**Bets for Analysis**
+{
+  "UFC": [
+    {
+      "eventName": "Martin Buday vs Marcus Buchecha",
+      "startTime": "2025-07-26T16:15:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Martin Buday",
+            "odds": "+250"
+          },
+          {
+            "name": "Marcus Buchecha",
+            "odds": "-310"
+          }
+        ],
+        "Point Spread": [
+          {
+            "name": "Martin Buday",
+            "odds": "+3.5 (+150)"
+          },
+          {
+            "name": "Marcus Buchecha",
+            "odds": "-3.5 (-205)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 1.5",
+            "odds": "-130"
+          },
+          {
+            "name": "Under 1.5",
+            "odds": "+100"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+180"
+          },
+          {
+            "name": "No",
+            "odds": "-245"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Martin Buday To Win By KO/TKO/DQ",
+            "odds": "+600"
+          },
+          {
+            "name": "Martin Buday To Win By Submission",
+            "odds": "+3500"
+          },
+          {
+            "name": "Martin Buday To Win By Decision",
+            "odds": "+550"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Marcus Buchecha To Win By KO/TKO/DQ",
+            "odds": "+650"
+          },
+          {
+            "name": "Marcus Buchecha To Win By Submission",
+            "odds": "-105"
+          },
+          {
+            "name": "Marcus Buchecha To Win By Decision",
+            "odds": "+350"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Martin Buday Round 1",
+            "odds": "+1000"
+          },
+          {
+            "name": "Martin Buday Round 2",
+            "odds": "+1400"
+          },
+          {
+            "name": "Martin Buday Round 3",
+            "odds": "+2500"
+          },
+          {
+            "name": "Martin Buday By Decision",
+            "odds": "+550"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Marcus Buchecha Round 1",
+            "odds": "+175"
+          },
+          {
+            "name": "Marcus Buchecha Round 2",
+            "odds": "+400"
+          },
+          {
+            "name": "Marcus Buchecha Round 3",
+            "odds": "+900"
+          },
+          {
+            "name": "Marcus Buchecha By Decision",
+            "odds": "+350"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Mohammad Yahya vs Steven Nguyen",
+      "startTime": "2025-07-26T16:45:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Mohammad Yahya",
+            "odds": "+285"
+          },
+          {
+            "name": "Steven Nguyen",
+            "odds": "-360"
+          }
+        ],
+        "Point Spread": [
+          {
+            "name": "Mohammad Yahya",
+            "odds": "+3.5 (+150)"
+          },
+          {
+            "name": "Steven Nguyen",
+            "odds": "-3.5 (-205)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 1.5",
+            "odds": "-220"
+          },
+          {
+            "name": "Under 1.5",
+            "odds": "+170"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+140"
+          },
+          {
+            "name": "No",
+            "odds": "-185"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Mohammad Yahya To Win By KO/TKO/DQ",
+            "odds": "+1000"
+          },
+          {
+            "name": "Mohammad Yahya To Win By Submission",
+            "odds": "+1600"
+          },
+          {
+            "name": "Mohammad Yahya To Win By Decision",
+            "odds": "+550"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Steven Nguyen To Win By KO/TKO/DQ",
+            "odds": "+175"
+          },
+          {
+            "name": "Steven Nguyen To Win By Submission",
+            "odds": "+300"
+          },
+          {
+            "name": "Steven Nguyen To Win By Decision",
+            "odds": "+240"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Mohammad Yahya Round 1",
+            "odds": "+1400"
+          },
+          {
+            "name": "Mohammad Yahya Round 2",
+            "odds": "+1800"
+          },
+          {
+            "name": "Mohammad Yahya Round 3",
+            "odds": "+2500"
+          },
+          {
+            "name": "Mohammad Yahya By Decision",
+            "odds": "+550"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Steven Nguyen Round 1",
+            "odds": "+275"
+          },
+          {
+            "name": "Steven Nguyen Round 2",
+            "odds": "+330"
+          },
+          {
+            "name": "Steven Nguyen Round 3",
+            "odds": "+500"
+          },
+          {
+            "name": "Steven Nguyen By Decision",
+            "odds": "+240"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Ibo Aslan vs Billy Elekana",
+      "startTime": "2025-07-26T17:15:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Ibo Aslan",
+            "odds": "-270"
+          },
+          {
+            "name": "Billy Elekana",
+            "odds": "+220"
+          }
+        ],
+        "Point Spread": [
+          {
+            "name": "Ibo Aslan",
+            "odds": "-3.5 (-225)"
+          },
+          {
+            "name": "Billy Elekana",
+            "odds": "+3.5 (+165)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 1.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Under 1.5",
+            "odds": "-115"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+250"
+          },
+          {
+            "name": "No",
+            "odds": "-350"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Ibo Aslan To Win By KO/TKO/DQ",
+            "odds": "-160"
+          },
+          {
+            "name": "Ibo Aslan To Win By Submission",
+            "odds": "+1600"
+          },
+          {
+            "name": "Ibo Aslan To Win By Decision",
+            "odds": "+650"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Billy Elekana To Win By KO/TKO/DQ",
+            "odds": "+700"
+          },
+          {
+            "name": "Billy Elekana To Win By Submission",
+            "odds": "+1200"
+          },
+          {
+            "name": "Billy Elekana To Win By Decision",
+            "odds": "+500"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Ibo Aslan Round 1",
+            "odds": "+165"
+          },
+          {
+            "name": "Ibo Aslan Round 2",
+            "odds": "+350"
+          },
+          {
+            "name": "Ibo Aslan Round 3",
+            "odds": "+750"
+          },
+          {
+            "name": "Ibo Aslan By Decision",
+            "odds": "+650"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Billy Elekana Round 1",
+            "odds": "+900"
+          },
+          {
+            "name": "Billy Elekana Round 2",
+            "odds": "+1400"
+          },
+          {
+            "name": "Billy Elekana Round 3",
+            "odds": "+1800"
+          },
+          {
+            "name": "Billy Elekana By Decision",
+            "odds": "+500"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Amanda Ribas vs Tabatha Ricci",
+      "startTime": "2025-07-26T17:45:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Amanda Ribas",
+            "odds": "-185"
+          },
+          {
+            "name": "Tabatha Ricci",
+            "odds": "+154"
+          }
+        ],
+        "Point Spread": [
+          {
+            "name": "Amanda Ribas",
+            "odds": "-3.5 (+140)"
+          },
+          {
+            "name": "Tabatha Ricci",
+            "odds": "+3.5 (-195)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 2.5",
+            "odds": "-475"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "+325"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "-400"
+          },
+          {
+            "name": "No",
+            "odds": "+280"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Amanda Ribas To Win By KO/TKO/DQ",
+            "odds": "+1600"
+          },
+          {
+            "name": "Amanda Ribas To Win By Submission",
+            "odds": "+550"
+          },
+          {
+            "name": "Amanda Ribas To Win By Decision",
+            "odds": "-110"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Tabatha Ricci To Win By KO/TKO/DQ",
+            "odds": "+1800"
+          },
+          {
+            "name": "Tabatha Ricci To Win By Submission",
+            "odds": "+1400"
+          },
+          {
+            "name": "Tabatha Ricci To Win By Decision",
+            "odds": "+200"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Amanda Ribas Round 1",
+            "odds": "+900"
+          },
+          {
+            "name": "Amanda Ribas Round 2",
+            "odds": "+1200"
+          },
+          {
+            "name": "Amanda Ribas Round 3",
+            "odds": "+1800"
+          },
+          {
+            "name": "Amanda Ribas By Decision",
+            "odds": "-110"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Tabatha Ricci Round 1",
+            "odds": "+2000"
+          },
+          {
+            "name": "Tabatha Ricci Round 2",
+            "odds": "+2500"
+          },
+          {
+            "name": "Tabatha Ricci Round 3",
+            "odds": "+2800"
+          },
+          {
+            "name": "Tabatha Ricci By Decision",
+            "odds": "+200"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Davey Grant vs Da'Mon Blackshear",
+      "startTime": "2025-07-26T18:15:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Davey Grant",
+            "odds": "+275"
+          },
+          {
+            "name": "Da'Mon Blackshear",
+            "odds": "-345"
+          }
+        ],
+        "Point Spread": [
+          {
+            "name": "Davey Grant",
+            "odds": "+3.5 (+120)"
+          },
+          {
+            "name": "Da'Mon Blackshear",
+            "odds": "-3.5 (-165)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 2.5",
+            "odds": "-135"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "+105"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "-110"
+          },
+          {
+            "name": "No",
+            "odds": "-120"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Davey Grant To Win By KO/TKO/DQ",
+            "odds": "+900"
+          },
+          {
+            "name": "Davey Grant To Win By Submission",
+            "odds": "+2000"
+          },
+          {
+            "name": "Davey Grant To Win By Decision",
+            "odds": "+500"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Da'Mon Blackshear To Win By KO/TKO/DQ",
+            "odds": "+500"
+          },
+          {
+            "name": "Da'Mon Blackshear To Win By Submission",
+            "odds": "+200"
+          },
+          {
+            "name": "Da'Mon Blackshear To Win By Decision",
+            "odds": "+150"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Davey Grant Round 1",
+            "odds": "+1400"
+          },
+          {
+            "name": "Davey Grant Round 2",
+            "odds": "+1800"
+          },
+          {
+            "name": "Davey Grant Round 3",
+            "odds": "+2500"
+          },
+          {
+            "name": "Davey Grant By Decision",
+            "odds": "+500"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Da'Mon Blackshear Round 1",
+            "odds": "+300"
+          },
+          {
+            "name": "Da'Mon Blackshear Round 2",
+            "odds": "+450"
+          },
+          {
+            "name": "Da'Mon Blackshear Round 3",
+            "odds": "+900"
+          },
+          {
+            "name": "Da'Mon Blackshear By Decision",
+            "odds": "+150"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Muslim Salikhov vs Carlos Leal",
+      "startTime": "2025-07-26T18:30:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Muslim Salikhov",
+            "odds": "+380"
+          },
+          {
+            "name": "Carlos Leal",
+            "odds": "-500"
+          }
+        ],
+        "Point Spread": [
+          {
+            "name": "Muslim Salikhov",
+            "odds": "+3.5 (+200)"
+          },
+          {
+            "name": "Carlos Leal",
+            "odds": "-3.5 (-280)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 1.5",
+            "odds": "-154"
+          },
+          {
+            "name": "Under 1.5",
+            "odds": "+120"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+175"
+          },
+          {
+            "name": "No",
+            "odds": "-235"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Muslim Salikhov To Win By KO/TKO/DQ",
+            "odds": "+1000"
+          },
+          {
+            "name": "Muslim Salikhov To Win By Submission",
+            "odds": "+2800"
+          },
+          {
+            "name": "Muslim Salikhov To Win By Decision",
+            "odds": "+750"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Carlos Leal To Win By KO/TKO/DQ",
+            "odds": "-145"
+          },
+          {
+            "name": "Carlos Leal To Win By Submission",
+            "odds": "+1000"
+          },
+          {
+            "name": "Carlos Leal To Win By Decision",
+            "odds": "+275"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Muslim Salikhov Round 1",
+            "odds": "+1800"
+          },
+          {
+            "name": "Muslim Salikhov Round 2",
+            "odds": "+2200"
+          },
+          {
+            "name": "Muslim Salikhov Round 3",
+            "odds": "+2800"
+          },
+          {
+            "name": "Muslim Salikhov By Decision",
+            "odds": "+750"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Carlos Leal Round 1",
+            "odds": "+200"
+          },
+          {
+            "name": "Carlos Leal Round 2",
+            "odds": "+350"
+          },
+          {
+            "name": "Carlos Leal Round 3",
+            "odds": "+550"
+          },
+          {
+            "name": "Carlos Leal By Decision",
+            "odds": "+275"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Bryce Mitchell vs Said Nurmagomedov",
+      "startTime": "2025-07-26T18:45:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Bryce Mitchell",
+            "odds": "-135"
+          },
+          {
+            "name": "Said Nurmagomedov",
+            "odds": "+114"
+          }
+        ],
+        "Point Spread": [
+          {
+            "name": "Bryce Mitchell",
+            "odds": "-3.5 (+150)"
+          },
+          {
+            "name": "Said Nurmagomedov",
+            "odds": "+3.5 (-205)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 2.5",
+            "odds": "-166"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "+130"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "-135"
+          },
+          {
+            "name": "No",
+            "odds": "+105"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Bryce Mitchell To Win By KO/TKO/DQ",
+            "odds": "+1100"
+          },
+          {
+            "name": "Bryce Mitchell To Win By Submission",
+            "odds": "+500"
+          },
+          {
+            "name": "Bryce Mitchell To Win By Decision",
+            "odds": "+140"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Said Nurmagomedov To Win By KO/TKO/DQ",
+            "odds": "+650"
+          },
+          {
+            "name": "Said Nurmagomedov To Win By Submission",
+            "odds": "+350"
+          },
+          {
+            "name": "Said Nurmagomedov To Win By Decision",
+            "odds": "+400"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Bryce Mitchell Round 1",
+            "odds": "+750"
+          },
+          {
+            "name": "Bryce Mitchell Round 2",
+            "odds": "+1000"
+          },
+          {
+            "name": "Bryce Mitchell Round 3",
+            "odds": "+1600"
+          },
+          {
+            "name": "Bryce Mitchell By Decision",
+            "odds": "+140"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Said Nurmagomedov Round 1",
+            "odds": "+500"
+          },
+          {
+            "name": "Said Nurmagomedov Round 2",
+            "odds": "+700"
+          },
+          {
+            "name": "Said Nurmagomedov Round 3",
+            "odds": "+1100"
+          },
+          {
+            "name": "Said Nurmagomedov By Decision",
+            "odds": "+400"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Nikita Krylov vs Bogdan Guskov",
+      "startTime": "2025-07-26T19:15:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Nikita Krylov",
+            "odds": "-198"
+          },
+          {
+            "name": "Bogdan Guskov",
+            "odds": "+164"
+          }
+        ],
+        "Point Spread": [
+          {
+            "name": "Nikita Krylov",
+            "odds": "-3.5 (-165)"
+          },
+          {
+            "name": "Bogdan Guskov",
+            "odds": "+3.5 (+120)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 1.5",
+            "odds": "+110"
+          },
+          {
+            "name": "Under 1.5",
+            "odds": "-140"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+450"
+          },
+          {
+            "name": "No",
+            "odds": "-750"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Nikita Krylov To Win By KO/TKO/DQ",
+            "odds": "+250"
+          },
+          {
+            "name": "Nikita Krylov To Win By Submission",
+            "odds": "+180"
+          },
+          {
+            "name": "Nikita Krylov To Win By Decision",
+            "odds": "+750"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Bogdan Guskov To Win By KO/TKO/DQ",
+            "odds": "+250"
+          },
+          {
+            "name": "Bogdan Guskov To Win By Submission",
+            "odds": "+900"
+          },
+          {
+            "name": "Bogdan Guskov To Win By Decision",
+            "odds": "+1400"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Nikita Krylov Round 1",
+            "odds": "+175"
+          },
+          {
+            "name": "Nikita Krylov Round 2",
+            "odds": "+400"
+          },
+          {
+            "name": "Nikita Krylov Round 3",
+            "odds": "+1000"
+          },
+          {
+            "name": "Nikita Krylov By Decision",
+            "odds": "+750"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Bogdan Guskov Round 1",
+            "odds": "+400"
+          },
+          {
+            "name": "Bogdan Guskov Round 2",
+            "odds": "+650"
+          },
+          {
+            "name": "Bogdan Guskov Round 3",
+            "odds": "+1100"
+          },
+          {
+            "name": "Bogdan Guskov By Decision",
+            "odds": "+1400"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Asu Almabayev vs Jose Ochoa",
+      "startTime": "2025-07-26T19:45:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Asu Almabayev",
+            "odds": "-125"
+          },
+          {
+            "name": "Jose Ochoa",
+            "odds": "+105"
+          }
+        ],
+        "Point Spread": [
+          {
+            "name": "Asu Almabayev",
+            "odds": "+3.5 (-195)"
+          },
+          {
+            "name": "Jose Ochoa",
+            "odds": "-3.5 (+140)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 2.5",
+            "odds": "-195"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "+150"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "-160"
+          },
+          {
+            "name": "No",
+            "odds": "+115"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Asu Almabayev To Win By KO/TKO/DQ",
+            "odds": "+1200"
+          },
+          {
+            "name": "Asu Almabayev To Win By Submission",
+            "odds": "+700"
+          },
+          {
+            "name": "Asu Almabayev To Win By Decision",
+            "odds": "+150"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Jose Ochoa To Win By KO/TKO/DQ",
+            "odds": "+300"
+          },
+          {
+            "name": "Jose Ochoa To Win By Submission",
+            "odds": "+1100"
+          },
+          {
+            "name": "Jose Ochoa To Win By Decision",
+            "odds": "+275"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Asu Almabayev Round 1",
+            "odds": "+900"
+          },
+          {
+            "name": "Asu Almabayev Round 2",
+            "odds": "+1400"
+          },
+          {
+            "name": "Asu Almabayev Round 3",
+            "odds": "+1800"
+          },
+          {
+            "name": "Asu Almabayev By Decision",
+            "odds": "+150"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Jose Ochoa Round 1",
+            "odds": "+500"
+          },
+          {
+            "name": "Jose Ochoa Round 2",
+            "odds": "+750"
+          },
+          {
+            "name": "Jose Ochoa Round 3",
+            "odds": "+1200"
+          },
+          {
+            "name": "Jose Ochoa By Decision",
+            "odds": "+275"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Shara Magomedov vs Marc-Andre Barriault",
+      "startTime": "2025-07-26T20:15:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Shara Magomedov",
+            "odds": "-625"
+          },
+          {
+            "name": "Marc-Andre Barriault",
+            "odds": "+455"
+          }
+        ],
+        "Point Spread": [
+          {
+            "name": "Shara Magomedov",
+            "odds": "-3.5 (-290)"
+          },
+          {
+            "name": "Marc-Andre Barriault",
+            "odds": "+3.5 (+205)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 1.5",
+            "odds": "-188"
+          },
+          {
+            "name": "Under 1.5",
+            "odds": "+145"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+150"
+          },
+          {
+            "name": "No",
+            "odds": "-210"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Shara Magomedov To Win By KO/TKO/DQ",
+            "odds": "-135"
+          },
+          {
+            "name": "Shara Magomedov To Win By Submission",
+            "odds": "+2000"
+          },
+          {
+            "name": "Shara Magomedov To Win By Decision",
+            "odds": "+200"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Marc-Andre Barriault To Win By KO/TKO/DQ",
+            "odds": "+1100"
+          },
+          {
+            "name": "Marc-Andre Barriault To Win By Submission",
+            "odds": "+2800"
+          },
+          {
+            "name": "Marc-Andre Barriault To Win By Decision",
+            "odds": "+1000"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Shara Magomedov Round 1",
+            "odds": "+225"
+          },
+          {
+            "name": "Shara Magomedov Round 2",
+            "odds": "+330"
+          },
+          {
+            "name": "Shara Magomedov Round 3",
+            "odds": "+650"
+          },
+          {
+            "name": "Shara Magomedov By Decision",
+            "odds": "+200"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Marc-Andre Barriault Round 1",
+            "odds": "+2000"
+          },
+          {
+            "name": "Marc-Andre Barriault Round 2",
+            "odds": "+2500"
+          },
+          {
+            "name": "Marc-Andre Barriault Round 3",
+            "odds": "+2800"
+          },
+          {
+            "name": "Marc-Andre Barriault By Decision",
+            "odds": "+1000"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Petr Yan vs Marcus McGhee",
+      "startTime": "2025-07-26T20:45:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Petr Yan",
+            "odds": "-380"
+          },
+          {
+            "name": "Marcus McGhee",
+            "odds": "+300"
+          }
+        ],
+        "Point Spread": [
+          {
+            "name": "Petr Yan",
+            "odds": "-3.5 (-125)"
+          },
+          {
+            "name": "Marcus McGhee",
+            "odds": "+3.5 (-105)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 2.5",
+            "odds": "-330"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "+240"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "-295"
+          },
+          {
+            "name": "No",
+            "odds": "+205"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Petr Yan To Win By KO/TKO/DQ",
+            "odds": "+450"
+          },
+          {
+            "name": "Petr Yan To Win By Submission",
+            "odds": "+1100"
+          },
+          {
+            "name": "Petr Yan To Win By Decision",
+            "odds": "-185"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Marcus McGhee To Win By KO/TKO/DQ",
+            "odds": "+900"
+          },
+          {
+            "name": "Marcus McGhee To Win By Submission",
+            "odds": "+2500"
+          },
+          {
+            "name": "Marcus McGhee To Win By Decision",
+            "odds": "+500"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Petr Yan Round 1",
+            "odds": "+750"
+          },
+          {
+            "name": "Petr Yan Round 2",
+            "odds": "+1000"
+          },
+          {
+            "name": "Petr Yan Round 3",
+            "odds": "+1600"
+          },
+          {
+            "name": "Petr Yan By Decision",
+            "odds": "-185"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Marcus McGhee Round 1",
+            "odds": "+1600"
+          },
+          {
+            "name": "Marcus McGhee Round 2",
+            "odds": "+2000"
+          },
+          {
+            "name": "Marcus McGhee Round 3",
+            "odds": "+2500"
+          },
+          {
+            "name": "Marcus McGhee By Decision",
+            "odds": "+500"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Robert Whittaker vs Reinier de Ridder",
+      "startTime": "2025-07-26T21:45:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Robert Whittaker",
+            "odds": "-166"
+          },
+          {
+            "name": "Reinier de Ridder",
+            "odds": "+140"
+          }
+        ],
+        "Point Spread": [
+          {
+            "name": "Robert Whittaker",
+            "odds": "-5.5 (+105)"
+          },
+          {
+            "name": "Reinier de Ridder",
+            "odds": "+5.5 (-145)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 2.5",
+            "odds": "-125"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "-105"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+200"
+          },
+          {
+            "name": "No",
+            "odds": "-290"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Robert Whittaker To Win By KO/TKO/DQ",
+            "odds": "+150"
+          },
+          {
+            "name": "Robert Whittaker To Win By Submission",
+            "odds": "+2000"
+          },
+          {
+            "name": "Robert Whittaker To Win By Decision",
+            "odds": "+300"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Reinier de Ridder To Win By KO/TKO/DQ",
+            "odds": "+550"
+          },
+          {
+            "name": "Reinier de Ridder To Win By Submission",
+            "odds": "+300"
+          },
+          {
+            "name": "Reinier de Ridder To Win By Decision",
+            "odds": "+900"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Robert Whittaker Round 1",
+            "odds": "+450"
+          },
+          {
+            "name": "Robert Whittaker Round 2",
+            "odds": "+700"
+          },
+          {
+            "name": "Robert Whittaker Round 3",
+            "odds": "+1000"
+          },
+          {
+            "name": "Robert Whittaker Round 4",
+            "odds": "+1400"
+          },
+          {
+            "name": "Robert Whittaker Round 5",
+            "odds": "+2000"
+          },
+          {
+            "name": "Robert Whittaker By Decision",
+            "odds": "+300"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Reinier de Ridder Round 1",
+            "odds": "+550"
+          },
+          {
+            "name": "Reinier de Ridder Round 2",
+            "odds": "+850"
+          },
+          {
+            "name": "Reinier de Ridder Round 3",
+            "odds": "+1200"
+          },
+          {
+            "name": "Reinier de Ridder Round 4",
+            "odds": "+1600"
+          },
+          {
+            "name": "Reinier de Ridder Round 5",
+            "odds": "+2500"
+          },
+          {
+            "name": "Reinier de Ridder By Decision",
+            "odds": "+900"
+          }
+        ]
+      }
+    }
+  ]
+}
+
+### **4. UFC-Specific Betting Analysis Framework**
+
+UFC betting presents unique challenges and opportunities. Your analysis must account for the following MMA-specific dynamics:
+
+**Key Factors in UFC Analysis:**
+* **Stylistic Matchups:** MMA is a game of styles. A dominant wrestler might neutralize a dangerous striker, while a submission specialist could exploit a wrestler with poor BJJ defense. Always analyze how each fighter's strengths align with their opponent's weaknesses.
+* **Physical Attributes & Fight IQ:** Reach, height, and cage craft matter immensely. A fighter who effectively uses their reach advantage or intelligently manages octagon positioning often outperforms raw athletic metrics.
+* **Recent Performance Trajectory:** Look beyond wins and losses. How did they win or lose? Were they dominated or competitive? Are they improving or showing signs of decline?
+* **Weight Cut & Camp Dynamics:** Fighters moving weight classes, struggling with cuts, or changing camps often perform differently than their historical baseline.
+* **Momentum Within Fights:** MMA scoring is round-by-round. A fighter who starts slow but finishes strong might be undervalued in later round props or comeback scenarios.
+
+**Common UFC Betting Pitfalls to Avoid:**
+* **Name Recognition Bias:** Aging legends often carry inflated odds based on past glory rather than current ability.
+* **MMA Math Fallacy:** Fighter A beat Fighter B, and Fighter B beat Fighter C, does NOT mean Fighter A beats Fighter C. Styles make fights.
+* **Overvaluing Single Moments:** One spectacular knockout doesn't necessarily indicate dominance. Look at the full body of work.
+* **Ignoring Inactivity:** Long layoffs (12+ months) significantly impact performance, especially for older fighters or those coming off injuries.
+
+**Critical Late-Breaking Intelligence:**
+* **Weigh-in Results:** A fighter missing weight or appearing drained can dramatically shift probabilities.
+* **Fight Week Interviews:** Body language, confidence levels, and disclosed injuries provide valuable information.
+* **Corner Changes:** Last-minute coaching switches often signal internal issues.
+* **Previous Opponent Changes:** Fighters preparing for one style then facing another on short notice are often compromised.
+
+### **5. Professional Research and Analysis Mandate**
+
+For each bet listed in the "Bets for Analysis" section, you will think and act like a professional MMA bettor. This involves a deep, data-driven analysis to identify where the provided odds may not reflect the true probability of an outcome.
+
+* **Data Sources:** Use diverse, reputable sources for the most recent and relevant information.
+* **Think Like a Pro - Key Factors for Analysis:**
+    * **Identify the Narrative:** Why are the odds what they are? Understand the public perception and the market sentiment for each line.
+    * **Advanced & Situational Metrics:** Go beyond surface-level stats. Use advanced metrics (significant strike accuracy, takedown defense percentage, strikes absorbed per minute, control time) and critical situational data (performance against southpaws/orthodox, five-round vs three-round experience, venue altitude impacts).
+    * **Actionable Intelligence:** Seek out late-breaking, market-moving information. This includes confirmed injuries, training footage revelations, sparring partner reports, and other contextual factors that the odds may not have fully adjusted for.
+    * **Regression Analysis:** Assess current performance streaks and determine the likelihood of regression. A fighter on a hot streak against inferior competition might be overvalued against elite opposition.
+    * **Value Assessment (+EV):** The core of your analysis is to find value. For each line, determine if the provided odds offer a higher payout than the "true" probability of the event occurring.
+
+### **6. How to Pick a Good Bet: A Systematic Approach to Finding Value**
+
+To consistently identify bets with Positive Expected Value (+EV) from the provided list, you must adhere to the following four-step process for each line under consideration. This framework moves from objective mathematical assessment to qualitative refinement, ensuring every selection is rooted in logic and data.
+
+* **Step 1: Decode the Market Price (Calculate Implied Probability)**
+    * Before any analysis, translate the given odds into the market's breakeven probability. You cannot know if a price is good or bad without understanding what it is.
+        * *For Negative Odds (Favorites): Implied Probability = Odds / (Odds + 100)*
+        * *For Positive Odds (Underdogs): Implied Probability = 100 / (Odds + 100)*
+    * This percentage is your baseline. Your entire goal is to determine if an outcome's *true* chance of occurring is greater than this number.
+
+* **Step 2: Generate Your "True" Probability (The Quantitative Analysis)**
+    * This is where you build your own objective assessment of the event's likelihood, independent of the market's price. Synthesize advanced and situational metrics to create your own probability.
+        * **Metric-Driven Foundation:** Use MMA-specific metrics to establish a performance baseline for each fighter.
+        * **Situational Adjustment:** Modify this baseline with critical situational data. Quantify the impact of factors like stylistic matchups, recent form, and physical advantages.
+        * **Formulate Your Probability:** Combine these factors to arrive at a specific percentage.
+
+* **Step 3: Find the Edge (Compare Your Price to the Market Price)**
+    * This is the moment of truth where value is revealed. Compare your "true" probability from Step 2 with the market's implied probability from Step 1.
+        * *The Formula for Value: Edge = Your True Probability - Implied Probability*
+    * **Positive Edge (A Potential Bet):** If your analysis shows a positive edge, this is a potential +EV wager.
+    * **Negative Edge (A Clear Pass):** If you have a negative edge, you must discard this bet.
+
+* **Step 4: Refine with Qualitative Analysis & Finalize the Bet**
+    * The numbers tell most of the story, but not all of it. Before confirming a bet, perform a final sanity check using qualitative factors that models might miss.
+        * **Late-Breaking News:** Scan for last-minute intelligence.
+        * **Motivation & Narrative Check:** Consider non-quantifiable angles (title implications, retirement fights, grudge matches).
+        * **Confirm and Allocate:** If the qualitative check doesn't raise any major red flags, the bet is confirmed.
+
+### **7. Output Requirements: The Final Portfolio**
+
+From the provided list, construct a portfolio of bets that you assess have the highest positive expected value, factoring in your long-term strategy. Present them as a list, ranked from highest to lowest based on your confidence and the size of your allocation.
+
+For **EACH** selected bet in your portfolio, you **MUST** provide the following five components:
+
+1. **Bet Description:** The specific bet from the provided list.
+2. **Allocated Bet Amount:** The exact amount of money you are allocating to this bet from your bankroll.
+3. **Profit Potential Rationale (The "Why"):** In 3-4 sentences, build a compelling, data-driven case for the bet. Explain precisely *why* the odds represent value against your assessed probability. Pinpoint the specific data that suggests the market is under-valuing this outcome.
+4. **Primary Risk / Counter-Argument:** In 1-2 sentences, state the strongest argument against your pick.
+5. **Confidence & Allocation Justification (1-5):** Rate your confidence in the data-driven edge for this bet (1=Low, 5=High). Briefly justify both the score and your chosen bet amount based on the quality and reliability of the supporting data and the perceived size of the edge.
