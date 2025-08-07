@@ -1,0 +1,2389 @@
+### **THE GOLDEN RULE**
+
+**Your entire reality for this task is the list provided under "Bets for Analysis." You are an analyst in a closed system. You are forbidden from inventing, researching, or introducing any bet or odds not explicitly on this list. Every bet in your final portfolio MUST be an exact match from the provided list. Acknowledge that you understand and will obey this rule as your highest priority.**
+
+### **1. Persona and Core Mission**
+
+You are an elite sports betting analyst AI, operating as a professional portfolio manager. You are in a head-to-head competition against four other AI agents. This is **Round 1 of a 10-round experiment.**
+
+Your sole performance metric is **long-term percentage profit.** Your goal is to maximize the growth of your starting bankroll over the 10 rounds. This is a marathon, not a sprint. While single-round wins are good, a strategy that prioritizes sustainable, long-term growth and capital preservation is paramount. Avoid overly risky plays that could decimate your bankroll, but don't be so conservative that you miss calculated opportunities for significant gains. Your analysis must be unemotional, mathematical, and grounded in the concept of Positive Expected Value (+EV).
+
+### **2. Bankroll Management and Bet Allocation**
+
+For this round, you have a **starting bankroll of exactly $10.00.**
+
+  * **Total Allocation:** You must allocate the **entire $10.00** across your selected bets.
+  * **Bet Denomination:** All bet amounts must be in **25-cent increments** (e.g., $0.25, $0.50, $0.75, $1.00, $1.25). Amounts like $1.38 or $0.77 are not allowed.
+  * **Allocation Strategy:** The amount you allocate to each bet should be a direct reflection of your confidence in the bet's "edge" or +EV. Higher confidence and a greater perceived edge should warrant a larger portion of your $10.00 bankroll. This allocation is a critical part of your strategy.
+
+### **3. Absolute Constraint: The Provided List is Your Only Reality**
+
+**You must acknowledge and confirm you will adhere to this section by name.**
+
+Your entire analysis and all final bet selections **must** be drawn directly and exclusively from the list provided under "Bets for Analysis." This is the most important rule of the entire task.
+
+  * **Forbidden Actions:** You are strictly forbidden from researching alternative odds, finding different lines for the same game, or suggesting any bet whatsoever that is not an exact character-for-character match to a line on the provided list.
+  * **Penalty:** Any deviation will result in an automatic failure for the entire round.
+
+**Action Required:** In your response, before you begin any analysis, you must state: **"I confirm that my analysis and final selections will be confined exclusively to the provided list of bets."**
+
+### **Bets for Analysis**
+
+{
+  "WNBA": [
+    {
+      "eventName": "Golden State Valkyries vs Atlanta Dream",
+      "startTime": "2025-07-29T23:30:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Spread": [
+          {
+            "name": "Golden State Valkyries +7.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Atlanta Dream -7.5",
+            "odds": "-110"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 155.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 155.5",
+            "odds": "-110"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Golden State Valkyries",
+            "odds": "+270"
+          },
+          {
+            "name": "Atlanta Dream",
+            "odds": "-340"
+          }
+        ],
+        "Leading Scorer of the Game": [
+          {
+            "name": "Allisha Gray",
+            "odds": "+100"
+          },
+          {
+            "name": "Tiffany Hayes",
+            "odds": "+400"
+          },
+          {
+            "name": "Janelle Salaun",
+            "odds": "+600"
+          },
+          {
+            "name": "Jordin Canada",
+            "odds": "+900"
+          },
+          {
+            "name": "Brittney Griner",
+            "odds": "+1000"
+          },
+          {
+            "name": "Veronica Burton",
+            "odds": "+1200"
+          },
+          {
+            "name": "Brionna Jones",
+            "odds": "+1300"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Chicago Sky vs Washington Mystics",
+      "startTime": "2025-07-29T23:30:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Spread": [
+          {
+            "name": "Chicago Sky +7",
+            "odds": "-110"
+          },
+          {
+            "name": "Washington Mystics -7",
+            "odds": "-110"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 157.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 157.5",
+            "odds": "-110"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Chicago Sky",
+            "odds": "+245"
+          },
+          {
+            "name": "Washington Mystics",
+            "odds": "-305"
+          }
+        ],
+        "Leading Scorer of the Game": [
+          {
+            "name": "Shakira Austin",
+            "odds": "+250"
+          },
+          {
+            "name": "Brittney Sykes",
+            "odds": "+400"
+          },
+          {
+            "name": "Angel Reese",
+            "odds": "+450"
+          },
+          {
+            "name": "Sonia Citron",
+            "odds": "+600"
+          },
+          {
+            "name": "Rachel Banham",
+            "odds": "+750"
+          },
+          {
+            "name": "Kamilla Cardoso",
+            "odds": "+800"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Las Vegas Aces vs Los Angeles Sparks",
+      "startTime": "2025-07-30T02:00:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Spread": [
+          {
+            "name": "Las Vegas Aces -2.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Los Angeles Sparks +2.5",
+            "odds": "-110"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 174.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 174.5",
+            "odds": "-110"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Las Vegas Aces",
+            "odds": "-142"
+          },
+          {
+            "name": "Los Angeles Sparks",
+            "odds": "+120"
+          }
+        ],
+        "Leading Scorer of the Game": [
+          {
+            "name": "A'ja Wilson",
+            "odds": "+100"
+          },
+          {
+            "name": "Kelsey Plum",
+            "odds": "+400"
+          },
+          {
+            "name": "Dearica Hamby",
+            "odds": "+650"
+          },
+          {
+            "name": "Jackie Young",
+            "odds": "+700"
+          },
+          {
+            "name": "Azura Stevens",
+            "odds": "+1200"
+          },
+          {
+            "name": "Rickea Jackson",
+            "odds": "+1300"
+          },
+          {
+            "name": "Jewell Loyd",
+            "odds": "+3500"
+          },
+          {
+            "name": "Chelsea Gray",
+            "odds": "+5000"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Phoenix Mercury vs Indiana Fever",
+      "startTime": "2025-07-30T23:00:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Spread": [
+          {
+            "name": "Phoenix Mercury -2",
+            "odds": "-110"
+          },
+          {
+            "name": "Indiana Fever +2",
+            "odds": "-110"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 161.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 161.5",
+            "odds": "-110"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Phoenix Mercury",
+            "odds": "-130"
+          },
+          {
+            "name": "Indiana Fever",
+            "odds": "+110"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "New York Liberty vs Minnesota Lynx",
+      "startTime": "2025-07-31T00:00:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Spread": [
+          {
+            "name": "New York Liberty +8.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Minnesota Lynx -8.5",
+            "odds": "-110"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 161.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 161.5",
+            "odds": "-110"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "New York Liberty",
+            "odds": "+310"
+          },
+          {
+            "name": "Minnesota Lynx",
+            "odds": "-395"
+          }
+        ]
+      }
+    }
+  ],
+  "MLB": [
+    {
+      "eventName": "Colorado Rockies vs Cleveland Guardians",
+      "startTime": "2025-07-29T22:40:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Run Line": [
+          {
+            "name": "Colorado Rockies +1.5",
+            "odds": "-103"
+          },
+          {
+            "name": "Cleveland Guardians -1.5",
+            "odds": "-118"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 8.5",
+            "odds": "-113"
+          },
+          {
+            "name": "Under 8.5",
+            "odds": "-107"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Colorado Rockies",
+            "odds": "+191"
+          },
+          {
+            "name": "Cleveland Guardians",
+            "odds": "-239"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "ARI Diamondbacks vs Detroit Tigers",
+      "startTime": "2025-07-29T22:40:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Run Line": [
+          {
+            "name": "ARI Diamondbacks +1.5",
+            "odds": "-175"
+          },
+          {
+            "name": "Detroit Tigers -1.5",
+            "odds": "+143"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 8.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Under 8.5",
+            "odds": "-106"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "ARI Diamondbacks",
+            "odds": "+118"
+          },
+          {
+            "name": "Detroit Tigers",
+            "odds": "-144"
+          }
+        ],
+        "Brandon Pfaadt - Player Strikeouts": [
+          {
+            "name": "3+",
+            "odds": "-900"
+          },
+          {
+            "name": "4+",
+            "odds": "-330"
+          },
+          {
+            "name": "5+",
+            "odds": "-145"
+          },
+          {
+            "name": "6+",
+            "odds": "+150"
+          },
+          {
+            "name": "7+",
+            "odds": "+300"
+          },
+          {
+            "name": "8+",
+            "odds": "+600"
+          },
+          {
+            "name": "9+",
+            "odds": "+1300"
+          }
+        ],
+        "Casey Mize - Player Strikeouts": [
+          {
+            "name": "3+",
+            "odds": "-525"
+          },
+          {
+            "name": "4+",
+            "odds": "-195"
+          },
+          {
+            "name": "5+",
+            "odds": "+115"
+          },
+          {
+            "name": "6+",
+            "odds": "+260"
+          },
+          {
+            "name": "7+",
+            "odds": "+600"
+          },
+          {
+            "name": "8+",
+            "odds": "+1300"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Tampa Bay Rays vs New York Yankees",
+      "startTime": "2025-07-29T23:05:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Run Line": [
+          {
+            "name": "Tampa Bay Rays +1.5",
+            "odds": "-120"
+          },
+          {
+            "name": "New York Yankees -1.5",
+            "odds": "-101"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 8.5",
+            "odds": "-105"
+          },
+          {
+            "name": "Under 8.5",
+            "odds": "-116"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Tampa Bay Rays",
+            "odds": "+168"
+          },
+          {
+            "name": "New York Yankees",
+            "odds": "-207"
+          }
+        ],
+        "Joe Boyle - Player Strikeouts": [
+          {
+            "name": "3+",
+            "odds": "-1000"
+          },
+          {
+            "name": "4+",
+            "odds": "-350"
+          },
+          {
+            "name": "5+",
+            "odds": "-155"
+          },
+          {
+            "name": "6+",
+            "odds": "+135"
+          },
+          {
+            "name": "7+",
+            "odds": "+280"
+          },
+          {
+            "name": "8+",
+            "odds": "+550"
+          },
+          {
+            "name": "9+",
+            "odds": "+1200"
+          }
+        ],
+        "Max Fried - Player Strikeouts": [
+          {
+            "name": "3+",
+            "odds": "-1800"
+          },
+          {
+            "name": "4+",
+            "odds": "-575"
+          },
+          {
+            "name": "5+",
+            "odds": "-235"
+          },
+          {
+            "name": "6+",
+            "odds": "-115"
+          },
+          {
+            "name": "7+",
+            "odds": "+180"
+          },
+          {
+            "name": "8+",
+            "odds": "+370"
+          },
+          {
+            "name": "9+",
+            "odds": "+750"
+          },
+          {
+            "name": "10+",
+            "odds": "+1700"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Los Angeles Dodgers vs Cincinnati Reds",
+      "startTime": "2025-07-29T23:10:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Run Line": [
+          {
+            "name": "Los Angeles Dodgers -1.5",
+            "odds": "+104"
+          },
+          {
+            "name": "Cincinnati Reds +1.5",
+            "odds": "-127"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 9",
+            "odds": "-113"
+          },
+          {
+            "name": "Under 9",
+            "odds": "-108"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Los Angeles Dodgers",
+            "odds": "-156"
+          },
+          {
+            "name": "Cincinnati Reds",
+            "odds": "+128"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Philadelphia Phillies vs Chicago White Sox",
+      "startTime": "2025-07-29T23:40:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Run Line": [
+          {
+            "name": "Philadelphia Phillies -1.5",
+            "odds": "-127"
+          },
+          {
+            "name": "Chicago White Sox +1.5",
+            "odds": "+105"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 8.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Under 8.5",
+            "odds": "-101"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Philadelphia Phillies",
+            "odds": "-207"
+          },
+          {
+            "name": "Chicago White Sox",
+            "odds": "+168"
+          }
+        ],
+        "Jesus Luzardo - Player Strikeouts": [
+          {
+            "name": "4+",
+            "odds": "-1200"
+          },
+          {
+            "name": "5+",
+            "odds": "-500"
+          },
+          {
+            "name": "6+",
+            "odds": "-220"
+          },
+          {
+            "name": "7+",
+            "odds": "-110"
+          },
+          {
+            "name": "8+",
+            "odds": "+180"
+          },
+          {
+            "name": "9+",
+            "odds": "+350"
+          },
+          {
+            "name": "10+",
+            "odds": "+700"
+          },
+          {
+            "name": "11+",
+            "odds": "+1400"
+          }
+        ],
+        "Jonathan Cannon - Player Strikeouts": [
+          {
+            "name": "3+",
+            "odds": "-450"
+          },
+          {
+            "name": "4+",
+            "odds": "-175"
+          },
+          {
+            "name": "5+",
+            "odds": "+130"
+          },
+          {
+            "name": "6+",
+            "odds": "+290"
+          },
+          {
+            "name": "7+",
+            "odds": "+650"
+          },
+          {
+            "name": "8+",
+            "odds": "+1500"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Chicago Cubs vs Milwaukee Brewers",
+      "startTime": "2025-07-29T23:40:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Run Line": [
+          {
+            "name": "Chicago Cubs +1.5",
+            "odds": "+155"
+          },
+          {
+            "name": "Milwaukee Brewers -1.5",
+            "odds": "-190"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 8.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Under 8.5",
+            "odds": "-106"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Chicago Cubs",
+            "odds": "-102"
+          },
+          {
+            "name": "Milwaukee Brewers",
+            "odds": "-119"
+          }
+        ],
+        "Colin Rea - Player Strikeouts": [
+          {
+            "name": "3+",
+            "odds": "-295"
+          },
+          {
+            "name": "4+",
+            "odds": "-115"
+          },
+          {
+            "name": "5+",
+            "odds": "+195"
+          },
+          {
+            "name": "6+",
+            "odds": "+450"
+          },
+          {
+            "name": "7+",
+            "odds": "+1100"
+          }
+        ],
+        "Quinn Priester - Player Strikeouts": [
+          {
+            "name": "3+",
+            "odds": "-575"
+          },
+          {
+            "name": "4+",
+            "odds": "-210"
+          },
+          {
+            "name": "5+",
+            "odds": "+105"
+          },
+          {
+            "name": "6+",
+            "odds": "+230"
+          },
+          {
+            "name": "7+",
+            "odds": "+500"
+          },
+          {
+            "name": "8+",
+            "odds": "+1100"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Atlanta Braves vs Kansas City Royals",
+      "startTime": "2025-07-29T23:40:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Run Line": [
+          {
+            "name": "Atlanta Braves +1.5",
+            "odds": "-187"
+          },
+          {
+            "name": "Kansas City Royals -1.5",
+            "odds": "+152"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 9.5",
+            "odds": "-106"
+          },
+          {
+            "name": "Under 9.5",
+            "odds": "-114"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Atlanta Braves",
+            "odds": "+104"
+          },
+          {
+            "name": "Kansas City Royals",
+            "odds": "-127"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Boston Red Sox vs Minnesota Twins",
+      "startTime": "2025-07-29T23:40:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Total": [
+          {
+            "name": "Over 8.5",
+            "odds": "-116"
+          },
+          {
+            "name": "Under 8.5",
+            "odds": "-105"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Boston Red Sox",
+            "odds": "-121"
+          },
+          {
+            "name": "Minnesota Twins",
+            "odds": "+100"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Miami Marlins vs St. Louis Cardinals",
+      "startTime": "2025-07-29T23:45:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Run Line": [
+          {
+            "name": "Miami Marlins +1.5",
+            "odds": "-157"
+          },
+          {
+            "name": "St. Louis Cardinals -1.5",
+            "odds": "+129"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 7.5",
+            "odds": "-117"
+          },
+          {
+            "name": "Under 7.5",
+            "odds": "-104"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Miami Marlins",
+            "odds": "+138"
+          },
+          {
+            "name": "St. Louis Cardinals",
+            "odds": "-169"
+          }
+        ],
+        "Sandy Alcantara - Player Strikeouts": [
+          {
+            "name": "3+",
+            "odds": "-425"
+          },
+          {
+            "name": "4+",
+            "odds": "-170"
+          },
+          {
+            "name": "5+",
+            "odds": "+130"
+          },
+          {
+            "name": "6+",
+            "odds": "+285"
+          },
+          {
+            "name": "7+",
+            "odds": "+600"
+          },
+          {
+            "name": "8+",
+            "odds": "+1400"
+          }
+        ],
+        "Sonny Gray - Player Strikeouts": [
+          {
+            "name": "4+",
+            "odds": "-600"
+          },
+          {
+            "name": "5+",
+            "odds": "-245"
+          },
+          {
+            "name": "6+",
+            "odds": "-115"
+          },
+          {
+            "name": "7+",
+            "odds": "+180"
+          },
+          {
+            "name": "8+",
+            "odds": "+360"
+          },
+          {
+            "name": "9+",
+            "odds": "+750"
+          },
+          {
+            "name": "10+",
+            "odds": "+1500"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Washington Nationals vs Houston Astros",
+      "startTime": "2025-07-30T00:10:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Run Line": [
+          {
+            "name": "Washington Nationals +1.5",
+            "odds": "-175"
+          },
+          {
+            "name": "Houston Astros -1.5",
+            "odds": "+143"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 8.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 8.5",
+            "odds": "-110"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Washington Nationals",
+            "odds": "+118"
+          },
+          {
+            "name": "Houston Astros",
+            "odds": "-144"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Texas Rangers vs Los Angeles Angels",
+      "startTime": "2025-07-30T01:38:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Run Line": [
+          {
+            "name": "Texas Rangers -1.5",
+            "odds": "+157"
+          },
+          {
+            "name": "Los Angeles Angels +1.5",
+            "odds": "-194"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 8.5",
+            "odds": "-123"
+          },
+          {
+            "name": "Under 8.5",
+            "odds": "+101"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Texas Rangers",
+            "odds": "+102"
+          },
+          {
+            "name": "Los Angeles Angels",
+            "odds": "-123"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "New York Mets vs San Diego Padres",
+      "startTime": "2025-07-30T01:40:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Run Line": [
+          {
+            "name": "New York Mets -1.5",
+            "odds": "+138"
+          },
+          {
+            "name": "San Diego Padres +1.5",
+            "odds": "-169"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 8.5",
+            "odds": "-102"
+          },
+          {
+            "name": "Under 8.5",
+            "odds": "-119"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "New York Mets",
+            "odds": "-121"
+          },
+          {
+            "name": "San Diego Padres",
+            "odds": "-101"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Pittsburgh Pirates vs San Francisco Giants",
+      "startTime": "2025-07-30T01:45:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Run Line": [
+          {
+            "name": "Pittsburgh Pirates +1.5",
+            "odds": "-164"
+          },
+          {
+            "name": "San Francisco Giants -1.5",
+            "odds": "+134"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 8",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 8",
+            "odds": "-110"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Pittsburgh Pirates",
+            "odds": "+133"
+          },
+          {
+            "name": "San Francisco Giants",
+            "odds": "-163"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Seattle Mariners vs Oakland Athletics",
+      "startTime": "2025-07-30T02:05:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Run Line": [
+          {
+            "name": "Seattle Mariners -1.5",
+            "odds": "+134"
+          },
+          {
+            "name": "Oakland Athletics +1.5",
+            "odds": "-164"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 10.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 10.5",
+            "odds": "-110"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Seattle Mariners",
+            "odds": "-114"
+          },
+          {
+            "name": "Oakland Athletics",
+            "odds": "-106"
+          }
+        ]
+      }
+    }
+  ],
+  "Tennis": [
+    {
+      "eventName": "Emilio Nava vs Ugo Humbert",
+      "startTime": "2025-07-29T15:00:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Emilio Nava",
+            "odds": "+235"
+          },
+          {
+            "name": "Ugo Humbert",
+            "odds": "-300"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Emilio Nava",
+            "odds": "+245"
+          },
+          {
+            "name": "Ugo Humbert",
+            "odds": "-300"
+          },
+          {
+            "name": "Tie",
+            "odds": "+1800"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Emilio Nava Over 11.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Emilio Nava Under 11.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Ugo Humbert Over 12.5",
+            "odds": "-150"
+          },
+          {
+            "name": "Ugo Humbert Under 12.5",
+            "odds": "+110"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Karen Khachanov vs Juan Pablo Ficovich",
+      "startTime": "2025-07-29T16:10:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Karen Khachanov",
+            "odds": "-1100"
+          },
+          {
+            "name": "Juan Pablo Ficovich",
+            "odds": "+700"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Karen Khachanov",
+            "odds": "-1100"
+          },
+          {
+            "name": "Juan Pablo Ficovich",
+            "odds": "+700"
+          },
+          {
+            "name": "Tie",
+            "odds": "+2800"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Juan Pablo Ficovich Over 8.5",
+            "odds": "+100"
+          },
+          {
+            "name": "Juan Pablo Ficovich Under 8.5",
+            "odds": "-140"
+          },
+          {
+            "name": "Karen Khachanov Over 12.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Karen Khachanov Under 12.5",
+            "odds": "-120"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Giovanni Mpetshi Perricard vs Holger Rune",
+      "startTime": "2025-07-29T16:30:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Giovanni Mpetshi Perricard",
+            "odds": "+150"
+          },
+          {
+            "name": "Holger Rune",
+            "odds": "-185"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Giovanni Mpetshi Perricard",
+            "odds": "+150"
+          },
+          {
+            "name": "Holger Rune",
+            "odds": "-175"
+          },
+          {
+            "name": "Tie",
+            "odds": "+1600"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Giovanni Mpetshi Perricard Over 12.5",
+            "odds": "-125"
+          },
+          {
+            "name": "Giovanni Mpetshi Perricard Under 12.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Holger Rune Over 13.5",
+            "odds": "+110"
+          },
+          {
+            "name": "Holger Rune Under 13.5",
+            "odds": "-150"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Marcelo Tomas Barrios Vera vs Alex Michelsen",
+      "startTime": "2025-07-29T16:30:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Marcelo Tomas Barrios Vera",
+            "odds": "+330"
+          },
+          {
+            "name": "Alex Michelsen",
+            "odds": "-450"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Marcelo Tomas Barrios Vera",
+            "odds": "+350"
+          },
+          {
+            "name": "Alex Michelsen",
+            "odds": "-450"
+          },
+          {
+            "name": "Tie",
+            "odds": "+2000"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Alex Michelsen Over 12.5",
+            "odds": "-125"
+          },
+          {
+            "name": "Alex Michelsen Under 12.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Marcelo Tomas Barrios Vera Over 9.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Marcelo Tomas Barrios Vera Under 9.5",
+            "odds": "-125"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Alexandre Muller vs Miomir Kecmanovic",
+      "startTime": "2025-07-29T16:30:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Alexandre Muller",
+            "odds": "+160"
+          },
+          {
+            "name": "Miomir Kecmanovic",
+            "odds": "-200"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Alexandre Muller",
+            "odds": "+160"
+          },
+          {
+            "name": "Miomir Kecmanovic",
+            "odds": "-200"
+          },
+          {
+            "name": "Tie",
+            "odds": "+1700"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Alexandre Muller Over 12.5",
+            "odds": "+110"
+          },
+          {
+            "name": "Alexandre Muller Under 12.5",
+            "odds": "-150"
+          },
+          {
+            "name": "Miomir Kecmanovic Over 12.5",
+            "odds": "-140"
+          },
+          {
+            "name": "Miomir Kecmanovic Under 12.5",
+            "odds": "+100"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Nicolas Arseneault vs Alexei Popyrin",
+      "startTime": "2025-07-29T17:20:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Nicolas Arseneault",
+            "odds": "+900"
+          },
+          {
+            "name": "Alexei Popyrin",
+            "odds": "-1400"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Nicolas Arseneault",
+            "odds": "+850"
+          },
+          {
+            "name": "Alexei Popyrin",
+            "odds": "-1400"
+          },
+          {
+            "name": "Tie",
+            "odds": "+3500"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Alexei Popyrin Over 12.5",
+            "odds": "+110"
+          },
+          {
+            "name": "Alexei Popyrin Under 12.5",
+            "odds": "-150"
+          },
+          {
+            "name": "Nicolas Arseneault Over 7.5",
+            "odds": "-105"
+          },
+          {
+            "name": "Nicolas Arseneault Under 7.5",
+            "odds": "-135"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Lorenzo Musetti vs James Duckworth",
+      "startTime": "2025-07-29T17:40:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Lorenzo Musetti",
+            "odds": "-475"
+          },
+          {
+            "name": "James Duckworth",
+            "odds": "+350"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Lorenzo Musetti",
+            "odds": "-450"
+          },
+          {
+            "name": "James Duckworth",
+            "odds": "+350"
+          },
+          {
+            "name": "Tie",
+            "odds": "+2200"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "James Duckworth Over 9.5",
+            "odds": "-115"
+          },
+          {
+            "name": "James Duckworth Under 9.5",
+            "odds": "-125"
+          },
+          {
+            "name": "Lorenzo Musetti Over 12.5",
+            "odds": "-135"
+          },
+          {
+            "name": "Lorenzo Musetti Under 12.5",
+            "odds": "-105"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Corentin Moutet vs Jenson Brooksby",
+      "startTime": "2025-07-29T17:40:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Corentin Moutet",
+            "odds": "-130"
+          },
+          {
+            "name": "Jenson Brooksby",
+            "odds": "+100"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Corentin Moutet",
+            "odds": "-125"
+          },
+          {
+            "name": "Jenson Brooksby",
+            "odds": "+100"
+          },
+          {
+            "name": "Tie",
+            "odds": "+1800"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Corentin Moutet Over 12.5",
+            "odds": "-105"
+          },
+          {
+            "name": "Corentin Moutet Under 12.5",
+            "odds": "-135"
+          },
+          {
+            "name": "Jenson Brooksby Over 12.5",
+            "odds": "+100"
+          },
+          {
+            "name": "Jenson Brooksby Under 12.5",
+            "odds": "-150"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Tallon Griekspoor vs Tomas Martin Etcheverry",
+      "startTime": "2025-07-29T17:40:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Tallon Griekspoor",
+            "odds": "-225"
+          },
+          {
+            "name": "Tomas Martin Etcheverry",
+            "odds": "+180"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Tallon Griekspoor",
+            "odds": "-225"
+          },
+          {
+            "name": "Tomas Martin Etcheverry",
+            "odds": "+185"
+          },
+          {
+            "name": "Tie",
+            "odds": "+1700"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Tallon Griekspoor Over 12.5",
+            "odds": "-175"
+          },
+          {
+            "name": "Tallon Griekspoor Under 12.5",
+            "odds": "+120"
+          },
+          {
+            "name": "Tomas Martin Etcheverry Over 12.5",
+            "odds": "+100"
+          },
+          {
+            "name": "Tomas Martin Etcheverry Under 12.5",
+            "odds": "-140"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Nuno Borges vs Facundo Bagnis",
+      "startTime": "2025-07-29T18:50:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Nuno Borges",
+            "odds": "-800"
+          },
+          {
+            "name": "Facundo Bagnis",
+            "odds": "+550"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Nuno Borges",
+            "odds": "-800"
+          },
+          {
+            "name": "Facundo Bagnis",
+            "odds": "+550"
+          },
+          {
+            "name": "Tie",
+            "odds": "+2500"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Facundo Bagnis Over 8.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Facundo Bagnis Under 8.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Nuno Borges Over 12.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Nuno Borges Under 12.5",
+            "odds": "-115"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Jaume Munar vs Francisco Cerundolo",
+      "startTime": "2025-07-29T18:50:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Jaume Munar",
+            "odds": "+100"
+          },
+          {
+            "name": "Francisco Cerundolo",
+            "odds": "-125"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Jaume Munar",
+            "odds": "+105"
+          },
+          {
+            "name": "Francisco Cerundolo",
+            "odds": "-125"
+          },
+          {
+            "name": "Tie",
+            "odds": "+1700"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Reilly Opelka vs Tomas Machac",
+      "startTime": "2025-07-29T20:00:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Reilly Opelka",
+            "odds": "+120"
+          },
+          {
+            "name": "Tomas Machac",
+            "odds": "-150"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Reilly Opelka",
+            "odds": "+125"
+          },
+          {
+            "name": "Tomas Machac",
+            "odds": "-150"
+          },
+          {
+            "name": "Tie",
+            "odds": "+1400"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Reilly Opelka Over 12.5",
+            "odds": "-140"
+          },
+          {
+            "name": "Reilly Opelka Under 12.5",
+            "odds": "+100"
+          },
+          {
+            "name": "Tomas Machac Over 13.5",
+            "odds": "+110"
+          },
+          {
+            "name": "Tomas Machac Under 13.5",
+            "odds": "-150"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Tristan Schoolkate vs Matteo Arnaldi",
+      "startTime": "2025-07-29T20:00:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Tristan Schoolkate",
+            "odds": "+160"
+          },
+          {
+            "name": "Matteo Arnaldi",
+            "odds": "-200"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Tristan Schoolkate",
+            "odds": "+160"
+          },
+          {
+            "name": "Matteo Arnaldi",
+            "odds": "-200"
+          },
+          {
+            "name": "Tie",
+            "odds": "+1700"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Matteo Arnaldi Over 12.5",
+            "odds": "-150"
+          },
+          {
+            "name": "Matteo Arnaldi Under 12.5",
+            "odds": "+105"
+          },
+          {
+            "name": "Tristan Schoolkate Over 12.5",
+            "odds": "+105"
+          },
+          {
+            "name": "Tristan Schoolkate Under 12.5",
+            "odds": "-150"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Roman Safiullin vs Casper Ruud",
+      "startTime": "2025-07-29T21:00:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Roman Safiullin",
+            "odds": "+195"
+          },
+          {
+            "name": "Casper Ruud",
+            "odds": "-250"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Roman Safiullin",
+            "odds": "+200"
+          },
+          {
+            "name": "Casper Ruud",
+            "odds": "-250"
+          },
+          {
+            "name": "Tie",
+            "odds": "+1800"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Casper Ruud Over 12.5",
+            "odds": "-150"
+          },
+          {
+            "name": "Casper Ruud Under 12.5",
+            "odds": "+100"
+          },
+          {
+            "name": "Roman Safiullin Over 11.5",
+            "odds": "-130"
+          },
+          {
+            "name": "Roman Safiullin Under 11.5",
+            "odds": "-105"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Daniil Medvedev vs Dalibor Svrcina",
+      "startTime": "2025-07-29T22:10:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Daniil Medvedev",
+            "odds": "-1400"
+          },
+          {
+            "name": "Dalibor Svrcina",
+            "odds": "+850"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Daniil Medvedev",
+            "odds": "-1400"
+          },
+          {
+            "name": "Dalibor Svrcina",
+            "odds": "+850"
+          },
+          {
+            "name": "Tie",
+            "odds": "+4000"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Daniil Medvedev Over 12.5",
+            "odds": "+140"
+          },
+          {
+            "name": "Daniil Medvedev Under 12.5",
+            "odds": "-215"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Denis Shapovalov vs Learner Tien",
+      "startTime": "2025-07-29T23:00:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Denis Shapovalov",
+            "odds": "-200"
+          },
+          {
+            "name": "Learner Tien",
+            "odds": "+150"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Denis Shapovalov",
+            "odds": "-200"
+          },
+          {
+            "name": "Learner Tien",
+            "odds": "+160"
+          },
+          {
+            "name": "Tie",
+            "odds": "+1700"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Denis Shapovalov Over 12.5",
+            "odds": "-135"
+          },
+          {
+            "name": "Denis Shapovalov Under 12.5",
+            "odds": "-105"
+          },
+          {
+            "name": "Learner Tien Over 12.5",
+            "odds": "+110"
+          },
+          {
+            "name": "Learner Tien Under 12.5",
+            "odds": "-165"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Alexander Zverev vs Adam Walton",
+      "startTime": "2025-07-30T00:10:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Alexander Zverev",
+            "odds": "-1100"
+          },
+          {
+            "name": "Adam Walton",
+            "odds": "+700"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Alexander Zverev",
+            "odds": "-1100"
+          },
+          {
+            "name": "Adam Walton",
+            "odds": "+700"
+          },
+          {
+            "name": "Tie",
+            "odds": "+2800"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Adam Walton Over 7.5",
+            "odds": "-140"
+          },
+          {
+            "name": "Adam Walton Under 7.5",
+            "odds": "+100"
+          },
+          {
+            "name": "Alexander Zverev Over 12.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Alexander Zverev Under 12.5",
+            "odds": "-130"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Andrey Rublev vs Hugo Gaston",
+      "startTime": "2025-07-30T15:00:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Andrey Rublev",
+            "odds": "-900"
+          },
+          {
+            "name": "Hugo Gaston",
+            "odds": "+650"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Andrey Rublev",
+            "odds": "-1100"
+          },
+          {
+            "name": "Hugo Gaston",
+            "odds": "+650"
+          },
+          {
+            "name": "Tie",
+            "odds": "+3000"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Andrey Rublev Over 12.5",
+            "odds": "+110"
+          },
+          {
+            "name": "Andrey Rublev Under 12.5",
+            "odds": "-165"
+          },
+          {
+            "name": "Hugo Gaston Over 7.5",
+            "odds": "+105"
+          },
+          {
+            "name": "Hugo Gaston Under 7.5",
+            "odds": "-150"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Stefanos Tsitsipas vs Christopher O'Connell",
+      "startTime": "2025-07-30T15:00:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Stefanos Tsitsipas",
+            "odds": "-215"
+          },
+          {
+            "name": "Christopher O'Connell",
+            "odds": "+160"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Stefanos Tsitsipas",
+            "odds": "-215"
+          },
+          {
+            "name": "Christopher O'Connell",
+            "odds": "+175"
+          },
+          {
+            "name": "Tie",
+            "odds": "+1700"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Christopher O'Connell Over 12.5",
+            "odds": "-105"
+          },
+          {
+            "name": "Christopher O'Connell Under 12.5",
+            "odds": "-135"
+          },
+          {
+            "name": "Stefanos Tsitsipas Over 12.5",
+            "odds": "-175"
+          },
+          {
+            "name": "Stefanos Tsitsipas Under 12.5",
+            "odds": "+120"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Frances Tiafoe vs Yosuke Watanuki",
+      "startTime": "2025-07-30T15:00:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Frances Tiafoe",
+            "odds": "-400"
+          },
+          {
+            "name": "Yosuke Watanuki",
+            "odds": "+310"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Frances Tiafoe",
+            "odds": "-425"
+          },
+          {
+            "name": "Yosuke Watanuki",
+            "odds": "+320"
+          },
+          {
+            "name": "Tie",
+            "odds": "+2000"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Frances Tiafoe Over 12.5",
+            "odds": "-135"
+          },
+          {
+            "name": "Frances Tiafoe Under 12.5",
+            "odds": "-105"
+          },
+          {
+            "name": "Yosuke Watanuki Over 9.5",
+            "odds": "-125"
+          },
+          {
+            "name": "Yosuke Watanuki Under 9.5",
+            "odds": "-115"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Brandon Nakashima vs Ethan Quinn",
+      "startTime": "2025-07-30T15:00:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Brandon Nakashima",
+            "odds": "-275"
+          },
+          {
+            "name": "Ethan Quinn",
+            "odds": "+220"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Brandon Nakashima",
+            "odds": "-275"
+          },
+          {
+            "name": "Ethan Quinn",
+            "odds": "+225"
+          },
+          {
+            "name": "Tie",
+            "odds": "+1800"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Brandon Nakashima Over 12.5",
+            "odds": "-135"
+          },
+          {
+            "name": "Brandon Nakashima Under 12.5",
+            "odds": "-105"
+          },
+          {
+            "name": "Ethan Quinn Over 11.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Ethan Quinn Under 11.5",
+            "odds": "-125"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Aleksandar Vukic vs Cameron Norrie",
+      "startTime": "2025-07-30T15:00:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Aleksandar Vukic",
+            "odds": "+210"
+          },
+          {
+            "name": "Cameron Norrie",
+            "odds": "-275"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Aleksandar Vukic",
+            "odds": "+220"
+          },
+          {
+            "name": "Cameron Norrie",
+            "odds": "-275"
+          },
+          {
+            "name": "Tie",
+            "odds": "+2000"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Aleksandar Vukic Over 11.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Aleksandar Vukic Under 11.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Cameron Norrie Over 12.5",
+            "odds": "-140"
+          },
+          {
+            "name": "Cameron Norrie Under 12.5",
+            "odds": "+100"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Mackenzie McDonald vs Jiri Lehecka",
+      "startTime": "2025-07-30T15:00:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Mackenzie McDonald",
+            "odds": "+215"
+          },
+          {
+            "name": "Jiri Lehecka",
+            "odds": "-275"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Mackenzie McDonald",
+            "odds": "+220"
+          },
+          {
+            "name": "Jiri Lehecka",
+            "odds": "-275"
+          },
+          {
+            "name": "Tie",
+            "odds": "+1800"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Jiri Lehecka Over 12.5",
+            "odds": "-150"
+          },
+          {
+            "name": "Jiri Lehecka Under 12.5",
+            "odds": "+100"
+          },
+          {
+            "name": "Mackenzie McDonald Over 11.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Mackenzie McDonald Under 11.5",
+            "odds": "-120"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Yunchaokete Bu vs Lorenzo Sonego",
+      "startTime": "2025-07-30T15:00:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Yunchaokete Bu",
+            "odds": "+160"
+          },
+          {
+            "name": "Lorenzo Sonego",
+            "odds": "-215"
+          }
+        ],
+        "To Win Most Games": [
+          {
+            "name": "Yunchaokete Bu",
+            "odds": "+160"
+          },
+          {
+            "name": "Lorenzo Sonego",
+            "odds": "-215"
+          },
+          {
+            "name": "Tie",
+            "odds": "+1600"
+          }
+        ],
+        "Player Total Games Won": [
+          {
+            "name": "Lorenzo Sonego Over 12.5",
+            "odds": "-150"
+          },
+          {
+            "name": "Lorenzo Sonego Under 12.5",
+            "odds": "+110"
+          },
+          {
+            "name": "Yunchaokete Bu Over 12.5",
+            "odds": "+105"
+          },
+          {
+            "name": "Yunchaokete Bu Under 12.5",
+            "odds": "-150"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Francisco Comesana vs Alex De Minaur",
+      "startTime": "2025-07-30T15:00:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Francisco Comesana",
+            "odds": "+700"
+          },
+          {
+            "name": "Alex De Minaur",
+            "odds": "-1100"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Adrian Mannarino vs Ben Shelton",
+      "startTime": "2025-07-30T15:00:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Adrian Mannarino",
+            "odds": "+350"
+          },
+          {
+            "name": "Ben Shelton",
+            "odds": "-475"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Tristan Boyer vs Jakub Mensik",
+      "startTime": "2025-07-30T15:00:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Tristan Boyer",
+            "odds": "+500"
+          },
+          {
+            "name": "Jakub Mensik",
+            "odds": "-700"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Roberto Carballes Baena vs Taylor Fritz",
+      "startTime": "2025-07-30T15:00:00Z",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Roberto Carballes Baena",
+            "odds": "+650"
+          },
+          {
+            "name": "Taylor Fritz",
+            "odds": "-900"
+          }
+        ]
+      }
+    }
+  ]
+}
+
+*(Example Format)*
+
+  * *Baseball - MLB (June 12, 2025): New York Yankees vs. Boston Red Sox - Yankees Run Line -1.5 @ +150*
+  * *Basketball - NBA (June 13, 2025): LAL vs. GSW - LeBron James Over 28.5 Points @ -115*
+
+### **4. Professional Research and Analysis Mandate**
+
+Your research is to be laser-focused **only on the teams, players, and events listed in the "Bets for Analysis" section.** You will use external data to analyze the matchups on the provided list, **NOT to find or validate new bets.** Your task is to evaluate the *provided odds*, not to search for other ones.
+
+For each bet listed in the "Bets for Analysis" section, you will think and act like a professional sports bettor using the following framework:
+
+  * **Data Sources:** Use diverse, reputable sources to find data *about the participants* in the provided bets.
+  * **Think Like a Pro - Key Factors for Analysis:**
+      * **Identify the Narrative:** Why are the *provided odds* what they are?
+      * **Advanced & Situational Metrics:** Use advanced metrics (wRC+, FIP, DVOA, etc.) and situational data (home/road splits, injuries, weather) to build your own probability model for the *provided bets*.
+      * **Actionable Intelligence:** Seek late-breaking news (injuries, lineup changes) that impacts the *provided bets*.
+      * **Regression Analysis:** Assess performance streaks to see if a team in a *provided bet* is likely to regress to its mean.
+      * **Value Assessment (+EV):** Your entire goal is to determine if the *provided odds* on the list offer value against your calculated "true" probability.
+
+### **5. How to Pick a Good Bet: A Systematic Approach to Finding Value**
+
+To consistently identify bets with Positive Expected Value (+EV) from the provided list, you must adhere to the following four-step process for each line under consideration. This framework moves from objective mathematical assessment to qualitative refinement, ensuring every selection is rooted in logic and data.
+
+  * **Step 1: Decode the Market Price (Calculate Implied Probability)**
+
+      * Before any analysis, translate the given odds into the market's breakeven probability. You cannot know if a price is good or bad without understanding what it is.
+      * *For Negative Odds (Favorites): Implied Probability = $Odds / (Odds + 100)$*
+      * *For Positive Odds (Underdogs): Implied Probability = $100 / (Odds + 100)$*
+      * This percentage is your baseline. Your entire goal is to determine if an outcome's *true* chance of occurring is greater than this number.
+
+  * **Step 2: Generate Your "True" Probability (The Quantitative Analysis)**
+
+      * This is where you build your own objective assessment of the event's likelihood, independent of the market's price. Synthesize advanced and situational metrics to create your own probability.
+      * **Metric-Driven Foundation:** Use advanced metrics (DVOA, EPA/Play, wRC+, xFIP, Corsi%, etc.) to establish a performance baseline for each team or player.
+      * **Situational Adjustment:** Modify this baseline with critical situational data. Quantify the impact of factors like home/road splits, rest advantage, and specific matchup history.
+      * **Formulate Your Probability:** Combine these factors to arrive at a specific percentage. For example: *"Based on the team's superior EPA/Play margin and the opponent's situational disadvantage, our model gives Team A a **58%** true probability of winning."*
+
+  * **Step 3: Find the Edge (Compare Your Price to the Market Price)**
+
+      * This is the moment of truth where value is revealed. Compare your "true" probability from Step 2 with the market's implied probability from Step 1.
+      * *The Formula for Value: Edge = Your True Probability - Implied Probability*
+      * **Positive Edge (A Potential Bet):** If your analysis shows a 58% true probability and the market's implied probability is 53.48% (from -115 odds), you have identified a positive edge of 4.52%. This is a potential +EV wager.
+      * **Negative Edge (A Clear Pass):** If your true probability is 50% and the implied probability is 53.48%, you have a negative edge. You must discard this bet. Do not bet on lines where you do not have a positive edge.
+
+  * **Step 4: Refine with Qualitative Analysis & Finalize the Bet**
+
+      * The numbers tell most of the story, but not all of it. Before confirming a bet, perform a final sanity check using qualitative factors that models might miss.
+      * **Late-Breaking News:** Scan for last-minute intelligence. A surprise injury, a significant weather shift, or reports of team turmoil can invalidate your calculated edge.
+      * **Motivation & Narrative Check:** Is there a non-quantifiable motivational angle (e.g., a "revenge game," playoff implications)? Use these factors to increase or decrease your confidence in a calculated edge.
+      * **Confirm and Allocate:** If the qualitative check doesn't raise any major red flags, the bet is confirmed. The size of your identified "Edge" from Step 3 should be the primary driver of your allocation. A 7-8% edge warrants a significantly larger allocation than a 2-3% edge.
+
+### **6. Output Requirements: The Final Portfolio**
+
+**Before presenting your final portfolio, you must perform a final audit. State, "Final Audit Complete: All selections are from the provided list." Then, proceed with the portfolio.**
+
+From the provided list, construct a portfolio of bets that you assess have the highest positive expected value, factoring in your long-term strategy. Present them as a list, ranked from highest to lowest based on your confidence and the size of your allocation.
+
+For **EACH** selected bet in your portfolio, you **MUST** provide the following five components:
+
+1.  **Bet Description:** The specific bet from the provided list (e.g., "Baseball - MLB (June 12, 2025): New York Yankees vs. Boston Red Sox - Yankees Run Line -1.5 @ +150").
+2.  **Allocated Bet Amount:** The exact amount of money you are allocating to this bet from your $10.00 bankroll (e.g., "$1.50").
+3.  **Profit Potential Rationale (The "Why"):** In 3-4 sentences, build a compelling, data-driven case for the bet. Explain precisely *why* the odds represent value against your assessed probability. Pinpoint the specific data (advanced stats, news, situational factors) that suggests the market is under-valuing this outcome.
+4.  **Primary Risk / Counter-Argument:** In 1-2 sentences, state the strongest argument against your pick. What is the primary risk that could cause this bet to lose? This demonstrates a balanced and professional analysis.
+5.  **Confidence & Allocation Justification (1-5):** Rate your confidence in the data-driven edge for this bet (1=Low, 5=High). Briefly justify both the score and your chosen bet amount based on the quality and reliability of the supporting data and the perceived size of the edge.

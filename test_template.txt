@@ -1,5 +1,5 @@
 -----Intro:
 -----Prompt:
 -----Picks/results:
------Inconsistencies:
+-----Inconsistencies/ Notes:
 -----Conclusion:

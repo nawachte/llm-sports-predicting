@@ -1,0 +1,35 @@
+-----Intro:
+I'm wondering if AI does particularly well with 1v1 sports since it does so well with UFC. So lets take a look at boxing and tennis.
+I haven't bet on boxing yet but I imagine that it is similar to UFC. The main exception of course that its only one background of 
+fighting. Betting UFC had a lot of analysis on the background of each fighter and what happens when those different backgrounds
+clash. I'll make a boxing prompt that is similar but slightly adjusted from the UFC prompt and we'll see how it goes. Tennis in theory
+should work great for betting with AI. It can analyze things like court types and playing styles. Historyically I have not done well
+using AI to bet on tennis but I'm hoping to change that around. I analyzed my experiements yesterday and came up with a new prompt for
+tennis based on the findings so should be intesting to see if that helps. I'm going to allocate $5 to each sport and see how it goes.
+
+-----Prompt:
+See 07292025_boxing_prompt.txt and 072292025_tennis_prompt.txt
+
+-----Picks/results:
+boxing
+Pick 1: Oscar Duarte vs Kenneth Sims Jr.    | Moneyline (Sims Jr.)    | $3.00 | +120 -> Lost
+Pick 2: Kenshiro Teraji vs Ricardo Sandoval | Total Rounds Under 10.5 | $2.00 | +120 -> Lost
+
+tennis
+Pick 1: Nuno Borges vs Facundo Bagnis | Player to Win at Least One Set (Bagnis No) | $3.50 | -200 -> Lost
+Pick 2: Daniil Medvedev vs Dalibor Svrcina | Set Betting (Medvedev 2:0) | $3.00 | -275 -> Won
+Pick 3: Roman Safiullin vs Casper Ruud | Moneyline (Safiullin) | $2.50 | +175 -> Lost
+Pick 4: Tristan Schoolkate vs Matteo Arnaldi | 1st Set / Moneyline (Schoolkate/Arnaldi) | $1.00 | +500 -> Lost
+
+-----Inconsistencies:
+Boxing is fine but its a little concerning that it only picked 2 bets.
+
+The report for tennis was a mess. I didn't realize I forgot to give it a bet amount so when I saw the percentages my brain just
+immediatly thought $10 but what I meant to do was $5 so now I have $10 in tennis which could turn out but I'll be honest I have a
+feeling I just lost $10. We'll see in the conclusion. Additionally one of its picks (pick 4) it did a parlay combining two lines 
+together which I don't think I explicitly disallow and I'm kind of interested to see how it goes so I placed it.
+
+-----Conclusion:
+Ouch. Not great. 
+Boxing: -$3.00 (pick 1) + $2.00 (pick 2) = -$5.00 [-100.0% profit]
+Tennis: -$3.50 (pick 1) + $1.09 (pick 2) - $2.50 (pick 3) - $1.00 (pick 4) = -$5.91 [-59.1% profit]

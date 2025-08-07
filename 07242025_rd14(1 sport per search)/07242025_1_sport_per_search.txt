@@ -38,7 +38,7 @@ WNBA
 Pick 1: Aces vs Fever | A. Boston vs J. Young - more points (Boston) | $1.75 | -115 -> Lost
 Pick 2: Aces vs Fever | Under 164.5 total points                     | $1.50 | -108 -> Won
 Pick 3: Aces vs Fever | Fever moneyline                              | $1.25 | +110 -> Won
-Pick 4: Aces vs Fever | A. Bost first points scorer                  | $0.50 | +550 -> Lost
+Pick 4: Aces vs Fever | A. Boston first points scorer                | $0.50 | +550 -> Lost
 
 -----Inconsistencies:
 Not necessarily an error but I'm not stoked that the MLB picks and the WNBA picks all came from the same game. It seems unlikely

@@ -1,0 +1,37 @@
+-----Intro:
+Its not clear to me if focusing on an individual sport or having a general script would produce better results or not. It makes sense
+that if the agent can focus on a single sport it can spend more time and resources analyzing matchups. But at the same time it also
+limits the variety of lines that are available. Logically it would be best to somehow have the best of both worlds. Have deep analysis
+on every single sport and and then at the end make picks based on the findings. Basically pick where the best edges exist. Honestly,
+it could be possible. I could run a report for every single sport and then run another report that takes all of those reports as input
+and selects lines accordingly. It would be time and resource intensive but also not the worst idea. Anyway, back to this test, we are
+going to take a look at baseball, tennis, 
+
+-----Prompt:
+See 07282025_prompt.txt
+
+-----Picks/results:
+Pick 1: (ATP Tennis) Reilly Opelka vs Tomas Machac       | Over 12.5 Games Won (Opelka) | $3.00 | -140 -> Won
+Pick 2: (MLB) ARI Diamondbacks vs Detroit Tigers         | 5+ Strikeouts (Pfaadt)       | $2.75 | -145 -> Lost
+Pick 3: (MLB) Philadelphia Phillies vs Chicago White Sox | 7+ Strikeouts (Luzardo)      | $2.50 | -110 -> Lost
+Pick 4: (WNBA) Chicago Sky vs Washington Mystics         | -7 Spread (Mystics)          | $1.75 | -110 -> Won
+
+-----Inconsistencies:
+This actually took me 3 tries. The original prompt I had for multi-sport betting ran twice and gave me bets that were not given to
+them. I had Gemini create a script to combat this based on the original multi-sport script and it finally worked that first try. I
+didn't feel that including the first 2 failed reports would be valuable so they have been omitted.
+
+On Jesus Luzardo (PHI) - Player Strikeouts 7+ vs Chicago White Sox, the reported line was -110 which is in line with the provided,
+however the actual was -115. Likely do to line shift while I waited for 3 reports to come out. Placed anyway.
+
+-----Conclusion:
+There is some times when I can tell that Gemini is a little off. I don't know how to explain it. It is usually later in the evening
+like 8pm or 9pm and it just fails to follow some simple instructions. Its like when gemini 2.5 pro first switched to the 05-06
+release and it just kind of got stupider. I feel like when I'm having difficulty generating a legit report it tends to do that.
+Anyway, cool that it won tennis. I'm currious to see how tennis goes in the next round with boxing. I've noticed that for WNBA, it
+seems like the scores are always crazy different. Like game are never close. And its almost making it easier to hit those spreads. I
+think I want to try a round were I try just WNBA spreads. Maybe without requiring that it spend any money at all. I've been wanting
+to do a 'not required to spend' or 'no spend amount specified' type of bet but haven't got around to it yet. Anyway here is the P/L
+for this round:
+
++$2.14 (pick 1) - $2.75 (pick 2) - $2.50 (pick 3) + $1.59 (pick 4) = -$1.52 [-15.2% profit]

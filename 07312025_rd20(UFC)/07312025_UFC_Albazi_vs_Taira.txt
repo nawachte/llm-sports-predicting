@@ -1,0 +1,43 @@
+-----Intro:
+Super excited to have another UFC event coming up. Not a full fight night technically but still many matchups. Overall a great 
+opportunity. For the last two UFC events I bet on I had a profit of 91.9% and 142.0% which are just insane. I'm a little on edge to 
+keep using the same script as the last two because I always like to keep trying to evolve and improve but hell, if it aint broke don't
+fix it. I'm eventually trying to move towards scripts that don't allocate money but rather identify bets that are good picks if 
+avaialbe and suggest bankroll unit amounts but for now sticking with the bankroll. There are a decent amount of lines to choose from
+so I think I'm going to go with $15 this time. Buming it up a little bit. Alright lets get too it!
+
+-----Prompt:
+See 07312025_dk_original_prompt.txt and 07312025_composite_prompt.txt
+
+-----Picks/results:
+Regular - DraftKings
+Pick 1: Rafael Estevam vs Felipe Bunes          | To Win By Decision (Estevam)        | $5.00 | -105 -> Won
+Pick 2: Elves Brener vs Esteban Ribovics        | To Win By KO/TKO/DQ (Ribovics)      | $4.00 | +150 -> Lost
+Pick 3: Neil Magny vs Elizeu Zaleski dos Santos | To Win By Decision (Magny)          | $3.50 | +240 -> Lost
+Pick 4: Karol Rosa vs Nora Cornolle             | Win by Split/Majority Decision: Yes | $2.50 | +250 -> Lost
+
+Composite - Fanatics
+Pick 1: Rafael Estevam vs Felipe Bunes          | To Win By Decision (Estevam)   | $6.00 | -110 -> Won
+Pick 2: Neil Magny vs Elizeu Zaleski dos Santos | To Win By Decision (Magny)     | $4.00 | +265 -> Lost
+Pick 3: Elves Brener vs Esteban Ribovics        | To Win By KO/TKO/DQ (Ribovics) | $3.00 | +170 -> Lost
+Pick 4: Piera Rodriguez vs Ketlen Souza         | Fight to Go the Distance: No   | $2.00 | +225 -> Lost
+
+
+-----Inconsistencies/ Notes:
+I didn't catch it until after it ran but the first script that came out was trying to do elevation stamina analysis because it
+thought the fight would be in Denver? Its in vegas I have no idea where it got that. It made me realize thought that I don't look at
+the analysis or executation plan very often. I should be better about that. --- Upon further investigation I noticed in the report
+it correctly identifies the location as Las Vegas, NV and even uses that knowledge in its decision making. I though to myself "I use
+secondary agents for data verification when I'm pulling odds, why not try it for bet selection." So I actually gave both reports to
+a third deep research agent and told it to select from the bets that were chosen by these two agents. I went into Fanatics where I
+have some money and all of the odds were better except for the first one it was -110 instead of -105 so I said hell lets do it. So
+if your reading the report 07312025_UFC_composite_picks.pdf you'll note that the oddsa redifferent than the ones I have listed above
+in the "Composite - Fanatics" section and thats because those in the report are from DraftKings and the ones in this report are from
+Fanatics. It looks like only one pick is different so thats kind of a good sign for my DraftKings analysis. Something felt off about
+that first report. I think I'm starting to get a 6th sense about when AI is having problems.
+
+-----Conclusion:
+
+
+Regular - DraftKings: +$4.76 (pick 1) -$4.00 (pick 2) -$3.50 (pick 3) -$2.50 (pick 4) = $-5.24 [-34.9% profit]
+Composite - Fanatics: +$5.45 (pick 1) -$4.00 (pick 2) -$3.00 (pick 3) -$2.00 (pick 4) = $-3.55 [-23.6% profit]
