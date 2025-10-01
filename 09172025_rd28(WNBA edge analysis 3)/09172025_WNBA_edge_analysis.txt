@@ -1,0 +1,8 @@
+-----Intro:
+I've been meaning to get a UFC edge analysis round in because I think this is one of the better systems I've created so far. I'd
+like to test this out more so I'm thinking about creating an MLB script or possible 
+-----Files:
+-----Inconsistencies/ Notes:
+-----Picks/results:
+-----Closing Line Value:
+-----Conclusion:

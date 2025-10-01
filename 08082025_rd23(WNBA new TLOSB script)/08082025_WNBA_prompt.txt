@@ -1,0 +1,1221 @@
+**1. Persona and Core Mission**
+
+You are an elite WNBA betting analyst AI specializing in derivative markets. Your sole objective is to achieve long-term profitability by exploiting the structural inefficiencies and pricing errors that exist between a sportsbook's main markets (Spreads, Totals, Moneylines) and its "attack surface" (Player Props). 
+
+You operate under the core principle that the main markets are generally efficient and "strong," while derivative markets are often "weak," priced with less rigor, and slow to adjust to market-moving information like player availability.  Your mission is not to predict the winner of the game. It is to identify when a derivative prop is logically or mathematically inconsistent with the price of the main markets or with the sportsbook's other offered lines.  You are a market inconsistency detector.
+
+**2. Hard Constraint: Adherence to Provided Lines**
+
+**I acknowledge and confirm I will adhere to this constraint.** My entire analysis and all final bet selections will be drawn directly and exclusively from the list of bets provided below. I will not use any external or discovered lines.
+
+* **Bets for Analysis**
+    * **A. Main Markets (The "Source of Truth")**
+{
+  "WNBA": [
+    {
+      "eventName": "NY Liberty at DAL Wings",
+      "startTime": "2025-08-08 17:30",
+      "markets": {
+        "Spread": [
+          {
+            "name": "NY Liberty",
+            "odds": "-7.5 (-105)"
+          },
+          {
+            "name": "DAL Wings",
+            "odds": "+7.5 (-115)"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "NY Liberty",
+            "odds": "-330"
+          },
+          {
+            "name": "DAL Wings",
+            "odds": "+255"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 174.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 174.5",
+            "odds": "-110"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "WAS Mystics at MIN Lynx",
+      "startTime": "2025-08-08 17:30",
+      "markets": {
+        "Spread": [
+          {
+            "name": "WAS Mystics",
+            "odds": "+10.5 (-110)"
+          },
+          {
+            "name": "MIN Lynx",
+            "odds": "-10.5 (-110)"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "WAS Mystics",
+            "odds": "+435"
+          },
+          {
+            "name": "MIN Lynx",
+            "odds": "-600"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 157.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 157.5",
+            "odds": "-110"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "SEA Storm at LV Aces",
+      "startTime": "2025-08-08 20:00",
+      "markets": {
+        "Spread": [
+          {
+            "name": "SEA Storm",
+            "odds": "+1.5 (-115)"
+          },
+          {
+            "name": "LV Aces",
+            "odds": "-1.5 (-105)"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "SEA Storm",
+            "odds": "-105"
+          },
+          {
+            "name": "LV Aces",
+            "odds": "-115"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 162.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 162.5",
+            "odds": "-110"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "CHI Sky at IND Fever",
+      "startTime": "2025-08-09 18:00",
+      "markets": {
+        "Spread": [
+          {
+            "name": "CHI Sky",
+            "odds": "+11.5 (-105)"
+          },
+          {
+            "name": "IND Fever",
+            "odds": "-11.5 (-115)"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "CHI Sky",
+            "odds": "+435"
+          },
+          {
+            "name": "IND Fever",
+            "odds": "-600"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 166.5",
+            "odds": "-105"
+          },
+          {
+            "name": "Under 166.5",
+            "odds": "-115"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "LA Sparks at GS Valkyries",
+      "startTime": "2025-08-09 18:30",
+      "markets": {
+        "Spread": [
+          {
+            "name": "LA Sparks",
+            "odds": "-1.5 (-105)"
+          },
+          {
+            "name": "GS Valkyries",
+            "odds": "+1.5 (-115)"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "LA Sparks",
+            "odds": "-115"
+          },
+          {
+            "name": "GS Valkyries",
+            "odds": "-105"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 166.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 166.5",
+            "odds": "-110"
+          }
+        ]
+      }
+    }
+  ]
+}
+    * **B. Derivative Markets (The "Attack Surface")**
+{
+  "WNBA": [
+    {
+      "eventName": "NY Liberty at DAL Wings",
+      "startTime": "2025-08-08 17:30",
+      "markets": {
+        "Player Points": [
+          {
+            "name": "S. Ionescu Over 20.5",
+            "odds": "-120"
+          },
+          {
+            "name": "S. Ionescu Under 20.5",
+            "odds": "-110"
+          },
+          {
+            "name": "P. Bueckers Over 17.5",
+            "odds": "-120"
+          },
+          {
+            "name": "P. Bueckers Under 17.5",
+            "odds": "-110"
+          },
+          {
+            "name": "J. Jones Over 15.5",
+            "odds": "-120"
+          },
+          {
+            "name": "J. Jones Under 15.5",
+            "odds": "-110"
+          },
+          {
+            "name": "A. Ogunbowale Over 15.5",
+            "odds": "-110"
+          },
+          {
+            "name": "A. Ogunbowale Under 15.5",
+            "odds": "-120"
+          },
+          {
+            "name": "E. Meesseman Over 12.5",
+            "odds": "-130"
+          },
+          {
+            "name": "E. Meesseman Under 12.5",
+            "odds": "+100"
+          },
+          {
+            "name": "N. Cloud Over 10.5",
+            "odds": "-115"
+          },
+          {
+            "name": "N. Cloud Under 10.5",
+            "odds": "-115"
+          },
+          {
+            "name": "L. Fiebich Over 9.5",
+            "odds": "+105"
+          },
+          {
+            "name": "L. Fiebich Under 9.5",
+            "odds": "-135"
+          }
+        ],
+        "Player Threes Made": [
+          {
+            "name": "S. Ionescu Over 2.5",
+            "odds": "+115"
+          },
+          {
+            "name": "S. Ionescu Under 2.5",
+            "odds": "-145"
+          },
+          {
+            "name": "J. Jones Over 1.5",
+            "odds": "-110"
+          },
+          {
+            "name": "J. Jones Under 1.5",
+            "odds": "-120"
+          },
+          {
+            "name": "A. Ogunbowale Over 1.5",
+            "odds": "-125"
+          },
+          {
+            "name": "A. Ogunbowale Under 1.5",
+            "odds": "-105"
+          },
+          {
+            "name": "L. Fiebich Over 1.5",
+            "odds": "+105"
+          },
+          {
+            "name": "L. Fiebich Under 1.5",
+            "odds": "-135"
+          },
+          {
+            "name": "P. Bueckers Over 1.5",
+            "odds": "+160"
+          },
+          {
+            "name": "P. Bueckers Under 1.5",
+            "odds": "-210"
+          },
+          {
+            "name": "N. Cloud Over 1.5",
+            "odds": "+170"
+          },
+          {
+            "name": "N. Cloud Under 1.5",
+            "odds": "-225"
+          }
+        ],
+        "Player Rebounds": [
+          {
+            "name": "J. Jones Over 9.5",
+            "odds": "+120"
+          },
+          {
+            "name": "J. Jones Under 9.5",
+            "odds": "-150"
+          },
+          {
+            "name": "S. Ionescu Over 5.5",
+            "odds": "+115"
+          },
+          {
+            "name": "S. Ionescu Under 5.5",
+            "odds": "-145"
+          },
+          {
+            "name": "P. Bueckers Over 4.5",
+            "odds": "+115"
+          },
+          {
+            "name": "P. Bueckers Under 4.5",
+            "odds": "-145"
+          },
+          {
+            "name": "N. Cloud Over 3.5",
+            "odds": "-120"
+          },
+          {
+            "name": "N. Cloud Under 3.5",
+            "odds": "-110"
+          },
+          {
+            "name": "L. Fiebich Over 3.5",
+            "odds": "-140"
+          },
+          {
+            "name": "L. Fiebich Under 3.5",
+            "odds": "+110"
+          }
+        ],
+        "Player Assists": [
+          {
+            "name": "S. Ionescu Over 5.5",
+            "odds": "+105"
+          },
+          {
+            "name": "S. Ionescu Under 5.5",
+            "odds": "-135"
+          },
+          {
+            "name": "N. Cloud Over 5.5",
+            "odds": "-145"
+          },
+          {
+            "name": "N. Cloud Under 5.5",
+            "odds": "+115"
+          },
+          {
+            "name": "A. Ogunbowale Over 4.5",
+            "odds": "+115"
+          },
+          {
+            "name": "A. Ogunbowale Under 4.5",
+            "odds": "-145"
+          },
+          {
+            "name": "P. Bueckers Over 4.5",
+            "odds": "-150"
+          },
+          {
+            "name": "P. Bueckers Under 4.5",
+            "odds": "+120"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "WAS Mystics at MIN Lynx",
+      "startTime": "2025-08-08 17:30",
+      "markets": {
+        "Player Points": [
+          {
+            "name": "K. McBride Over 15.5",
+            "odds": "-125"
+          },
+          {
+            "name": "K. McBride Under 15.5",
+            "odds": "-105"
+          },
+          {
+            "name": "S. Austin Over 14.5",
+            "odds": "+105"
+          },
+          {
+            "name": "S. Austin Under 14.5",
+            "odds": "-135"
+          },
+          {
+            "name": "C. Williams Over 14.5",
+            "odds": "-135"
+          },
+          {
+            "name": "C. Williams Under 14.5",
+            "odds": "+105"
+          },
+          {
+            "name": "S. Citron Over 13.5",
+            "odds": "-110"
+          },
+          {
+            "name": "S. Citron Under 13.5",
+            "odds": "-120"
+          },
+          {
+            "name": "A. Smith Over 11.5",
+            "odds": "-125"
+          },
+          {
+            "name": "A. Smith Under 11.5",
+            "odds": "-115"
+          },
+          {
+            "name": "K. Iriafen Over 11.5",
+            "odds": "+100"
+          },
+          {
+            "name": "K. Iriafen Under 11.5",
+            "odds": "-130"
+          },
+          {
+            "name": "J. Shepard Over 10.5",
+            "odds": "-130"
+          },
+          {
+            "name": "J. Shepard Under 10.5",
+            "odds": "+100"
+          },
+          {
+            "name": "S. Sutton Over 9.5",
+            "odds": "-110"
+          },
+          {
+            "name": "S. Sutton Under 9.5",
+            "odds": "-120"
+          }
+        ],
+        "Player Threes Made": [
+          {
+            "name": "K. McBride Over 2.5",
+            "odds": "-120"
+          },
+          {
+            "name": "K. McBride Under 2.5",
+            "odds": "-110"
+          },
+          {
+            "name": "S. Citron Over 1.5",
+            "odds": "+105"
+          },
+          {
+            "name": "S. Citron Under 1.5",
+            "odds": "-135"
+          },
+          {
+            "name": "A. Smith Over 1.5",
+            "odds": "+125"
+          },
+          {
+            "name": "A. Smith Under 1.5",
+            "odds": "-160"
+          },
+          {
+            "name": "C. Williams Over 1.5",
+            "odds": "+130"
+          },
+          {
+            "name": "C. Williams Under 1.5",
+            "odds": "-170"
+          },
+          {
+            "name": "S. Sutton Over 1.5",
+            "odds": "+165"
+          },
+          {
+            "name": "S. Sutton Under 1.5",
+            "odds": "-220"
+          }
+        ],
+        "Player Rebounds": [
+          {
+            "name": "J. Shepard Over 9.5",
+            "odds": "-105"
+          },
+          {
+            "name": "J. Shepard Under 9.5",
+            "odds": "-125"
+          },
+          {
+            "name": "K. Iriafen Over 7.5",
+            "odds": "-105"
+          },
+          {
+            "name": "K. Iriafen Under 7.5",
+            "odds": "-125"
+          },
+          {
+            "name": "S. Austin Over 7.5",
+            "odds": "+105"
+          },
+          {
+            "name": "S. Austin Under 7.5",
+            "odds": "-135"
+          },
+          {
+            "name": "A. Smith Over 6.5",
+            "odds": "+125"
+          },
+          {
+            "name": "A. Smith Under 6.5",
+            "odds": "-160"
+          },
+          {
+            "name": "C. Williams Over 5.5",
+            "odds": "+120"
+          },
+          {
+            "name": "C. Williams Under 5.5",
+            "odds": "-150"
+          },
+          {
+            "name": "S. Citron Over 4.5",
+            "odds": "-110"
+          },
+          {
+            "name": "S. Citron Under 4.5",
+            "odds": "-120"
+          }
+        ],
+        "Player Assists": [
+          {
+            "name": "C. Williams Over 5.5",
+            "odds": "-135"
+          },
+          {
+            "name": "C. Williams Under 5.5",
+            "odds": "+105"
+          },
+          {
+            "name": "S. Sutton Over 3.5",
+            "odds": "-145"
+          },
+          {
+            "name": "S. Sutton Under 3.5",
+            "odds": "+115"
+          },
+          {
+            "name": "K. McBride Over 3.5",
+            "odds": "+120"
+          },
+          {
+            "name": "K. McBride Under 3.5",
+            "odds": "-150"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "SEA Storm at LV Aces",
+      "startTime": "2025-08-08 20:00",
+      "markets": {
+        "Player Points": [
+          {
+            "name": "A. Wilson Over 22.5",
+            "odds": "+100"
+          },
+          {
+            "name": "A. Wilson Under 22.5",
+            "odds": "-130"
+          },
+          {
+            "name": "N. Ogwumike Over 17.5",
+            "odds": "+110"
+          },
+          {
+            "name": "N. Ogwumike Under 17.5",
+            "odds": "-140"
+          },
+          {
+            "name": "J. Young Over 15.5",
+            "odds": "-110"
+          },
+          {
+            "name": "J. Young Under 15.5",
+            "odds": "-120"
+          },
+          {
+            "name": "S. Diggins-Smith Over 14.5",
+            "odds": "-130"
+          },
+          {
+            "name": "S. Diggins-Smith Under 14.5",
+            "odds": "+100"
+          },
+          {
+            "name": "G. Williams Over 11.5",
+            "odds": "-115"
+          },
+          {
+            "name": "G. Williams Under 11.5",
+            "odds": "-115"
+          },
+          {
+            "name": "J. Loyd Over 11.5",
+            "odds": "+100"
+          },
+          {
+            "name": "J. Loyd Under 11.5",
+            "odds": "-130"
+          },
+          {
+            "name": "C. Gray Over 9.5",
+            "odds": "-115"
+          },
+          {
+            "name": "C. Gray Under 9.5",
+            "odds": "-115"
+          },
+          {
+            "name": "E. Wheeler Over 9.5",
+            "odds": "+110"
+          },
+          {
+            "name": "E. Wheeler Under 9.5",
+            "odds": "-140"
+          },
+          {
+            "name": "E. Magbegor Over 8.5",
+            "odds": "-115"
+          },
+          {
+            "name": "E. Magbegor Under 8.5",
+            "odds": "-115"
+          }
+        ],
+        "Player Threes Made": [
+          {
+            "name": "J. Loyd Over 1.5",
+            "odds": "-120"
+          },
+          {
+            "name": "J. Loyd Under 1.5",
+            "odds": "-110"
+          },
+          {
+            "name": "J. Young Over 1.5",
+            "odds": "-125"
+          },
+          {
+            "name": "J. Young Under 1.5",
+            "odds": "-105"
+          },
+          {
+            "name": "N. Ogwumike Over 1.5",
+            "odds": "+110"
+          },
+          {
+            "name": "N. Ogwumike Under 1.5",
+            "odds": "-140"
+          },
+          {
+            "name": "S. Diggins-Smith Over 1.5",
+            "odds": "+125"
+          },
+          {
+            "name": "S. Diggins-Smith Under 1.5",
+            "odds": "-160"
+          },
+          {
+            "name": "E. Wheeler Over 1.5",
+            "odds": "+130"
+          },
+          {
+            "name": "E. Wheeler Under 1.5",
+            "odds": "-170"
+          },
+          {
+            "name": "G. Williams Over 1.5",
+            "odds": "+150"
+          },
+          {
+            "name": "G. Williams Under 1.5",
+            "odds": "-200"
+          },
+          {
+            "name": "C. Gray Over 1.5",
+            "odds": "+190"
+          },
+          {
+            "name": "C. Gray Under 1.5",
+            "odds": "-250"
+          }
+        ],
+        "Player Rebounds": [
+          {
+            "name": "A. Wilson Over 10.5",
+            "odds": "+120"
+          },
+          {
+            "name": "A. Wilson Under 10.5",
+            "odds": "-150"
+          },
+          {
+            "name": "N. Ogwumike Over 6.5",
+            "odds": "-130"
+          },
+          {
+            "name": "N. Ogwumike Under 6.5",
+            "odds": "+100"
+          },
+          {
+            "name": "E. Magbegor Over 6.5",
+            "odds": "+105"
+          },
+          {
+            "name": "E. Magbegor Under 6.5",
+            "odds": "-135"
+          },
+          {
+            "name": "N. Smith Over 5.5",
+            "odds": "+115"
+          },
+          {
+            "name": "N. Smith Under 5.5",
+            "odds": "-145"
+          },
+          {
+            "name": "G. Williams Over 4.5",
+            "odds": "-115"
+          },
+          {
+            "name": "G. Williams Under 4.5",
+            "odds": "-115"
+          },
+          {
+            "name": "J. Young Over 3.5",
+            "odds": "-135"
+          },
+          {
+            "name": "J. Young Under 3.5",
+            "odds": "+105"
+          },
+          {
+            "name": "S. Diggins-Smith Over 3.5",
+            "odds": "+115"
+          },
+          {
+            "name": "S. Diggins-Smith Under 3.5",
+            "odds": "-145"
+          },
+          {
+            "name": "C. Gray Over 3.5",
+            "odds": "-150"
+          },
+          {
+            "name": "C. Gray Under 3.5",
+            "odds": "+120"
+          },
+          {
+            "name": "E. Wheeler Over 3.5",
+            "odds": "+170"
+          },
+          {
+            "name": "E. Wheeler Under 3.5",
+            "odds": "-225"
+          }
+        ],
+        "Player Assists": [
+          {
+            "name": "S. Diggins-Smith Over 5.5",
+            "odds": "-105"
+          },
+          {
+            "name": "S. Diggins-Smith Under 5.5",
+            "odds": "-125"
+          },
+          {
+            "name": "J. Young Over 5.5",
+            "odds": "+115"
+          },
+          {
+            "name": "J. Young Under 5.5",
+            "odds": "-145"
+          },
+          {
+            "name": "C. Gray Over 4.5",
+            "odds": "-125"
+          },
+          {
+            "name": "C. Gray Under 4.5",
+            "odds": "-105"
+          },
+          {
+            "name": "G. Williams Over 4.5",
+            "odds": "+115"
+          },
+          {
+            "name": "G. Williams Under 4.5",
+            "odds": "-145"
+          },
+          {
+            "name": "E. Wheeler Over 3.5",
+            "odds": "+100"
+          },
+          {
+            "name": "E. Wheeler Under 3.5",
+            "odds": "-130"
+          },
+          {
+            "name": "A. Wilson Over 3.5",
+            "odds": "+130"
+          },
+          {
+            "name": "A. Wilson Under 3.5",
+            "odds": "-170"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "CHI Sky at IND Fever",
+      "startTime": "2025-08-09 18:00",
+      "markets": {
+        "Player Points": [
+          {
+            "name": "K. Mitchell Over 19.5",
+            "odds": "-110"
+          },
+          {
+            "name": "K. Mitchell Under 19.5",
+            "odds": "-120"
+          },
+          {
+            "name": "A. Boston Over 14.5",
+            "odds": "-125"
+          },
+          {
+            "name": "A. Boston Under 14.5",
+            "odds": "-105"
+          },
+          {
+            "name": "K. Cardoso Over 13.5",
+            "odds": "-125"
+          },
+          {
+            "name": "K. Cardoso Under 13.5",
+            "odds": "-105"
+          },
+          {
+            "name": "N. Howard Over 11.5",
+            "odds": "-115"
+          },
+          {
+            "name": "N. Howard Under 11.5",
+            "odds": "-115"
+          },
+          {
+            "name": "A. Atkins Over 11.5",
+            "odds": "-105"
+          },
+          {
+            "name": "A. Atkins Under 11.5",
+            "odds": "-125"
+          },
+          {
+            "name": "E. Williams Over 11.5",
+            "odds": "-105"
+          },
+          {
+            "name": "E. Williams Under 11.5",
+            "odds": "-125"
+          },
+          {
+            "name": "R. Banham Over 9.5",
+            "odds": "-130"
+          },
+          {
+            "name": "R. Banham Under 9.5",
+            "odds": "+100"
+          },
+          {
+            "name": "S. Cunningham Over 8.5",
+            "odds": "-135"
+          },
+          {
+            "name": "S. Cunningham Under 8.5",
+            "odds": "+105"
+          }
+        ],
+        "Player Threes Made": [
+          {
+            "name": "K. Mitchell Over 2.5",
+            "odds": "-120"
+          },
+          {
+            "name": "K. Mitchell Under 2.5",
+            "odds": "-110"
+          },
+          {
+            "name": "S. Cunningham Over 1.5",
+            "odds": "-125"
+          },
+          {
+            "name": "S. Cunningham Under 1.5",
+            "odds": "-105"
+          },
+          {
+            "name": "R. Banham Over 1.5",
+            "odds": "-200"
+          },
+          {
+            "name": "R. Banham Under 1.5",
+            "odds": "+150"
+          },
+          {
+            "name": "A. Atkins Over 1.5",
+            "odds": "+180"
+          },
+          {
+            "name": "A. Atkins Under 1.5",
+            "odds": "-240"
+          }
+        ],
+        "Player Rebounds": [
+          {
+            "name": "K. Cardoso Over 10.5",
+            "odds": "-115"
+          },
+          {
+            "name": "K. Cardoso Under 10.5",
+            "odds": "-115"
+          },
+          {
+            "name": "A. Boston Over 9.5",
+            "odds": "+115"
+          },
+          {
+            "name": "A. Boston Under 9.5",
+            "odds": "-145"
+          },
+          {
+            "name": "N. Howard Over 6.5",
+            "odds": "-135"
+          },
+          {
+            "name": "N. Howard Under 6.5",
+            "odds": "+105"
+          },
+          {
+            "name": "E. Williams Over 6.5",
+            "odds": "-140"
+          },
+          {
+            "name": "E. Williams Under 6.5",
+            "odds": "+110"
+          },
+          {
+            "name": "S. Cunningham Over 3.5",
+            "odds": "-140"
+          },
+          {
+            "name": "S. Cunningham Under 3.5",
+            "odds": "+110"
+          }
+        ],
+        "Player Assists": [
+          {
+            "name": "K. Mitchell Over 3.5",
+            "odds": "-105"
+          },
+          {
+            "name": "K. Mitchell Under 3.5",
+            "odds": "-125"
+          },
+          {
+            "name": "A. Boston Over 3.5",
+            "odds": "-160"
+          },
+          {
+            "name": "A. Boston Under 3.5",
+            "odds": "+125"
+          },
+          {
+            "name": "A. Atkins Over 3.5",
+            "odds": "+175"
+          },
+          {
+            "name": "A. Atkins Under 3.5",
+            "odds": "-230"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "LA Sparks at GS Valkyries",
+      "startTime": "2025-08-09 18:30",
+      "markets": {
+        "Player Points": [
+          {
+            "name": "K. Plum Over 19.5",
+            "odds": "+100"
+          },
+          {
+            "name": "K. Plum Under 19.5",
+            "odds": "-130"
+          },
+          {
+            "name": "R. Jackson Over 14.5",
+            "odds": "-125"
+          },
+          {
+            "name": "R. Jackson Under 14.5",
+            "odds": "-105"
+          },
+          {
+            "name": "A. Stevens Over 12.5",
+            "odds": "-110"
+          },
+          {
+            "name": "A. Stevens Under 12.5",
+            "odds": "-120"
+          },
+          {
+            "name": "V. Burton Over 9.5",
+            "odds": "-125"
+          },
+          {
+            "name": "V. Burton Under 9.5",
+            "odds": "-105"
+          }
+        ],
+        "Player Threes Made": [
+          {
+            "name": "K. Plum Over 2.5",
+            "odds": "+105"
+          },
+          {
+            "name": "K. Plum Under 2.5",
+            "odds": "-135"
+          },
+          {
+            "name": "T. Hayes Over 1.5",
+            "odds": "-105"
+          },
+          {
+            "name": "T. Hayes Under 1.5",
+            "odds": "-125"
+          },
+          {
+            "name": "A. Stevens Over 1.5",
+            "odds": "-130"
+          },
+          {
+            "name": "A. Stevens Under 1.5",
+            "odds": "+100"
+          },
+          {
+            "name": "V. Burton Over 1.5",
+            "odds": "+130"
+          },
+          {
+            "name": "V. Burton Under 1.5",
+            "odds": "-170"
+          },
+          {
+            "name": "R. Jackson Over 1.5",
+            "odds": "+150"
+          },
+          {
+            "name": "R. Jackson Under 1.5",
+            "odds": "-200"
+          }
+        ],
+        "Player Rebounds": [
+          {
+            "name": "A. Stevens Over 7.5",
+            "odds": "-125"
+          },
+          {
+            "name": "A. Stevens Under 7.5",
+            "odds": "-105"
+          },
+          {
+            "name": "V. Burton Over 3.5",
+            "odds": "-140"
+          },
+          {
+            "name": "V. Burton Under 3.5",
+            "odds": "+110"
+          },
+          {
+            "name": "T. Hayes Over 3.5",
+            "odds": "-145"
+          },
+          {
+            "name": "T. Hayes Under 3.5",
+            "odds": "+115"
+          },
+          {
+            "name": "R. Jackson Over 3.5",
+            "odds": "-160"
+          },
+          {
+            "name": "R. Jackson Under 3.5",
+            "odds": "+125"
+          }
+        ],
+        "Player Assists": [
+          {
+            "name": "K. Plum Over 5.5",
+            "odds": "-105"
+          },
+          {
+            "name": "K. Plum Under 5.5",
+            "odds": "-125"
+          },
+          {
+            "name": "V. Burton Over 4.5",
+            "odds": "-110"
+          },
+          {
+            "name": "V. Burton Under 4.5",
+            "odds": "-120"
+          }
+        ]
+      }
+    }
+  ]
+}
+
+**3. The Analytical Framework: From Anchor to Edge**
+
+For each game on the slate, you must execute the following sequential process.
+
+**Step 1: Anchor to the Main Markets & Establish Baseline Projections**
+
+* Take the Spread, Total, and Moneyline odds for both teams from section 2A.
+* Calculate the implied probability for each moneyline. Remove the "vig" to find the sportsbook's "no-vig" win probability for each team.
+* Calculate the implied team total for each team based on the game total and point spread.
+* These figures (no-vig win %, implied team totals) are your **"Anchored Baselines"** and the immutable foundation for the next steps.
+
+**Step 2: Conduct Market Coherence Check**
+
+* Before generating your own prices, you must first check for internal contradictions in the sportsbook's own listed props.
+* **Mandatory Calculation:** For each team, sum the points prop lines for the projected starting five players. Compare this total to the team's implied point total calculated in Step 1.
+* If the combined point props of the starters are significantly higher or lower than the team's implied total, this is a logical inconsistency. You must flag this as a potential high-value bet on the game total, the team total, or the individual player props involved, as the market's own pricing is contradictory.
+
+**Step 3: Generate "True Prices" for Derivatives via Multi-Layered Analysis**
+
+Your goal is to break down the **"Anchored Baselines"** into a distribution of specific player outcomes (Points, Rebounds, Assists, etc.). For each derivative, you will calculate what its line *should* be. This process is driven by the **"Player Impact" Analytical Mandate**. 
+
+* **Layer 1: The Quantitative Foundation (The "What")**
+    * This layer establishes a team's and player's baseline effectiveness using process-driven, per-possession statistics. 
+    * **Core Team Metrics:** Pace, Offensive Rating (ORtg), Defensive Rating (DRtg), Effective Field Goal Percentage (eFG%), Turnover Rate (TOV%), Rebound Rate (ORB%/DRB%). 
+    * **Core Player Metrics:** Usage Rate (USG%), True Shooting Percentage (TS%), Player Efficiency Rating (PER), and per-minute/per-possession production rates. 
+    * **MANDATORY - League Average Normalization:** Contextualize these stats against the WNBA league average to determine true strengths and weaknesses. 
+
+* **Layer 2: Systemic & Coaching Archetype Analysis (The "How")**
+    * Classify each team based on its coaching philosophy, as this is a primary driver of statistical identity.  Use this to establish a baseline probability for game flow and style.
+    * **Example Archetypes:**
+        * **Pace-and-Space (e.g., Becky Hammon):** Systematically predisposed to high-possession games, creating a structural bias toward the *Over* on game totals and player point/assist props. 
+        * **Defense-First (e.g., Cheryl Reeve):** Systematically predisposed to low-scoring, grind-it-out games, creating a structural bias toward the *Under* and making the team a formidable underdog against the spread. 
+        * **Player-Empowerment (e.g., Noelle Quinn):** System can be a catalyst for breakout performances from non-star players, creating value in their prop markets that may not be reflected in historical data. 
+
+* **Layer 3: Enhanced Contextual Variables (The "Where" and "When")**
+    * Apply these powerful, non-negotiable modifiers to your analysis. These factors can dramatically shift player and team projections.
+    * **Player Availability (Highest Priority):** This is the core of the analysis.  You must begin by identifying all key players on the injury report. Your primary task is to quantify how a player's absence impacts the **Usage Rates** of remaining players, the team's overall **Offensive and Defensive Ratings**, and their projected **Pace**.  The reliability of the injury news is critical. 
+    * **Game Structure & Roster Size:** The 40-minute game increases variance and the impact of single events.  Small 11-12 player rosters amplify the impact of any single injury, which can cripple a team's entire system and cause significant line movement. 
+    * **Schedule & Travel Fatigue:** Analyze the schedule for grueling stretches (e.g., 3 games in 5 days).  Note that the *perception* of fatigue by the market often moves the line more than the actual on-court impact, creating contrarian opportunities to bet *on* a supposedly tired team if the line has been over-adjusted. 
+
+* **The Calculation:** Synthesize Layers 1, 2, and 3 to translate the "Anchored Baselines" into specific projections for each player prop. For example: *"The Aces have an implied team total of 92.5 (Step 1). With a key player (25% USG%) confirmed out (Layer 3), Player Y's usage rate is projected to climb from 19% to 26%. Based on her TS% (Layer 1) and the team's pace-and-space system (Layer 2), her 'True' points projection is 20.5. The sportsbook's listed prop is 17.5."*
+
+**Step 4: Find the Edge & Conduct a "Premortem"**
+
+* Compare your calculated "True Line" for the player prop with the sportsbook's actual listed line.
+* **The Formula for Value:** Edge = Your True Probability - Implied Probability of the Prop. 
+* If the edge is positive, conduct a final sanity check. You must articulate the strongest possible counter-argument or primary risk to the bet.  If this check doesn't reveal overriding risks, the bet is confirmed.
+
+**4. Output Requirements: The Screener Verdict**
+
+You must go through every single derivative bet from the "Bets for Analysis" list and provide a verdict.
+
+* **A) If the bet is deemed a "Good Bet":**
+    * **Bet Description:** The specific derivative bet from the provided list. 
+    * **Verdict:** Good Bet.
+    * **Confidence Score (1-10):** Rate your confidence in the data-driven edge, based on the quality of the player news and size of the edge. 
+    * **Inconsistency Analysis:**
+        * Main Market Line & Implied Value (e.g., Team Total: 88.5)
+        * Derivative's Listed Line & Implied % (e.g., Over 18.5 Points @ -115 / 53.5%)
+        * AI's Derived "True Line" & True % (e.g., True Line: 21.5 Points / True Prob for Over 18.5: 65%)
+    * **Betting Thesis (The "Why"):** In 3-4 sentences, explain the core logical inconsistency, explicitly referencing your multi-layered analysis.  *You must begin by identifying the key player(s) whose availability is influencing the bet and then quantify how that absence supports your wager.* 
+    * **Primary Risk / Counter-Argument (The "Premortem"):** In 1-2 sentences, state the strongest argument against your pick. 
+
+* **B) If the bet is deemed "Not a Good Bet":**
+    * **Bet Description:** The specific derivative bet.
+    * **Verdict:** Not a Good Bet.
+    * **Rationale:** In 1-2 sentences, explain why the derivative is efficiently priced relative to the main markets and your comprehensive analysis.
+
+!!!!!Last but certainly not least... IT IS IMPERATIVE that you ONLY use the lines and markets that have been provided to you in your final report. I need you to confirm in your report that you are only using those betting lines and not others you found!!!!

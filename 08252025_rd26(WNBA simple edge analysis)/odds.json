@@ -1,0 +1,1670 @@
+{
+  "WNBA": [
+    {
+      "eventName": "CON Sun @ NY Liberty",
+      "startTime": "2025-08-25 17:00",
+      "markets": {
+        "Spread": [
+          {
+            "name": "CON Sun",
+            "odds": "+14.5 (-110)"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "-14.5 (-110)"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 167.5",
+            "odds": "-108"
+          },
+          {
+            "name": "Under 167.5",
+            "odds": "-112"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "CON Sun",
+            "odds": "+650"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "-1000"
+          }
+        ],
+        "Player Assists O/U": [
+          {
+            "name": "Sabrina Ionescu Over 5.5",
+            "odds": "+110"
+          },
+          {
+            "name": "Sabrina Ionescu Under 5.5",
+            "odds": "-140"
+          },
+          {
+            "name": "Marina Mabrey Over 4.5",
+            "odds": "+105"
+          },
+          {
+            "name": "Marina Mabrey Under 4.5",
+            "odds": "-135"
+          }
+        ],
+        "Player Points O/U": [
+          {
+            "name": "Sabrina Ionescu Over 16.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Sabrina Ionescu Under 16.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Marina Mabrey Over 15.5",
+            "odds": "-125"
+          },
+          {
+            "name": "Marina Mabrey Under 15.5",
+            "odds": "-105"
+          },
+          {
+            "name": "Jonquel Jones Over 15.5",
+            "odds": "-105"
+          },
+          {
+            "name": "Jonquel Jones Under 15.5",
+            "odds": "-125"
+          },
+          {
+            "name": "Tina Charles Over 15.5",
+            "odds": "-105"
+          },
+          {
+            "name": "Tina Charles Under 15.5",
+            "odds": "-125"
+          },
+          {
+            "name": "Breanna Stewart Over 14.5",
+            "odds": "-105"
+          },
+          {
+            "name": "Breanna Stewart Under 14.5",
+            "odds": "-125"
+          }
+        ],
+        "Player Rebounds O/U": [
+          {
+            "name": "Jonquel Jones Over 8.5",
+            "odds": "+124"
+          },
+          {
+            "name": "Jonquel Jones Under 8.5",
+            "odds": "-160"
+          },
+          {
+            "name": "Tina Charles Over 6.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Tina Charles Under 6.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Breanna Stewart Over 5.5",
+            "odds": "+110"
+          },
+          {
+            "name": "Breanna Stewart Under 5.5",
+            "odds": "-140"
+          },
+          {
+            "name": "Marina Mabrey Over 5.5",
+            "odds": "+120"
+          },
+          {
+            "name": "Marina Mabrey Under 5.5",
+            "odds": "-154"
+          }
+        ],
+        "Spread 1st Quarter": [
+          {
+            "name": "CON Sun",
+            "odds": "+4.5 (-115)"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "-4.5 (-115)"
+          }
+        ],
+        "Total 1st Quarter": [
+          {
+            "name": "Over 43.5",
+            "odds": "-108"
+          },
+          {
+            "name": "Under 43.5",
+            "odds": "-112"
+          }
+        ],
+        "Moneyline 1st Quarter": [
+          {
+            "name": "CON Sun",
+            "odds": "+260"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "-325"
+          }
+        ],
+        "Player Threes O/U": [
+          {
+            "name": "Sabrina Ionescu Over 2.5",
+            "odds": "+130"
+          },
+          {
+            "name": "Sabrina Ionescu Under 2.5",
+            "odds": "-166"
+          },
+          {
+            "name": "Marina Mabrey Over 2.5",
+            "odds": "+145"
+          },
+          {
+            "name": "Marina Mabrey Under 2.5",
+            "odds": "-188"
+          }
+        ],
+        "Largest Lead of the Game": [
+          {
+            "name": "26 or More",
+            "odds": "+155"
+          },
+          {
+            "name": "14",
+            "odds": "+1500"
+          },
+          {
+            "name": "15",
+            "odds": "+1600"
+          },
+          {
+            "name": "16",
+            "odds": "+1600"
+          },
+          {
+            "name": "17",
+            "odds": "+1600"
+          },
+          {
+            "name": "13",
+            "odds": "+1600"
+          },
+          {
+            "name": "18",
+            "odds": "+1700"
+          },
+          {
+            "name": "19",
+            "odds": "+1700"
+          },
+          {
+            "name": "20",
+            "odds": "+1700"
+          },
+          {
+            "name": "12",
+            "odds": "+1700"
+          },
+          {
+            "name": "21",
+            "odds": "+1800"
+          },
+          {
+            "name": "11",
+            "odds": "+1900"
+          },
+          {
+            "name": "22",
+            "odds": "+2000"
+          },
+          {
+            "name": "23",
+            "odds": "+2000"
+          },
+          {
+            "name": "24",
+            "odds": "+2000"
+          },
+          {
+            "name": "10",
+            "odds": "+2000"
+          },
+          {
+            "name": "25",
+            "odds": "+2200"
+          },
+          {
+            "name": "9",
+            "odds": "+2200"
+          },
+          {
+            "name": "8",
+            "odds": "+3000"
+          },
+          {
+            "name": "7",
+            "odds": "+5000"
+          },
+          {
+            "name": "6",
+            "odds": "+8000"
+          },
+          {
+            "name": "5",
+            "odds": "+9000"
+          }
+        ],
+        "Race to 10 Points - 1st Quarter": [
+          {
+            "name": "CON Sun",
+            "odds": "+165"
+          },
+          {
+            "name": "Neither",
+            "odds": "+9000"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "-220"
+          }
+        ],
+        "Race to 10 Points - 2nd Quarter": [
+          {
+            "name": "CON Sun",
+            "odds": "+155"
+          },
+          {
+            "name": "Neither",
+            "odds": "+9000"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "-200"
+          }
+        ],
+        "Race to 10 Points - 3rd Quarter": [
+          {
+            "name": "CON Sun",
+            "odds": "+195"
+          },
+          {
+            "name": "Neither",
+            "odds": "+9000"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "-255"
+          }
+        ],
+        "Race to 10 Points - 4th Quarter": [
+          {
+            "name": "CON Sun",
+            "odds": "+175"
+          },
+          {
+            "name": "Neither",
+            "odds": "+9000"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "-230"
+          }
+        ],
+        "Race to 15 Points - 1st Quarter": [
+          {
+            "name": "CON Sun",
+            "odds": "+205"
+          },
+          {
+            "name": "Neither",
+            "odds": "+5000"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "-255"
+          }
+        ],
+        "Race to 15 Points - 2nd Quarter": [
+          {
+            "name": "CON Sun",
+            "odds": "+170"
+          },
+          {
+            "name": "Neither",
+            "odds": "+4500"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "-210"
+          }
+        ],
+        "Race to 15 Points - 3rd Quarter": [
+          {
+            "name": "CON Sun",
+            "odds": "+230"
+          },
+          {
+            "name": "Neither",
+            "odds": "+4500"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "-285"
+          }
+        ],
+        "Race to 15 Points - 4th Quarter": [
+          {
+            "name": "CON Sun",
+            "odds": "+195"
+          },
+          {
+            "name": "Neither",
+            "odds": "+2500"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "-230"
+          }
+        ],
+        "Race to 20 Points - 1st Quarter": [
+          {
+            "name": "CON Sun",
+            "odds": "+280"
+          },
+          {
+            "name": "Neither",
+            "odds": "+650"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "-205"
+          }
+        ],
+        "Race to 20 Points - 2nd Quarter": [
+          {
+            "name": "CON Sun",
+            "odds": "+250"
+          },
+          {
+            "name": "Neither",
+            "odds": "+475"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "-160"
+          }
+        ],
+        "Race to 20 Points - 3rd Quarter": [
+          {
+            "name": "CON Sun",
+            "odds": "+320"
+          },
+          {
+            "name": "Neither",
+            "odds": "+500"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "-215"
+          }
+        ],
+        "Race to 20 Points - 4th Quarter": [
+          {
+            "name": "CON Sun",
+            "odds": "+285"
+          },
+          {
+            "name": "Neither",
+            "odds": "+275"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "-120"
+          }
+        ],
+        "Race to 25 Points - 1st Quarter": [
+          {
+            "name": "CON Sun",
+            "odds": "+650"
+          },
+          {
+            "name": "Neither",
+            "odds": "+105"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "+120"
+          }
+        ],
+        "Race to 25 Points - 2nd Quarter": [
+          {
+            "name": "CON Sun",
+            "odds": "+650"
+          },
+          {
+            "name": "Neither",
+            "odds": "-130"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "+160"
+          }
+        ],
+        "Race to 25 Points - 3rd Quarter": [
+          {
+            "name": "CON Sun",
+            "odds": "+800"
+          },
+          {
+            "name": "Neither",
+            "odds": "-115"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "+125"
+          }
+        ],
+        "Race to 25 Points - 4th Quarter": [
+          {
+            "name": "CON Sun",
+            "odds": "+750"
+          },
+          {
+            "name": "Neither",
+            "odds": "-235"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "+295"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "LV Aces @ CHI Sky",
+      "startTime": "2025-08-25 18:00",
+      "markets": {
+        "Spread": [
+          {
+            "name": "LV Aces",
+            "odds": "-10.5 (-112)"
+          },
+          {
+            "name": "CHI Sky",
+            "odds": "+10.5 (-108)"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 166",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 166",
+            "odds": "-110"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "LV Aces",
+            "odds": "-600"
+          },
+          {
+            "name": "CHI Sky",
+            "odds": "+440"
+          }
+        ],
+        "Player Assists O/U": [
+          {
+            "name": "Chelsea Gray Over 6.5",
+            "odds": "+110"
+          },
+          {
+            "name": "Chelsea Gray Under 6.5",
+            "odds": "-140"
+          }
+        ],
+        "Player Points O/U": [
+          {
+            "name": "A'ja Wilson Over 25.5",
+            "odds": "-110"
+          },
+          {
+            "name": "A'ja Wilson Under 25.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Jackie Young Over 16.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Jackie Young Under 16.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Ariel Atkins Over 13.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Ariel Atkins Under 13.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Kamilla Cardoso Over 13.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Kamilla Cardoso Under 13.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Angel Reese Over 13.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Angel Reese Under 13.5",
+            "odds": "-120"
+          }
+        ],
+        "Player Rebounds O/U": [
+          {
+            "name": "Angel Reese Over 12.5",
+            "odds": "+105"
+          },
+          {
+            "name": "Angel Reese Under 12.5",
+            "odds": "-135"
+          },
+          {
+            "name": "A'ja Wilson Over 10.5",
+            "odds": "-135"
+          },
+          {
+            "name": "A'ja Wilson Under 10.5",
+            "odds": "+105"
+          },
+          {
+            "name": "Kamilla Cardoso Over 8.5",
+            "odds": "-140"
+          },
+          {
+            "name": "Kamilla Cardoso Under 8.5",
+            "odds": "+110"
+          },
+          {
+            "name": "NaLyssa Smith Over 5.5",
+            "odds": "+130"
+          },
+          {
+            "name": "NaLyssa Smith Under 5.5",
+            "odds": "-166"
+          }
+        ],
+        "Spread 1st Quarter": [
+          {
+            "name": "LV Aces",
+            "odds": "-3.5 (-110)"
+          },
+          {
+            "name": "CHI Sky",
+            "odds": "+3.5 (-120)"
+          }
+        ],
+        "Total 1st Quarter": [
+          {
+            "name": "Over 40.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 40.5",
+            "odds": "-110"
+          }
+        ],
+        "Moneyline 1st Quarter": [
+          {
+            "name": "LV Aces",
+            "odds": "-245"
+          },
+          {
+            "name": "CHI Sky",
+            "odds": "+200"
+          }
+        ],
+        "Largest Lead of the Game": [
+          {
+            "name": "26 or More",
+            "odds": "+255"
+          },
+          {
+            "name": "12",
+            "odds": "+1300"
+          },
+          {
+            "name": "13",
+            "odds": "+1300"
+          },
+          {
+            "name": "14",
+            "odds": "+1300"
+          },
+          {
+            "name": "15",
+            "odds": "+1300"
+          },
+          {
+            "name": "16",
+            "odds": "+1400"
+          },
+          {
+            "name": "18",
+            "odds": "+1400"
+          },
+          {
+            "name": "11",
+            "odds": "+1500"
+          },
+          {
+            "name": "17",
+            "odds": "+1500"
+          },
+          {
+            "name": "10",
+            "odds": "+1600"
+          },
+          {
+            "name": "19",
+            "odds": "+1600"
+          },
+          {
+            "name": "20",
+            "odds": "+1700"
+          },
+          {
+            "name": "21",
+            "odds": "+1800"
+          },
+          {
+            "name": "22",
+            "odds": "+1900"
+          },
+          {
+            "name": "9",
+            "odds": "+2000"
+          },
+          {
+            "name": "23",
+            "odds": "+2000"
+          },
+          {
+            "name": "24",
+            "odds": "+2000"
+          },
+          {
+            "name": "25",
+            "odds": "+2200"
+          },
+          {
+            "name": "8",
+            "odds": "+2500"
+          },
+          {
+            "name": "7",
+            "odds": "+4000"
+          },
+          {
+            "name": "6",
+            "odds": "+6500"
+          },
+          {
+            "name": "5",
+            "odds": "+9000"
+          }
+        ],
+        "Race to 10 Points - 1st Quarter": [
+          {
+            "name": "LV Aces",
+            "odds": "-190"
+          },
+          {
+            "name": "Neither",
+            "odds": "+9000"
+          },
+          {
+            "name": "CHI Sky",
+            "odds": "+145"
+          }
+        ],
+        "Race to 10 Points - 2nd Quarter": [
+          {
+            "name": "LV Aces",
+            "odds": "-180"
+          },
+          {
+            "name": "Neither",
+            "odds": "+9000"
+          },
+          {
+            "name": "CHI Sky",
+            "odds": "+140"
+          }
+        ],
+        "Race to 10 Points - 3rd Quarter": [
+          {
+            "name": "LV Aces",
+            "odds": "-190"
+          },
+          {
+            "name": "Neither",
+            "odds": "+9000"
+          },
+          {
+            "name": "CHI Sky",
+            "odds": "+150"
+          }
+        ],
+        "Race to 10 Points - 4th Quarter": [
+          {
+            "name": "LV Aces",
+            "odds": "-185"
+          },
+          {
+            "name": "Neither",
+            "odds": "+9000"
+          },
+          {
+            "name": "CHI Sky",
+            "odds": "+140"
+          }
+        ],
+        "Race to 15 Points - 1st Quarter": [
+          {
+            "name": "LV Aces",
+            "odds": "-205"
+          },
+          {
+            "name": "Neither",
+            "odds": "+3000"
+          },
+          {
+            "name": "CHI Sky",
+            "odds": "+170"
+          }
+        ],
+        "Race to 15 Points - 2nd Quarter": [
+          {
+            "name": "LV Aces",
+            "odds": "-190"
+          },
+          {
+            "name": "Neither",
+            "odds": "+2500"
+          },
+          {
+            "name": "CHI Sky",
+            "odds": "+160"
+          }
+        ],
+        "Race to 15 Points - 3rd Quarter": [
+          {
+            "name": "LV Aces",
+            "odds": "-230"
+          },
+          {
+            "name": "Neither",
+            "odds": "+5000"
+          },
+          {
+            "name": "CHI Sky",
+            "odds": "+175"
+          }
+        ],
+        "Race to 15 Points - 4th Quarter": [
+          {
+            "name": "LV Aces",
+            "odds": "-195"
+          },
+          {
+            "name": "Neither",
+            "odds": "+3000"
+          },
+          {
+            "name": "CHI Sky",
+            "odds": "+160"
+          }
+        ],
+        "Race to 20 Points - 1st Quarter": [
+          {
+            "name": "LV Aces",
+            "odds": "-140"
+          },
+          {
+            "name": "Neither",
+            "odds": "+340"
+          },
+          {
+            "name": "CHI Sky",
+            "odds": "+265"
+          }
+        ],
+        "Race to 20 Points - 2nd Quarter": [
+          {
+            "name": "LV Aces",
+            "odds": "-125"
+          },
+          {
+            "name": "Neither",
+            "odds": "+320"
+          },
+          {
+            "name": "CHI Sky",
+            "odds": "+245"
+          }
+        ],
+        "Race to 20 Points - 3rd Quarter": [
+          {
+            "name": "LV Aces",
+            "odds": "-180"
+          },
+          {
+            "name": "Neither",
+            "odds": "+650"
+          },
+          {
+            "name": "CHI Sky",
+            "odds": "+240"
+          }
+        ],
+        "Race to 20 Points - 4th Quarter": [
+          {
+            "name": "LV Aces",
+            "odds": "-120"
+          },
+          {
+            "name": "Neither",
+            "odds": "+360"
+          },
+          {
+            "name": "CHI Sky",
+            "odds": "+205"
+          }
+        ],
+        "Race to 25 Points - 1st Quarter": [
+          {
+            "name": "LV Aces",
+            "odds": "+215"
+          },
+          {
+            "name": "Neither",
+            "odds": "-175"
+          },
+          {
+            "name": "CHI Sky",
+            "odds": "+700"
+          }
+        ],
+        "Race to 25 Points - 2nd Quarter": [
+          {
+            "name": "LV Aces",
+            "odds": "+245"
+          },
+          {
+            "name": "Neither",
+            "odds": "-195"
+          },
+          {
+            "name": "CHI Sky",
+            "odds": "+700"
+          }
+        ],
+        "Race to 25 Points - 3rd Quarter": [
+          {
+            "name": "LV Aces",
+            "odds": "+130"
+          },
+          {
+            "name": "Neither",
+            "odds": "+105"
+          },
+          {
+            "name": "CHI Sky",
+            "odds": "+550"
+          }
+        ],
+        "Race to 25 Points - 4th Quarter": [
+          {
+            "name": "LV Aces",
+            "odds": "+260"
+          },
+          {
+            "name": "Neither",
+            "odds": "-175"
+          },
+          {
+            "name": "CHI Sky",
+            "odds": "+500"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "SEA Storm @ IND Fever",
+      "startTime": "2025-08-26 17:00",
+      "markets": {
+        "Spread": [
+          {
+            "name": "SEA Storm",
+            "odds": "-3.5 (-108)"
+          },
+          {
+            "name": "IND Fever",
+            "odds": "+3.5 (-112)"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 165",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 165",
+            "odds": "-110"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "SEA Storm",
+            "odds": "-166"
+          },
+          {
+            "name": "IND Fever",
+            "odds": "+140"
+          }
+        ],
+        "Largest Lead of the Game": [
+          {
+            "name": "26 or More",
+            "odds": "+600"
+          },
+          {
+            "name": "12",
+            "odds": "+1000"
+          },
+          {
+            "name": "14",
+            "odds": "+1000"
+          },
+          {
+            "name": "10",
+            "odds": "+1100"
+          },
+          {
+            "name": "11",
+            "odds": "+1100"
+          },
+          {
+            "name": "13",
+            "odds": "+1100"
+          },
+          {
+            "name": "15",
+            "odds": "+1100"
+          },
+          {
+            "name": "16",
+            "odds": "+1100"
+          },
+          {
+            "name": "17",
+            "odds": "+1300"
+          },
+          {
+            "name": "9",
+            "odds": "+1400"
+          },
+          {
+            "name": "18",
+            "odds": "+1400"
+          },
+          {
+            "name": "19",
+            "odds": "+1600"
+          },
+          {
+            "name": "20",
+            "odds": "+1900"
+          },
+          {
+            "name": "21",
+            "odds": "+2000"
+          },
+          {
+            "name": "22",
+            "odds": "+2000"
+          },
+          {
+            "name": "8",
+            "odds": "+2000"
+          },
+          {
+            "name": "23",
+            "odds": "+2200"
+          },
+          {
+            "name": "24",
+            "odds": "+2500"
+          },
+          {
+            "name": "25",
+            "odds": "+3000"
+          },
+          {
+            "name": "7",
+            "odds": "+3000"
+          },
+          {
+            "name": "6",
+            "odds": "+6000"
+          },
+          {
+            "name": "5",
+            "odds": "+9000"
+          },
+          {
+            "name": "4",
+            "odds": "+10000"
+          }
+        ],
+        "Race to 10 Points - 1st Quarter": [
+          {
+            "name": "SEA Storm",
+            "odds": "-125"
+          },
+          {
+            "name": "Neither",
+            "odds": "+9000"
+          },
+          {
+            "name": "IND Fever",
+            "odds": "+100"
+          }
+        ],
+        "Race to 10 Points - 2nd Quarter": [
+          {
+            "name": "SEA Storm",
+            "odds": "-125"
+          },
+          {
+            "name": "Neither",
+            "odds": "+9000"
+          },
+          {
+            "name": "IND Fever",
+            "odds": "-105"
+          }
+        ],
+        "Race to 10 Points - 3rd Quarter": [
+          {
+            "name": "SEA Storm",
+            "odds": "-125"
+          },
+          {
+            "name": "Neither",
+            "odds": "+9000"
+          },
+          {
+            "name": "IND Fever",
+            "odds": "+100"
+          }
+        ],
+        "Race to 10 Points - 4th Quarter": [
+          {
+            "name": "SEA Storm",
+            "odds": "-130"
+          },
+          {
+            "name": "Neither",
+            "odds": "+9000"
+          },
+          {
+            "name": "IND Fever",
+            "odds": "+100"
+          }
+        ],
+        "Race to 15 Points - 1st Quarter": [
+          {
+            "name": "SEA Storm",
+            "odds": "-125"
+          },
+          {
+            "name": "Neither",
+            "odds": "+3000"
+          },
+          {
+            "name": "IND Fever",
+            "odds": "+105"
+          }
+        ],
+        "Race to 15 Points - 2nd Quarter": [
+          {
+            "name": "SEA Storm",
+            "odds": "-125"
+          },
+          {
+            "name": "Neither",
+            "odds": "+3000"
+          },
+          {
+            "name": "IND Fever",
+            "odds": "+105"
+          }
+        ],
+        "Race to 15 Points - 3rd Quarter": [
+          {
+            "name": "SEA Storm",
+            "odds": "-125"
+          },
+          {
+            "name": "Neither",
+            "odds": "+4500"
+          },
+          {
+            "name": "IND Fever",
+            "odds": "+105"
+          }
+        ],
+        "Race to 15 Points - 4th Quarter": [
+          {
+            "name": "SEA Storm",
+            "odds": "-125"
+          },
+          {
+            "name": "Neither",
+            "odds": "+2500"
+          },
+          {
+            "name": "IND Fever",
+            "odds": "+110"
+          }
+        ],
+        "Race to 20 Points - 1st Quarter": [
+          {
+            "name": "SEA Storm",
+            "odds": "+115"
+          },
+          {
+            "name": "Neither",
+            "odds": "+340"
+          },
+          {
+            "name": "IND Fever",
+            "odds": "+155"
+          }
+        ],
+        "Race to 20 Points - 2nd Quarter": [
+          {
+            "name": "SEA Storm",
+            "odds": "+115"
+          },
+          {
+            "name": "Neither",
+            "odds": "+330"
+          },
+          {
+            "name": "IND Fever",
+            "odds": "+155"
+          }
+        ],
+        "Race to 20 Points - 3rd Quarter": [
+          {
+            "name": "SEA Storm",
+            "odds": "+105"
+          },
+          {
+            "name": "Neither",
+            "odds": "+500"
+          },
+          {
+            "name": "IND Fever",
+            "odds": "+135"
+          }
+        ],
+        "Race to 20 Points - 4th Quarter": [
+          {
+            "name": "SEA Storm",
+            "odds": "+125"
+          },
+          {
+            "name": "Neither",
+            "odds": "+300"
+          },
+          {
+            "name": "IND Fever",
+            "odds": "+155"
+          }
+        ],
+        "Race to 25 Points - 1st Quarter": [
+          {
+            "name": "SEA Storm",
+            "odds": "+320"
+          },
+          {
+            "name": "Neither",
+            "odds": "-185"
+          },
+          {
+            "name": "IND Fever",
+            "odds": "+425"
+          }
+        ],
+        "Race to 25 Points - 2nd Quarter": [
+          {
+            "name": "SEA Storm",
+            "odds": "+330"
+          },
+          {
+            "name": "Neither",
+            "odds": "-200"
+          },
+          {
+            "name": "IND Fever",
+            "odds": "+450"
+          }
+        ],
+        "Race to 25 Points - 3rd Quarter": [
+          {
+            "name": "SEA Storm",
+            "odds": "+235"
+          },
+          {
+            "name": "Neither",
+            "odds": "-120"
+          },
+          {
+            "name": "IND Fever",
+            "odds": "+330"
+          }
+        ],
+        "Race to 25 Points - 4th Quarter": [
+          {
+            "name": "SEA Storm",
+            "odds": "+360"
+          },
+          {
+            "name": "Neither",
+            "odds": "-205"
+          },
+          {
+            "name": "IND Fever",
+            "odds": "+450"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "PHO Mercury @ LA Sparks",
+      "startTime": "2025-08-26 20:00",
+      "markets": {
+        "Spread": [
+          {
+            "name": "PHO Mercury",
+            "odds": "-5 (-108)"
+          },
+          {
+            "name": "LA Sparks",
+            "odds": "+5 (-112)"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 175",
+            "odds": "-112"
+          },
+          {
+            "name": "Under 175",
+            "odds": "-108"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "PHO Mercury",
+            "odds": "-198"
+          },
+          {
+            "name": "LA Sparks",
+            "odds": "+164"
+          }
+        ],
+        "Largest Lead of the Game": [
+          {
+            "name": "26 or More",
+            "odds": "+500"
+          },
+          {
+            "name": "12",
+            "odds": "+1000"
+          },
+          {
+            "name": "14",
+            "odds": "+1000"
+          },
+          {
+            "name": "11",
+            "odds": "+1100"
+          },
+          {
+            "name": "13",
+            "odds": "+1100"
+          },
+          {
+            "name": "15",
+            "odds": "+1100"
+          },
+          {
+            "name": "16",
+            "odds": "+1200"
+          },
+          {
+            "name": "10",
+            "odds": "+1300"
+          },
+          {
+            "name": "17",
+            "odds": "+1300"
+          },
+          {
+            "name": "18",
+            "odds": "+1400"
+          },
+          {
+            "name": "19",
+            "odds": "+1500"
+          },
+          {
+            "name": "9",
+            "odds": "+1600"
+          },
+          {
+            "name": "20",
+            "odds": "+1700"
+          },
+          {
+            "name": "21",
+            "odds": "+1900"
+          },
+          {
+            "name": "22",
+            "odds": "+2000"
+          },
+          {
+            "name": "8",
+            "odds": "+2200"
+          },
+          {
+            "name": "23",
+            "odds": "+2200"
+          },
+          {
+            "name": "24",
+            "odds": "+2200"
+          },
+          {
+            "name": "25",
+            "odds": "+3000"
+          },
+          {
+            "name": "7",
+            "odds": "+3500"
+          },
+          {
+            "name": "6",
+            "odds": "+6500"
+          },
+          {
+            "name": "5",
+            "odds": "+8000"
+          },
+          {
+            "name": "4",
+            "odds": "+9000"
+          }
+        ],
+        "Race to 10 Points - 1st Quarter": [
+          {
+            "name": "PHO Mercury",
+            "odds": "-135"
+          },
+          {
+            "name": "Neither",
+            "odds": "+10000"
+          },
+          {
+            "name": "LA Sparks",
+            "odds": "+105"
+          }
+        ],
+        "Race to 10 Points - 2nd Quarter": [
+          {
+            "name": "PHO Mercury",
+            "odds": "-135"
+          },
+          {
+            "name": "Neither",
+            "odds": "+9000"
+          },
+          {
+            "name": "LA Sparks",
+            "odds": "+105"
+          }
+        ],
+        "Race to 10 Points - 3rd Quarter": [
+          {
+            "name": "PHO Mercury",
+            "odds": "-140"
+          },
+          {
+            "name": "Neither",
+            "odds": "+9000"
+          },
+          {
+            "name": "LA Sparks",
+            "odds": "+110"
+          }
+        ],
+        "Race to 10 Points - 4th Quarter": [
+          {
+            "name": "PHO Mercury",
+            "odds": "-135"
+          },
+          {
+            "name": "Neither",
+            "odds": "+9000"
+          },
+          {
+            "name": "LA Sparks",
+            "odds": "+105"
+          }
+        ],
+        "Race to 15 Points - 1st Quarter": [
+          {
+            "name": "PHO Mercury",
+            "odds": "-140"
+          },
+          {
+            "name": "Neither",
+            "odds": "+5500"
+          },
+          {
+            "name": "LA Sparks",
+            "odds": "+110"
+          }
+        ],
+        "Race to 15 Points - 2nd Quarter": [
+          {
+            "name": "PHO Mercury",
+            "odds": "-140"
+          },
+          {
+            "name": "Neither",
+            "odds": "+5500"
+          },
+          {
+            "name": "LA Sparks",
+            "odds": "+115"
+          }
+        ],
+        "Race to 15 Points - 3rd Quarter": [
+          {
+            "name": "PHO Mercury",
+            "odds": "-145"
+          },
+          {
+            "name": "Neither",
+            "odds": "+5000"
+          },
+          {
+            "name": "LA Sparks",
+            "odds": "+115"
+          }
+        ],
+        "Race to 15 Points - 4th Quarter": [
+          {
+            "name": "PHO Mercury",
+            "odds": "-140"
+          },
+          {
+            "name": "Neither",
+            "odds": "+3000"
+          },
+          {
+            "name": "LA Sparks",
+            "odds": "+115"
+          }
+        ],
+        "Race to 20 Points - 1st Quarter": [
+          {
+            "name": "PHO Mercury",
+            "odds": "-115"
+          },
+          {
+            "name": "Neither",
+            "odds": "+800"
+          },
+          {
+            "name": "LA Sparks",
+            "odds": "+135"
+          }
+        ],
+        "Race to 20 Points - 2nd Quarter": [
+          {
+            "name": "PHO Mercury",
+            "odds": "-120"
+          },
+          {
+            "name": "Neither",
+            "odds": "+750"
+          },
+          {
+            "name": "LA Sparks",
+            "odds": "+135"
+          }
+        ],
+        "Race to 20 Points - 3rd Quarter": [
+          {
+            "name": "PHO Mercury",
+            "odds": "-120"
+          },
+          {
+            "name": "Neither",
+            "odds": "+650"
+          },
+          {
+            "name": "LA Sparks",
+            "odds": "+150"
+          }
+        ],
+        "Race to 20 Points - 4th Quarter": [
+          {
+            "name": "PHO Mercury",
+            "odds": "+105"
+          },
+          {
+            "name": "Neither",
+            "odds": "+390"
+          },
+          {
+            "name": "LA Sparks",
+            "odds": "+155"
+          }
+        ],
+        "Race to 25 Points - 1st Quarter": [
+          {
+            "name": "PHO Mercury",
+            "odds": "+175"
+          },
+          {
+            "name": "Neither",
+            "odds": "+115"
+          },
+          {
+            "name": "LA Sparks",
+            "odds": "+275"
+          }
+        ],
+        "Race to 25 Points - 2nd Quarter": [
+          {
+            "name": "PHO Mercury",
+            "odds": "+185"
+          },
+          {
+            "name": "Neither",
+            "odds": "+110"
+          },
+          {
+            "name": "LA Sparks",
+            "odds": "+285"
+          }
+        ],
+        "Race to 25 Points - 3rd Quarter": [
+          {
+            "name": "PHO Mercury",
+            "odds": "+180"
+          },
+          {
+            "name": "Neither",
+            "odds": "+100"
+          },
+          {
+            "name": "LA Sparks",
+            "odds": "+330"
+          }
+        ],
+        "Race to 25 Points - 4th Quarter": [
+          {
+            "name": "PHO Mercury",
+            "odds": "+300"
+          },
+          {
+            "name": "Neither",
+            "odds": "-170"
+          },
+          {
+            "name": "LA Sparks",
+            "odds": "+400"
+          }
+        ]
+      }
+    }
+  ]
+}

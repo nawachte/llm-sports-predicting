@@ -1,0 +1,39 @@
+-----Intro:
+I realized in the last round and while doing some research on prompting technique that more complex prompts can actually lead to worse
+performance. Some of my earlier prompts of just asking Gemini to go find betting opportunities were actually better than my more
+refined prompts. So now I'm simplifying it to have one agent go research potential edges and then other agent will look at specific 
+lines and decide if those edges have been accounted for in the lines provided. I'm choosing lines by taking any line with a confidence
+score of 7 or higher and allocating as 1 unit for 7, 2 units for 8, 3 units for 9, and 4 units for 10. For the purposes of this test
+I'll make one unit $0.50.
+-----Files:
+3.1_WNBA_DR_potential_edges.txt: use deep research to find potential edges for specific matchups
+     3.2_WNBA_analyze_lines.txt: take those potential edges and real sportsbook odds and decided which lines are mispriced
+           WNBA_Edges_Report.md: Report produced by the 3.1 agent on potential edges
+               final_output.txt: final assessment from the 3.2 agent on which picks are mispriced and gives a confidence level for each
+                      odds.json: sportsbook odds given to 3.2
+
+-----Inconsistencies/ Notes:
+Some descrpencies between the sports book now and what was reported by the agent at the end of analysis. Some small differences that
+were clearly line movment. To be fare literally every single discrepancy was in the direction of my percieved edge so I'm guessing
+it truly was line movement. One that stood out ot me was the Breanna Stewart player prop which had an actual point line of 12 instead
+of 14.5 but looking at the odds I gave it, this was quoted correctly. I'm guessing an hour maybe two between collected and chosen
+odds so everythign seems normal here. I'm actually going to place all of these despite any descrepencies except for the Breanna 
+Stewart pick. Financial analysis will be on everyting provided below.
+
+-----Picks/results:
+Pick 1: IND Fever vs SEA Storm      | +3.5 Spread (Fever)      | $1.50 | -112 -> Won
+Pick 2: CHI Sky vs LV Aces          | +10.5 Spread (Sky)       | $1.00 | -108 -> Won
+Pick 3: SEA Storm vs IND Fever      | Total Over (165)         | $1.00 | -110 -> Won
+Pick 4: CON Sun vs NY Liberty       | +14.5 Spread (Sun)       | $1.00 | -110 -> Won
+Pick 5: PHO Mercury vs LA Sparks    | Total Over (175)         | $0.50 | -112 -> Won
+Pick 6: Breanna Stewart Player Prop | Under 14.5 Points        | $0.50 | -125 -> Lost
+Pick 7: CHI vs LV Aces              | +3.5 Spread 1Q (Sky)     | $0.50 | -120 -> Lost
+
+
+-----Closing Line Value:
+Unknown
+
+-----Conclusion:
+Truly not a bad run. I think I 
+
++$1.34 (pick 1) + $0.93 (pick 2) + $0.91 (pick 3) + $0.91 (pick 4) + $0.45 (pick 5) - $0.50 (pick 6) - $0.50 (pick 7) = $3.53 [58.8% profit]

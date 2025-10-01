@@ -1,0 +1,736 @@
+{
+  "UFC Fight Night 257: Shanghai - Generated True Prices": [
+    {
+      "matchup": "Uran Satybaldiev VS Diyar Nurgozhay",
+      "markets": {
+        "methodOfVictory": [
+          {
+            "name": "Uran Satybaldiev by KO/TKO/DQ",
+            "odds": "+421"
+          },
+          {
+            "name": "Uran Satybaldiev by Submission",
+            "odds": "+2841"
+          },
+          {
+            "name": "Uran Satybaldiev by Decision",
+            "odds": "+361"
+          },
+          {
+            "name": "Diyar Nurgozhay by KO/TKO/DQ",
+            "odds": "+604"
+          },
+          {
+            "name": "Diyar Nurgozhay by Submission",
+            "odds": "+604"
+          },
+          {
+            "name": "Diyar Nurgozhay by Decision",
+            "odds": "+266"
+          }
+        ],
+        "fightToGoTheDistance": [
+          {
+            "name": "Yes",
+            "odds": "+104"
+          },
+          {
+            "name": "No",
+            "odds": "-104"
+          }
+        ],
+        "fightToBeWonByUnanimousDecision": [
+          {
+            "name": "Yes",
+            "odds": "+192"
+          },
+          {
+            "name": "No",
+            "odds": "-192"
+          }
+        ],
+        "fightToBeWonBySplitMajorityDecision": [
+          {
+            "name": "Yes",
+            "odds": "+580"
+          },
+          {
+            "name": "No",
+            "odds": "-580"
+          }
+        ]
+      }
+    },
+    {
+      "matchup": "Long Xiao VS Su Young You",
+      "markets": {
+        "methodOfVictory": [
+          {
+            "name": "Long Xiao by KO/TKO/DQ",
+            "odds": "+223"
+          },
+          {
+            "name": "Long Xiao by Submission",
+            "odds": "+33233"
+          },
+          {
+            "name": "Long Xiao by Decision",
+            "odds": "+2400"
+          },
+          {
+            "name": "Su Young You by KO/TKO/DQ",
+            "odds": "+6944"
+          },
+          {
+            "name": "Su Young You by Submission",
+            "odds": "+266"
+          },
+          {
+            "name": "Su Young You by Decision",
+            "odds": "+178"
+          }
+        ],
+        "fightToGoTheDistance": [
+          {
+            "name": "Yes",
+            "odds": "+150"
+          },
+          {
+            "name": "No",
+            "odds": "-150"
+          }
+        ],
+        "fightToBeWonByUnanimousDecision": [
+          {
+            "name": "Yes",
+            "odds": "+178"
+          },
+          {
+            "name": "No",
+            "odds": "-178"
+          }
+        ],
+        "fightToBeWonBySplitMajorityDecision": [
+          {
+            "name": "Yes",
+            "odds": "+2400"
+          },
+          {
+            "name": "No",
+            "odds": "-2400"
+          }
+        ]
+      }
+    },
+    {
+      "matchup": "Yizha VS Westin Wilson",
+      "markets": {
+        "methodOfVictory": [
+          {
+            "name": "Yizha by KO/TKO/DQ",
+            "odds": "+203"
+          },
+          {
+            "name": "Yizha by Submission",
+            "odds": "+102"
+          },
+          {
+            "name": "Yizha by Decision",
+            "odds": "+1900"
+          },
+          {
+            "name": "Westin Wilson by KO/TKO/DQ",
+            "odds": "+99900"
+          },
+          {
+            "name": "Westin Wilson by Submission",
+            "odds": "+700"
+          },
+          {
+            "name": "Westin Wilson by Decision",
+            "odds": "+99900"
+          }
+        ],
+        "fightToGoTheDistance": [
+          {
+            "name": "Yes",
+            "odds": "+1900"
+          },
+          {
+            "name": "No",
+            "odds": "-1900"
+          }
+        ],
+        "fightToBeWonByUnanimousDecision": [
+          {
+            "name": "Yes",
+            "odds": "+1983"
+          },
+          {
+            "name": "No",
+            "odds": "-1983"
+          }
+        ],
+        "fightToBeWonBySplitMajorityDecision": [
+          {
+            "name": "Yes",
+            "odds": "+49900"
+          },
+          {
+            "name": "No",
+            "odds": "-49900"
+          }
+        ]
+      }
+    },
+    {
+      "matchup": "Michel Pereira VS Kyle Daukaus",
+      "markets": {
+        "methodOfVictory": [
+          {
+            "name": "Michel Pereira by KO/TKO/DQ",
+            "odds": "+120"
+          },
+          {
+            "name": "Michel Pereira by Submission",
+            "odds": "+1861"
+          },
+          {
+            "name": "Michel Pereira by Decision",
+            "odds": "+492"
+          },
+          {
+            "name": "Kyle Daukaus by KO/TKO/DQ",
+            "odds": "+8233"
+          },
+          {
+            "name": "Kyle Daukaus by Submission",
+            "odds": "+331"
+          },
+          {
+            "name": "Kyle Daukaus by Decision",
+            "odds": "+1135"
+          }
+        ],
+        "fightToGoTheDistance": [
+          {
+            "name": "Yes",
+            "odds": "+300"
+          },
+          {
+            "name": "No",
+            "odds": "-300"
+          }
+        ],
+        "fightToBeWonByUnanimousDecision": [
+          {
+            "name": "Yes",
+            "odds": "+514"
+          },
+          {
+            "name": "No",
+            "odds": "-514"
+          }
+        ],
+        "fightToBeWonBySplitMajorityDecision": [
+          {
+            "name": "Yes",
+            "odds": "+1049"
+          },
+          {
+            "name": "No",
+            "odds": "-1049"
+          }
+        ]
+      }
+    },
+    {
+      "matchup": "Rongzhu VS Austin Hubbard",
+      "markets": {
+        "methodOfVictory": [
+          {
+            "name": "Rongzhu by KO/TKO/DQ",
+            "odds": "+541"
+          },
+          {
+            "name": "Rongzhu by Submission",
+            "odds": "+2464"
+          },
+          {
+            "name": "Rongzhu by Decision",
+            "odds": "+104"
+          },
+          {
+            "name": "Austin Hubbard by KO/TKO/DQ",
+            "odds": "+6150"
+          },
+          {
+            "name": "Austin Hubbard by Submission",
+            "odds": "+1861"
+          },
+          {
+            "name": "Austin Hubbard by Decision",
+            "odds": "+341"
+          }
+        ],
+        "fightToGoTheDistance": [
+          {
+            "name": "Yes",
+            "odds": "-255"
+          },
+          {
+            "name": "No",
+            "odds": "+255"
+          }
+        ],
+        "fightToBeWonByUnanimousDecision": [
+          {
+            "name": "Yes",
+            "odds": "-117"
+          },
+          {
+            "name": "No",
+            "odds": "+117"
+          }
+        ],
+        "fightToBeWonBySplitMajorityDecision": [
+          {
+            "name": "Yes",
+            "odds": "+458"
+          },
+          {
+            "name": "No",
+            "odds": "-458"
+          }
+        ]
+      }
+    },
+    {
+      "matchup": "Charles Johnson VS Lone'er Kavanagh",
+      "markets": {
+        "methodOfVictory": [
+          {
+            "name": "Charles Johnson by KO/TKO/DQ",
+            "odds": "+1166"
+          },
+          {
+            "name": "Charles Johnson by Submission",
+            "odds": "+6150"
+          },
+          {
+            "name": "Charles Johnson by Decision",
+            "odds": "+294"
+          },
+          {
+            "name": "Lone'er Kavanagh by KO/TKO/DQ",
+            "odds": "+1105"
+          },
+          {
+            "name": "Lone'er Kavanagh by Submission",
+            "odds": "+2281"
+          },
+          {
+            "name": "Lone'er Kavanagh by Decision",
+            "odds": "-107"
+          }
+        ],
+        "fightToGoTheDistance": [
+          {
+            "name": "Yes",
+            "odds": "-335"
+          },
+          {
+            "name": "No",
+            "odds": "+335"
+          }
+        ],
+        "fightToBeWonByUnanimousDecision": [
+          {
+            "name": "Yes",
+            "odds": "-160"
+          },
+          {
+            "name": "No",
+            "odds": "+160"
+          }
+        ],
+        "fightToBeWonBySplitMajorityDecision": [
+          {
+            "name": "Yes",
+            "odds": "+549"
+          },
+          {
+            "name": "No",
+            "odds": "-549"
+          }
+        ]
+      }
+    },
+    {
+      "matchup": "Maheshate VS Gauge Young",
+      "markets": {
+        "methodOfVictory": [
+          {
+            "name": "Maheshate by KO/TKO/DQ",
+            "odds": "+413"
+          },
+          {
+            "name": "Maheshate by Submission",
+            "odds": "+8233"
+          },
+          {
+            "name": "Maheshate by Decision",
+            "odds": "+160"
+          },
+          {
+            "name": "Gauge Young by KO/TKO/DQ",
+            "odds": "+1166"
+          },
+          {
+            "name": "Gauge Young by Submission",
+            "odds": "+4900"
+          },
+          {
+            "name": "Gauge Young by Decision",
+            "odds": "+342"
+          }
+        ],
+        "fightToGoTheDistance": [
+          {
+            "name": "Yes",
+            "odds": "-157"
+          },
+          {
+            "name": "No",
+            "odds": "+157"
+          }
+        ],
+        "fightToBeWonByUnanimousDecision": [
+          {
+            "name": "Yes",
+            "odds": "+118"
+          },
+          {
+            "name": "No",
+            "odds": "-118"
+          }
+        ],
+        "fightToBeWonBySplitMajorityDecision": [
+          {
+            "name": "Yes",
+            "odds": "+554"
+          },
+          {
+            "name": "No",
+            "odds": "-554"
+          }
+        ]
+      }
+    },
+    {
+      "matchup": "Taiyilake Nueraji VS Kiefer Crosbie",
+      "markets": {
+        "methodOfVictory": [
+          {
+            "name": "Taiyilake Nueraji by KO/TKO/DQ",
+            "odds": "-256"
+          },
+          {
+            "name": "Taiyilake Nueraji by Submission",
+            "odds": "+2532"
+          },
+          {
+            "name": "Taiyilake Nueraji by Decision",
+            "odds": "+871"
+          },
+          {
+            "name": "Kiefer Crosbie by KO/TKO/DQ",
+            "odds": "+3471"
+          },
+          {
+            "name": "Kiefer Crosbie by Submission",
+            "odds": "+1438"
+          },
+          {
+            "name": "Kiefer Crosbie by Decision",
+            "odds": "+2028"
+          }
+        ],
+        "fightToGoTheDistance": [
+          {
+            "name": "Yes",
+            "odds": "+567"
+          },
+          {
+            "name": "No",
+            "odds": "-567"
+          }
+        ],
+        "fightToBeWonByUnanimousDecision": [
+          {
+            "name": "Yes",
+            "odds": "+733"
+          },
+          {
+            "name": "No",
+            "odds": "-733"
+          }
+        ],
+        "fightToBeWonBySplitMajorityDecision": [
+          {
+            "name": "Yes",
+            "odds": "+3233"
+          },
+          {
+            "name": "No",
+            "odds": "-3233"
+          }
+        ]
+      }
+    },
+    {
+      "matchup": "Sumudaerji VS Kevin Borjas",
+      "markets": {
+        "methodOfVictory": [
+          {
+            "name": "Sumudaerji by KO/TKO/DQ",
+            "odds": "+554"
+          },
+          {
+            "name": "Sumudaerji by Submission",
+            "odds": "+8233"
+          },
+          {
+            "name": "Sumudaerji by Decision",
+            "odds": "+122"
+          },
+          {
+            "name": "Kevin Borjas by KO/TKO/DQ",
+            "odds": "+510"
+          },
+          {
+            "name": "Kevin Borjas by Submission",
+            "odds": "+8991"
+          },
+          {
+            "name": "Kevin Borjas by Decision",
+            "odds": "+376"
+          }
+        ],
+        "fightToGoTheDistance": [
+          {
+            "name": "Yes",
+            "odds": "-194"
+          },
+          {
+            "name": "No",
+            "odds": "+194"
+          }
+        ],
+        "fightToBeWonByUnanimousDecision": [
+          {
+            "name": "Yes",
+            "odds": "+102"
+          },
+          {
+            "name": "No",
+            "odds": "-102"
+          }
+        ],
+        "fightToBeWonBySplitMajorityDecision": [
+          {
+            "name": "Yes",
+            "odds": "+506"
+          },
+          {
+            "name": "No",
+            "odds": "-506"
+          }
+        ]
+      }
+    },
+    {
+      "matchup": "Sergei Pavlovich VS Waldo Cortes-Acosta",
+      "markets": {
+        "methodOfVictory": [
+          {
+            "name": "Sergei Pavlovich by KO/TKO/DQ",
+            "odds": "-135"
+          },
+          {
+            "name": "Sergei Pavlovich by Submission",
+            "odds": "+14186"
+          },
+          {
+            "name": "Sergei Pavlovich by Decision",
+            "odds": "+900"
+          },
+          {
+            "name": "Waldo Cortes-Acosta by KO/TKO/DQ",
+            "odds": "+920"
+          },
+          {
+            "name": "Waldo Cortes-Acosta by Submission",
+            "odds": "+4900"
+          },
+          {
+            "name": "Waldo Cortes-Acosta by Decision",
+            "odds": "+400"
+          }
+        ],
+        "fightToGoTheDistance": [
+          {
+            "name": "Yes",
+            "odds": "+233"
+          },
+          {
+            "name": "No",
+            "odds": "-233"
+          }
+        ],
+        "fightToBeWonByUnanimousDecision": [
+          {
+            "name": "Yes",
+            "odds": "+344"
+          },
+          {
+            "name": "No",
+            "odds": "-344"
+          }
+        ],
+        "fightToBeWonBySplitMajorityDecision": [
+          {
+            "name": "Yes",
+            "odds": "+1233"
+          },
+          {
+            "name": "No",
+            "odds": "-1233"
+          }
+        ]
+      }
+    },
+    {
+      "matchup": "Brian Ortega VS Aljamain Sterling",
+      "markets": {
+        "methodOfVictory": [
+          {
+            "name": "Brian Ortega by KO/TKO/DQ",
+            "odds": "+681"
+          },
+          {
+            "name": "Brian Ortega by Submission",
+            "odds": "+421"
+          },
+          {
+            "name": "Brian Ortega by Decision",
+            "odds": "+713"
+          },
+          {
+            "name": "Aljamain Sterling by KO/TKO/DQ",
+            "odds": "+3348"
+          },
+          {
+            "name": "Aljamain Sterling by Submission",
+            "odds": "+562"
+          },
+          {
+            "name": "Aljamain Sterling by Decision",
+            "odds": "+165"
+          }
+        ],
+        "fightToGoTheDistance": [
+          {
+            "name": "Yes",
+            "odds": "-150"
+          },
+          {
+            "name": "No",
+            "odds": "+150"
+          }
+        ],
+        "fightToBeWonByUnanimousDecision": [
+          {
+            "name": "Yes",
+            "odds": "+122"
+          },
+          {
+            "name": "No",
+            "odds": "-122"
+          }
+        ],
+        "fightToBeWonBySplitMajorityDecision": [
+          {
+            "name": "Yes",
+            "odds": "+567"
+          },
+          {
+            "name": "No",
+            "odds": "-567"
+          }
+        ]
+      }
+    },
+    {
+      "matchup": "Johnny Walker VS Zhang Mingyang",
+      "markets": {
+        "methodOfVictory": [
+          {
+            "name": "Johnny Walker by KO/TKO/DQ",
+            "odds": "+359"
+          },
+          {
+            "name": "Johnny Walker by Submission",
+            "odds": "+4067"
+          },
+          {
+            "name": "Johnny Walker by Decision",
+            "odds": "+2757"
+          },
+          {
+            "name": "Zhang Mingyang by KO/TKO/DQ",
+            "odds": "-151"
+          },
+          {
+            "name": "Zhang Mingyang by Submission",
+            "odds": "+843"
+          },
+          {
+            "name": "Zhang Mingyang by Decision",
+            "odds": "+6567"
+          }
+        ],
+        "fightToGoTheDistance": [
+          {
+            "name": "Yes",
+            "odds": "+1900"
+          },
+          {
+            "name": "No",
+            "odds": "-1900"
+          }
+        ],
+        "fightToBeWonByUnanimousDecision": [
+          {
+            "name": "Yes",
+            "odds": "+2226"
+          },
+          {
+            "name": "No",
+            "odds": "-2226"
+          }
+        ],
+        "fightToBeWonBySplitMajorityDecision": [
+          {
+            "name": "Yes",
+            "odds": "+14186"
+          },
+          {
+            "name": "No",
+            "odds": "-14186"
+          }
+        ]
+      }
+    }
+  ]
+}

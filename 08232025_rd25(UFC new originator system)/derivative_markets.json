@@ -1,0 +1,788 @@
+{
+  "UFC": [
+    {
+      "eventName": "Uran Satybaldiev VS Diyar Nurgozhay",
+      "startTime": "2025-08-23 02:15",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Uran Satybaldiev To Win By KO/TKO/DQ",
+            "odds": "+240"
+          },
+          {
+            "name": "Uran Satybaldiev To Win By Submission",
+            "odds": "+800"
+          },
+          {
+            "name": "Uran Satybaldiev To Win By Decision",
+            "odds": "+250"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Diyar Nurgozhay To Win By KO/TKO/DQ",
+            "odds": "+350"
+          },
+          {
+            "name": "Diyar Nurgozhay To Win By Submission",
+            "odds": "+1000"
+          },
+          {
+            "name": "Diyar Nurgozhay To Win By Decision",
+            "odds": "+350"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+110"
+          },
+          {
+            "name": "No",
+            "odds": "-145"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+500"
+          },
+          {
+            "name": "No",
+            "odds": "-900"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+165"
+          },
+          {
+            "name": "No",
+            "odds": "-220"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Long Xiao VS Su Young You",
+      "startTime": "2025-08-23 02:45",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Long Xiao To Win By KO/TKO/DQ",
+            "odds": "+700"
+          },
+          {
+            "name": "Long Xiao To Win By Submission",
+            "odds": "+1100"
+          },
+          {
+            "name": "Long Xiao To Win By Decision",
+            "odds": "+175"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Su Young You To Win By KO/TKO/DQ",
+            "odds": "+1000"
+          },
+          {
+            "name": "Su Young You To Win By Submission",
+            "odds": "+800"
+          },
+          {
+            "name": "Su Young You To Win By Decision",
+            "odds": "+130"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "-275"
+          },
+          {
+            "name": "No",
+            "odds": "+200"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+275"
+          },
+          {
+            "name": "No",
+            "odds": "-400"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "-135"
+          },
+          {
+            "name": "No",
+            "odds": "+105"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Yizha VS Westin Wilson",
+      "startTime": "2025-08-23 03:15",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Yizha To Win By KO/TKO/DQ",
+            "odds": "+250"
+          },
+          {
+            "name": "Yizha To Win By Submission",
+            "odds": "-175"
+          },
+          {
+            "name": "Yizha To Win By Decision",
+            "odds": "+650"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Westin Wilson To Win By KO/TKO/DQ",
+            "odds": "+2800"
+          },
+          {
+            "name": "Westin Wilson To Win By Submission",
+            "odds": "+1400"
+          },
+          {
+            "name": "Westin Wilson To Win By Decision",
+            "odds": "+2500"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+500"
+          },
+          {
+            "name": "No",
+            "odds": "-900"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+1800"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+650"
+          },
+          {
+            "name": "No",
+            "odds": "-1400"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Michel Pereira VS Kyle Daukaus",
+      "startTime": "2025-08-23 03:45",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Michel Pereira To Win By KO/TKO/DQ",
+            "odds": "+130"
+          },
+          {
+            "name": "Michel Pereira To Win By Submission",
+            "odds": "+900"
+          },
+          {
+            "name": "Michel Pereira To Win By Decision",
+            "odds": "+225"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Kyle Daukaus To Win By KO/TKO/DQ",
+            "odds": "+1100"
+          },
+          {
+            "name": "Kyle Daukaus To Win By Submission",
+            "odds": "+600"
+          },
+          {
+            "name": "Kyle Daukaus To Win By Decision",
+            "odds": "+550"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+130"
+          },
+          {
+            "name": "No",
+            "odds": "-170"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+550"
+          },
+          {
+            "name": "No",
+            "odds": "-1000"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+200"
+          },
+          {
+            "name": "No",
+            "odds": "-275"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Rongzhu VS Austin Hubbard",
+      "startTime": "2025-08-23 04:15",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Rongzhu To Win By KO/TKO/DQ",
+            "odds": "+380"
+          },
+          {
+            "name": "Rongzhu To Win By Submission",
+            "odds": "+1000"
+          },
+          {
+            "name": "Rongzhu To Win By Decision",
+            "odds": "-110"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Austin Hubbard To Win By KO/TKO/DQ",
+            "odds": "+900"
+          },
+          {
+            "name": "Austin Hubbard To Win By Submission",
+            "odds": "+1800"
+          },
+          {
+            "name": "Austin Hubbard To Win By Decision",
+            "odds": "+350"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "-225"
+          },
+          {
+            "name": "No",
+            "odds": "+165"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+330"
+          },
+          {
+            "name": "No",
+            "odds": "-500"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "-120"
+          },
+          {
+            "name": "No",
+            "odds": "-110"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Charles Johnson VS Lone'er Kavanagh",
+      "startTime": "2025-08-23 04:30",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Charles Johnson To Win By KO/TKO/DQ",
+            "odds": "+900"
+          },
+          {
+            "name": "Charles Johnson To Win By Submission",
+            "odds": "+3000"
+          },
+          {
+            "name": "Charles Johnson To Win By Decision",
+            "odds": "+300"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Lone'er Kavanagh To Win By KO/TKO/DQ",
+            "odds": "+450"
+          },
+          {
+            "name": "Lone'er Kavanagh To Win By Submission",
+            "odds": "+1800"
+          },
+          {
+            "name": "Lone'er Kavanagh To Win By Decision",
+            "odds": "-135"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "-330"
+          },
+          {
+            "name": "No",
+            "odds": "+235"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+275"
+          },
+          {
+            "name": "No",
+            "odds": "-400"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "-150"
+          },
+          {
+            "name": "No",
+            "odds": "+110"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Maheshate VS Gauge Young",
+      "startTime": "2025-08-23 04:45",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Maheshate To Win By KO/TKO/DQ",
+            "odds": "+450"
+          },
+          {
+            "name": "Maheshate To Win By Submission",
+            "odds": "+2000"
+          },
+          {
+            "name": "Maheshate To Win By Decision",
+            "odds": "+240"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Gauge Young To Win By KO/TKO/DQ",
+            "odds": "+250"
+          },
+          {
+            "name": "Gauge Young To Win By Submission",
+            "odds": "+1200"
+          },
+          {
+            "name": "Gauge Young To Win By Decision",
+            "odds": "+215"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "-130"
+          },
+          {
+            "name": "No",
+            "odds": "+100"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+400"
+          },
+          {
+            "name": "No",
+            "odds": "-650"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+120"
+          },
+          {
+            "name": "No",
+            "odds": "-160"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Taiyilake Nueraji VS Kiefer Crosbie",
+      "startTime": "2025-08-23 05:15",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Taiyilake Nueraji To Win By KO/TKO/DQ",
+            "odds": "-225"
+          },
+          {
+            "name": "Taiyilake Nueraji To Win By Submission",
+            "odds": "+500"
+          },
+          {
+            "name": "Taiyilake Nueraji To Win By Decision",
+            "odds": "+750"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Kiefer Crosbie To Win By KO/TKO/DQ",
+            "odds": "+750"
+          },
+          {
+            "name": "Kiefer Crosbie To Win By Submission",
+            "odds": "+1600"
+          },
+          {
+            "name": "Kiefer Crosbie To Win By Decision",
+            "odds": "+1400"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+450"
+          },
+          {
+            "name": "No",
+            "odds": "-750"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+1400"
+          },
+          {
+            "name": "No",
+            "odds": "-20000"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+650"
+          },
+          {
+            "name": "No",
+            "odds": "-1400"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Sumudaerji VS Kevin Borjas",
+      "startTime": "2025-08-23 05:45",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Sumudaerji To Win By KO/TKO/DQ",
+            "odds": "+450"
+          },
+          {
+            "name": "Sumudaerji To Win By Submission",
+            "odds": "+1200"
+          },
+          {
+            "name": "Sumudaerji To Win By Decision",
+            "odds": "+110"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Kevin Borjas To Win By KO/TKO/DQ",
+            "odds": "+450"
+          },
+          {
+            "name": "Kevin Borjas To Win By Submission",
+            "odds": "+2000"
+          },
+          {
+            "name": "Kevin Borjas To Win By Decision",
+            "odds": "+300"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "-200"
+          },
+          {
+            "name": "No",
+            "odds": "+150"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+330"
+          },
+          {
+            "name": "No",
+            "odds": "-500"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "-110"
+          },
+          {
+            "name": "No",
+            "odds": "-120"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Sergei Pavlovich VS Waldo Cortes-Acosta",
+      "startTime": "2025-08-23 06:15",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Sergei Pavlovich To Win By KO/TKO/DQ",
+            "odds": "+110"
+          },
+          {
+            "name": "Sergei Pavlovich To Win By Submission",
+            "odds": "+2500"
+          },
+          {
+            "name": "Sergei Pavlovich To Win By Decision",
+            "odds": "+250"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Waldo Cortes-Acosta To Win By KO/TKO/DQ",
+            "odds": "+500"
+          },
+          {
+            "name": "Waldo Cortes-Acosta To Win By Submission",
+            "odds": "+2500"
+          },
+          {
+            "name": "Waldo Cortes-Acosta To Win By Decision",
+            "odds": "+550"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+140"
+          },
+          {
+            "name": "No",
+            "odds": "-185"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+600"
+          },
+          {
+            "name": "No",
+            "odds": "-1400"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+200"
+          },
+          {
+            "name": "No",
+            "odds": "-290"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Brian Ortega VS Aljamain Sterling",
+      "startTime": "2025-08-23 06:45",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Brian Ortega To Win By KO/TKO/DQ",
+            "odds": "+1400"
+          },
+          {
+            "name": "Brian Ortega To Win By Submission",
+            "odds": "+800"
+          },
+          {
+            "name": "Brian Ortega To Win By Decision",
+            "odds": "+750"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Aljamain Sterling To Win By KO/TKO/DQ",
+            "odds": "+600"
+          },
+          {
+            "name": "Aljamain Sterling To Win By Submission",
+            "odds": "+300"
+          },
+          {
+            "name": "Aljamain Sterling To Win By Decision",
+            "odds": "-110"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "-150"
+          },
+          {
+            "name": "No",
+            "odds": "+110"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+450"
+          },
+          {
+            "name": "No",
+            "odds": "-750"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+100"
+          },
+          {
+            "name": "No",
+            "odds": "-130"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Johnny Walker VS Zhang Mingyang",
+      "startTime": "2025-08-23 07:15",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Johnny Walker To Win By KO/TKO/DQ",
+            "odds": "+450"
+          },
+          {
+            "name": "Johnny Walker To Win By Submission",
+            "odds": "+1100"
+          },
+          {
+            "name": "Johnny Walker To Win By Decision",
+            "odds": "+1800"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Zhang Mingyang To Win By KO/TKO/DQ",
+            "odds": "-280"
+          },
+          {
+            "name": "Zhang Mingyang To Win By Submission",
+            "odds": "+1200"
+          },
+          {
+            "name": "Zhang Mingyang To Win By Decision",
+            "odds": "+2200"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+900"
+          },
+          {
+            "name": "No",
+            "odds": "-3000"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+2500"
+          },
+          {
+            "name": "No",
+            "odds": "-20000"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+1200"
+          }
+        ]
+      }
+    }
+  ]
+}

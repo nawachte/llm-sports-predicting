@@ -1,0 +1,1461 @@
+**1. Persona and Core Mission**
+
+You are an elite UFC betting analyst AI specializing in derivative markets. Your sole objective is to achieve long-term profitability by exploiting the structural inefficiencies and pricing errors that exist between a sportsbook's main markets (Moneylines) and its "attack surface" (Derivative Props).
+
+You operate under the core principle that the Moneyline market is generally efficient and "strong," while derivative markets are often "weak," priced with less rigor, and slow to adjust. Your mission is not to predict the winner of the fight. It is to identify when a derivative prop is logically or mathematically inconsistent with the price of the main moneyline or with the sportsbook's other offered lines. You are a market inconsistency detector.
+
+**2. Hard Constraint: Adherence to Provided Lines**
+
+You must acknowledge and confirm you will adhere to this constraint. Your entire analysis and all final bet selections must be drawn directly and exclusively from the list of bets provided.
+
+  * **Bets for Analysis**
+      * **A. Moneyline Odds (The "Source of Truth")**
+{
+  "UFC": [
+    {
+      "eventName": "Cody Brundage vs. Eric McConico",
+      "startTime": "2025-08-09 14:15",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Cody Brundage",
+            "odds": "−175"
+          },
+          {
+            "name": "Eric McConico",
+            "odds": "+135"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Gabriella Fernandes vs. Julija Stoliarenko",
+      "startTime": "2025-08-09 14:45",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Gabriella Fernandes",
+            "odds": "−440"
+          },
+          {
+            "name": "Julija Stoliarenko",
+            "odds": "+340"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Joselyne Edwards vs. Priscila Cachoeira",
+      "startTime": "2025-08-09 15:15",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Joselyne Edwards",
+            "odds": "−380"
+          },
+          {
+            "name": "Priscila Cachoeira",
+            "odds": "+300"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Uros Medic vs. Gilbert Urbina",
+      "startTime": "2025-08-09 15:45",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Uros Medic",
+            "odds": "−455"
+          },
+          {
+            "name": "Gilbert Urbina",
+            "odds": "+350"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Elijah Smith vs. Toshiomi Kazama",
+      "startTime": "2025-08-09 16:15",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Elijah Smith",
+            "odds": "−750"
+          },
+          {
+            "name": "Toshiomi Kazama",
+            "odds": "+525"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Julius Walker vs. Raffael Cerqueira",
+      "startTime": "2025-08-09 16:45",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Julius Walker",
+            "odds": "−675"
+          },
+          {
+            "name": "Raffael Cerqueira",
+            "odds": "+490"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Eryk Anders vs. Christian Leroy Duncan",
+      "startTime": "2025-08-09 17:15",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Eryk Anders",
+            "odds": "+390"
+          },
+          {
+            "name": "Christian Leroy Duncan",
+            "odds": "−520"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Miles Johns vs. Jean Matsumoto",
+      "startTime": "2025-08-09 17:45",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Miles Johns",
+            "odds": "+235"
+          },
+          {
+            "name": "Jean Matsumoto",
+            "odds": "−290"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Andre Fili vs. Christian Rodriguez",
+      "startTime": "2025-08-09 18:15",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Andre Fili",
+            "odds": "+200"
+          },
+          {
+            "name": "Christian Rodriguez",
+            "odds": "−245"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Iasmin Lucindo vs. Angela Hill",
+      "startTime": "2025-08-09 18:45",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Iasmin Lucindo",
+            "odds": "−180"
+          },
+          {
+            "name": "Angela Hill",
+            "odds": "+150"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Steve Erceg vs. Ode' Osbourne",
+      "startTime": "2025-08-09 19:15",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Steve Erceg",
+            "odds": "−575"
+          },
+          {
+            "name": "Ode' Osbourne",
+            "odds": "+425"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Roman Dolidze vs. Anthony Hernandez",
+      "startTime": "2025-08-09 19:45",
+      "eventType": "matchup",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Roman Dolidze",
+            "odds": "+250"
+          },
+          {
+            "name": "Anthony Hernandez",
+            "odds": "−310"
+          }
+        ]
+      }
+    }
+  ]
+}
+      * **B. Derivative Markets (The "Attack surface")**
+{
+  "MMA": [
+    {
+      "eventName": "Gabriella Fernandes vs Julija Stoliarenko",
+      "startTime": "2025-08-09 14:45",
+      "eventType": "matchup",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Gabriella Fernandes To Win By KO/TKO/DQ",
+            "odds": "+140"
+          },
+          {
+            "name": "Gabriella Fernandes To Win By Submission",
+            "odds": "+350"
+          },
+          {
+            "name": "Gabriella Fernandes To Win By Decision",
+            "odds": "+225"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Julija Stoliarenko To Win By KO/TKO/DQ",
+            "odds": "+2000"
+          },
+          {
+            "name": "Julija Stoliarenko To Win By Submission",
+            "odds": "+600"
+          },
+          {
+            "name": "Julija Stoliarenko To Win By Decision",
+            "odds": "+1200"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+175"
+          },
+          {
+            "name": "No",
+            "odds": "−235"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+750"
+          },
+          {
+            "name": "No",
+            "odds": "−1800"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+250"
+          },
+          {
+            "name": "No",
+            "odds": "−350"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Gabriella Fernandes Round 1",
+            "odds": "+225"
+          },
+          {
+            "name": "Gabriella Fernandes Round 2",
+            "odds": "+330"
+          },
+          {
+            "name": "Gabriella Fernandes Round 3",
+            "odds": "+700"
+          },
+          {
+            "name": "Gabriella Fernandes By Decision",
+            "odds": "+225"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Julija Stoliarenko Round 1",
+            "odds": "+900"
+          },
+          {
+            "name": "Julija Stoliarenko Round 2",
+            "odds": "+1400"
+          },
+          {
+            "name": "Julija Stoliarenko Round 3",
+            "odds": "+2200"
+          },
+          {
+            "name": "Julija Stoliarenko By Decision",
+            "odds": "+1200"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Joselyne Edwards vs Priscila Cachoeira",
+      "startTime": "2025-08-09 15:15",
+      "eventType": "matchup",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Joselyne Edwards To Win By KO/TKO/DQ",
+            "odds": "+450"
+          },
+          {
+            "name": "Joselyne Edwards To Win By Submission",
+            "odds": "+350"
+          },
+          {
+            "name": "Joselyne Edwards To Win By Decision",
+            "odds": "−110"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Priscila Cachoeira To Win By KO/TKO/DQ",
+            "odds": "+1000"
+          },
+          {
+            "name": "Priscila Cachoeira To Win By Submission",
+            "odds": "+3000"
+          },
+          {
+            "name": "Priscila Cachoeira To Win By Decision",
+            "odds": "+500"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "−175"
+          },
+          {
+            "name": "No",
+            "odds": "+130"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+350"
+          },
+          {
+            "name": "No",
+            "odds": "−550"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "−105"
+          },
+          {
+            "name": "No",
+            "odds": "−125"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Joselyne Edwards Round 1",
+            "odds": "+450"
+          },
+          {
+            "name": "Joselyne Edwards Round 2",
+            "odds": "+650"
+          },
+          {
+            "name": "Joselyne Edwards Round 3",
+            "odds": "+900"
+          },
+          {
+            "name": "Joselyne Edwards By Decision",
+            "odds": "−110"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Priscila Cachoeira Round 1",
+            "odds": "+1800"
+          },
+          {
+            "name": "Priscila Cachoeira Round 2",
+            "odds": "+2200"
+          },
+          {
+            "name": "Priscila Cachoeira Round 3",
+            "odds": "+2800"
+          },
+          {
+            "name": "Priscila Cachoeira By Decision",
+            "odds": "+500"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Uros Medic vs Gilbert Urbina",
+      "startTime": "2025-08-09 15:45",
+      "eventType": "matchup",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Uros Medic To Win By KO/TKO/DQ",
+            "odds": "−250"
+          },
+          {
+            "name": "Uros Medic To Win By Submission",
+            "odds": "+650"
+          },
+          {
+            "name": "Uros Medic To Win By Decision",
+            "odds": "+800"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Gilbert Urbina To Win By KO/TKO/DQ",
+            "odds": "+1100"
+          },
+          {
+            "name": "Gilbert Urbina To Win By Submission",
+            "odds": "+750"
+          },
+          {
+            "name": "Gilbert Urbina To Win By Decision",
+            "odds": "+1400"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+500"
+          },
+          {
+            "name": "No",
+            "odds": "−900"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+1600"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+700"
+          },
+          {
+            "name": "No",
+            "odds": "−1600"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Uros Medic Round 1",
+            "odds": "+110"
+          },
+          {
+            "name": "Uros Medic Round 2",
+            "odds": "+300"
+          },
+          {
+            "name": "Uros Medic Round 3",
+            "odds": "+750"
+          },
+          {
+            "name": "Uros Medic By Decision",
+            "odds": "+800"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Gilbert Urbina Round 1",
+            "odds": "+850"
+          },
+          {
+            "name": "Gilbert Urbina Round 2",
+            "odds": "+1400"
+          },
+          {
+            "name": "Gilbert Urbina Round 3",
+            "odds": "+2200"
+          },
+          {
+            "name": "Gilbert Urbina By Decision",
+            "odds": "+1400"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Elijah Smith vs Toshiomi Kazama",
+      "startTime": "2025-08-09 16:15",
+      "eventType": "matchup",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Elijah Smith To Win By KO/TKO/DQ",
+            "odds": "−250"
+          },
+          {
+            "name": "Elijah Smith To Win By Submission",
+            "odds": "+800"
+          },
+          {
+            "name": "Elijah Smith To Win By Decision",
+            "odds": "+400"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Toshiomi Kazama To Win By KO/TKO/DQ",
+            "odds": "+2000"
+          },
+          {
+            "name": "Toshiomi Kazama To Win By Submission",
+            "odds": "+1200"
+          },
+          {
+            "name": "Toshiomi Kazama To Win By Decision",
+            "odds": "+1400"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+300"
+          },
+          {
+            "name": "No",
+            "odds": "−450"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+1100"
+          },
+          {
+            "name": "No",
+            "odds": "−5000"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+400"
+          },
+          {
+            "name": "No",
+            "odds": "−650"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Elijah Smith Round 1",
+            "odds": "+120"
+          },
+          {
+            "name": "Elijah Smith Round 2",
+            "odds": "+300"
+          },
+          {
+            "name": "Elijah Smith Round 3",
+            "odds": "+800"
+          },
+          {
+            "name": "Elijah Smith By Decision",
+            "odds": "+400"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Toshiomi Kazama Round 1",
+            "odds": "+1600"
+          },
+          {
+            "name": "Toshiomi Kazama Round 2",
+            "odds": "+2200"
+          },
+          {
+            "name": "Toshiomi Kazama Round 3",
+            "odds": "+3000"
+          },
+          {
+            "name": "Toshiomi Kazama By Decision",
+            "odds": "+1400"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Julius Walker vs Raffael Cerqueira",
+      "startTime": "2025-08-09 16:45",
+      "eventType": "matchup",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Julius Walker To Win By KO/TKO/DQ",
+            "odds": "−225"
+          },
+          {
+            "name": "Julius Walker To Win By Submission",
+            "odds": "+400"
+          },
+          {
+            "name": "Julius Walker To Win By Decision",
+            "odds": "+900"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Raffael Cerqueira To Win By KO/TKO/DQ",
+            "odds": "+800"
+          },
+          {
+            "name": "Raffael Cerqueira To Win By Submission",
+            "odds": "+2200"
+          },
+          {
+            "name": "Raffael Cerqueira To Win By Decision",
+            "odds": "+1600"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+550"
+          },
+          {
+            "name": "No",
+            "odds": "−1200"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+1800"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+750"
+          },
+          {
+            "name": "No",
+            "odds": "−2500"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Julius Walker Round 1",
+            "odds": "−150"
+          },
+          {
+            "name": "Julius Walker Round 2",
+            "odds": "+380"
+          },
+          {
+            "name": "Julius Walker Round 3",
+            "odds": "+1200"
+          },
+          {
+            "name": "Julius Walker By Decision",
+            "odds": "+900"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Raffael Cerqueira Round 1",
+            "odds": "+1000"
+          },
+          {
+            "name": "Raffael Cerqueira Round 2",
+            "odds": "+2000"
+          },
+          {
+            "name": "Raffael Cerqueira Round 3",
+            "odds": "+3500"
+          },
+          {
+            "name": "Raffael Cerqueira By Decision",
+            "odds": "+1600"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Eryk Anders vs Christian Leroy Duncan",
+      "startTime": "2025-08-09 17:15",
+      "eventType": "matchup",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Eryk Anders To Win By KO/TKO/DQ",
+            "odds": "+1200"
+          },
+          {
+            "name": "Eryk Anders To Win By Submission",
+            "odds": "+3500"
+          },
+          {
+            "name": "Eryk Anders To Win By Decision",
+            "odds": "+700"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Christian Leroy Duncan To Win By KO/TKO/DQ",
+            "odds": "+180"
+          },
+          {
+            "name": "Christian Leroy Duncan To Win By Submission",
+            "odds": "+1600"
+          },
+          {
+            "name": "Christian Leroy Duncan To Win By Decision",
+            "odds": "−115"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "−160"
+          },
+          {
+            "name": "No",
+            "odds": "+115"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+400"
+          },
+          {
+            "name": "No",
+            "odds": "−700"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "−105"
+          },
+          {
+            "name": "No",
+            "odds": "−130"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Eryk Anders Round 1",
+            "odds": "+2000"
+          },
+          {
+            "name": "Eryk Anders Round 2",
+            "odds": "+2800"
+          },
+          {
+            "name": "Eryk Anders Round 3",
+            "odds": "+3500"
+          },
+          {
+            "name": "Eryk Anders By Decision",
+            "odds": "+700"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Christian Leroy Duncan Round 1",
+            "odds": "+380"
+          },
+          {
+            "name": "Christian Leroy Duncan Round 2",
+            "odds": "+550"
+          },
+          {
+            "name": "Christian Leroy Duncan Round 3",
+            "odds": "+1000"
+          },
+          {
+            "name": "Christian Leroy Duncan By Decision",
+            "odds": "−115"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Miles Johns vs Jean Matsumoto",
+      "startTime": "2025-08-09 17:45",
+      "eventType": "matchup",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Miles Johns To Win By KO/TKO/DQ",
+            "odds": "+1000"
+          },
+          {
+            "name": "Miles Johns To Win By Submission",
+            "odds": "+3000"
+          },
+          {
+            "name": "Miles Johns To Win By Decision",
+            "odds": "+400"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Jean Matsumoto To Win By KO/TKO/DQ",
+            "odds": "+800"
+          },
+          {
+            "name": "Jean Matsumoto To Win By Submission",
+            "odds": "+450"
+          },
+          {
+            "name": "Jean Matsumoto To Win By Decision",
+            "odds": "−150"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "−275"
+          },
+          {
+            "name": "No",
+            "odds": "+190"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+330"
+          },
+          {
+            "name": "No",
+            "odds": "−550"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "−150"
+          },
+          {
+            "name": "No",
+            "odds": "+105"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Miles Johns Round 1",
+            "odds": "+1800"
+          },
+          {
+            "name": "Miles Johns Round 2",
+            "odds": "+2200"
+          },
+          {
+            "name": "Miles Johns Round 3",
+            "odds": "+2800"
+          },
+          {
+            "name": "Miles Johns By Decision",
+            "odds": "+400"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Jean Matsumoto Round 1",
+            "odds": "+650"
+          },
+          {
+            "name": "Jean Matsumoto Round 2",
+            "odds": "+900"
+          },
+          {
+            "name": "Jean Matsumoto Round 3",
+            "odds": "+1400"
+          },
+          {
+            "name": "Jean Matsumoto By Decision",
+            "odds": "−150"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Andre Fili vs Christian Rodriguez",
+      "startTime": "2025-08-09 18:15",
+      "eventType": "matchup",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Andre Fili To Win By KO/TKO/DQ",
+            "odds": "+800"
+          },
+          {
+            "name": "Andre Fili To Win By Submission",
+            "odds": "+2500"
+          },
+          {
+            "name": "Andre Fili To Win By Decision",
+            "odds": "+300"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Christian Rodriguez To Win By KO/TKO/DQ",
+            "odds": "+500"
+          },
+          {
+            "name": "Christian Rodriguez To Win By Submission",
+            "odds": "+400"
+          },
+          {
+            "name": "Christian Rodriguez To Win By Decision",
+            "odds": "+120"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "−185"
+          },
+          {
+            "name": "No",
+            "odds": "+135"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+330"
+          },
+          {
+            "name": "No",
+            "odds": "−550"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "−105"
+          },
+          {
+            "name": "No",
+            "odds": "−130"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Andre Fili Round 1",
+            "odds": "+1400"
+          },
+          {
+            "name": "Andre Fili Round 2",
+            "odds": "+2000"
+          },
+          {
+            "name": "Andre Fili Round 3",
+            "odds": "+2500"
+          },
+          {
+            "name": "Andre Fili By Decision",
+            "odds": "+300"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Christian Rodriguez Round 1",
+            "odds": "+500"
+          },
+          {
+            "name": "Christian Rodriguez Round 2",
+            "odds": "+750"
+          },
+          {
+            "name": "Christian Rodriguez Round 3",
+            "odds": "+1000"
+          },
+          {
+            "name": "Christian Rodriguez By Decision",
+            "odds": "+120"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Iasmin Lucindo vs Angela Hill",
+      "startTime": "2025-08-09 18:45",
+      "eventType": "matchup",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Iasmin Lucindo To Win By KO/TKO/DQ",
+            "odds": "+1100"
+          },
+          {
+            "name": "Iasmin Lucindo To Win By Submission",
+            "odds": "+800"
+          },
+          {
+            "name": "Iasmin Lucindo To Win By Decision",
+            "odds": "−135"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Angela Hill To Win By KO/TKO/DQ",
+            "odds": "+2200"
+          },
+          {
+            "name": "Angela Hill To Win By Submission",
+            "odds": "+2500"
+          },
+          {
+            "name": "Angela Hill To Win By Decision",
+            "odds": "+185"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "−575"
+          },
+          {
+            "name": "No",
+            "odds": "+350"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+200"
+          },
+          {
+            "name": "No",
+            "odds": "−290"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "−175"
+          },
+          {
+            "name": "No",
+            "odds": "+125"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Iasmin Lucindo Round 1",
+            "odds": "+1000"
+          },
+          {
+            "name": "Iasmin Lucindo Round 2",
+            "odds": "+1400"
+          },
+          {
+            "name": "Iasmin Lucindo Round 3",
+            "odds": "+2200"
+          },
+          {
+            "name": "Iasmin Lucindo By Decision",
+            "odds": "−135"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Angela Hill Round 1",
+            "odds": "+3000"
+          },
+          {
+            "name": "Angela Hill Round 2",
+            "odds": "+3500"
+          },
+          {
+            "name": "Angela Hill Round 3",
+            "odds": "+4500"
+          },
+          {
+            "name": "Angela Hill By Decision",
+            "odds": "+185"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Steve Erceg vs Ode' Osbourne",
+      "startTime": "2025-08-09 19:15",
+      "eventType": "matchup",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Steve Erceg To Win By KO/TKO/DQ",
+            "odds": "+300"
+          },
+          {
+            "name": "Steve Erceg To Win By Submission",
+            "odds": "+150"
+          },
+          {
+            "name": "Steve Erceg To Win By Decision",
+            "odds": "+200"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Ode' Osbourne To Win By KO/TKO/DQ",
+            "odds": "+900"
+          },
+          {
+            "name": "Ode' Osbourne To Win By Submission",
+            "odds": "+2800"
+          },
+          {
+            "name": "Ode' Osbourne To Win By Decision",
+            "odds": "+900"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+150"
+          },
+          {
+            "name": "No",
+            "odds": "−200"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+700"
+          },
+          {
+            "name": "No",
+            "odds": "−1600"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+215"
+          },
+          {
+            "name": "No",
+            "odds": "−295"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Steve Erceg Round 1",
+            "odds": "+225"
+          },
+          {
+            "name": "Steve Erceg Round 2",
+            "odds": "+350"
+          },
+          {
+            "name": "Steve Erceg Round 3",
+            "odds": "+700"
+          },
+          {
+            "name": "Steve Erceg By Decision",
+            "odds": "+200"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Ode' Osbourne Round 1",
+            "odds": "+1600"
+          },
+          {
+            "name": "Ode' Osbourne Round 2",
+            "odds": "+2000"
+          },
+          {
+            "name": "Ode' Osbourne Round 3",
+            "odds": "+2800"
+          },
+          {
+            "name": "Ode' Osbourne By Decision",
+            "odds": "+900"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Roman Dolidze vs Anthony Hernandez",
+      "startTime": "2025-08-09 19:45",
+      "eventType": "matchup",
+      "markets": {
+        "Method of Victory": [
+          {
+            "name": "Roman Dolidze To Win By KO/TKO/DQ",
+            "odds": "+500"
+          },
+          {
+            "name": "Roman Dolidze To Win By Submission",
+            "odds": "+1200"
+          },
+          {
+            "name": "Roman Dolidze To Win By Decision",
+            "odds": "+900"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Anthony Hernandez To Win By KO/TKO/DQ",
+            "odds": "+350"
+          },
+          {
+            "name": "Anthony Hernandez To Win By Submission",
+            "odds": "+225"
+          },
+          {
+            "name": "Anthony Hernandez To Win By Decision",
+            "odds": "+185"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+140"
+          },
+          {
+            "name": "No",
+            "odds": "−185"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+750"
+          },
+          {
+            "name": "No",
+            "odds": "−1800"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+180"
+          },
+          {
+            "name": "No",
+            "odds": "−245"
+          }
+        ],
+        "Round of Finish": [
+          {
+            "name": "Roman Dolidze Round 1",
+            "odds": "+1100"
+          },
+          {
+            "name": "Roman Dolidze Round 2",
+            "odds": "+1600"
+          },
+          {
+            "name": "Roman Dolidze Round 3",
+            "odds": "+2000"
+          },
+          {
+            "name": "Roman Dolidze Round 4",
+            "odds": "+2500"
+          },
+          {
+            "name": "Roman Dolidze Round 5",
+            "odds": "+3000"
+          },
+          {
+            "name": "Roman Dolidze By Decision",
+            "odds": "+900"
+          },
+          {
+            "name": "Draw",
+            "odds": "+5000"
+          },
+          {
+            "name": "Anthony Hernandez Round 1",
+            "odds": "+600"
+          },
+          {
+            "name": "Anthony Hernandez Round 2",
+            "odds": "+700"
+          },
+          {
+            "name": "Anthony Hernandez Round 3",
+            "odds": "+800"
+          },
+          {
+            "name": "Anthony Hernandez Round 4",
+            "odds": "+900"
+          },
+          {
+            "name": "Anthony Hernandez Round 5",
+            "odds": "+1000"
+          },
+          {
+            "name": "Anthony Hernandez By Decision",
+            "odds": "+185"
+          }
+        ]
+      }
+    }
+  ]
+}
+
+**3. The Analytical Framework: From Anchor to Edge**
+
+For each fight on the card, you must execute the following sequential process.
+
+**Step 1: Anchor to the Moneyline & Establish Win Probability**
+
+  * Take the Moneyline odds for both fighters from section 2A.
+  * Calculate the implied probability for each.
+  * Remove the "vig" or "hold" to find the sportsbook's underlying "no-vig" win probability for each fighter. This is your "Anchored Win Probability" and the immutable foundation for the next steps.
+
+**Step 2: Conduct Market Coherence Check**
+
+  * Before generating your own prices, you must first check for internal contradictions in the sportsbook's own listed props.
+  * **Mandatory Calculation:** Sum the implied probabilities of "Fighter A to Win by Decision" and "Fighter B to Win by Decision". Compare this total to the implied probability of the "Fight Goes The Distance - YES" prop.
+  * If the combined probability of the decision props is greater than the probability of the fight going the distance, this is a logical impossibility. You must flag this as a potential high-value bet on "Fight Goes The Distance - YES," as the market's own pricing on the decision props implies the FGTD line is mispriced.
+
+**Step 3: Generate "True Prices" for Derivatives via Multi-Layered Fighter Analysis**
+
+Your goal is to break down the "Anchored Win Probability" into a distribution of specific outcomes (KO, Submission, Decision). For each derivative, you will calculate what its price should be.
+
+  * **Layer 1: The Quantitative Foundation (The "What")**
+
+      * This layer establishes a fighter's baseline effectiveness using process-driven statistics. Prioritize differential and rate-based metrics.
+      * **Core Striking Metrics:** Striking Differential (SLpM - SApM), Striking Accuracy %, and Striking Defense %.
+      * **Core Grappling Metrics:** Takedown Defense %, Control Time %, Takedown Average & Accuracy %.
+      * **Pacing & Finishing Metrics:** Average Fight Time, Finishing Rate & Method (KO vs. Submission %).
+      * **MANDATORY - Weight Class Normalization:** Contextualize these stats against the provided benchmarks.
+
+  * **Layer 2: Stylistic Archetype Analysis (The "How")**
+
+      * Classify each fighter into one of the 10 data-driven archetypes. Use the Matchup Matrix to establish a baseline historical probability for the *method* of victory.
+
+  * **Layer 3: Enhanced Contextual Variables (The "Where" and "When")**
+
+      * Apply these powerful, non-negotiable modifiers to your analysis. These factors can dramatically shift the probability of how a fight ends.
+      * **Octagon Size:** The 25-foot APEX Cage results in a \~10-12% higher finish rate, advantaging pressure-based archetypes.
+      * **Fight Duration & Pacing:** A five-round fight increases the likelihood of a late finish due to accumulated damage and cardio depletion.
+      * **Difficult Weight Cut:** Scrutinize reports of difficult weight cuts. A depleted fighter has compromised cardio and durability, making them more susceptible to late-round stoppages and less likely to win a decision.
+      * **Referee Tendencies:** This is a critical factor. You must factor in the assigned referee's reputation. Referees known for late stoppages (e.g., Herb Dean) increase the value of "Over" and "Goes to Decision" props. Referees known for quick stoppages increase the value of "Under" and "KO/TKO" props.
+      * **Evolving Judging Criteria:** This is a non-negotiable modifier for all decision-related props. Under the unified rules, "damage" is the most highly valued scoring component, superseding positional control without impact. For any "Win by Decision" prop, you must assess which fighter's style is more likely to land the more visibly damaging blows, as this now holds more weight than "control time".
+
+  * **The Calculation:** Synthesize Layers 1, 2, and 3 to translate the "Anchored Win Probability" into specific probabilities for each derivative. For example: "Fighter A has a 65% Anchored Win Probability. His high KO rate (Layer 1), 'Patient Power Puncher' archetype (Layer 2), and a referee known for quick stoppages (Layer 3) suggests 50% of his wins will come via KO. Therefore, his 'True Probability' of winning by KO is 32.5% (0.65 \* 0.50), which translates to a 'True Price' of +208".
+
+**Step 4: Find the Edge & Conduct a "Premortem"**
+
+  * Compare your calculated "True Price" for the derivative prop with the sportsbook's actual listed price.
+  * **The Formula for Value:** Edge = Your True Probability - Implied Probability of the Prop.
+  * If the edge is positive, conduct a final sanity check. You must articulate the strongest possible counter-argument or path to victory for the opponent. If this check doesn't reveal overriding risks, the bet is confirmed.
+
+**4. Output Requirements: The Screener Verdict**
+
+You must go through every single derivative bet from the "Bets for Analysis" list and provide a verdict.
+
+  * **A) If the bet is deemed a "Good Bet":**
+
+      * **Bet Description:** The specific derivative bet.
+      * **Verdict:** Good Bet.
+      * **Confidence Score (1-10):** Rate your confidence in the data-driven edge.
+      * **Inconsistency Analysis:**
+          * Moneyline Price & Anchored Win % 
+          * Derivative's Listed Price & Implied % 
+          * AI's Derived "True Price" & True % 
+      * **Betting Thesis (The "Why"):** In 2-3 sentences, explain the core logical inconsistency, explicitly referencing your multi-layered fighter analysis. *You must cite the specific contextual variables (e.g., judging criteria, referee tendency) if they are a primary driver of the value*.
+      * **Primary Risk / Counter-Argument (The "Premortem"):** In 1-2 sentences, state the strongest argument against your pick.
+
+  * **B) If the bet is deemed "Not a Good Bet":**
+
+      * **Bet Description:** The specific derivative bet.
+      * **Verdict:** Not a Good Bet.
+      * **Rationale:** In 1-2 sentences, explain why the derivative is efficiently priced relative to the moneyline and your comprehensive analysis.
+
+!!!!!Last but certainly not least... IT IS IMPERATIVE that you ONLY use the lines and markets that have been provided to you in your final report. I need you to confirm in your report that you are only using those betting lines and not others you found!!!!

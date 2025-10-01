@@ -1,0 +1,36 @@
+-----Intro:
+In my last test, I compared the 3 UFC prompts that I have had in betting the same event. Mostly to see how the old scripts were
+comparing to my new script. The new script was simply unable to following instructions. After some analysis I decided the amount of
+specific tasks I needed Gemini to perform was simply too much for its capabilities which was leading to a loss in performance. To
+solve this I decided the best way to move forward was to try to split the tasks up into smaller chunks and run them consecutively. I
+created a sports betting agent prompt and through my discussiong with this prompt created a slightly different system that is going
+to research the markets (agnostic of lines), originate its own lines, and then based on its own lines and the lines of a sports book
+it chooses bets to make based on a percieved mispricing/edge. 
+-----Files:
+prompts: 3.1,3.2,3.3
+odds: main_markets.json, true_price.json, derivative_markets.json
+final report: investment_report.txt
+
+-----Inconsistencies/ Notes:
+I realized during the  point that it was genearting new lines that this would need to be brooken up. Doing on the lines at once seemed
+ill advised given that there is limited computer per prompt. So I went ahead and separated them into different markets and then
+compiled the results.
+
+-----Picks/results:
+Pick 1: Long Xiao VS Su Young You               | By Submission (You)          | $1.75 | +800 -> Lost
+Pick 2: Michel Pereira VS Kyle Daukaus          | Fight to Go the Distance: No | $1.50 | -170 -> Won
+Pick 3: Sergei Pavlovich VS Waldo Cortes-Acosta | By KO/TKO/DQ (Pavlovich)     | $1.50 | +110 -> Lost
+Pick 4: Long Xiao VS Su Young You               | Fight to Go the Distance: No | $1.25 | +200 -> Lost
+Pick 5: Michel Pereira VS Kyle Daukaus          | By Submission (Daukaus)      | $1.00 | +600 -> Lost
+Pick 6: Brian Ortega VS Aljamain Sterling       | By Submission (Ortega)       | $1.00 | +800 -> Lost
+Pick 7: Yizha VS Westin Wilson                  | Fight to Go the Distance: No | $1.00 | -900 -> Won
+Pick 8: Long Xiao VS Su Young You               | By KO/TKO/DQ (Xiao)          | $0.50 | +700 -> Lost
+Pick 9: Sergei Pavlovich VS Waldo Cortes-Acosta | By Decision (Cortes-Acosta)  | $0.50 | +550 -> Lost
+
+-----Conclusion:
+I think this new system took something like 2 or 3 hours to run. Its only the first time I've tried it but I jsut don't think its
+showing enough potential to keep trying. I mean just thinking about it, using a LLM to originate lines is never going to be beat a
+sports book or find edges that the general public hasn't already exploited. There has to be another way. No regrets trying this but I
+think I really need to consider the strenghts and weaknesses of AI before running my next experiment. 
+
+-$1.75 (pick 1) + $0.88 (pick 2) - $1.50 (pick 3) - $1.25 (pick 4) - $1.00 (pick 5) - $1.00 (pick 6) + $0.11 (pick 7) - $0.50 (pick 8) - $0.50 (pick 9) = -$6.51 [-65.1% profit]

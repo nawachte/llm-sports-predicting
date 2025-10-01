@@ -1,0 +1,53 @@
+-----Intro:
+UFC used to be my bread and butter but lately performance has been lacking. I've been continuously trying to improve my script so I'm
+not sure if its a script issue (script has actually been getting worse) or if I'm just unlucky and I have been improving the system.
+So for this round we have UFC 319 tomorrow, we will run all 3 scripts that I have and compare the performance. Ideally I'll have
+several rounds of this. Too bad UFC events are more spread out. I'll probably end up doing this with WNBA as well. I'm just going to
+shadow this bets. 
+
+-----Prompt:
+See UFC_prompt_v1.txt, UFC_prompt_v2.txt, and UFC_prompt_v3.txt
+
+-----Inconsistencies/ Notes:
+That v3 prompt just can't seem to follow instructions. At least this time we got edge calculations. But this time the agent used 
+categorical confidence score despite me explicitely asking for a score 1-10. It also looks like they included a moneyline in there
+which I specifically told it to only do prop bets. I think that script is just too complex for Gemini to handle. And now that I'm
+looking more into the bets that it chose, it appears to have misquoted ALL prices. It even made up a line that not only wasn't given,
+it doesn't exist. "Fight Starts Round 4" what the fuck is that???? Prompt v3 as been DQ'd. Here is specifically what was wrong with 
+prompt v3:
+Pick 1: Murphy vs. Pico: Murphy moneyline I specifically only wanted prop bets. Also odds are +154 not +165.
+Pick 2: Meerschaert vs. Oleksiejczuk: Submission odds were quoted at +275 but are listed as +400.
+Pick 3: Barboza vs. Klose: "Fight Doesn't Go to Decision" odds were quoted at -110 but are listed as +105.
+Pick 4: Elliott vs. Asakura: The "Tim Elliott to Win" market at +240 does not exist.
+Pick 5: Hooper vs. Hernandez: Submission odds were quoted at +175 but are listed as +150.
+Pick 6: Du Plessis vs. Chimaev: The "Fight Starts Round 4" market does not exist.
+
+-----Picks/results:
+Prompt v1
+Pick 1: Gerald Meerschaert vs. Michal Oleksiejczuk | To Win By Submission (Meerschaert) | $4.00 | +400 -> Lost
+Pick 2: Chase Hooper vs. Alexander Hernandez       | To Win By Submission (Hooper)      | $2.75 | +150 -> Lost
+Pick 3: Edson Barboza vs. Drakkar Klose            | To Win By Decision (Klose)         | $2.00 | +250 -> Win
+Pick 4: Dricus Du Plessis vs. Khamzat Chimaev      | To Win By KO/TKO/DQ (Du Plessis)   | $1.25 | +550 -> Lost
+
+Prompt v2
+Pick 1: Karine Silva vs Dione Barbosa     | To Win By Decision (Barbosa)               | $2.50 | +275 -> Lost
+Pick 2: Chase Hooper vs A. Hernandez      | To Win By Decision (Hernandez)             | $1.25 | +650 -> Lost
+Pick 3: G. Meerschaert vs M. Oleksiejczuk | To Win By Submission (Meerschaert)         | $1.50 | +400 -> Lost
+Pick 4: Edson Barboza vs Drakkar Klose    | Fight to Go the Distance: No               | $2.25 | +105 -> Lost
+Pick 5: J. Andrade vs L. Godinez          | Fight to Be Won by Unanimous Decision: Yes | $2.50 | -125 -> Won
+
+Prompt v3
+Pick 1: Murphy vs. Pico              | Lerone Murphy to Win         | $3.75 | +165 -> DQ
+Pick 2: Meerschaert vs. Oleksiejczuk | G. Meerschaert by Submission | $2.25 | +275 -> DQ
+Pick 3: Barboza vs. Klose            | Fight Doesn't Go to Decision | $1.75 | -110 -> DQ
+Pick 4: Elliott vs. Asakura          | Tim Elliott to Win           | $1.50 | +240 -> DQ
+Pick 5: Hooper vs. Hernandez         | C. Hooper by Submission      | $0.50 | +175 -> DQ
+Pick 6: Du Plessis vs. Chimaev       | Fight Starts Round 4         | $0.25 | +150 -> DQ
+
+-----Conclusion:
+Thankfully I didn't actually place these bets. Nothing here indicates to me that any of these prompts should ever be used. I'll
+probably engineer a new prompt for the next UFC fight. I think its worth investigating the third script seeing why it can't follow
+instructions by comparing the prompt and output to v1 and v2. Anyway, here is P/L:
+
+Prompt v1: -$4.00 (pick 1) -$2.75 (pick 2) +$5.00 (pick 3) -$1.25 (pick 4)                 = $-3.00 [-30.0% profit]
+Prompt v2: -$2.50 (pick 1) -$1.25 (pick 2) -$1.50 (pick 3) -$2.25 (pick 4) +$2.00 (pick 5) = $-5.50 [-55.0% profit]

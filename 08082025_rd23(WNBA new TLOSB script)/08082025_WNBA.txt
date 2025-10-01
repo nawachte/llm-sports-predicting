@@ -1,0 +1,25 @@
+-----Intro:
+I created a new WNBA prompt similar to the UFC prompt I created in the last round. Trying out this new strategy here. Using Fanatics
+for this round while I'm low on money in my DraftKings account.
+
+-----Prompt:
+See 08082025_WNBA_prompt.txt
+
+-----Picks/results:
+
+Pick 1: Aliyah Boston (IND)    | Over 14.5 Points (Boston)   | $2.00 | -125 -> Won
+Pick 2: Nneka Ogwumike (SEA)   | Over 6.5 Rebounds (Ogwumike)| $2.25 | -135 -> Won
+Pick 3: Courtney Williams (MIN)| Over 14.5 Points (Williams) | $2.00 | +100 -> Lost
+Pick 4: Jessica Shepard (MIN)  | Over 9.5 Rebounds (Shepard) | $2.00 | -110 -> Lost
+Pick 5: Kelsey Mitchell (IND)  | Over 19.5 Points (Mitchell) | $1.50 | -110 -> Won
+Pick 6: Sonia Citron (WAS)     | Over 13.5 Points (Citron)   | $0.25 | -115 -> Won
+
+-----Inconsistencies/ Notes:
+This prompt dit NOT go nearly as smoothly as the UFC prompt. I need to make some adjustments. The first run of the script I was
+getting lines that didn't exist and these ones weren't even close. I don't think the agent could have got this from another sports
+book
+-----Conclusion:
+I actually thought this went horribly before I analyzed the results but I think I was just so distracted by my UFC picks going wrong
+that I was just down bad. Ended up being profitable! I think WNBA is getting better. P/L:
+
++$1.60 (pick 1) +$1.67 (pick 2) -$2.00 (pick 3) -$2.00 (pick 4) +$1.36 (pick 5) +$0.22 (pick 6) = $0.85 [8.5% profit]

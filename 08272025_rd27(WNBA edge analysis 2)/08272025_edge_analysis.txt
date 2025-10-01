@@ -1,0 +1,42 @@
+-----Intro:
+Alright, the last round showed some promise for this new system so lets give it a shot.
+
+-----Files:
+-----Inconsistencies/ Notes:
+Had trouble getting the data extraction to converge so for this test I'm looking at spread, total, moneyline as well as player props
+for points, 3s, rebounds, and assists. first quarter markets, halftime markets, largest lead, and rece to X points markets were
+removed so that having less lines could make it easier to extract and verify.
+
+some price differences: 
+mystics spread actually -108
+dream spread actually -3 @ -110
+drea/aces total actually 162 @ -108
+These are slightly concerning. It gives me better odds but thats because the lines have moved the opposite way that I plan to bet
+which technically means I have negative EV.
+
+I debated not placing these since it seems to be one of those days that AI just doesn't have their shit together. But I ran the picks
+with two different agents and then had a third agent create the final report. And since there was significant overlap, I think it
+could potentially be some good picks.
+
+-----Picks/results:
+Pick 1: DAL Wings vs CON Sun        | Moneyline (Sun)      | $1.50 | -105 -> Won
+Pick 2: IND Fever vs LA Sparks      | -2 Spread (Sparks)   | $1.50 | -108 -> Lost
+Pick 3: Tina Charles Player Prop    | Over 15.5 Points     | $1.00 | -125 -> Won
+Pick 4: Alyssa Thomas Player Prop   | Over 9.5 Assists     | $1.00 | -145 -> Lost
+Pick 5: SEA Storm vs MIN Lynx       | -8.5 Spread (Lynx)   | $1.00 | -112 -> Lost
+Pick 6: Angel Reese Player Prop     | Under 12.5 Rebounds  | $1.00 | -135 -> Lost
+Pick 7: WAS Mystics vs NY Liberty   | +12 Spread (Mystics) | $0.50 | -112 -> Lost
+Pick 8: Breanna Stewart Player Prop | Under 14.5 Points    | $0.50 | -115 -> Won
+Pick 9: LV Aces vs ATL Dream        | -3.5 Spread (Dream)  | $0.50 | -115 -> Lost
+Pick 10: LV Aces vs ATL Dream       | Total Under (162.5)  | $0.50 | -110 -> Won
+
+-----Closing Line Value:
+See inconsistencies and notes section.
+
+-----Conclusion:
+Sad to see we didn't have good performance like last time. I swear my gut knows when AI is having performance issues. I should listen
+to it more. Overall this script is still ahead $1.15 which is still on a relatively small sample size. My main concern for this round
+was to see line movement in the wrong direction for 3 lines. And then of course the result was 2 of the 3 losing. 
+
++$1.43 (pick 1) - $1.50 (pick 2) + $0.80 (pick 3) - $1.00 (pick 4) - $1.00 (pick 5)
+- $1.00 (pick 6) - $0.50 (pick 7) + $0.43 (pick 8) - $0.50 (pick 9) + $0.45 (pick 10) = -$2.38 [-26.47% profit]

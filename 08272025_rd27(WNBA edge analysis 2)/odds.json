@@ -1,0 +1,660 @@
+{
+  "WNBA": [
+    {
+      "eventName": "LV Aces at ATL Dream",
+      "startTime": "2025-08-27 17:30",
+      "markets": {
+        "Spread": [
+          {
+            "name": "LV Aces",
+            "odds": "+3.5 (-105)"
+          },
+          {
+            "name": "ATL Dream",
+            "odds": "-3.5 (-115)"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 162.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 162.5",
+            "odds": "-110"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "LV Aces",
+            "odds": "+130"
+          },
+          {
+            "name": "ATL Dream",
+            "odds": "-155"
+          }
+        ],
+        "A'ja Wilson - Points O/U": [
+          {
+            "name": "Over 23.5",
+            "odds": "-125"
+          },
+          {
+            "name": "Under 23.5",
+            "odds": "-105"
+          }
+        ],
+        "Rhyne Howard - Points O/U": [
+          {
+            "name": "Over 16.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Under 16.5",
+            "odds": "-110"
+          }
+        ],
+        "Allisha Gray - Points O/U": [
+          {
+            "name": "Over 16.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 16.5",
+            "odds": "-120"
+          }
+        ],
+        "Jackie Young - Points O/U": [
+          {
+            "name": "Over 15.5",
+            "odds": "+105"
+          },
+          {
+            "name": "Under 15.5",
+            "odds": "-135"
+          }
+        ],
+        "A'ja Wilson - Rebounds O/U": [
+          {
+            "name": "Over 11.5",
+            "odds": "+100"
+          },
+          {
+            "name": "Under 11.5",
+            "odds": "-130"
+          }
+        ],
+        "Brionna Jones - Rebounds O/U": [
+          {
+            "name": "Over 5.5",
+            "odds": "-154"
+          },
+          {
+            "name": "Under 5.5",
+            "odds": "+120"
+          }
+        ],
+        "Rhyne Howard - Threes O/U": [
+          {
+            "name": "Over 2.5",
+            "odds": "+100"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "-130"
+          }
+        ],
+        "Allisha Gray - Threes O/U": [
+          {
+            "name": "Over 2.5",
+            "odds": "+160"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "-210"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "CON Sun at DAL Wings",
+      "startTime": "2025-08-27 18:00",
+      "markets": {
+        "Spread": [
+          {
+            "name": "CON Sun",
+            "odds": "+1 (-108)"
+          },
+          {
+            "name": "DAL Wings",
+            "odds": "-1 (-112)"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 165",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 165",
+            "odds": "-110"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "CON Sun",
+            "odds": "-105"
+          },
+          {
+            "name": "DAL Wings",
+            "odds": "-115"
+          }
+        ],
+        "Paige Bueckers - Points O/U": [
+          {
+            "name": "Over 18.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Under 18.5",
+            "odds": "-110"
+          }
+        ],
+        "Tina Charles - Points O/U": [
+          {
+            "name": "Over 15.5",
+            "odds": "-125"
+          },
+          {
+            "name": "Under 15.5",
+            "odds": "-105"
+          }
+        ],
+        "Marina Mabrey - Points O/U": [
+          {
+            "name": "Over 15.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Under 15.5",
+            "odds": "-110"
+          }
+        ],
+        "Maddy Siegrist - Points O/U": [
+          {
+            "name": "Over 13.5",
+            "odds": "-125"
+          },
+          {
+            "name": "Under 13.5",
+            "odds": "-105"
+          }
+        ],
+        "Paige Bueckers - Assists O/U": [
+          {
+            "name": "Over 5.5",
+            "odds": "+130"
+          },
+          {
+            "name": "Under 5.5",
+            "odds": "-166"
+          }
+        ],
+        "Marina Mabrey - Assists O/U": [
+          {
+            "name": "Over 4.5",
+            "odds": "-105"
+          },
+          {
+            "name": "Under 4.5",
+            "odds": "-125"
+          }
+        ],
+        "Tina Charles - Rebounds O/U": [
+          {
+            "name": "Over 6.5",
+            "odds": "+105"
+          },
+          {
+            "name": "Under 6.5",
+            "odds": "-135"
+          }
+        ],
+        "Marina Mabrey - Rebounds O/U": [
+          {
+            "name": "Over 4.5",
+            "odds": "-125"
+          },
+          {
+            "name": "Under 4.5",
+            "odds": "-105"
+          }
+        ],
+        "Marina Mabrey - Threes O/U": [
+          {
+            "name": "Over 2.5",
+            "odds": "+114"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "-145"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "WAS Mystics at NY Liberty",
+      "startTime": "2025-08-28 17:00",
+      "markets": {
+        "Spread": [
+          {
+            "name": "WAS Mystics",
+            "odds": "+12 (-112)"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "-12 (-108)"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 163",
+            "odds": "-108"
+          },
+          {
+            "name": "Under 163",
+            "odds": "-112"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "WAS Mystics",
+            "odds": "+625"
+          },
+          {
+            "name": "NY Liberty",
+            "odds": "-950"
+          }
+        ],
+        "Sabrina Ionescu - Points O/U": [
+          {
+            "name": "Over 16.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Under 16.5",
+            "odds": "-110"
+          }
+        ],
+        "Sonia Citron - Points O/U": [
+          {
+            "name": "Over 15.5",
+            "odds": "-105"
+          },
+          {
+            "name": "Under 15.5",
+            "odds": "-125"
+          }
+        ],
+        "Jonquel Jones - Points O/U": [
+          {
+            "name": "Over 15.5",
+            "odds": "+100"
+          },
+          {
+            "name": "Under 15.5",
+            "odds": "-130"
+          }
+        ],
+        "Breanna Stewart - Points O/U": [
+          {
+            "name": "Over 14.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Under 14.5",
+            "odds": "-115"
+          }
+        ],
+        "Shakira Austin - Points O/U": [
+          {
+            "name": "Over 14.5",
+            "odds": "+100"
+          },
+          {
+            "name": "Under 14.5",
+            "odds": "-130"
+          }
+        ],
+        "Kiki Iriafen - Points O/U": [
+          {
+            "name": "Over 13.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Under 13.5",
+            "odds": "-110"
+          }
+        ],
+        "Sabrina Ionescu - Assists O/U": [
+          {
+            "name": "Over 5.5",
+            "odds": "-135"
+          },
+          {
+            "name": "Under 5.5",
+            "odds": "+105"
+          }
+        ],
+        "Sug Sutton - Assists O/U": [
+          {
+            "name": "Over 4.5",
+            "odds": "-154"
+          },
+          {
+            "name": "Under 4.5",
+            "odds": "+120"
+          }
+        ],
+        "Kiki Iriafen - Rebounds O/U": [
+          {
+            "name": "Over 10.5",
+            "odds": "+114"
+          },
+          {
+            "name": "Under 10.5",
+            "odds": "-145"
+          }
+        ],
+        "Jonquel Jones - Rebounds O/U": [
+          {
+            "name": "Over 7.5",
+            "odds": "-145"
+          },
+          {
+            "name": "Under 7.5",
+            "odds": "+114"
+          }
+        ],
+        "Shakira Austin - Rebounds O/U": [
+          {
+            "name": "Over 6.5",
+            "odds": "-135"
+          },
+          {
+            "name": "Under 6.5",
+            "odds": "+105"
+          }
+        ],
+        "Sabrina Ionescu - Threes O/U": [
+          {
+            "name": "Over 2.5",
+            "odds": "+145"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "-188"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "SEA Storm at MIN Lynx",
+      "startTime": "2025-08-28 18:00",
+      "markets": {
+        "Spread": [
+          {
+            "name": "SEA Storm",
+            "odds": "+8.5 (-108)"
+          },
+          {
+            "name": "MIN Lynx",
+            "odds": "-8.5 (-112)"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 164",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 164",
+            "odds": "-110"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "SEA Storm",
+            "odds": "+285"
+          },
+          {
+            "name": "MIN Lynx",
+            "odds": "-360"
+          }
+        ],
+        "Napheesa Collier - Points O/U": [
+          {
+            "name": "Over 21.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 21.5",
+            "odds": "-120"
+          }
+        ],
+        "Nneka Ogwumike - Points O/U": [
+          {
+            "name": "Over 16.5",
+            "odds": "-125"
+          },
+          {
+            "name": "Under 16.5",
+            "odds": "-105"
+          }
+        ],
+        "Kayla McBride - Points O/U": [
+          {
+            "name": "Over 13.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Under 13.5",
+            "odds": "-110"
+          }
+        ],
+        "Skylar Diggins - Points O/U": [
+          {
+            "name": "Over 13.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Under 13.5",
+            "odds": "-110"
+          }
+        ],
+        "Courtney Williams - Points O/U": [
+          {
+            "name": "Over 13.5",
+            "odds": "+100"
+          },
+          {
+            "name": "Under 13.5",
+            "odds": "-130"
+          }
+        ],
+        "Skylar Diggins - Assists O/U": [
+          {
+            "name": "Over 5.5",
+            "odds": "-105"
+          },
+          {
+            "name": "Under 5.5",
+            "odds": "-125"
+          }
+        ],
+        "Napheesa Collier - Rebounds O/U": [
+          {
+            "name": "Over 7.5",
+            "odds": "-120"
+          },
+          {
+            "name": "Under 7.5",
+            "odds": "-110"
+          }
+        ],
+        "Dominique Malonga - Rebounds O/U": [
+          {
+            "name": "Over 7.5",
+            "odds": "+100"
+          },
+          {
+            "name": "Under 7.5",
+            "odds": "-130"
+          }
+        ],
+        "Nneka Ogwumike - Rebounds O/U": [
+          {
+            "name": "Over 6.5",
+            "odds": "-145"
+          },
+          {
+            "name": "Under 6.5",
+            "odds": "+114"
+          }
+        ],
+        "Kayla McBride - Threes O/U": [
+          {
+            "name": "Over 2.5",
+            "odds": "+120"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "-154"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "CHI Sky at PHO Mercury",
+      "startTime": "2025-08-28 20:00",
+      "markets": {
+        "Spread": [
+          {
+            "name": "CHI Sky",
+            "odds": "+12.5 (-110)"
+          },
+          {
+            "name": "PHO Mercury",
+            "odds": "-12.5 (-110)"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 163.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 163.5",
+            "odds": "-110"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "CHI Sky",
+            "odds": "+600"
+          },
+          {
+            "name": "PHO Mercury",
+            "odds": "-900"
+          }
+        ],
+        "Alyssa Thomas - Points O/U": [
+          {
+            "name": "Over 15.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Under 15.5",
+            "odds": "-115"
+          }
+        ],
+        "Angel Reese - Points O/U": [
+          {
+            "name": "Over 13.5",
+            "odds": "-110"
+          },
+          {
+            "name": "Under 13.5",
+            "odds": "-120"
+          }
+        ],
+        "Alyssa Thomas - Assists O/U": [
+          {
+            "name": "Over 9.5",
+            "odds": "-145"
+          },
+          {
+            "name": "Under 9.5",
+            "odds": "+114"
+          }
+        ],
+        "Angel Reese - Rebounds O/U": [
+          {
+            "name": "Over 12.5",
+            "odds": "+105"
+          },
+          {
+            "name": "Under 12.5",
+            "odds": "-135"
+          }
+        ],
+        "Alyssa Thomas - Rebounds O/U": [
+          {
+            "name": "Over 9.5",
+            "odds": "-135"
+          },
+          {
+            "name": "Under 9.5",
+            "odds": "+105"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "IND Fever at LA Sparks",
+      "startTime": "2025-08-29 20:00",
+      "markets": {
+        "Spread": [
+          {
+            "name": "IND Fever",
+            "odds": "+2 (-112)"
+          },
+          {
+            "name": "LA Sparks",
+            "odds": "-2 (-108)"
+          }
+        ],
+        "Total": [
+          {
+            "name": "Over 178.5",
+            "odds": "-112"
+          },
+          {
+            "name": "Under 178.5",
+            "odds": "-108"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "IND Fever",
+            "odds": "+110"
+          },
+          {
+            "name": "LA Sparks",
+            "odds": "-130"
+          }
+        ]
+      }
+    }
+  ]
+}

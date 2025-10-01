@@ -1,0 +1,49 @@
+-----Intro:
+There just seems to be something I couldn't figure out with my prompts that my agents were doing so poorly on their bet selections.
+So I really took the time to investigate what is going on. I had the idea to give the PDF printout of the book The Logic of Sports
+Betting to an agent and see if they could spot any issues and the biggest change they suggested I make is to bet only on derivative
+markets but still give the main markets to the agent to use as an anchor point. So thats what I did and I verified the approach with
+other agents and I'm feeling good about it! This time I'm going to run this at leat a couple of times before changing it up again. 
+Its hard to say how many times you should try an experiment before moving on. 
+
+-----Prompt:
+See 08072025_UFC_prompt.txt
+
+-----Picks/results:
+Naive confidence picks
+Pick 1: Julius Walker vs Raffael Cerqueira| KO/TKO/DQ (Walker)    | $2.50 | -225 -> Lost
+Pick 2: Anthony Hernandez vs Roman Dolidze| Submission (Hernandez)| $2.25 | +225 -> Won
+Pick 3: Fernandes vs Stoliarenko          | Go The Distance: No   | $2.25 | -235 -> Lost
+Pick 4: Christian Duncan vs Eryk Anders   | Decision (Duncan)     | $1.25 | -115 -> Lost
+Pick 5: Gabriella Fernandes vs Stoliarenko| KO/TKO/DQ (Fernandes) | $1.00 | +140 -> Lost
+Pick 6: Edwards vs Cachoeira              | Go The Distance: Yes  | $0.75 | -175 -> Lost
+
+Strategic edge X confidence picks
+Pick 1: Julius Walker vs Raffael Cerqueira| KO/TKO/DQ (Walker)    | $3.00 | -225 -> Lost
+Pick 2: Christian Duncan vs Eryk Anders   | Decision (Duncan)     | $2.00 | -115 -> Lost
+Pick 3: Fernandes vs Stoliarenko          | KO/TKO/DQ (Fernandes) | $1.75 | +140 -> Lost
+Pick 4: Anthony Hernandez vs Roman Dolidze| Submission (Hernandez)| $1.25 | +225 -> Won
+Pick 5: J. Edwards vs Cachoeira           | Decision (Edwards)    | $1.00 | -110 -> Won
+Pick 6: Fernandes vs Stoliarenko          | Go The Distance: No   | $1.00 | -235 -> Lost
+
+-----Inconsistencies/ Notes:
+The first run of the script resulted in lines that were not specified by me which was really frustrating but after adding some
+language for a mandate to verify it is only using the lines provided it had no problem.
+
+When the (correct) report first came back I simply gave it to another agent and told it to spend $10. This was a mistake as it had
+no sports betting domain logic loaded into its context window and as a result picked the most confident bets while ignoreing the
+edge. I then gave it to the agent that I worked on the prompt with and they made different choices based on combining the confidence
+score and the edge. I've included both sets of picks in the section above.
+
+For the second set of picks I was low on money in DraftKings so I went to Fanatics and all of the lines were better except for
+Pick 2 so I placed all but that. The odds reported above are the draftkings odds however so I'll be doing analysis based on that.
+
+-----Conclusion:
+I should have konw with all of the weird things that were going on with the reports that I should have just not put anything in.
+This round was kind of a disaster and I feel discouraged. I think for whatever reason, Gemini is just unable to perform the tasks
+that I have given in this prompt. I think the prompt is good but there is a lack of performance on Gemini's end. The WNBA prompt
+in the next round had the same issues but thankfully was able to turn a profit. I might shadow bet the next couple rounds. Its hard
+to tell, did I actually make a good bet and get unlucky or make a bad bet and lose.
+
+    Naive: -$2.50 (pick 1) +$5.06 (pick 2) -$2.25 (pick 3) -$1.25 (pick 4) -$1.00 (pick 5) -$0.75 (pick 6) = -$2.69 [-26.9% profit]
+Strategic: -$3.00 (pick 1) -$2.00 (pick 2) -$1.75 (pick 3) +$2.81 (pick 4) +$0.91 (pick 5) -$1.00 (pick 6) = -$4.03 [-40.3% profit]

@@ -1,0 +1,436 @@
+{
+  "UFC": [
+    {
+      "eventName": "Uran Satybaldiev VS Diyar Nurgozhay",
+      "startTime": "2025-08-23 02:15",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Uran Satybaldiev",
+            "odds": "+110"
+          },
+          {
+            "name": "Diyar Nurgozhay",
+            "odds": "-150"
+          }
+        ],
+        "Spread": [
+          {
+            "name": "Uran Satybaldiev",
+            "odds": "-3.5 (+105)"
+          },
+          {
+            "name": "Diyar Nurgozhay",
+            "odds": "+3.5 (-135)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 2.5",
+            "odds": "-105"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "-115"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Long Xiao VS Su Young You",
+      "startTime": "2025-08-23 02:45",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Long Xiao",
+            "odds": "+165"
+          },
+          {
+            "name": "Su Young You",
+            "odds": "-225"
+          }
+        ],
+        "Spread": [
+          {
+            "name": "Long Xiao",
+            "odds": "+3.5 (-410)"
+          },
+          {
+            "name": "Su Young You",
+            "odds": "-3.5 (+290)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 2.5",
+            "odds": "+114"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "-135"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Yizha VS Westin Wilson",
+      "startTime": "2025-08-23 03:15",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Yizha",
+            "odds": "-900"
+          },
+          {
+            "name": "Westin Wilson",
+            "odds": "+675"
+          }
+        ],
+        "Spread": [
+          {
+            "name": "Yizha",
+            "odds": "-3.5 (+114)"
+          },
+          {
+            "name": "Westin Wilson",
+            "odds": "+3.5 (-145)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 1.5",
+            "odds": "-1050"
+          },
+          {
+            "name": "Under 1.5",
+            "odds": "+475"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Michel Pereira VS Kyle Daukaus",
+      "startTime": "2025-08-23 03:45",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Michel Pereira",
+            "odds": "-238"
+          },
+          {
+            "name": "Kyle Daukaus",
+            "odds": "+195"
+          }
+        ],
+        "Spread": [
+          {
+            "name": "Michel Pereira",
+            "odds": "-3.5 (-150)"
+          },
+          {
+            "name": "Kyle Daukaus",
+            "odds": "+3.5 (+110)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 1.5",
+            "odds": "-215"
+          },
+          {
+            "name": "Under 1.5",
+            "odds": "+165"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Rongzhu VS Austin Hubbard",
+      "startTime": "2025-08-23 04:15",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Rongzhu",
+            "odds": "-245"
+          },
+          {
+            "name": "Austin Hubbard",
+            "odds": "+185"
+          }
+        ],
+        "Spread": [
+          {
+            "name": "Rongzhu",
+            "odds": "-3.5 (-105)"
+          },
+          {
+            "name": "Austin Hubbard",
+            "odds": "+3.5 (-125)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 2.5",
+            "odds": "-290"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "+235"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Charles Johnson VS Lone'er Kavanagh",
+      "startTime": "2025-08-23 04:30",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Charles Johnson",
+            "odds": "+210"
+          },
+          {
+            "name": "Lone'er Kavanagh",
+            "odds": "-258"
+          }
+        ],
+        "Spread": [
+          {
+            "name": "Charles Johnson",
+            "odds": "+3.5 (-150)"
+          },
+          {
+            "name": "Lone'er Kavanagh",
+            "odds": "-3.5 (+110)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 2.5",
+            "odds": "-395"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "+280"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Maheshate VS Gauge Young",
+      "startTime": "2025-08-23 04:45",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Maheshate",
+            "odds": "-165"
+          },
+          {
+            "name": "Gauge Young",
+            "odds": "+135"
+          }
+        ],
+        "Spread": [
+          {
+            "name": "Maheshate",
+            "odds": "-3.5 (-148)"
+          },
+          {
+            "name": "Gauge Young",
+            "odds": "+3.5 (+120)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 2.5",
+            "odds": "-175"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "+124"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Taiyilake Nueraji VS Kiefer Crosbie",
+      "startTime": "2025-08-23 05:15",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Taiyilake Nueraji",
+            "odds": "-475"
+          },
+          {
+            "name": "Kiefer Crosbie",
+            "odds": "+400"
+          }
+        ],
+        "Spread": [
+          {
+            "name": "Taiyilake Nueraji",
+            "odds": "-3.5 (+170)"
+          },
+          {
+            "name": "Kiefer Crosbie",
+            "odds": "+3.5 (+300)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 1.5",
+            "odds": "-535"
+          },
+          {
+            "name": "Under 1.5",
+            "odds": "-220"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Sumudaerji VS Kevin Borjas",
+      "startTime": "2025-08-23 05:45",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Sumudaerji",
+            "odds": "-175"
+          },
+          {
+            "name": "Kevin Borjas",
+            "odds": "+145"
+          }
+        ],
+        "Spread": [
+          {
+            "name": "Sumudaerji",
+            "odds": "-3.5 (-180)"
+          },
+          {
+            "name": "Kevin Borjas",
+            "odds": "+3.5 (+130)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 2.5",
+            "odds": "-220"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "+170"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Sergei Pavlovich VS Waldo Cortes-Acosta",
+      "startTime": "2025-08-23 06:15",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Sergei Pavlovich",
+            "odds": "-250"
+          },
+          {
+            "name": "Waldo Cortes-Acosta",
+            "odds": "+205"
+          }
+        ],
+        "Spread": [
+          {
+            "name": "Sergei Pavlovich",
+            "odds": "-3.5 (-165)"
+          },
+          {
+            "name": "Waldo Cortes-Acosta",
+            "odds": "+3.5 (+120)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 1.5",
+            "odds": "-166"
+          },
+          {
+            "name": "Under 1.5",
+            "odds": "+130"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Brian Ortega VS Aljamain Sterling",
+      "startTime": "2025-08-23 06:45",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Brian Ortega",
+            "odds": "+110"
+          },
+          {
+            "name": "Aljamain Sterling",
+            "odds": "-150"
+          }
+        ],
+        "Spread": [
+          {
+            "name": "Brian Ortega",
+            "odds": "+5.5 (+380)"
+          },
+          {
+            "name": "Aljamain Sterling",
+            "odds": "-5.5 (-500)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 4.5",
+            "odds": "-166"
+          },
+          {
+            "name": "Under 4.5",
+            "odds": "+130"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Johnny Walker VS Zhang Mingyang",
+      "startTime": "2025-08-23 07:15",
+      "markets": {
+        "Moneyline": [
+          {
+            "name": "Johnny Walker",
+            "odds": "+230"
+          },
+          {
+            "name": "Zhang Mingyang",
+            "odds": "-380"
+          }
+        ],
+        "Spread": [
+          {
+            "name": "Johnny Walker",
+            "odds": "-5.5 (+300)"
+          },
+          {
+            "name": "Zhang Mingyang",
+            "odds": "+5.5 (-450)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 1.5",
+            "odds": "+300"
+          },
+          {
+            "name": "Under 1.5",
+            "odds": "-315"
+          }
+        ]
+      }
+    }
+  ]
+}
