@@ -1,5 +1,5 @@
 -----Intro:
-Ok this is the same test as 07062025_baseball_and_UFC but last time I realized that Claude didn't pull out MLB prop bets so all
+Ok this is the same test as 07062025_experiment_overview limited but last time I realized that Claude didn't pull out MLB prop bets so all
 Gemini  really had to look at was spread/total/moneyline for MLB and then still the same moneylines for UFC. Its only a couple hours
 later and its late at night so I doubt the lines have changed much if at all. Still looking at the same markets but now with the full
 set. I already put in the bets for the other ones so still going to evaluate those. Hopefully these ones are different. I havn't
