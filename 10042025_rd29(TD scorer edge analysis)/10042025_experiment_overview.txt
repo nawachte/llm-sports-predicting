@@ -1,0 +1,33 @@
+-----Intro:
+I had some time and wanted to try something new and I saw that I had a promotion on draftkings for a 33% profit boost on betting NFL
+touchdown scorers so I figured why not go for it. I adapted my existing edge analysis system to narrow down the best pick to make.
+
+-----Files:
+3.1_NFL_TDscorer_DR_potential_edges.txt: prompt for deep research
+     3.2_NFL_TDscorer_analyze_lines.txt: prompts used to walk agent through matchups and final results to find edges
+                 NFL_TD_Edges_Report.md: report of nfl touchdown metrics relevant to week 5
+                  NFL_TDscorer_analysis: AI Studio chat file from 3.2 see: https://aistudio.google.com/prompts/1JW6bFEPr-AHx92HISP4g-8TrWHXIKzFz
+                              odds.json: odds between -200 and +1000 for week 5 td scorers
+
+-----Inconsistencies/ Notes:
+Had some issues converging the odds at first. Limited it to odds between -200 and +1000 and resolved the issue.
+
+-----Picks/results:
+
+Bet: Michael Carter Anytime TD scorers
+Odds: Originally +105, +140 after boost
+Bet amount: $2
+Outcome: Win
+
+-----P/L and Notes:
+P/L: +$2.80 (pick1) = +$2.80 [140.0% profit]
+
+Love to see the win! I haven't dug into line movement yet but so far this seems like a good bet. I think logically it also made sense.
+The cardinals have a decent offensive line and historically love to run in touchdowns. So seeing that their lead back has underdog
+betting odds for scoring a touchdown anytime appears to me like a mispriced line.
+
+-----Analysis
+It looks like the closing lines for this bet at DraftKings ended up being +130 which makes my bet technically a bad one when comparing 
+it to the +105 that it would have been at. With the odds bost making my bet +140 it ends up being a good bet and it did pay off. 
+Although I'll note the highest odds I found were +150 at FanDuel which actually makes my bet not that good. Full honesty, this was a
+mediocre bet at best that I got lucky with.

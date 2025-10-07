@@ -1,0 +1,1480 @@
+{
+  "NFL": [
+    {
+      "eventName": "MIN Vikings at CLE Browns",
+      "startTime": "2025-10-05 07:30",
+      "markets": {
+        "First TD Scorer": [
+          {
+            "name": "Jordan Mason",
+            "odds": "+400"
+          },
+          {
+            "name": "Quinshon Judkins",
+            "odds": "+450"
+          },
+          {
+            "name": "Justin Jefferson",
+            "odds": "+650"
+          }
+        ],
+        "Anytime TD Scorer": [
+          {
+            "name": "Jordan Mason",
+            "odds": "-115"
+          },
+          {
+            "name": "Quinshon Judkins",
+            "odds": "+100"
+          },
+          {
+            "name": "Justin Jefferson",
+            "odds": "+165"
+          },
+          {
+            "name": "Jordan Addison",
+            "odds": "+300"
+          },
+          {
+            "name": "T.J. Hockenson",
+            "odds": "+340"
+          },
+          {
+            "name": "Jerry Jeudy",
+            "odds": "+390"
+          },
+          {
+            "name": "Harold Fannin Jr.",
+            "odds": "+450"
+          },
+          {
+            "name": "Dillon Gabriel",
+            "odds": "+450"
+          },
+          {
+            "name": "Carson Wentz",
+            "odds": "+550"
+          },
+          {
+            "name": "David Njoku",
+            "odds": "+475"
+          },
+          {
+            "name": "Isaiah Bond",
+            "odds": "+500"
+          },
+          {
+            "name": "CLE Browns D/ST",
+            "odds": "+600"
+          },
+          {
+            "name": "MIN Vikings D/ST",
+            "odds": "+600"
+          },
+          {
+            "name": "Jerome Ford",
+            "odds": "+750"
+          },
+          {
+            "name": "Zavier Scott",
+            "odds": "+700"
+          },
+          {
+            "name": "Jalen Nailor",
+            "odds": "+850"
+          }
+        ],
+        "2+ TDs": [
+          {
+            "name": "Jordan Mason",
+            "odds": "+550"
+          },
+          {
+            "name": "Quinshon Judkins",
+            "odds": "+650"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "DEN Broncos at PHI Eagles",
+      "startTime": "2025-10-05 11:00",
+      "markets": {
+        "First TD Scorer": [
+          {
+            "name": "Saquon Barkley",
+            "odds": "+425"
+          },
+          {
+            "name": "Jalen Hurts",
+            "odds": "+425"
+          },
+          {
+            "name": "J.K. Dobbins",
+            "odds": "+800"
+          }
+        ],
+        "Anytime TD Scorer": [
+          {
+            "name": "Saquon Barkley",
+            "odds": "-150"
+          },
+          {
+            "name": "Jalen Hurts",
+            "odds": "-150"
+          },
+          {
+            "name": "J.K. Dobbins",
+            "odds": "+160"
+          },
+          {
+            "name": "A.J. Brown",
+            "odds": "+190"
+          },
+          {
+            "name": "Courtland Sutton",
+            "odds": "+185"
+          },
+          {
+            "name": "DeVonta Smith",
+            "odds": "+250"
+          },
+          {
+            "name": "Dallas Goedert",
+            "odds": "+320"
+          },
+          {
+            "name": "RJ Harvey",
+            "odds": "+320"
+          },
+          {
+            "name": "Troy Franklin",
+            "odds": "+310"
+          },
+          {
+            "name": "Evan Engram",
+            "odds": "+380"
+          },
+          {
+            "name": "Marvin Mims Jr.",
+            "odds": "+390"
+          },
+          {
+            "name": "Bo Nix",
+            "odds": "+475"
+          },
+          {
+            "name": "PHI Eagles D/ST",
+            "odds": "+500"
+          },
+          {
+            "name": "DEN Broncos D/ST",
+            "odds": "+550"
+          },
+          {
+            "name": "Adam Trautman",
+            "odds": "+650"
+          },
+          {
+            "name": "Jahan Dotson",
+            "odds": "+950"
+          },
+          {
+            "name": "Trent Sherfield Sr.",
+            "odds": "+900"
+          },
+          {
+            "name": "Nate Adkins",
+            "odds": "+900"
+          }
+        ],
+        "2+ TDs": [
+          {
+            "name": "Saquon Barkley",
+            "odds": "+360"
+          },
+          {
+            "name": "Jalen Hurts",
+            "odds": "+370"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "LV Raiders at IND Colts",
+      "startTime": "2025-10-05 11:00",
+      "markets": {
+        "First TD Scorer": [
+          {
+            "name": "Jonathan Taylor",
+            "odds": "+300"
+          },
+          {
+            "name": "Ashton Jeanty",
+            "odds": "+700"
+          },
+          {
+            "name": "Daniel Jones",
+            "odds": "+800"
+          },
+          {
+            "name": "Michael Pittman Jr.",
+            "odds": "+900"
+          },
+          {
+            "name": "Tyler Warren",
+            "odds": "+950"
+          }
+        ],
+        "Anytime TD Scorer": [
+          {
+            "name": "Ashton Jeanty",
+            "odds": "-110"
+          },
+          {
+            "name": "Daniel Jones",
+            "odds": "+140"
+          },
+          {
+            "name": "Michael Pittman Jr.",
+            "odds": "+155"
+          },
+          {
+            "name": "Tyler Warren",
+            "odds": "+165"
+          },
+          {
+            "name": "Jakobi Meyers",
+            "odds": "+205"
+          },
+          {
+            "name": "Brock Bowers",
+            "odds": "+220"
+          },
+          {
+            "name": "Josh Downs",
+            "odds": "+295"
+          },
+          {
+            "name": "Adonai Mitchell",
+            "odds": "+340"
+          },
+          {
+            "name": "Tre Tucker",
+            "odds": "+285"
+          },
+          {
+            "name": "Michael Mayer",
+            "odds": "+350"
+          },
+          {
+            "name": "IND Colts D/ST",
+            "odds": "+500"
+          },
+          {
+            "name": "DJ Giddens",
+            "odds": "+650"
+          },
+          {
+            "name": "Dont'e Thornton Jr.",
+            "odds": "+500"
+          },
+          {
+            "name": "Ian Thomas",
+            "odds": "+500"
+          },
+          {
+            "name": "LV Raiders D/ST",
+            "odds": "+550"
+          },
+          {
+            "name": "Ashton Dulin",
+            "odds": "+700"
+          },
+          {
+            "name": "Anthony Gould",
+            "odds": "+850"
+          },
+          {
+            "name": "Geno Smith",
+            "odds": "+850"
+          },
+          {
+            "name": "Raheem Mostert",
+            "odds": "+950"
+          },
+          {
+            "name": "Zamir White",
+            "odds": "+1000"
+          }
+        ],
+        "2+ TDs": [
+          {
+            "name": "Jonathan Taylor",
+            "odds": "+205"
+          },
+          {
+            "name": "Ashton Jeanty",
+            "odds": "+550"
+          },
+          {
+            "name": "Daniel Jones",
+            "odds": "+900"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "NY Giants at NO Saints",
+      "startTime": "2025-10-05 11:00",
+      "markets": {
+        "First TD Scorer": [
+          {
+            "name": "Cameron Skattebo",
+            "odds": "+425"
+          },
+          {
+            "name": "Alvin Kamara",
+            "odds": "+500"
+          },
+          {
+            "name": "Chris Olave",
+            "odds": "+900"
+          }
+        ],
+        "Anytime TD Scorer": [
+          {
+            "name": "Cameron Skattebo",
+            "odds": "-140"
+          },
+          {
+            "name": "Alvin Kamara",
+            "odds": "-115"
+          },
+          {
+            "name": "Chris Olave",
+            "odds": "+175"
+          },
+          {
+            "name": "Jaxson Dart",
+            "odds": "+235"
+          },
+          {
+            "name": "Rashid Shaheed",
+            "odds": "+255"
+          },
+          {
+            "name": "Juwan Johnson",
+            "odds": "+220"
+          },
+          {
+            "name": "Wan'Dale Robinson",
+            "odds": "+250"
+          },
+          {
+            "name": "Kendre Miller",
+            "odds": "+370"
+          },
+          {
+            "name": "Darius Slayton",
+            "odds": "+360"
+          },
+          {
+            "name": "Theo Johnson",
+            "odds": "+425"
+          },
+          {
+            "name": "Spencer Rattler",
+            "odds": "+500"
+          },
+          {
+            "name": "Brandin Cooks",
+            "odds": "+450"
+          },
+          {
+            "name": "Devin Singletary",
+            "odds": "+450"
+          },
+          {
+            "name": "NO Saints D/ST",
+            "odds": "+550"
+          },
+          {
+            "name": "NY Giants D/ST",
+            "odds": "+500"
+          },
+          {
+            "name": "Jalin Hyatt",
+            "odds": "+600"
+          }
+        ],
+        "2+ TDs": [
+          {
+            "name": "Cameron Skattebo",
+            "odds": "+425"
+          },
+          {
+            "name": "Alvin Kamara",
+            "odds": "+550"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "DAL Cowboys at NY Jets",
+      "startTime": "2025-10-05 11:00",
+      "markets": {
+        "First TD Scorer": [
+          {
+            "name": "Javonte Williams",
+            "odds": "+500"
+          },
+          {
+            "name": "Breece Hall",
+            "odds": "+600"
+          },
+          {
+            "name": "Justin Fields",
+            "odds": "+750"
+          },
+          {
+            "name": "George Pickens",
+            "odds": "+750"
+          },
+          {
+            "name": "Garrett Wilson",
+            "odds": "+950"
+          },
+          {
+            "name": "Jake Ferguson",
+            "odds": "+950"
+          }
+        ],
+        "Anytime TD Scorer": [
+          {
+            "name": "Javonte Williams",
+            "odds": "-130"
+          },
+          {
+            "name": "Breece Hall",
+            "odds": "-115"
+          },
+          {
+            "name": "Justin Fields",
+            "odds": "+120"
+          },
+          {
+            "name": "George Pickens",
+            "odds": "+115"
+          },
+          {
+            "name": "Garrett Wilson",
+            "odds": "+130"
+          },
+          {
+            "name": "Jake Ferguson",
+            "odds": "+155"
+          },
+          {
+            "name": "Jalen Tolbert",
+            "odds": "+220"
+          },
+          {
+            "name": "Mason Taylor",
+            "odds": "+350"
+          },
+          {
+            "name": "Ryan Flournoy",
+            "odds": "+400"
+          },
+          {
+            "name": "Jaydon Blue",
+            "odds": "+475"
+          },
+          {
+            "name": "Josh Reynolds",
+            "odds": "+425"
+          },
+          {
+            "name": "Miles Sanders",
+            "odds": "+475"
+          },
+          {
+            "name": "DAL Cowboys D/ST",
+            "odds": "+500"
+          },
+          {
+            "name": "Isaiah Davis",
+            "odds": "+550"
+          },
+          {
+            "name": "NY Jets D/ST",
+            "odds": "+500"
+          },
+          {
+            "name": "Khalil Herbert",
+            "odds": "+650"
+          },
+          {
+            "name": "Tyler Johnson",
+            "odds": "+700"
+          },
+          {
+            "name": "Allen Lazard",
+            "odds": "+600"
+          },
+          {
+            "name": "Dak Prescott",
+            "odds": "+750"
+          },
+          {
+            "name": "Luke Schoonmaker",
+            "odds": "+850"
+          },
+          {
+            "name": "Jeremy Ruckert",
+            "odds": "+900"
+          },
+          {
+            "name": "Arian Smith",
+            "odds": "+800"
+          }
+        ],
+        "2+ TDs": [
+          {
+            "name": "Javonte Williams",
+            "odds": "+425"
+          },
+          {
+            "name": "Breece Hall",
+            "odds": "+550"
+          },
+          {
+            "name": "Justin Fields",
+            "odds": "+750"
+          },
+          {
+            "name": "George Pickens",
+            "odds": "+750"
+          },
+          {
+            "name": "Garrett Wilson",
+            "odds": "+900"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "HOU Texans at BAL Ravens",
+      "startTime": "2025-10-05 11:00",
+      "markets": {
+        "First TD Scorer": [
+          {
+            "name": "Derrick Henry",
+            "odds": "+380"
+          },
+          {
+            "name": "Woody Marks",
+            "odds": "+700"
+          },
+          {
+            "name": "Nico Collins",
+            "odds": "+750"
+          }
+        ],
+        "Anytime TD Scorer": [
+          {
+            "name": "Derrick Henry",
+            "odds": "-150"
+          },
+          {
+            "name": "Woody Marks",
+            "odds": "+150"
+          },
+          {
+            "name": "Nico Collins",
+            "odds": "+140"
+          },
+          {
+            "name": "Zay Flowers",
+            "odds": "+260"
+          },
+          {
+            "name": "Nick Chubb",
+            "odds": "+295"
+          },
+          {
+            "name": "Dalton Schultz",
+            "odds": "+285"
+          },
+          {
+            "name": "Christian Kirk",
+            "odds": "+320"
+          },
+          {
+            "name": "Mark Andrews",
+            "odds": "+350"
+          },
+          {
+            "name": "Rashod Bateman",
+            "odds": "+450"
+          },
+          {
+            "name": "BAL Ravens D/ST",
+            "odds": "+600"
+          },
+          {
+            "name": "Justice Hill",
+            "odds": "+550"
+          },
+          {
+            "name": "HOU Texans D/ST",
+            "odds": "+500"
+          },
+          {
+            "name": "Isaiah Likely",
+            "odds": "+550"
+          },
+          {
+            "name": "C.J. Stroud",
+            "odds": "+650"
+          },
+          {
+            "name": "Jayden Higgins",
+            "odds": "+750"
+          },
+          {
+            "name": "Xavier Hutchinson",
+            "odds": "+650"
+          },
+          {
+            "name": "DeAndre Hopkins",
+            "odds": "+800"
+          },
+          {
+            "name": "Tylan Wallace",
+            "odds": "+1000"
+          },
+          {
+            "name": "Devontez Walker",
+            "odds": "+900"
+          }
+        ],
+        "2+ TDs": [
+          {
+            "name": "Derrick Henry",
+            "odds": "+380"
+          },
+          {
+            "name": "Woody Marks",
+            "odds": "+1000"
+          },
+          {
+            "name": "Nico Collins",
+            "odds": "+1000"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "MIA Dolphins at CAR Panthers",
+      "startTime": "2025-10-05 11:00",
+      "markets": {
+        "First TD Scorer": [
+          {
+            "name": "De'Von Achane",
+            "odds": "+475"
+          },
+          {
+            "name": "Rico Dowdle",
+            "odds": "+550"
+          },
+          {
+            "name": "Tetairoa McMillan",
+            "odds": "+850"
+          },
+          {
+            "name": "Jaylen Waddle",
+            "odds": "+850"
+          }
+        ],
+        "Anytime TD Scorer": [
+          {
+            "name": "De'Von Achane",
+            "odds": "-140"
+          },
+          {
+            "name": "Rico Dowdle",
+            "odds": "-115"
+          },
+          {
+            "name": "Tetairoa McMillan",
+            "odds": "+135"
+          },
+          {
+            "name": "Jaylen Waddle",
+            "odds": "+130"
+          },
+          {
+            "name": "Ollie Gordon II",
+            "odds": "+265"
+          },
+          {
+            "name": "Darren Waller",
+            "odds": "+290"
+          },
+          {
+            "name": "Hunter Renfrow",
+            "odds": "+285"
+          },
+          {
+            "name": "Bryce Young",
+            "odds": "+360"
+          },
+          {
+            "name": "Xavier Legette",
+            "odds": "+295"
+          },
+          {
+            "name": "Malik Washington",
+            "odds": "+300"
+          },
+          {
+            "name": "Tommy Tremble",
+            "odds": "+330"
+          },
+          {
+            "name": "Trevor Etienne",
+            "odds": "+380"
+          },
+          {
+            "name": "Nick Westbrook-Ikhine",
+            "odds": "+400"
+          },
+          {
+            "name": "MIA Dolphins D/ST",
+            "odds": "+500"
+          },
+          {
+            "name": "CAR Panthers D/ST",
+            "odds": "+500"
+          },
+          {
+            "name": "Mitchell Evans",
+            "odds": "+950"
+          },
+          {
+            "name": "Brycen Tremayne",
+            "odds": "+850"
+          },
+          {
+            "name": "Jaylen Wright",
+            "odds": "+1000"
+          }
+        ],
+        "2+ TDs": [
+          {
+            "name": "De'Von Achane",
+            "odds": "+425"
+          },
+          {
+            "name": "Rico Dowdle",
+            "odds": "+500"
+          },
+          {
+            "name": "Tetairoa McMillan",
+            "odds": "+1000"
+          },
+          {
+            "name": "Jaylen Waddle",
+            "odds": "+900"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "TEN Titans at ARI Cardinals",
+      "startTime": "2025-10-05 14:05",
+      "markets": {
+        "First TD Scorer": [
+          {
+            "name": "Michael Carter",
+            "odds": "+550"
+          },
+          {
+            "name": "Tony Pollard",
+            "odds": "+600"
+          },
+          {
+            "name": "Trey McBride",
+            "odds": "+700"
+          },
+          {
+            "name": "Marvin Harrison Jr.",
+            "odds": "+750"
+          },
+          {
+            "name": "Kyler Murray",
+            "odds": "+950"
+          }
+        ],
+        "Anytime TD Scorer": [
+          {
+            "name": "Michael Carter",
+            "odds": "+105"
+          },
+          {
+            "name": "Tony Pollard",
+            "odds": "+115"
+          },
+          {
+            "name": "Trey McBride",
+            "odds": "+140"
+          },
+          {
+            "name": "Marvin Harrison Jr.",
+            "odds": "+160"
+          },
+          {
+            "name": "Kyler Murray",
+            "odds": "+190"
+          },
+          {
+            "name": "Tyjae Spears",
+            "odds": "+250"
+          },
+          {
+            "name": "Emari Demercado",
+            "odds": "+270"
+          },
+          {
+            "name": "Michael Wilson",
+            "odds": "+360"
+          },
+          {
+            "name": "Calvin Ridley",
+            "odds": "+360"
+          },
+          {
+            "name": "Elic Ayomanor",
+            "odds": "+360"
+          },
+          {
+            "name": "Greg Dortch",
+            "odds": "+500"
+          },
+          {
+            "name": "Cameron Ward",
+            "odds": "+550"
+          },
+          {
+            "name": "Chimere Dike",
+            "odds": "+450"
+          },
+          {
+            "name": "ARI Cardinals D/ST",
+            "odds": "+475"
+          },
+          {
+            "name": "Chigoziem Okonkwo",
+            "odds": "+550"
+          },
+          {
+            "name": "TEN Titans D/ST",
+            "odds": "+650"
+          },
+          {
+            "name": "Zay Jones",
+            "odds": "+850"
+          },
+          {
+            "name": "Gunnar Helm",
+            "odds": "+900"
+          },
+          {
+            "name": "Tyler Lockett",
+            "odds": "+950"
+          },
+          {
+            "name": "Zonovan Knight",
+            "odds": "+1000"
+          }
+        ],
+        "2+ TDs": [
+          {
+            "name": "Michael Carter",
+            "odds": "+650"
+          },
+          {
+            "name": "Tony Pollard",
+            "odds": "+750"
+          },
+          {
+            "name": "Trey McBride",
+            "odds": "+1000"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "TB Buccaneers at SEA Seahawks",
+      "startTime": "2025-10-05 14:05",
+      "markets": {
+        "First TD Scorer": [
+          {
+            "name": "Kenneth Walker III",
+            "odds": "+550"
+          },
+          {
+            "name": "Jaxon Smith-Njigba",
+            "odds": "+700"
+          },
+          {
+            "name": "Zach Charbonnet",
+            "odds": "+700"
+          },
+          {
+            "name": "Rachaad White",
+            "odds": "+800"
+          }
+        ],
+        "Anytime TD Scorer": [
+          {
+            "name": "Kenneth Walker III",
+            "odds": "+100"
+          },
+          {
+            "name": "Jaxon Smith-Njigba",
+            "odds": "+125"
+          },
+          {
+            "name": "Zach Charbonnet",
+            "odds": "+125"
+          },
+          {
+            "name": "Rachaad White",
+            "odds": "+135"
+          },
+          {
+            "name": "Emeka Egbuka",
+            "odds": "+170"
+          },
+          {
+            "name": "Cooper Kupp",
+            "odds": "+290"
+          },
+          {
+            "name": "Chris Godwin",
+            "odds": "+245"
+          },
+          {
+            "name": "Sean Tucker",
+            "odds": "+270"
+          },
+          {
+            "name": "Sterling Shepard",
+            "odds": "+370"
+          },
+          {
+            "name": "Tory Horton",
+            "odds": "+390"
+          },
+          {
+            "name": "A.J. Barner",
+            "odds": "+450"
+          },
+          {
+            "name": "Cade Otton",
+            "odds": "+390"
+          },
+          {
+            "name": "Elijah Arroyo",
+            "odds": "+600"
+          },
+          {
+            "name": "SEA Seahawks D/ST",
+            "odds": "+500"
+          },
+          {
+            "name": "TB Buccaneers D/ST",
+            "odds": "+550"
+          },
+          {
+            "name": "Sam Darnold",
+            "odds": "+650"
+          },
+          {
+            "name": "Baker Mayfield",
+            "odds": "+600"
+          },
+          {
+            "name": "Tez Johnson",
+            "odds": "+950"
+          }
+        ],
+        "2+ TDs": [
+          {
+            "name": "Kenneth Walker III",
+            "odds": "+600"
+          },
+          {
+            "name": "Jaxon Smith-Njigba",
+            "odds": "+900"
+          },
+          {
+            "name": "Zach Charbonnet",
+            "odds": "+850"
+          },
+          {
+            "name": "Rachaad White",
+            "odds": "+950"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "DET Lions at CIN Bengals",
+      "startTime": "2025-10-05 14:25",
+      "markets": {
+        "First TD Scorer": [
+          {
+            "name": "Jahmyr Gibbs",
+            "odds": "+370"
+          },
+          {
+            "name": "David Montgomery",
+            "odds": "+425"
+          },
+          {
+            "name": "Amon-Ra St. Brown",
+            "odds": "+650"
+          },
+          {
+            "name": "Chase Brown",
+            "odds": "+800"
+          }
+        ],
+        "Anytime TD Scorer": [
+          {
+            "name": "David Montgomery",
+            "odds": "-185"
+          },
+          {
+            "name": "Amon-Ra St. Brown",
+            "odds": "-105"
+          },
+          {
+            "name": "Chase Brown",
+            "odds": "+120"
+          },
+          {
+            "name": "Sam LaPorta",
+            "odds": "+195"
+          },
+          {
+            "name": "Jameson Williams",
+            "odds": "+190"
+          },
+          {
+            "name": "Ja'Marr Chase",
+            "odds": "+155"
+          },
+          {
+            "name": "Tee Higgins",
+            "odds": "+215"
+          },
+          {
+            "name": "Mike Gesicki",
+            "odds": "+500"
+          },
+          {
+            "name": "DET Lions D/ST",
+            "odds": "+500"
+          },
+          {
+            "name": "Noah Fant",
+            "odds": "+550"
+          },
+          {
+            "name": "CIN Bengals D/ST",
+            "odds": "+550"
+          },
+          {
+            "name": "Jake Browning",
+            "odds": "+700"
+          },
+          {
+            "name": "Isaac TeSlaa",
+            "odds": "+800"
+          },
+          {
+            "name": "Kalif Raymond",
+            "odds": "+950"
+          },
+          {
+            "name": "Samaje Perine",
+            "odds": "+850"
+          }
+        ],
+        "2+ TDs": [
+          {
+            "name": "Jahmyr Gibbs",
+            "odds": "+225"
+          },
+          {
+            "name": "David Montgomery",
+            "odds": "+280"
+          },
+          {
+            "name": "Amon-Ra St. Brown",
+            "odds": "+600"
+          },
+          {
+            "name": "Chase Brown",
+            "odds": "+850"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "WAS Commanders at LA Chargers",
+      "startTime": "2025-10-05 14:25",
+      "markets": {
+        "First TD Scorer": [
+          {
+            "name": "Omarion Hampton",
+            "odds": "+500"
+          }
+        ],
+        "Anytime TD Scorer": [
+          {
+            "name": "Omarion Hampton",
+            "odds": "-135"
+          },
+          {
+            "name": "Quentin Johnston",
+            "odds": "+160"
+          },
+          {
+            "name": "Keenan Allen",
+            "odds": "+170"
+          },
+          {
+            "name": "Deebo Samuel",
+            "odds": "+140"
+          },
+          {
+            "name": "Ladd McConkey",
+            "odds": "+205"
+          },
+          {
+            "name": "Zach Ertz",
+            "odds": "+190"
+          },
+          {
+            "name": "Chris Rodriguez Jr.",
+            "odds": "+255"
+          },
+          {
+            "name": "Jayden Daniels",
+            "odds": "+260"
+          },
+          {
+            "name": "Jacory Croskey-Merritt",
+            "odds": "+295"
+          },
+          {
+            "name": "Justin Herbert",
+            "odds": "+340"
+          },
+          {
+            "name": "Chris Moore",
+            "odds": "+390"
+          },
+          {
+            "name": "Oronde Gadsden II",
+            "odds": "+380"
+          },
+          {
+            "name": "Luke McCaffrey",
+            "odds": "+425"
+          },
+          {
+            "name": "Jaylin Lane",
+            "odds": "+500"
+          },
+          {
+            "name": "Jeremy McNichols",
+            "odds": "+500"
+          },
+          {
+            "name": "WAS Commanders D/ST",
+            "odds": "+550"
+          },
+          {
+            "name": "Tyler Conklin",
+            "odds": "+650"
+          },
+          {
+            "name": "Hassan Haskins",
+            "odds": "+700"
+          },
+          {
+            "name": "LA Chargers D/ST",
+            "odds": "+500"
+          },
+          {
+            "name": "Will Dissly",
+            "odds": "+600"
+          },
+          {
+            "name": "Kimani Vidal",
+            "odds": "+1000"
+          },
+          {
+            "name": "Ben Sinnott",
+            "odds": "+950"
+          }
+        ],
+        "2+ TDs": [
+          {
+            "name": "Omarion Hampton",
+            "odds": "+425"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "NE Patriots at BUF Bills",
+      "startTime": "2025-10-05 18:20",
+      "markets": {
+        "First TD Scorer": [
+          {
+            "name": "James Cook",
+            "odds": "+380"
+          },
+          {
+            "name": "Josh Allen",
+            "odds": "+550"
+          }
+        ],
+        "Anytime TD Scorer": [
+          {
+            "name": "Josh Allen",
+            "odds": "-130"
+          },
+          {
+            "name": "Keon Coleman",
+            "odds": "+175"
+          },
+          {
+            "name": "Dalton Kincaid",
+            "odds": "+225"
+          },
+          {
+            "name": "Khalil Shakir",
+            "odds": "+210"
+          },
+          {
+            "name": "Rhamondre Stevenson",
+            "odds": "+220"
+          },
+          {
+            "name": "Hunter Henry",
+            "odds": "+215"
+          },
+          {
+            "name": "TreVeyon Henderson",
+            "odds": "+250"
+          },
+          {
+            "name": "Stefon Diggs",
+            "odds": "+265"
+          },
+          {
+            "name": "Joshua Palmer",
+            "odds": "+370"
+          },
+          {
+            "name": "Kayshon Boutte",
+            "odds": "+340"
+          },
+          {
+            "name": "Drake Maye",
+            "odds": "+400"
+          },
+          {
+            "name": "Ty Johnson",
+            "odds": "+475"
+          },
+          {
+            "name": "NE Patriots D/ST",
+            "odds": "+600"
+          },
+          {
+            "name": "Ray Davis",
+            "odds": "+500"
+          },
+          {
+            "name": "Antonio Gibson",
+            "odds": "+500"
+          },
+          {
+            "name": "BUF Bills D/ST",
+            "odds": "+500"
+          },
+          {
+            "name": "Dawson Knox",
+            "odds": "+600"
+          },
+          {
+            "name": "Austin Hooper",
+            "odds": "+650"
+          },
+          {
+            "name": "Curtis Samuel",
+            "odds": "+850"
+          },
+          {
+            "name": "Tyrell Shavers",
+            "odds": "+950"
+          },
+          {
+            "name": "Mack Hollins",
+            "odds": "+700"
+          },
+          {
+            "name": "Demario Douglas",
+            "odds": "+800"
+          },
+          {
+            "name": "Elijah Moore",
+            "odds": "+1000"
+          },
+          {
+            "name": "Jackson Hawes",
+            "odds": "+700"
+          }
+        ],
+        "2+ TDs": [
+          {
+            "name": "James Cook",
+            "odds": "+235"
+          },
+          {
+            "name": "Josh Allen",
+            "odds": "+450"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "KC Chiefs at JAX Jaguars",
+      "startTime": "2025-10-06 18:15",
+      "markets": {
+        "First TD Scorer": [
+          {
+            "name": "Travis Etienne Jr.",
+            "odds": "+650"
+          },
+          {
+            "name": "Xavier Worthy",
+            "odds": "+900"
+          }
+        ],
+        "Anytime TD Scorer": [
+          {
+            "name": "Travis Etienne Jr.",
+            "odds": "+110"
+          },
+          {
+            "name": "Xavier Worthy",
+            "odds": "+155"
+          },
+          {
+            "name": "Brian Thomas Jr.",
+            "odds": "+170"
+          },
+          {
+            "name": "Travis Kelce",
+            "odds": "+175"
+          },
+          {
+            "name": "Kareem Hunt",
+            "odds": "+210"
+          },
+          {
+            "name": "Marquise Brown",
+            "odds": "+215"
+          },
+          {
+            "name": "Isiah Pacheco",
+            "odds": "+255"
+          },
+          {
+            "name": "Travis Hunter",
+            "odds": "+270"
+          },
+          {
+            "name": "Parker Washington",
+            "odds": "+340"
+          },
+          {
+            "name": "Bhayshul Tuten",
+            "odds": "+330"
+          },
+          {
+            "name": "Brenton Strange",
+            "odds": "+310"
+          },
+          {
+            "name": "Dyami Brown",
+            "odds": "+330"
+          },
+          {
+            "name": "Patrick Mahomes",
+            "odds": "+350"
+          },
+          {
+            "name": "JuJu Smith-Schuster",
+            "odds": "+330"
+          },
+          {
+            "name": "Tyquan Thornton",
+            "odds": "+400"
+          },
+          {
+            "name": "Trevor Lawrence",
+            "odds": "+550"
+          },
+          {
+            "name": "Brashard Smith",
+            "odds": "+550"
+          },
+          {
+            "name": "Noah Gray",
+            "odds": "+550"
+          },
+          {
+            "name": "JAX Jaguars D/ST",
+            "odds": "+600"
+          },
+          {
+            "name": "KC Chiefs D/ST",
+            "odds": "+600"
+          },
+          {
+            "name": "Tim Patrick",
+            "odds": "+750"
+          }
+        ],
+        "2+ TDs": [
+          {
+            "name": "Travis Etienne Jr.",
+            "odds": "+750"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1300 @@
+{
+  "UFC": [
+    {
+      "eventName": "Veronica Hardy vs Brogan Walker",
+      "startTime": "2025-10-04 16:15",
+      "markets": {
+        "Point Spread": [
+          {
+            "name": "Veronica Hardy",
+            "odds": "-3.5 (-195)"
+          },
+          {
+            "name": "Brogan Walker",
+            "odds": "+3.5 (+140)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 2.5",
+            "odds": "-410"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "+290"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Veronica Hardy",
+            "odds": "-700"
+          },
+          {
+            "name": "Brogan Walker",
+            "odds": "+500"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Veronica Hardy To Win By KO/TKO/DQ",
+            "odds": "+550"
+          },
+          {
+            "name": "Veronica Hardy To Win By Submission",
+            "odds": "+650"
+          },
+          {
+            "name": "Veronica Hardy To Win By Decision",
+            "odds": "-250"
+          },
+          {
+            "name": "Brogan Walker To Win By KO/TKO/DQ",
+            "odds": "+4000"
+          },
+          {
+            "name": "Brogan Walker To Win By Submission",
+            "odds": "+2200"
+          },
+          {
+            "name": "Brogan Walker To Win By Decision",
+            "odds": "+700"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "-340"
+          },
+          {
+            "name": "No",
+            "odds": "+240"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+350"
+          },
+          {
+            "name": "No",
+            "odds": "-550"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "-185"
+          },
+          {
+            "name": "No",
+            "odds": "+140"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Ramiz Brahimaj vs Austin Vanderford",
+      "startTime": "2025-10-04 16:45",
+      "markets": {
+        "Point Spread": [
+          {
+            "name": "Ramiz Brahimaj",
+            "odds": "+3.5 (+110)"
+          },
+          {
+            "name": "Austin Vanderford",
+            "odds": "-3.5 (-150)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 1.5",
+            "odds": "-238"
+          },
+          {
+            "name": "Under 1.5",
+            "odds": "+180"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Ramiz Brahimaj",
+            "odds": "+240"
+          },
+          {
+            "name": "Austin Vanderford",
+            "odds": "-298"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Ramiz Brahimaj To Win By KO/TKO/DQ",
+            "odds": "+1200"
+          },
+          {
+            "name": "Ramiz Brahimaj To Win By Submission",
+            "odds": "+450"
+          },
+          {
+            "name": "Ramiz Brahimaj To Win By Decision",
+            "odds": "+900"
+          },
+          {
+            "name": "Austin Vanderford To Win By KO/TKO/DQ",
+            "odds": "+300"
+          },
+          {
+            "name": "Austin Vanderford To Win By Submission",
+            "odds": "+650"
+          },
+          {
+            "name": "Austin Vanderford To Win By Decision",
+            "odds": "+110"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "-115"
+          },
+          {
+            "name": "No",
+            "odds": "-115"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+500"
+          },
+          {
+            "name": "No",
+            "odds": "-900"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+130"
+          },
+          {
+            "name": "No",
+            "odds": "-170"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Punahele Soriano vs Nikolay Veretennikov",
+      "startTime": "2025-10-04 17:15",
+      "markets": {
+        "Point Spread": [
+          {
+            "name": "Punahele Soriano",
+            "odds": "-3.5 (-195)"
+          },
+          {
+            "name": "Nikolay Veretennikov",
+            "odds": "+3.5 (+140)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 1.5",
+            "odds": "-180"
+          },
+          {
+            "name": "Under 1.5",
+            "odds": "+140"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Punahele Soriano",
+            "odds": "-340"
+          },
+          {
+            "name": "Nikolay Veretennikov",
+            "odds": "+270"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Punahele Soriano To Win By KO/TKO/DQ",
+            "odds": "+110"
+          },
+          {
+            "name": "Punahele Soriano To Win By Submission",
+            "odds": "+900"
+          },
+          {
+            "name": "Punahele Soriano To Win By Decision",
+            "odds": "+215"
+          },
+          {
+            "name": "Nikolay Veretennikov To Win By KO/TKO/DQ",
+            "odds": "+550"
+          },
+          {
+            "name": "Nikolay Veretennikov To Win By Submission",
+            "odds": "+2500"
+          },
+          {
+            "name": "Nikolay Veretennikov To Win By Decision",
+            "odds": "+700"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+140"
+          },
+          {
+            "name": "No",
+            "odds": "-185"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+600"
+          },
+          {
+            "name": "No",
+            "odds": "-1200"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+215"
+          },
+          {
+            "name": "No",
+            "odds": "-295"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Patrick Mix vs Jakub Wiklacz",
+      "startTime": "2025-10-04 17:30",
+      "markets": {
+        "Point Spread": [
+          {
+            "name": "Patrick Mix",
+            "odds": "-3.5 (-150)"
+          },
+          {
+            "name": "Jakub Wiklacz",
+            "odds": "+3.5 (+110)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 2.5",
+            "odds": "-166"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "+130"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Patrick Mix",
+            "odds": "-310"
+          },
+          {
+            "name": "Jakub Wiklacz",
+            "odds": "+250"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Patrick Mix To Win By KO/TKO/DQ",
+            "odds": "+800"
+          },
+          {
+            "name": "Patrick Mix To Win By Submission",
+            "odds": "+180"
+          },
+          {
+            "name": "Patrick Mix To Win By Decision",
+            "odds": "+140"
+          },
+          {
+            "name": "Jakub Wiklacz To Win By KO/TKO/DQ",
+            "odds": "+2200"
+          },
+          {
+            "name": "Jakub Wiklacz To Win By Submission",
+            "odds": "+1000"
+          },
+          {
+            "name": "Jakub Wiklacz To Win By Decision",
+            "odds": "+400"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "-135"
+          },
+          {
+            "name": "No",
+            "odds": "+105"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+400"
+          },
+          {
+            "name": "No",
+            "odds": "-650"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+120"
+          },
+          {
+            "name": "No",
+            "odds": "-160"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Macy Chiasson vs Yana Santos",
+      "startTime": "2025-10-04 17:45",
+      "markets": {
+        "Point Spread": [
+          {
+            "name": "Macy Chiasson",
+            "odds": "-3.5 (+100)"
+          },
+          {
+            "name": "Yana Santos",
+            "odds": "+3.5 (-140)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 2.5",
+            "odds": "-250"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "+190"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Macy Chiasson",
+            "odds": "-192"
+          },
+          {
+            "name": "Yana Santos",
+            "odds": "+160"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Macy Chiasson To Win By KO/TKO/DQ",
+            "odds": "+400"
+          },
+          {
+            "name": "Macy Chiasson To Win By Submission",
+            "odds": "+450"
+          },
+          {
+            "name": "Macy Chiasson To Win By Decision",
+            "odds": "+150"
+          },
+          {
+            "name": "Yana Santos To Win By KO/TKO/DQ",
+            "odds": "+1200"
+          },
+          {
+            "name": "Yana Santos To Win By Submission",
+            "odds": "+2800"
+          },
+          {
+            "name": "Yana Santos To Win By Decision",
+            "odds": "+215"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "-200"
+          },
+          {
+            "name": "No",
+            "odds": "+150"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+330"
+          },
+          {
+            "name": "No",
+            "odds": "-500"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "-110"
+          },
+          {
+            "name": "No",
+            "odds": "-120"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Daniel Santos vs Joo Sang Yoo",
+      "startTime": "2025-10-04 18:15",
+      "markets": {
+        "Point Spread": [
+          {
+            "name": "Daniel Santos",
+            "odds": "-3.5 (+130)"
+          },
+          {
+            "name": "Joo Sang Yoo",
+            "odds": "+3.5 (-180)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 2.5",
+            "odds": "-175"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "+135"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Daniel Santos",
+            "odds": "-148"
+          },
+          {
+            "name": "Joo Sang Yoo",
+            "odds": "+124"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Daniel Santos To Win By KO/TKO/DQ",
+            "odds": "+400"
+          },
+          {
+            "name": "Daniel Santos To Win By Submission",
+            "odds": "+800"
+          },
+          {
+            "name": "Daniel Santos To Win By Decision",
+            "odds": "+165"
+          },
+          {
+            "name": "Joo Sang Yoo To Win By KO/TKO/DQ",
+            "odds": "+400"
+          },
+          {
+            "name": "Joo Sang Yoo To Win By Submission",
+            "odds": "+1600"
+          },
+          {
+            "name": "Joo Sang Yoo To Win By Decision",
+            "odds": "+275"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "-150"
+          },
+          {
+            "name": "No",
+            "odds": "+110"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+350"
+          },
+          {
+            "name": "No",
+            "odds": "-550"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+110"
+          },
+          {
+            "name": "No",
+            "odds": "-145"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Chris Gutierrez vs Farid Basharat",
+      "startTime": "2025-10-04 18:45",
+      "markets": {
+        "Point Spread": [
+          {
+            "name": "Chris Gutierrez",
+            "odds": "+5.5 (-125)"
+          },
+          {
+            "name": "Farid Basharat",
+            "odds": "-5.5 (-105)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 2.5",
+            "odds": "-298"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "+220"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Chris Gutierrez",
+            "odds": "+370"
+          },
+          {
+            "name": "Farid Basharat",
+            "odds": "-485"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Chris Gutierrez To Win By KO/TKO/DQ",
+            "odds": "+1000"
+          },
+          {
+            "name": "Chris Gutierrez To Win By Submission",
+            "odds": "+3000"
+          },
+          {
+            "name": "Chris Gutierrez To Win By Decision",
+            "odds": "+700"
+          },
+          {
+            "name": "Farid Basharat To Win By KO/TKO/DQ",
+            "odds": "+800"
+          },
+          {
+            "name": "Farid Basharat To Win By Submission",
+            "odds": "+400"
+          },
+          {
+            "name": "Farid Basharat To Win By Decision",
+            "odds": "-185"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "-245"
+          },
+          {
+            "name": "No",
+            "odds": "+180"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+450"
+          },
+          {
+            "name": "No",
+            "odds": "-750"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "-160"
+          },
+          {
+            "name": "No",
+            "odds": "+120"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Edmen Shahbazyan vs Andre Muniz",
+      "startTime": "2025-10-04 19:15",
+      "markets": {
+        "Point Spread": [
+          {
+            "name": "Edmen Shahbazyan",
+            "odds": "-7.5 (-245)"
+          },
+          {
+            "name": "Andre Muniz",
+            "odds": "+7.5 (+175)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 1.5",
+            "odds": "+110"
+          },
+          {
+            "name": "Under 1.5",
+            "odds": "-140"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Edmen Shahbazyan",
+            "odds": "-325"
+          },
+          {
+            "name": "Andre Muniz",
+            "odds": "+260"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Edmen Shahbazyan To Win By KO/TKO/DQ",
+            "odds": "-185"
+          },
+          {
+            "name": "Edmen Shahbazyan To Win By Submission",
+            "odds": "+2000"
+          },
+          {
+            "name": "Edmen Shahbazyan To Win By Decision",
+            "odds": "+600"
+          },
+          {
+            "name": "Andre Muniz To Win By KO/TKO/DQ",
+            "odds": "+1400"
+          },
+          {
+            "name": "Andre Muniz To Win By Submission",
+            "odds": "+500"
+          },
+          {
+            "name": "Andre Muniz To Win By Decision",
+            "odds": "+900"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+330"
+          },
+          {
+            "name": "No",
+            "odds": "-500"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+1200"
+          },
+          {
+            "name": "No",
+            "odds": "-8000"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+450"
+          },
+          {
+            "name": "No",
+            "odds": "-750"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Abus Magomedov vs Joe Pyfer",
+      "startTime": "2025-10-04 20:15",
+      "markets": {
+        "Point Spread": [
+          {
+            "name": "Abus Magomedov",
+            "odds": "+7.5 (+105)"
+          },
+          {
+            "name": "Joe Pyfer",
+            "odds": "-7.5 (-140)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 1.5",
+            "odds": "-154"
+          },
+          {
+            "name": "Under 1.5",
+            "odds": "+120"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Abus Magomedov",
+            "odds": "+205"
+          },
+          {
+            "name": "Joe Pyfer",
+            "odds": "-250"
+          }
+        ],
+        "Abus Magomedov Total Significant Strikes O/U": [
+          {
+            "name": "Over 25.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Under 25.5",
+            "odds": "-115"
+          }
+        ],
+        "Joe Pyfer Total Significant Strikes O/U": [
+          {
+            "name": "Over 34.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Under 34.5",
+            "odds": "-115"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Abus Magomedov To Win By KO/TKO/DQ",
+            "odds": "+650"
+          },
+          {
+            "name": "Abus Magomedov To Win By Submission",
+            "odds": "+1000"
+          },
+          {
+            "name": "Abus Magomedov To Win By Decision",
+            "odds": "+550"
+          },
+          {
+            "name": "Joe Pyfer To Win By KO/TKO/DQ",
+            "odds": "+110"
+          },
+          {
+            "name": "Joe Pyfer To Win By Submission",
+            "odds": "+550"
+          },
+          {
+            "name": "Joe Pyfer To Win By Decision",
+            "odds": "+350"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+180"
+          },
+          {
+            "name": "No",
+            "odds": "-245"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+750"
+          },
+          {
+            "name": "No",
+            "odds": "-2500"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+275"
+          },
+          {
+            "name": "No",
+            "odds": "-425"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Josh Emmett vs Youssef Zalal",
+      "startTime": "2025-10-04 20:45",
+      "markets": {
+        "Point Spread": [
+          {
+            "name": "Josh Emmett",
+            "odds": "+3.5 (+100)"
+          },
+          {
+            "name": "Youssef Zalal",
+            "odds": "-3.5 (-135)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 2.5",
+            "odds": "-298"
+          },
+          {
+            "name": "Under 2.5",
+            "odds": "+220"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Josh Emmett",
+            "odds": "+360"
+          },
+          {
+            "name": "Youssef Zalal",
+            "odds": "-470"
+          }
+        ],
+        "Josh Emmett Total Significant Strikes O/U": [
+          {
+            "name": "Over 37.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Under 37.5",
+            "odds": "-115"
+          }
+        ],
+        "Youssef Zalal Total Significant Strikes O/U": [
+          {
+            "name": "Over 46.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Under 46.5",
+            "odds": "-115"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Josh Emmett To Win By KO/TKO/DQ",
+            "odds": "+750"
+          },
+          {
+            "name": "Josh Emmett To Win By Submission",
+            "odds": "+4000"
+          },
+          {
+            "name": "Josh Emmett To Win By Decision",
+            "odds": "+800"
+          },
+          {
+            "name": "Youssef Zalal To Win By KO/TKO/DQ",
+            "odds": "+900"
+          },
+          {
+            "name": "Youssef Zalal To Win By Submission",
+            "odds": "+450"
+          },
+          {
+            "name": "Youssef Zalal To Win By Decision",
+            "odds": "-200"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "-250"
+          },
+          {
+            "name": "No",
+            "odds": "+185"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+350"
+          },
+          {
+            "name": "No",
+            "odds": "-550"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "-150"
+          },
+          {
+            "name": "No",
+            "odds": "+110"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Jiri Prochazka vs Khalil Rountree Jr.",
+      "startTime": "2025-10-04 21:15",
+      "markets": {
+        "Point Spread": [
+          {
+            "name": "Jiri Prochazka",
+            "odds": "-3.5 (-150)"
+          },
+          {
+            "name": "Khalil Rountree Jr.",
+            "odds": "+3.5 (+110)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 1.5",
+            "odds": "-145"
+          },
+          {
+            "name": "Under 1.5",
+            "odds": "+114"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Jiri Prochazka",
+            "odds": "-198"
+          },
+          {
+            "name": "Khalil Rountree Jr.",
+            "odds": "+164"
+          }
+        ],
+        "Jiri Prochazka Total Significant Strikes O/U": [
+          {
+            "name": "Over 40.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Under 40.5",
+            "odds": "-115"
+          }
+        ],
+        "Khalil Rountree Jr. Total Significant Strikes O/U": [
+          {
+            "name": "Over 37.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Under 37.5",
+            "odds": "-115"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Jiri Prochazka To Win By KO/TKO/DQ",
+            "odds": "-105"
+          },
+          {
+            "name": "Jiri Prochazka To Win By Submission",
+            "odds": "+1100"
+          },
+          {
+            "name": "Jiri Prochazka To Win By Decision",
+            "odds": "+500"
+          },
+          {
+            "name": "Khalil Rountree Jr. To Win By KO/TKO/DQ",
+            "odds": "+350"
+          },
+          {
+            "name": "Khalil Rountree Jr. To Win By Submission",
+            "odds": "+3500"
+          },
+          {
+            "name": "Khalil Rountree Jr. To Win By Decision",
+            "odds": "+450"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+200"
+          },
+          {
+            "name": "No",
+            "odds": "-275"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+800"
+          },
+          {
+            "name": "No",
+            "odds": "-2000"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+275"
+          },
+          {
+            "name": "No",
+            "odds": "-400"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Merab Dvalishvili vs Cory Sandhagen",
+      "startTime": "2025-10-04 21:45",
+      "markets": {
+        "Point Spread": [
+          {
+            "name": "Merab Dvalishvili",
+            "odds": "-5.5 (-120)"
+          },
+          {
+            "name": "Cory Sandhagen",
+            "odds": "+5.5 (-110)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 4.5",
+            "odds": "-360"
+          },
+          {
+            "name": "Under 4.5",
+            "odds": "+260"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Merab Dvalishvili",
+            "odds": "-410"
+          },
+          {
+            "name": "Cory Sandhagen",
+            "odds": "+320"
+          }
+        ],
+        "Cory Sandhagen Total Significant Strikes O/U": [
+          {
+            "name": "Over 62.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Under 62.5",
+            "odds": "-115"
+          }
+        ],
+        "Merab Dvalishvili Total Significant Strikes O/U": [
+          {
+            "name": "Over 87.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Under 87.5",
+            "odds": "-115"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Merab Dvalishvili To Win By KO/TKO/DQ",
+            "odds": "+800"
+          },
+          {
+            "name": "Merab Dvalishvili To Win By Submission",
+            "odds": "+900"
+          },
+          {
+            "name": "Merab Dvalishvili To Win By Decision",
+            "odds": "-250"
+          },
+          {
+            "name": "Cory Sandhagen To Win By KO/TKO/DQ",
+            "odds": "+800"
+          },
+          {
+            "name": "Cory Sandhagen To Win By Submission",
+            "odds": "+2500"
+          },
+          {
+            "name": "Cory Sandhagen To Win By Decision",
+            "odds": "+700"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "-330"
+          },
+          {
+            "name": "No",
+            "odds": "+235"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+400"
+          },
+          {
+            "name": "No",
+            "odds": "-650"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "-185"
+          },
+          {
+            "name": "No",
+            "odds": "+140"
+          }
+        ]
+      }
+    },
+    {
+      "eventName": "Magomed Ankalaev vs Alex Pereira",
+      "startTime": "2025-10-04 22:30",
+      "markets": {
+        "Point Spread": [
+          {
+            "name": "Magomed Ankalaev",
+            "odds": "-5.5 (-135)"
+          },
+          {
+            "name": "Alex Pereira",
+            "odds": "+5.5 (+100)"
+          }
+        ],
+        "Total Rounds": [
+          {
+            "name": "Over 3.5",
+            "odds": "-130"
+          },
+          {
+            "name": "Under 3.5",
+            "odds": "+100"
+          }
+        ],
+        "Moneyline": [
+          {
+            "name": "Magomed Ankalaev",
+            "odds": "-285"
+          },
+          {
+            "name": "Alex Pereira",
+            "odds": "+230"
+          }
+        ],
+        "Alex Pereira Total Significant Strikes O/U": [
+          {
+            "name": "Over 61.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Under 61.5",
+            "odds": "-115"
+          }
+        ],
+        "Magomed Ankalaev Total Significant Strikes O/U": [
+          {
+            "name": "Over 67.5",
+            "odds": "-115"
+          },
+          {
+            "name": "Under 67.5",
+            "odds": "-115"
+          }
+        ],
+        "Method of Victory": [
+          {
+            "name": "Magomed Ankalaev To Win By KO/TKO/DQ",
+            "odds": "+215"
+          },
+          {
+            "name": "Magomed Ankalaev To Win By Submission",
+            "odds": "+1000"
+          },
+          {
+            "name": "Magomed Ankalaev To Win By Decision",
+            "odds": "+130"
+          },
+          {
+            "name": "Alex Pereira To Win By KO/TKO/DQ",
+            "odds": "+320"
+          },
+          {
+            "name": "Alex Pereira To Win By Submission",
+            "odds": "+3500"
+          },
+          {
+            "name": "Alex Pereira To Win By Decision",
+            "odds": "+1200"
+          }
+        ],
+        "Fight to Go the Distance": [
+          {
+            "name": "Yes",
+            "odds": "+110"
+          },
+          {
+            "name": "No",
+            "odds": "-145"
+          }
+        ],
+        "Fight to Be Won by Split or Majority Decision": [
+          {
+            "name": "Yes",
+            "odds": "+550"
+          },
+          {
+            "name": "No",
+            "odds": "-1200"
+          }
+        ],
+        "Fight to Be Won by Unanimous Decision": [
+          {
+            "name": "Yes",
+            "odds": "+165"
+          },
+          {
+            "name": "No",
+            "odds": "-235"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+-----Intro:
+Alright, had to take a break to go get a real job. I have high hopes while I wait to hear back from bet365. right now I just need to 
+keep myself occupied so here I am. But enough about me, I want to get some more reps in with this new edge analysis system I created
+because I think it has a good balance of diligence and simplicity. Unfortunately I missed virtually all of the rest of the WNBA
+season. I'm thinking NHL will be my next high frequency league to focus in on. But for right now we have UFC 320 coming up in 2 days
+so lets take a crack at that. Now that I'm looking at my records, I created the scripts for this but I haven't tested them out yet.
+
+-----Files:
+3.1_UFC_DR_potenial_edges.txt: Prompt for deep research
+    3.2_UFC_analyze_lines.txt: Uses edges report and odds to find edges
+             final_report.txt: Bets that were selected, their reasoning, and confidence scores.
+                    odds.json: Betting lines to analyze
+          UFC_Edges_Report.md: Deep research report produced by 3.1 agent 
+           3.2conversation.md: The 3.2 chatbot conversation where picks were chosen
+
+-----Inconsistencies/ Notes:
+I feel like the 3.2 agent was super trigger happy chosing which bets were good. I think in the next experiment I might use Google AI 
+Studio and choose a lower temperature. It looks like the default temperature is 1, I'll probalby set it at 0.5 to see if that fixes it.
+
+
+-----Picks/results:
+Pick 1:  Cory Sandhagen vs Merab Dvalishvili   | Moneyline (Sandhagen)       | $1.50 | +320 -> Lost
+Pick 2:  Jiří Procházka vs Khalil Rountree Jr. | Moneyline (Rountree Jr.)    | $1.00 | +164 -> Lost
+Pick 3:  Jiří Procházka vs Khalil Rountree Jr. | Total Under (1.5)           | $1.00 | +114 -> Lost
+Pick 4:  Magomed Ankalaev vs Alex Pereira      | Fight to Go Distance (Yes)  | $1.00 | +110 -> Lost
+Pick 5:  Patrick Mix vs Jakub Wiklacz          | Fight to Go Distance (Yes)  | $1.00 | -135 -> Won
+Pick 6:  Andre Muniz vs Edmen shahbazyan       | By Submission (Muniz)       | $1.00 | +500 -> Lost
+Pick 7:  Jiří Procházka vs Khalil Rountree Jr. | By KO/TKO/DQ (Rountree Jr.) | $1.00 | +350 -> Lost
+Pick 8:  Magomed Ankalaev vs Alex Pereira      | By Decision (Ankalaev)      | $1.00 | +130 -> Lost
+Pick 9:  Cory Sandhagen vs Merab Dvalishvili   | Sig. Strikes Over (62.5)    | $1.50 | -115 -> Won
+Pick 10: Magomed Ankalaev vs Alex Pereira      | Sig. Strikes Over (67.5)    | $1.50 | -115 -> Lost
+Pick 11: Magomed Ankalaev vs Alex Pereira      | Sig. Strikes Over (61.5)    | $1.00 | -115 -> Lost
+
+-----P/L and Notes:
+P/L: -$1.50 (pick 1) - $1.00 (pick 2) - $1.00 (pick 3) - $1.00 (pick 4) + $0.74 (pick 5) - $1.00 (pick 6) - $1.00 (pick 7) 
+    - $1.00 (pick 8) + $1.30 (pick 9) - $1.50 (pick 10) - $1.00 (pick 11) = -$7.95 [-63.6% profit]
+
+Hitting 2 for 11 is abismal. I haven't dug into the data to see if these bets were bad or if I just got unlucky. From the very little 
+that I know about UFC I would have personally guessed the Pereira/Roudtree fight to be a finish by KO/TKO by Pereira so these fight to
+go the distance and win by decision shots don't make sense to me. I think something I'm struggling to reconcile in my head is the
+variance factor and choosing bets that win. Specifically it seems like betting the edge no matter what is supposed to always be the
+right move but there are these longshot bets that have legitimate edges that I'm betting on and while I understand mathmatically it is
+supposed to pay off in the long run it just seems like I'm wasting my money.
+
+-----Analysis:
+
+Closing line odds comparing the odds on my bet to the closing line at Pinnacle for 1,2,and3 and draftkings for 8,10,11. 
+Pick 1:  Cory Sandhagen vs Merab Dvalishvili   | Moneyline (Sandhagen)       | My Odds: +320 | CL: +221 (Pinnacle)
+Pick 2:  Jiří Procházka vs Khalil Rountree Jr. | Moneyline (Rountree Jr.)    | My Odds: +164 | CL: +164 (Pinnacle)
+Pick 3:  Jiří Procházka vs Khalil Rountree Jr. | Total Under (1.5)           | My Odds: +114 | CL: +136 (Pinnacle)
+Pick 4:  Magomed Ankalaev vs Alex Pereira      | Fight to Go Distance (Yes)  | My Odds: +110 | CL: 
+Pick 5:  Patrick Mix vs Jakub Wiklacz          | Fight to Go Distance (Yes)  | My Odds: -135 | CL: 
+Pick 6:  Andre Muniz vs Edmen shahbazyan       | By Submission (Muniz)       | My Odds: +500 | CL: 
+Pick 7:  Jiří Procházka vs Khalil Rountree Jr. | By KO/TKO/DQ (Rountree Jr.) | My Odds: +350 | CL: 
+Pick 8:  Magomed Ankalaev vs Alex Pereira      | By Decision (Ankalaev)      | My Odds: +130 | CL: +140 (DraftKings)
+Pick 9:  Cory Sandhagen vs Merab Dvalishvili   | Sig. Strikes Over (62.5)    | My Odds: -115 | CL: 
+Pick 10: Magomed Ankalaev vs Alex Pereira      | Sig. Strikes Over (67.5)    | My Odds: -115 | CL: -115 (DraftKings)
+Pick 11: Magomed Ankalaev vs Alex Pereira      | Sig. Strikes Over (61.5)    | My Odds: -115 | CL: -115 (DraftKings)
+
+I wasn't able to find closing lines for all of my bets
