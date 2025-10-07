@@ -1,0 +1,105 @@
+Attached are HTML files containing betting odds. Your task is to perform OCR, parse the files, and extract ONLY THE MONEYLINES into a single, structured JSON object.
+
+
+
+You must adhere to the following rules for filtering events and structuring the JSON output.
+
+
+
+**1. JSON Output Specification**
+
+
+
+The final output MUST be a single JSON object. The entire output must be enclosed in a single json code block. Use the following nested, market-centric structure:
+
+
+
+{
+
+  "Sport Name": [
+
+    {
+
+      "eventName": "Event Name (e.g., Genesis Invitational, Super Bowl LIX)",
+
+      "startTime": "YYYY-MM-DD HH:MM",
+
+      "eventType": "matchup OR tournament",
+
+      "markets": {
+
+        "Moneyline": [
+
+          {
+
+            "name": "Name of the fighter",
+
+            "odds": "Odds value (e.g., -110)"
+
+          }
+
+        ],
+
+        "Moneyline": [
+
+          {
+
+            "name": "Fighter A",
+
+            "odds": "-115"
+
+          },
+
+          {
+
+            "name": "Fighter B",
+
+            "odds": "+120"
+
+          }
+
+        ]
+
+      }
+
+    }
+
+  ]
+
+}
+
+
+
+**2. HTML Parsing and Data Association Logic**
+
+
+
+To prevent common data entry errors, you must follow these parsing rules based on the principle of **Positional Proximity**: data elements that are close to each other in the HTML code are related.
+
+
+
+  * **A. For "Fight Lines" / Main Event Pages:**
+
+
+
+      * Matchups are presented in consecutive horizontal rows or blocks (e.g., `div.cms-market-selector-static__content`), one for each participant.
+
+      * The first block contains Participant 1's name and their associated odds (their Moneyline, their side of the Spread, and the "Over" for the Total).
+
+      * The second block contains Participant 2's name and their odds (their Moneyline, their side of the Spread, and the "Under" for the Total).
+
+      * **Crucially, you must extract the odds from the *same container element* as the participant's name to ensure they are not mixed up.** For Totals, you must identify the "O" or "U" text *within the same button element* as the odds value to avoid swapping them.
+
+
+
+  * **B. For "Prop Bet" / Market-Specific Pages (e.g., "Method of Victory," "Round of Finish"):**
+
+
+
+      * These pages typically group all options for a single market under one expandable event header.
+
+      * The betting options are listed as a sequence of label-button pairs.
+
+      * The text describing a specific bet (e.g., "Asu Almabayev To Win By KO/TKO/DQ" or "Fight to Go the Distance - Yes") is located in an element that is an **immediate sibling or in very close proximity to the button element containing its odds.**
+
+      * **You must parse these as label-and-button pairs.** Never associate a descriptive label with an odds button that is several elements away in the HTML structure.

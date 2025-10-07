@@ -1,10 +1,7 @@
-.vscode
 .DS_Store
+.vscode/
 scraping/
-FileA.json
-FileB.json
 scratch.py
 scratch.txt
 The-Logic-of-Sports-Betting.pdf
 thoughts.txt
-nonAI/sports-betting/

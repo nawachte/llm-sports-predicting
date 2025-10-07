@@ -1,0 +1,63 @@
+1. CORE MISSION: UNIVERSAL DATA EXTRACTION
+
+Attached are files in various formats (e.g., PNG, JPG, PDF, HTML, JSON) containing betting odds. Your primary task is to perform high-fidelity Optical Character Recognition (OCR) where necessary, parse the content of the file, and extract all available betting lines into a single, structured JSON object.
+
+2. JSON OUTPUT SPECIFICATION
+
+The final output MUST be a single JSON object. The entire output must be enclosed in a single json code block. Use the following nested, market-centric structure.
+
+{
+  "Sport Name": [
+    {
+      "eventName": "Event Name (e.g., Genesis Invitational, Super Bowl LIX)",
+      "startTime": "YYYY-MM-DD HH:MM",
+      "markets": {
+        "Market Name (e.g., Moneyline)": [
+          {
+            "name": "Name of the betting option (e.g., Team A, or Over 2.5)",
+            "odds": "Odds value (e.g., -110)"
+          }
+        ],
+        "Market Name (e.g., Spread)": [
+          {
+            "name": "Team A",
+            "odds": "-3.5 (-115)"
+          },
+          {
+            "name": "Team B",
+            "odds": "+3.5 (-115)"
+          }
+        ]
+      }
+    }
+  ]
+}
+
+3. DATA MAPPING AND FORMATTING
+
+For each event found in the source file, populate the JSON structure as follows:
+
+  A. Group by Sport: Use the name of the sport as the top-level key in the JSON object. All events for that sport should be objects within the corresponding array.
+
+  B. Structure by Market: All betting lines for an event must be organized by their market type (e.g., "Moneyline", "Spread", "Total Rounds", "Winner") inside the `markets` object.
+    * Each market is a key in the `markets` object.
+    * The value for each market key is an array of objects, where each object represents a distinct betting choice.
+    * Each choice object must contain a `name` (the participant or option, e.g., "Team A" or "Over 2.5") and its `odds`.
+
+4. UNIVERSAL PARSING AND DATA ASSOCIATION LOGIC
+
+To prevent data association errors, you must follow the principle of Proximity: data elements that are close to each other are related. Apply the appropriate logic based on the source file type.
+
+  A. For Structured Files (HTML, JSON):
+    * Matchups: These are often in consecutive rows or blocks (e.g., <div>). A participant's name and their associated odds (Moneyline, Spread, Total) will be in the same parent container. Crucially, extract odds from the same container element as the participant's name. For Totals, identify the "O" or "U" text within the same element as the odds value.
+    * Prop Bets: These are typically listed as label-button pairs. The text describing a bet (e.g., "Player A to Win by KO") is located in an element that is an immediate sibling or in very close proximity to the element containing its odds. Parse these as linked pairs.
+
+  B. For Unstructured Files (Images, PDF):
+    * Standard Game Lines: Recognize tabular or row-based formats. A single game is often two horizontal rows. Associate odds with a team based on their ROW. Odds in the top row belong to the top team. For the "Total" market, the top row is typically "Over" and the bottom row is "Under."
+    * Prop Bets & Futures: These are usually a vertical list. Each betting option is a distinct row containing the descriptive name and its odds. The descriptive text is on the left and the odds are on the right side of the same row. Parse these as complete horizontal rows. For tournament-style events (e.g., Golf Tournament Winner), ensure you capture an object for every single participant listed.
+
+5. OCR AND DATA CORRECTION
+
+  * Pay close attention to common OCR mistakes. A "−" (minus sign) might be misread as a "—" (em-dash). All negative odds must start with a standard hyphen-minus (-).
+  * Verify that odds values like "+1500" are not misread as "1500" or "+150O". Double-check for letters being mistaken for numbers.
+  * Player or team names can be misspelled by OCR. Use context and common knowledge to correct them to their proper spelling (e.g., if OCR reads "C. Gotterrup", correct it to "Chris Gotterup").

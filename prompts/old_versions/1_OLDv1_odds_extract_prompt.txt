@@ -1,0 +1,25 @@
+Attached are PDF files containing betting odds for one or more sports. Please parse the files and extract all available betting lines for every event and participant, following these specific rules:
+
+1.  **Event Status Verification and Exclusion:** Your primary goal is to output only events that have **not yet started** and are scheduled to occur **within the next 7 days.** CURRENT DATE/TIME: \<month day\> 2025 \<time\>. You must verify the status and timing of each event using the following sequence:
+    * **A. Check for Live Indicators:** First, examine the data for each event in the file. If an event has an explicit "live" icon, a score, or shows a specific period/inning (e.g., "3rd Period", "6th Inning"), it is in progress. You must **omit these live events entirely** from your output.
+    * **B. Verify Start Time:** For any event not immediately excluded by the step above, you must check for its start time using the following conditional logic:
+        * **Case 1: The file CONTAINS a start date and time for the event.**
+            * Compare the provided start time to the current date and time.
+            * If the start time is in the past, **omit the event.**
+            * If the start time is in the future, proceed to the next step (1.C). **You do not need to use the internet for this event.**
+        * **Case 2: The file DOES NOT contain a start date and time for the event.**
+            * **Only in this case, you must use the internet** to find the official start time for that specific matchup.
+            * Once found, compare the start time to the current date and time. If it is in the past, **omit the event.** If it is in the future, proceed to the next step (1.C).
+    * **C. Apply Time Horizon Filter:** For any event confirmed to be in the future, you must now check if it falls within the required 7-day window.
+        * Calculate the duration between the `CURRENT DATE/TIME` and the event's official start time.
+        * If this duration is **greater than 7 days** (i.e., 120 hours), you must **omit the event.**
+        * If the duration is **7 days or less**, the event is eligible for the final output.
+    * **D. Final Inclusion:** Only events confirmed to be in the future *and* within the 7-day time horizon (i.e., they have passed all checks above) should be processed for the final output.
+
+2.  **Group by Sport:** Structure the output with clear headings for each sport found in the file.
+
+3.  **Data Formatting by Event Type:** After grouping by sport, you must format the extracted data based on the structure of the event itself:
+    * **A. For Head-to-Head Matchups:** This applies to events where two teams or two individuals compete directly against each other (e.g., NBA, NHL, MLB games, or Tennis/UFC matches). For these, list the full matchup showing both participants. Under each participant, display all of their associated odds (e.g., Spread, Total, Moneyline).
+    * **B. For Tournament & Futures Events:** This applies to events that feature a large field of individual participants competing for a final ranking or title (e.g., a golf tournament, a NASCAR race, or odds to win a league championship). For these, you must provide a complete and unabridged list. **List every single participant and all of their available odds (e.g., Winner, Top 5, Top 10). It is critical that you do not summarize, truncate, or omit any participants from these lists.**
+
+4.  **Final Output:** The result should be a complete and unabridged list of all betting information for events that you have verified are upcoming (non-live), formatted according to the rules above.

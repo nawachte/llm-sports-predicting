@@ -1,0 +1,139 @@
+1. Core Mission: Image-to-JSON Data Extraction
+
+Attached are image files (e.g., PNG, JPG) containing screenshots of betting odds. Your task is to perform high-fidelity Optical Character Recognition (OCR) on these images, interpret the visual layout, and extract all available betting lines into a single, structured JSON object.
+
+You must adhere to the following rules for filtering events and structuring the JSON output.
+
+2. JSON Output Specification
+
+The final output MUST be a single JSON object. The entire output must be enclosed in a single json code block. Use the following nested, market-centric structure:
+
+JSON
+
+
+
+{
+
+  "Sport Name": [
+
+    {
+
+      "eventName": "Event Name (e.g., Genesis Invitational, Super Bowl LIX)",
+
+      "startTime": "YYYY-MM-DD HH:MM",
+
+      "eventType": "matchup OR tournament",
+
+      "markets": {
+
+        "Market Name (e.g., Moneyline)": [
+
+          {
+
+            "name": "Name of the betting option (e.g., Team A, or Over 2.5)",
+
+            "odds": "Odds value (e.g., -110)"
+
+          }
+
+        ],
+
+        "Market Name (e.g., Spread)": [
+
+          {
+
+            "name": "Team A",
+
+            "odds": "-3.5 (-115)"
+
+          },
+
+          {
+
+            "name": "Team B",
+
+            "odds": "+3.5 (-115)"
+
+          }
+
+        ]
+
+      }
+
+    }
+
+  ]
+
+}
+
+3. Event Filtering and Inclusion Criteria
+
+An event from the source image must be included in the JSON output ONLY if it meets ALL of the following conditions. The CURRENT DATE/TIME for all comparisons is <DATE/TIME> MT.
+
+A. Must Not Be Live:
+
+Visually scan the image for any live indicators (e.g., an explicit "live" icon, a displayed score, or a specific period/inning like "3rd Qtr" or "Bottom 5th").
+
+If an event is live, it must be omitted from the output.
+
+B. Must Not Be in the Past:
+
+If the image provides a start date/time: Compare it to the CURRENT DATE/TIME. If the start time is in the past, omit the event.
+
+If the image does NOT provide a start date/time: You must use the internet to find the official start time. If the discovered start time is in the past, omit the event.
+
+The startTime value in the JSON must be the official start time in format (YYYY-MM-DD HH:MM:SS).
+
+C. Must Be Within the 7-Day Horizon:
+
+Calculate the time between the CURRENT DATE/TIME and the event's verified future start time.
+
+If this duration is greater than 7 days (168 hours), omit the event.
+
+4. Data Mapping and Formatting
+
+For each event that passes the filtering criteria, populate the JSON structure as follows:
+
+A. Group by Sport: Use the name of the sport as the top-level key in the JSON object.
+
+B. Structure by Market: All betting lines for an event must be organized by their market type (e.g., "Moneyline", "Spread", "Total Rounds", "Winner") inside the markets object.
+
+C. Determine eventType and Populate Markets:
+
+For Head-to-Head Matchups: Set eventType to "matchup". Populate all available markets.
+
+For Tournament & Futures Events: Set eventType to "tournament". Populate the primary market (e.g., "Winner"), ensuring you include an object for every single participant listed.
+
+5. OCR and Visual Layout Parsing Logic
+
+To prevent common data association errors, you must follow these parsing rules based on the principle of Visual Proximity and Alignment: data elements that are visually close and aligned are related.
+
+A. For Standard Game Lines (e.g., NFL, NBA, MLB):
+
+Recognize that these are typically presented in a tabular or row-based format. A single game is represented by two horizontal rows, one for each team.
+
+Participant 1 (Top Row): The team name will be on the left. Their corresponding odds for "Spread," "Total," and "Moneyline" will be in distinct columns to the right, on the same horizontal plane.
+
+Participant 2 (Bottom Row): The second team's name will be directly below the first. Their odds will be in the same columns, directly below the odds for Participant 1.
+
+Crucially, you must associate odds with a team based on their ROW. Odds in the top row belong to the top team. For the "Total" market, the odds in the top row are for the "Over," and the odds in the bottom row are for the "Under."
+
+B. For Prop Bets & Futures (e.g., Method of Victory, Tournament Winner):
+
+These are typically presented as a vertical list.
+
+Each betting option is a distinct row containing the descriptive name of the bet and its corresponding odds.
+
+The descriptive text (e.g., "Max Verstappen" or "Fight to Go the Distance - Yes") will be on the left side of the row.
+
+The odds for that specific bet will be on the right side of the same row.
+
+You must parse these as complete, horizontal rows. Never associate a descriptive label from one row with an odds value from a different row above or below it.
+
+C. OCR Error Correction:
+
+Pay close attention to common OCR mistakes. A "−" (minus sign) might be misread as a "—" (em-dash) or OCR'd as part of the number. All negative odds must start with a standard hyphen-minus.
+
+Odds values like "+1500" should not be misread as "1500" or "+150O". Double-check for letters being mistaken for numbers.
+
+Player or team names can be misspelled. Use context and common knowledge to correct them to their proper spelling (e.g., if OCR reads "C. Gotterrup", correct it to "Chris Gotterup").

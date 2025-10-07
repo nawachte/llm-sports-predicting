@@ -1,0 +1,6 @@
+Based on the odds and the amount bet on each, provide me with a breakdown of the percent profit for each group. Show your work.
+At the end I want you to give me one line per group formatted as shown in the example below:
+Gemini: -$1.75 (pick 1) + $0.00 (pick 2) + $0.55 (pick 3) + $0.65 (pick 4) + $0.45 (pick 5) = -$0.10 [-2.0% profit]
+Claude: -$1.25 (pick 1) - $1.00 (pick 2) + $1.10 (pick 3) - $0.75 (pick 4) + $0.24 (pick 5) + $0.14 (pick 6) = -$1.52 [-30.4% profit]
+
+Here is the data:

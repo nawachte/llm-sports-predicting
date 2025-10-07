@@ -1,0 +1,19 @@
+Attached are research documents that agents have created during their research for picking sports bets. It is your job to format these results.
+The basic format for each pick looks like Pick <N>: <description> | <Bet> (<contestant short name>) | $<bet amount> | <odds> -> tbd
+You should do this for each pick and group it by source. Keep formatting consistant accross groups. 
+
+Here is an example:
+Claude
+Pick 1: Detroit Tigers vs Washington National | Moneyline (Tigers)    | $3.00 | -149 -> tbd
+Pick 2: Adrian Mannarino vs Andrey Rublev     | Moneyline (Mannarino) | $2.00 | +225 -> tbd
+Pick 3: Indiana Fever vs Las Vegas Aces       | +4.5 Spread (Fever)   | $2.00 | -105 -> tbd
+Pick 4: Emma Raducanu vs Aryna Sabalenka      | Moneyline (Raducanu)  | $1.50 | +275 -> tbd
+Pick 5: Toronto Blue Jays vs New York Yankees | Moneyline (Blue Jays) | $1.50 | +109 -> tbd
+
+Gemini
+Pick 1: San Francisco Giants vs Arizona Diamondbacks | Moneyline (Giants)     | $2.50 | -125 -> tbd
+Pick 2: Phoenix Mercury vs Dallas Wings              | -11.5 Spread (Mercury) | $2.25 | -108 -> tbd
+Pick 3: Chicago White Sox vs Los Angeles Dodgers     | -1.5 Spread (Dodgers)  | $1.75 | -144 -> tbd
+Pick 4: Los Angeles Sparks vs New York Liberty       | +10 Spread (Sparks)    | $1.50 | -110 -> tbd
+Pick 5: Milwaukee Brewers vs New York Mets           | Moneyline (Brewers)    | $1.25 | +129 -> tbd
+Pick 6: Kansas City Royals vs Seattle Mariners       | Total Under (7.5)      | $0.75 | -110 -> tbd

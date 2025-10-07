@@ -1,0 +1,61 @@
+Attached are HTML files containing betting odds. Your task is to perform OCR, parse the files, and extract all available betting lines into a single, structured JSON object.
+
+You must adhere to the following rules for filtering events and structuring the JSON output.
+
+1. JSON Output Specification
+
+The final output MUST be a single JSON object. The entire output must be enclosed in a single json code block. Use the following nested structure:
+
+{
+  "Sport Name": [
+    {
+      "eventName": "Event Name (e.g., Genesis Invitational, Super Bowl LIX)",
+      "startTime": "YYYY-MM-DDTHH:MM:SSZ",
+      "eventType": "matchup OR tournament",
+      "participants": [
+        {
+          "participantName": "Name of Team or Player",
+          "odds": {
+            "Odds Type (e.g., Moneyline)": "Odds Value (e.g., -110)",
+            "Odds Type (e.g., Spread)": "Odds Value (e.g., -3.5 (-115))",
+            "Odds Type (e.g., Winner)": "Odds Value (e.g., +800)"
+          }
+        }
+      ]
+    }
+  ]
+}
+
+2. Event Filtering and Inclusion Criteria
+
+An event from the source file must be included in the JSON output ONLY if it meets ALL of the following conditions. The CURRENT DATE/TIME for all comparisons is Wednesday, July 23, 2025 at 12:28:33 PM MDT.
+
+A. Must Not Be Live:
+- Examine the data for any live indicators (e.g., an explicit "live" icon, a displayed score, or a specific period/inning like "3rd Qtr" or "Bottom 5th").
+- If an event is live, it must be omitted from the output.
+
+B. Must Not Be in the Past:
+- If the file provides a start date/time: Compare it to the CURRENT DATE/TIME. If the start time is in the past, omit the event.
+- If the file does NOT provide a start date/time: You must use the internet to find the official start time. If the discovered start time is in the past, omit the event.
+- The startTime value in the JSON must be the official start time in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ).
+
+C. Must Be Within the 7-Day Horizon:
+- Calculate the time between the CURRENT DATE/TIME and the event's verified future start time.
+- If this duration is greater than 7 days (168 hours), omit the event.
+
+3. Data Mapping and Formatting
+
+For each event that passes the filtering criteria, populate the JSON structure as follows:
+
+A. Group by Sport: Use the name of the sport as the top-level key in the JSON object. All events for that sport should be objects within the corresponding array.
+
+B. Determine eventType and Structure participants:
+- For Head-to-Head Matchups (e.g., NFL, NBA, Tennis):
+-- Set the eventType field to "matchup".
+-- The participants array must contain exactly two objects, one for each team/player.
+-- For each participant, populate their participantName and the odds object with all their associated lines (e.g., Spread, Total, Moneyline).
+
+- For Tournament & Futures Events (e.g., Golf Tournament Winner, NASCAR Race Winner, League Champion):
+-- Set the eventType field to "tournament".
+-- The participants array must contain an object for every single participant listed for that event.
+-- Do not summarize, truncate, or omit any participants. For each participant, populate their participantName and the odds object with all available odds (e.g., Winner, Top 5, Top 10).
