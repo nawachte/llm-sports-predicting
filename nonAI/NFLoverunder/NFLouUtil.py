@@ -1,11 +1,14 @@
-# nfl_scraper_utils.py
+# NFLouUtil.py
 
 import requests
-from typing import Dict, List, Tuple
+import os
+import json
+from typing import Dict, List, Tuple, Any
 from urllib.parse import urlparse
 
 CORE_WEEK_EVENTS = "https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/{year}/types/2/weeks/{week}/events"
 SUMMARY_URL = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary"
+JSON_FILE = "NFLscores.json"
 
 def _get(url: str, **params):
     r = requests.get(url, params=params, timeout=20)
@@ -36,6 +39,16 @@ def _event_ids_for_week(year: int, week: int) -> List[str]:
 
 def _summary_by_event_id(event_id: str) -> dict:
     return _get(SUMMARY_URL, event=event_id)
+
+def _load_json():
+    if not os.path.exists(JSON_FILE):
+        return {"metadata": {"most_recent_week": 0}, "scored": {}, "allowed": {}}
+    with open(JSON_FILE, 'r') as f:
+        return json.load(f)
+
+def _save_json(data):
+    with open(JSON_FILE, 'w') as f:
+        json.dump(data, f, indent=2)
 
 def scrape_points_test(scored,allowed,num_games,manual_check=True):
     ''' Run tests on scraped scored and allowed data '''
@@ -70,12 +83,15 @@ def scrape_points_test(scored,allowed,num_games,manual_check=True):
             chosen_team = random.choice(teams)
             print(f"Week {week + 1}, Team: {chosen_team}, Scored: {scored[chosen_team][week]}, Allowed: {allowed[chosen_team][week]}")
 
-def scrape_points_by_team(current_week: int, season_year: int = 2025):
-    if current_week < 1:
-        raise ValueError("current_week must be >= 1")
-
+def scrape_points_by_team(start_week: int, end_week: int, season_year: int = 2025):
+    if end_week < start_week:
+        raise ValueError("end_week must be greater than or equal to start_week")
+    
+    # -----------------------------------------------------------------
+    # STEP 1: Scrape all completed games in range into a flat list
+    # -----------------------------------------------------------------
     rows = []
-    for wk in range(1, max(1, current_week)):
+    for wk in range(start_week, end_week + 1):
         for eid in _event_ids_for_week(season_year, wk):
             summ = _summary_by_event_id(eid)
             comp = ((summ.get("header") or {}).get("competitions") or [{}])[0]
@@ -103,27 +119,99 @@ def scrape_points_by_team(current_week: int, season_year: int = 2025):
                 "home_pts": home_pts, "away_pts": away_pts,
             })
 
-    rows.sort(key=lambda r: (r["week"], r["date"]))
+    # -----------------------------------------------------------------
+    # STEP 2: Process rows week by week to insert byes correctly
+    # -----------------------------------------------------------------
 
-    points_scored, points_allowed = {}, {}
+    # Get a master list of all teams that played in this range
+    all_teams = set()
     for r in rows:
-        h, a = r["home"], r["away"]
-        hp, ap = r["home_pts"], r["away_pts"]
-        points_scored.setdefault(h, []).append(hp)
-        points_allowed.setdefault(h, []).append(ap)
-        points_scored.setdefault(a, []).append(ap)
-        points_allowed.setdefault(a, []).append(hp)
+        all_teams.add(r["home"])
+        all_teams.add(r["away"])
 
-    # ---------- insert bye placeholders ----------
-    all_teams = list(points_scored.keys())
-    for team in all_teams:
-        games = len(points_scored[team])
-        expected_games = current_week - 1
-        # one "bye" for every missing week (usually 0 or 1)
-        byes = expected_games - games
-        for _ in range(byes):
-            points_scored[team].append("bye")
-            points_allowed[team].append("bye")
+    # Group games by week for easy lookup
+    games_by_week: Dict[int, List[Dict]] = {}
+    for r in rows:
+        games_by_week.setdefault(r["week"], []).append(r)
 
-    scrape_points_test(points_scored, points_allowed, current_week - 1)
+    # Initialize empty lists for all teams
+    points_scored: Dict[str, List] = {team: [] for team in all_teams}
+    points_allowed: Dict[str, List] = {team: [] for team in all_teams}
+
+    # Loop through the *week range* (not the scraped rows)
+    for wk in range(start_week, end_week + 1):
+        teams_that_played_this_week = set()
+
+        # Add scores for games that happened this week
+        for game in games_by_week.get(wk, []):
+            h, a = game["home"], game["away"]
+            hp, ap = game["home_pts"], game["away_pts"]
+
+            points_scored[h].append(hp)
+            points_allowed[h].append(ap)
+            points_scored[a].append(ap)
+            points_allowed[a].append(hp)
+            
+            teams_that_played_this_week.add(h)
+            teams_that_played_this_week.add(a)
+
+        # Add "bye" for all other teams that didn't play
+        for team in all_teams:
+            if team not in teams_that_played_this_week:
+                points_scored[team].append("bye")
+                points_allowed[team].append("bye")
+
+    # -----------------------------------------------------------------
+    # STEP 3: Run tests and return
+    # -----------------------------------------------------------------
+    expected_games = end_week - start_week + 1
+    scrape_points_test(points_scored, points_allowed, expected_games)
     return points_scored, points_allowed
+
+def get_points(current_week: int, season_year: int = 2025):
+    """
+    Wrapper that uses JSON cache when available, delegates to scrape_points_by_team for missing weeks.
+    """
+    target_week = current_week - 1
+    
+    # Load existing data
+    data = _load_json()
+    most_recent = data["metadata"]["most_recent_week"]
+    
+    # If we have all needed data, return it
+    if most_recent >= target_week:
+        print(f"Loaded weeks 1-{target_week} from {JSON_FILE}")
+        return data["scored"], data["allowed"]
+    
+    # Figure out what we need to scrape
+    start = most_recent + 1
+    end = target_week
+    
+    if most_recent > 0:
+        print(f"Loading weeks 1-{most_recent} from {JSON_FILE}")
+    print(f"Scraping weeks {start}-{end} from ESPN API...")
+    
+    # Call the scraping function
+    new_scored, new_allowed = scrape_points_by_team(start, end, season_year)
+    
+    # Merge with existing data
+    scored = data["scored"]
+    allowed = data["allowed"]
+    
+    for team in new_scored:
+        # If team is new (e.g., first week of scraping), pad previous weeks with byes
+        if team not in scored:
+            scored[team] = ["bye"] * most_recent
+            allowed[team] = ["bye"] * most_recent
+            
+        scored.setdefault(team, []).extend(new_scored[team])
+        allowed.setdefault(team, []).extend(new_allowed[team])
+    
+    # Save updated data
+    data["metadata"]["most_recent_week"] = target_week
+    data["scored"] = scored
+    data["allowed"] = allowed
+    _save_json(data)
+    print(f"Saved updated data to {JSON_FILE}")
+    
+    return scored, allowed

@@ -8,5 +8,7 @@ scratch.txt
 The-Logic-of-Sports-Betting.pdf
 thoughts.txt
 nonAI/sports-betting/
-nonAI/new_system_OOP/__pycache__/
-nonAI/__pycache__/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd

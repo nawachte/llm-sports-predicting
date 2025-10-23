@@ -1,0 +1,585 @@
+{
+  "metadata": {
+    "most_recent_week": 7
+  },
+  "scored": {
+    "Tampa Bay Buccaneers": [
+      23,
+      20,
+      29,
+      25,
+      38,
+      30,
+      9
+    ],
+    "Atlanta Falcons": [
+      20,
+      22,
+      0,
+      34,
+      "bye",
+      24,
+      10
+    ],
+    "Los Angeles Rams": [
+      14,
+      33,
+      26,
+      27,
+      23,
+      17,
+      35
+    ],
+    "Houston Texans": [
+      9,
+      19,
+      10,
+      26,
+      44,
+      "bye",
+      19
+    ],
+    "Las Vegas Raiders": [
+      20,
+      9,
+      24,
+      24,
+      6,
+      20,
+      0
+    ],
+    "Kansas City Chiefs": [
+      21,
+      17,
+      22,
+      37,
+      28,
+      30,
+      31
+    ],
+    "New York Jets": [
+      32,
+      10,
+      27,
+      21,
+      22,
+      11,
+      6
+    ],
+    "Carolina Panthers": [
+      10,
+      22,
+      30,
+      13,
+      27,
+      30,
+      13
+    ],
+    "Baltimore Ravens": [
+      40,
+      41,
+      30,
+      20,
+      10,
+      3,
+      "bye"
+    ],
+    "New Orleans Saints": [
+      13,
+      21,
+      13,
+      19,
+      26,
+      19,
+      14
+    ],
+    "Arizona Cardinals": [
+      20,
+      27,
+      15,
+      20,
+      21,
+      27,
+      23
+    ],
+    "San Francisco 49ers": [
+      17,
+      26,
+      16,
+      21,
+      26,
+      19,
+      20
+    ],
+    "Detroit Lions": [
+      13,
+      52,
+      38,
+      34,
+      37,
+      17,
+      24
+    ],
+    "Minnesota Vikings": [
+      27,
+      6,
+      48,
+      21,
+      21,
+      "bye",
+      22
+    ],
+    "Chicago Bears": [
+      24,
+      21,
+      31,
+      25,
+      "bye",
+      25,
+      26
+    ],
+    "Seattle Seahawks": [
+      13,
+      31,
+      44,
+      23,
+      35,
+      20,
+      27
+    ],
+    "New England Patriots": [
+      13,
+      33,
+      14,
+      42,
+      23,
+      25,
+      31
+    ],
+    "Philadelphia Eagles": [
+      24,
+      20,
+      33,
+      31,
+      17,
+      17,
+      28
+    ],
+    "Cleveland Browns": [
+      16,
+      17,
+      13,
+      10,
+      17,
+      9,
+      31
+    ],
+    "Dallas Cowboys": [
+      20,
+      40,
+      14,
+      40,
+      37,
+      27,
+      44
+    ],
+    "Pittsburgh Steelers": [
+      34,
+      17,
+      21,
+      24,
+      "bye",
+      23,
+      31
+    ],
+    "Jacksonville Jaguars": [
+      26,
+      27,
+      17,
+      26,
+      31,
+      12,
+      7
+    ],
+    "Cincinnati Bengals": [
+      17,
+      31,
+      10,
+      3,
+      24,
+      18,
+      33
+    ],
+    "Green Bay Packers": [
+      27,
+      27,
+      10,
+      40,
+      "bye",
+      27,
+      27
+    ],
+    "Buffalo Bills": [
+      41,
+      30,
+      31,
+      31,
+      20,
+      14,
+      "bye"
+    ],
+    "Denver Broncos": [
+      20,
+      28,
+      20,
+      28,
+      21,
+      13,
+      33
+    ],
+    "Miami Dolphins": [
+      8,
+      27,
+      21,
+      27,
+      24,
+      27,
+      6
+    ],
+    "Washington Commanders": [
+      21,
+      18,
+      41,
+      27,
+      27,
+      24,
+      22
+    ],
+    "Indianapolis Colts": [
+      33,
+      29,
+      41,
+      20,
+      40,
+      31,
+      38
+    ],
+    "Los Angeles Chargers": [
+      27,
+      20,
+      23,
+      18,
+      10,
+      29,
+      24
+    ],
+    "Tennessee Titans": [
+      12,
+      19,
+      20,
+      0,
+      22,
+      10,
+      13
+    ],
+    "New York Giants": [
+      6,
+      37,
+      9,
+      21,
+      14,
+      34,
+      32
+    ]
+  },
+  "allowed": {
+    "Tampa Bay Buccaneers": [
+      20,
+      19,
+      27,
+      31,
+      35,
+      19,
+      24
+    ],
+    "Atlanta Falcons": [
+      23,
+      6,
+      30,
+      27,
+      "bye",
+      14,
+      20
+    ],
+    "Los Angeles Rams": [
+      9,
+      19,
+      33,
+      20,
+      26,
+      3,
+      7
+    ],
+    "Houston Texans": [
+      14,
+      20,
+      17,
+      0,
+      10,
+      "bye",
+      27
+    ],
+    "Las Vegas Raiders": [
+      13,
+      20,
+      41,
+      25,
+      40,
+      10,
+      31
+    ],
+    "Kansas City Chiefs": [
+      27,
+      20,
+      9,
+      20,
+      31,
+      17,
+      0
+    ],
+    "New York Jets": [
+      34,
+      30,
+      29,
+      27,
+      37,
+      13,
+      13
+    ],
+    "Carolina Panthers": [
+      26,
+      27,
+      0,
+      42,
+      24,
+      27,
+      6
+    ],
+    "Baltimore Ravens": [
+      41,
+      17,
+      38,
+      37,
+      44,
+      17,
+      "bye"
+    ],
+    "New Orleans Saints": [
+      20,
+      26,
+      44,
+      31,
+      14,
+      25,
+      26
+    ],
+    "Arizona Cardinals": [
+      13,
+      22,
+      16,
+      23,
+      22,
+      31,
+      27
+    ],
+    "San Francisco 49ers": [
+      13,
+      21,
+      15,
+      26,
+      23,
+      30,
+      10
+    ],
+    "Detroit Lions": [
+      27,
+      21,
+      30,
+      10,
+      24,
+      30,
+      9
+    ],
+    "Minnesota Vikings": [
+      24,
+      22,
+      10,
+      24,
+      17,
+      "bye",
+      28
+    ],
+    "Chicago Bears": [
+      27,
+      52,
+      14,
+      24,
+      "bye",
+      24,
+      14
+    ],
+    "Seattle Seahawks": [
+      17,
+      17,
+      13,
+      20,
+      38,
+      12,
+      19
+    ],
+    "New England Patriots": [
+      20,
+      27,
+      21,
+      13,
+      20,
+      19,
+      13
+    ],
+    "Philadelphia Eagles": [
+      20,
+      17,
+      26,
+      25,
+      21,
+      34,
+      22
+    ],
+    "Cleveland Browns": [
+      17,
+      41,
+      10,
+      34,
+      21,
+      23,
+      6
+    ],
+    "Dallas Cowboys": [
+      24,
+      37,
+      31,
+      40,
+      22,
+      30,
+      22
+    ],
+    "Pittsburgh Steelers": [
+      32,
+      31,
+      14,
+      21,
+      "bye",
+      9,
+      33
+    ],
+    "Jacksonville Jaguars": [
+      10,
+      31,
+      10,
+      21,
+      28,
+      20,
+      35
+    ],
+    "Cincinnati Bengals": [
+      16,
+      27,
+      48,
+      28,
+      37,
+      27,
+      31
+    ],
+    "Green Bay Packers": [
+      13,
+      18,
+      13,
+      40,
+      "bye",
+      18,
+      23
+    ],
+    "Buffalo Bills": [
+      40,
+      10,
+      21,
+      19,
+      23,
+      24,
+      "bye"
+    ],
+    "Denver Broncos": [
+      12,
+      29,
+      23,
+      3,
+      17,
+      11,
+      32
+    ],
+    "Miami Dolphins": [
+      33,
+      33,
+      31,
+      21,
+      27,
+      29,
+      31
+    ],
+    "Washington Commanders": [
+      6,
+      27,
+      24,
+      34,
+      10,
+      25,
+      44
+    ],
+    "Indianapolis Colts": [
+      8,
+      28,
+      20,
+      27,
+      6,
+      27,
+      24
+    ],
+    "Los Angeles Chargers": [
+      21,
+      9,
+      20,
+      21,
+      27,
+      27,
+      38
+    ],
+    "Tennessee Titans": [
+      20,
+      33,
+      41,
+      26,
+      21,
+      20,
+      31
+    ],
+    "New York Giants": [
+      21,
+      40,
+      22,
+      18,
+      26,
+      17,
+      33
+    ]
+  }
+}
