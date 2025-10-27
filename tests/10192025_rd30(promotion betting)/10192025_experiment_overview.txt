@@ -1,0 +1,45 @@
+-----Intro:
+Crazy we have made it to 30 tests. Ironically this is going to be the first one that doesn't use AI. Lets talk about that for a quick
+second. Historically, the best system I have ever created for betting is the NFL over/under algorithm I created before I got into
+using AI in sports betting. I think both experiments went on long enough to be able to show the long term stability of each algorithm.
+It is in my professional opinion it is likely that the current state of AI models cannot on its own be successful at sports betting 
+without so much outside input that it ultimately defeats the point. As you can see its been a couple of weeks since I have done one of 
+these tests. I have been revamping the over/under algorithm from last year. I'm going to try to combine in with AI to see if we can get
+the bets of both worlds to find edges. But right now we are focused on using promotions to bet. I was discussing sports betting with 
+my friend Marshall who has had high success in sports betting. He only bets when he has promotions and much to my surprise, does not 
+bet parlays. Hes smart about it. During my research I found that even with a boost, you might still be down on parlays because thats
+just how much of a vigorish that is added sometimes. I might include a printout of the AI conversation I had figuring this out. Anyway
+I decided to only bet promos for one football sunday and as you will see in my results, it turned out well for me.
+
+-----Files:
+-----Inconsistencies/ Notes:
+-----Picks/results:
+DraftKings
+Brian Thomas Junior 50+ receiving yards | +140->+186 | $1.00 | Lost
+George Pickens anytime touchdown | +160->+213 | $1.00 | Lost
+Darren Waller anytime touchdown | +285 | $1.00 | Lost
+49ers vs Falcons Parlay | +310->+372 | $1.00 | Lost
+- Bijan Robinson anytime touchdown (hit)
+- Bijan Robinson 70+ rushing yards (miss)
+- Mac Jones 240+ passing yards (miss)
+***DraftKings total: -$4.00
+
+FanDuel
+Keenan Allen anytime touchdown | +210->+274 | $2.00 | Won
+Commanders moneyline | +104->+125 | $2.00 | Lost
+Broncos moneyline | +144->+188 | $2.00 | Won
+***FanDuel total: +$7.24
+
+Fanatics
+Josh Jacobs anytime touchdown | +175->+218 | $2.00 | Won
+Packers moneyline | +125 | $2.00 | Won
+George Pickens anytime touchdown | +345->+431 | $2.00 | Lost
+Fanatics total: +4.88
+
+All total: +$8.12
+
+% profit: 8.12/16 = 50.75% profit 
+
+-----Conclusion:
+I did all the calculations before creating this document so slightly different format this time. But this results really worked out in
+my favor. I only won 4 out of 10 bets but I came away with a 50% ROI.
